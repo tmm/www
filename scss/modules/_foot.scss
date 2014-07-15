@@ -1,0 +1,17 @@
+// modules: foot
+
+.foot {
+  font: 1rem $sans;
+  @include center;
+  @include list-inline(-2.4375rem, .4375rem, .4375rem);
+}
+
+.twitter {
+  @include link-social($twitter1, $twitter2);
+  padding-bottom: 1rem;
+}
+
+.github {
+  @include link-social($github1, $github2);
+  padding-bottom: 1rem;
+}

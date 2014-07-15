@@ -1,0 +1,5 @@
+# ignore node dependencies
+node_modules/**/*
+
+# ignore caches
+**/sass-cache

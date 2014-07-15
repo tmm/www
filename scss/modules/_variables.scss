@@ -1,0 +1,20 @@
+// modules: variables
+
+// screen sizes
+$mobile: "screen and (max-width: 30rem)";
+$tablet: "screen and (min-width: 30.0265rem) and (max-width: 50rem)";
+
+// fonts
+$serif: 'Noto Serif', serif;
+$sans: 'Montserrat', sans-serif;
+$font-size: 100%;
+
+// colors
+$background: #fbfbfb;
+$font: #292929;
+
+// images
+$twitter1: url('../img/twitter.png') no-repeat;
+$twitter2: url('../img/twitter.svg') no-repeat;
+$github1: url('../img/github.png') no-repeat;
+$github2: url('../img/github.svg') no-repeat;
