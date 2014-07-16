@@ -1,0 +1,39 @@
+// modules: 404
+
+.main-404 {
+  @include center;
+
+  margin: 13rem 0 1rem;
+  @media #{$mobile} {
+    margin: 5rem 0 1rem;
+  }
+  @media #{$tablet} {
+    margin: 4rem 0 1rem;
+  }
+}
+
+.number {
+  margin: 1rem 0;
+  font: normal 3rem $sans;
+}
+
+.nietzsche {
+  margin: 1rem 0 3rem;
+  font: italic 2.25rem $serif;
+  font-weight: 100;
+}
+
+.rewind {
+  font: normal 1.25rem $sans;
+  color: $accent;
+  text-decoration: none;
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
