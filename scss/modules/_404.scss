@@ -3,7 +3,7 @@
 .main-404 {
   @include center;
 
-  margin: 13rem 0 1rem;
+  margin: 17rem 0 1rem;
   @media #{$mobile} {
     margin: 5rem 0 1rem;
   }
@@ -15,12 +15,6 @@
 .number {
   margin: 1rem 0;
   font: normal 3rem $sans;
-}
-
-.nietzsche {
-  margin: 1rem 0 3rem;
-  font: italic 2.25rem $serif;
-  font-weight: 100;
 }
 
 .rewind {
