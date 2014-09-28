@@ -1,0 +1,10 @@
+# Site settings
+title: Thomas Meagher
+description: "love what you do."
+url: "http://thomasmeagher.com"
+author: "Thomas Meagher"
+keywords: "Thomas,Meagher,wpi,develop,innovate"
+
+exclude: ["node_modules", "Gruntfile.js", "package.json", "readme.md", "CNAME"]
+include: []
+timezone: America/New_York
