@@ -27,6 +27,16 @@
 
     ga('create', 'UA-52981191-1', 'auto');
     ga('send', 'pageview');
-
   </script>
+
+  {% if page.title == 'Daily App' %}
+  <!-- Daily App Twitter Card -->
+  <meta name="twitter:card" content="app">
+  <meta name="twitter:site" content="@thomasmeagher">
+  <meta name="twitter:description" content="Daily is a free app that manages your most important habits. Everyday make sure you consistently do things that matter to you, and don't do the things that don't. It's simple—just check it daily!">
+  <meta name="twitter:app:country" content="US">
+  <meta name="twitter:app:name:iphone" content="Daily">
+  <meta name="twitter:app:id:iphone" content="942352316">
+  {% endif %}
+
 </head>
