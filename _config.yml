@@ -5,6 +5,6 @@ url: "http://thomasmeagher.com"
 author: "Thomas Meagher"
 keywords: "Thomas,Meagher,wpi,develop,innovate"
 
-exclude: ["node_modules", "Gruntfile.js", "package.json", "readme.md", "CNAME"]
+exclude: ["readme.md", "CNAME"]
 include: []
 timezone: America/New_York
