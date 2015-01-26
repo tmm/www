@@ -12,6 +12,7 @@
       margin-top: .75rem;
       padding-right: $paddingr;
       padding-left: $paddingl;
+      margin-bottom: .75rem;
     }
   }
 }
@@ -21,6 +22,20 @@
   color: $font;
   background: $img1;
   background: $img2;
+  text-decoration: none;
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+@mixin link() {
+  color: $font;
   text-decoration: none;
   opacity: 0.3;
   -webkit-transition: all 0.15s ease-in-out;

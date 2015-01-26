@@ -5,7 +5,7 @@
 
   margin: 17rem 0 1rem;
   @media #{$mobile} {
-    margin: 5rem 0 1rem;
+    margin: 6rem 0 1rem;
   }
   @media #{$tablet} {
     margin: 4rem 0 1rem;
@@ -16,4 +16,16 @@
   margin: 1rem 0 0;
   font: italic 2.25rem $serif;
   font-weight: 100;
+}
+
+.nav-intro {
+  font: 1.15rem $sans;
+  @include center;
+  @include list-inline(-2.4375rem, .4375rem, .4375rem);
+
+  margin: 0 0 5rem;
+
+  li>a {
+    @include link;
+  }
 }

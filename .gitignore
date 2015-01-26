@@ -1,5 +1,2 @@
-# ignore node dependencies
-node_modules/**/*
-
-# ignore caches
+_site/*
 **/sass-cache
