@@ -4,22 +4,22 @@
   @include center;
 
   margin: 17rem 0 1rem;
-  @media #{$mobile} {
+  @media #{$mobile-intro} {
     margin: 5rem 0 1rem;
   }
-  @media #{$tablet} {
+  @media #{$tablet-intro} {
     margin: 4rem 0 1rem;
   }
 }
 
 .number {
   margin: 1rem 0;
-  font: normal 3rem $sans;
+  font: normal 3rem $montserrat;
 }
 
 .rewind {
-  font: normal 1.25rem $sans;
-  color: $accent;
+  font: normal 1.25rem $montserrat;
+  color: $green-intro;
   text-decoration: none;
   opacity: 0.3;
   -webkit-transition: all 0.15s ease-in-out;

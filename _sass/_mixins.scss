@@ -19,7 +19,7 @@
 
 @mixin link-social($img1, $img2) {
   padding-left: 1.875rem;
-  color: $font;
+  color: $gray-intro;
   background: $img1;
   background: $img2;
   text-decoration: none;
@@ -35,7 +35,7 @@
 }
 
 @mixin link() {
-  color: $font;
+  color: $gray-intro;
   text-decoration: none;
   opacity: 0.3;
   -webkit-transition: all 0.15s ease-in-out;

@@ -1,0 +1,132 @@
+// modules: projects
+
+.body-projects {
+  background-color: $white-projects;
+  color: $gray-projects;
+  font-family: "Monsterrat",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+
+  @media #{$mobile-projects} {
+    font-size: 14px;
+  }
+}
+
+.nav-projects {
+  font: 1.15rem $montserrat;
+  @include center;
+  @include list-inline(-2.4375rem, .4375rem, .4375rem);
+
+  margin: 1rem 0 0;
+
+  li>a {
+    @include link;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: auto;
+  padding: 20px 20px 0px;
+
+  @media #{$mobile-projects} {
+    padding-top: 25px;
+  }
+}
+
+.about {
+  width: 50%;
+  float: right;
+  display: inline-block;
+  text-align: center;
+  margin: 25px auto 5px;
+
+  h1 {
+    color: $dark-gray-projects;
+    font-weight: 300;
+    margin: .75rem 0;
+  }
+
+  h2 {
+    color: $gray-projects;
+    font-weight: 300;
+    margin: 0.75rem 0 1.5rem;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  @media #{$mobile-projects} {
+    width: 100%;
+    float: none;
+    margin: 15px auto 5px;
+  }
+}
+
+.skill {
+  color: $blue-projects;
+  border: 1px solid $blue-projects;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-decoration: none;
+
+  &:hover {
+    color: $white-projects;
+    background-color: $blue-projects;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+.external-link {
+  padding-bottom: 5px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.project-icon {
+  width: 150px;
+}
+
+.project-image {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin: 25px auto 5px;
+
+  @media #{$mobile-projects} {
+    width: 100%;
+    float: none;
+    padding: 0px;
+    margin: 25px auto 5px;
+  }
+}
+
+.inline-projects {
+  list-style: none;
+  margin-left: -30px;
+
+  li {
+    display: inline-block;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+}
+
+.foot-projects {
+  font: 0.75rem $montserrat;
+  @include center;
+
+  margin: 5rem 0 3rem;
+
+  a {
+    @include link;
+  }
+}

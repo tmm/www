@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>appTemplateapptemp</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="appTemplate" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+            <path d="M268.675,14.0607143 C305.335714,14.0607143 335.160714,43.8857143 335.160714,80.5464286 L335.160714,269.453571 C335.160714,306.114286 305.335714,335.939286 268.675,335.939286 L79.7678571,335.939286 C43.1071429,335.939286 13.2821429,306.114286 13.2821429,269.453571 L13.2821429,80.5464286 C13.2821429,43.8857143 43.1071429,14.0607143 79.7678571,14.0607143 L268.675,14.0607143 L268.675,14.0607143 Z M268.675,3.34642857 L79.7678571,3.34642857 C37.1321429,3.34642857 2.56785714,37.9107143 2.56785714,80.5464286 L2.56785714,269.453571 C2.56785714,312.089286 37.1321429,346.653571 79.7678571,346.653571 L268.675,346.653571 C311.310714,346.653571 345.875,312.089286 345.875,269.453571 L345.875,80.5464286 C345.875,37.9107143 311.310714,3.34642857 268.675,3.34642857 L268.675,3.34642857 L268.675,3.34642857 Z" id="Shape" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M0.114285714,349.107143 L348.328571,0.892857143" id="Shape" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup"></path>
+            <path d="M0.114285714,0.892857143 L348.328571,349.107143" id="Shape" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup"></path>
+            <g id="Group" transform="translate(5.571429, 110.714286)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
+                <path d="M0.289285714,127 L337.010714,127" id="Shape"></path>
+                <path d="M0.289285714,64 L337.010714,64" id="Shape"></path>
+                <path d="M0.289285714,0 L337.010714,0" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(110.714286, 6.571429)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
+                <path d="M126,336.789286 L126,0.0678571429" id="Shape"></path>
+                <path d="M63,336.789286 L63,0.0678571429" id="Shape"></path>
+                <path d="M0,336.789286 L0,0.0678571429" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(25.000000, 3.000000)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
+                <path d="M298,343.653571 L298,0.346428571" id="Shape"></path>
+                <path d="M0,343.653571 L0,0.346428571" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(2.000000, 25.000000)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
+                <path d="M343.875,0 L0.567857143,0" id="Shape"></path>
+                <path d="M343.875,299 L0.567857143,299" id="Shape"></path>
+            </g>
+            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="148.928571"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="89.8642857"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="63.3928571"></circle>
+        </g>
+    </g>
+</svg>

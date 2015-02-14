@@ -1,4 +1,4 @@
-body {
+.body-intro {
   background-color: #fbfbfb;
   color: #292929;
   font: 100% "Noto Serif", serif;
@@ -9,7 +9,7 @@ body {
   margin: 17rem 0 1rem; }
   @media screen and (max-width: 30rem) {
     .head-intro {
-      margin: 5rem 0 1rem; } }
+      margin: 6rem 0 1rem; } }
   @media screen and (min-width: 30.0265rem) and (max-width: 50rem) {
     .head-intro {
       margin: 4rem 0 1rem; } }
@@ -19,17 +19,42 @@ body {
   font: italic 2.25rem "Noto Serif", serif;
   font-weight: 100; }
 
-.foot {
-  font: 1rem "Montserrat", sans-serif;
-  text-align: center; }
-  .foot ul {
+.nav-intro {
+  font: 1.15rem "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0 0 5rem; }
+  .nav-intro ul {
     list-style: none;
     margin-left: -2.4375rem; }
-    .foot ul li {
+    .nav-intro ul li {
       display: inline-block;
       margin-top: .75rem;
       padding-right: 0.4375rem;
-      padding-left: 0.4375rem; }
+      padding-left: 0.4375rem;
+      margin-bottom: .75rem; }
+  .nav-intro li > a {
+    color: #292929;
+    text-decoration: none;
+    opacity: 0.3;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+    .nav-intro li > a:hover {
+      opacity: 1.0; }
+
+.foot-intro {
+  font: 1rem "Montserrat", sans-serif;
+  text-align: center; }
+  .foot-intro ul {
+    list-style: none;
+    margin-left: -2.4375rem; }
+    .foot-intro ul li {
+      display: inline-block;
+      margin-top: .75rem;
+      padding-right: 0.4375rem;
+      padding-left: 0.4375rem;
+      margin-bottom: .75rem; }
 
 .twitter {
   padding-left: 1.875rem;
@@ -60,6 +85,129 @@ body {
   padding-bottom: 1rem; }
   .github:hover {
     opacity: 1.0; }
+
+.body-projects {
+  background-color: white;
+  color: #756a66;
+  font-family: "Monsterrat",Helvetica,Arial,sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 674px) {
+    .body-projects {
+      font-size: 14px; } }
+
+.nav-projects {
+  font: 1.15rem "Montserrat", sans-serif;
+  text-align: center;
+  margin: 1rem 0 0; }
+  .nav-projects ul {
+    list-style: none;
+    margin-left: -2.4375rem; }
+    .nav-projects ul li {
+      display: inline-block;
+      margin-top: .75rem;
+      padding-right: 0.4375rem;
+      padding-left: 0.4375rem;
+      margin-bottom: .75rem; }
+  .nav-projects li > a {
+    color: #292929;
+    text-decoration: none;
+    opacity: 0.3;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+    .nav-projects li > a:hover {
+      opacity: 1.0; }
+
+.section {
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: auto;
+  padding: 20px 20px 0px; }
+  @media screen and (max-width: 674px) {
+    .section {
+      padding-top: 25px; } }
+
+.about {
+  width: 50%;
+  float: right;
+  display: inline-block;
+  text-align: center;
+  margin: 25px auto 5px; }
+  .about h1 {
+    color: #534540;
+    font-weight: 300;
+    margin: .75rem 0; }
+  .about h2 {
+    color: #756a66;
+    font-weight: 300;
+    margin: 0.75rem 0 1.5rem; }
+  .about p {
+    font-size: 18px;
+    font-weight: 300; }
+  @media screen and (max-width: 674px) {
+    .about {
+      width: 100%;
+      float: none;
+      margin: 15px auto 5px; } }
+
+.skill {
+  color: #1d9ce8;
+  border: 1px solid #1d9ce8;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-decoration: none; }
+  .skill:hover {
+    color: white;
+    background-color: #1d9ce8;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.external-link {
+  padding-bottom: 5px; }
+  .external-link a {
+    text-decoration: none; }
+
+.project-icon {
+  width: 150px; }
+
+.project-image {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin: 25px auto 5px; }
+  @media screen and (max-width: 674px) {
+    .project-image {
+      width: 100%;
+      float: none;
+      padding: 0px;
+      margin: 25px auto 5px; } }
+
+.inline-projects {
+  list-style: none;
+  margin-left: -30px; }
+  .inline-projects li {
+    display: inline-block;
+    padding-right: 7.5px;
+    padding-left: 7.5px; }
+
+.foot-projects {
+  font: 0.75rem "Montserrat", sans-serif;
+  text-align: center;
+  margin: 5rem 0 3rem; }
+  .foot-projects a {
+    color: #292929;
+    text-decoration: none;
+    opacity: 0.3;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+    .foot-projects a:hover {
+      opacity: 1.0; }
 
 .main-404 {
   text-align: center;
