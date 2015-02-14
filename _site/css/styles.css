@@ -87,8 +87,8 @@
     opacity: 1.0; }
 
 .body-projects {
-  background-color: white;
-  color: #756a66;
+  background-color: #fbfbfb;
+  color: #534540;
   font-family: "Monsterrat",Helvetica,Arial,sans-serif;
   font-size: 16px; }
   @media screen and (max-width: 674px) {
@@ -120,7 +120,7 @@
       opacity: 1.0; }
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   max-width: 675px;
   overflow: auto;
   padding: 0; }
@@ -132,13 +132,13 @@
   text-align: center;
   margin: 25px auto 5px; }
   .about h1 {
+    color: #292929;
+    font-weight: 300;
+    margin: 0rem 0 .25rem; }
+  .about h2 {
     color: #534540;
     font-weight: 300;
-    margin: .75rem 0; }
-  .about h2 {
-    color: #756a66;
-    font-weight: 300;
-    margin: 0.75rem 0 1.5rem; }
+    margin: 0.5rem 0 0.25rem; }
   .about p {
     font-size: 18px;
     font-weight: 300; }
@@ -148,27 +148,34 @@
       float: none;
       margin: 15px auto 5px; } }
 
-.skill {
-  color: #1d9ce8;
-  border: 1px solid #1d9ce8;
-  border-radius: 5px;
-  padding: 7px 15px;
-  text-decoration: none; }
-  .skill:hover {
-    color: white;
-    background-color: #1d9ce8;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
+.inline-projects {
+  list-style: none;
+  margin-left: -40px; }
+  .inline-projects li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px; }
 
-.external-link {
-  padding-bottom: 7px; }
-  .external-link a {
-    color: #1d9ce8; }
-
-.project-icon {
-  width: 150px; }
+.link-projects {
+  margin: 17px 0;
+  font-size: 14px;
+  font-weight: 600; }
+  .link-projects a {
+    color: #1d9ce8;
+    border: 2px solid #1d9ce8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 7px 15px;
+    text-decoration: none; }
+    .link-projects a:hover {
+      color: #ffffff;
+      background-color: #1d9ce8;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
 
 .project-image {
   width: 50%;
@@ -183,13 +190,8 @@
       padding: 0px;
       margin: 25px auto 5px; } }
 
-.inline-projects {
-  list-style: none;
-  margin-left: -30px; }
-  .inline-projects li {
-    display: inline-block;
-    padding-right: 7.5px;
-    padding-left: 7.5px; }
+.project-icon {
+  width: 150px; }
 
 .foot-projects {
   font: 0.75rem "Montserrat", sans-serif;
