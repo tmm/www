@@ -121,12 +121,9 @@
 
 .section {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 675px;
   overflow: auto;
-  padding: 20px 20px 0px; }
-  @media screen and (max-width: 674px) {
-    .section {
-      padding-top: 25px; } }
+  padding: 0; }
 
 .about {
   width: 50%;
@@ -166,9 +163,9 @@
     transition: 0.5s; }
 
 .external-link {
-  padding-bottom: 5px; }
+  padding-bottom: 7px; }
   .external-link a {
-    text-decoration: none; }
+    color: #1d9ce8; }
 
 .project-icon {
   width: 150px; }

@@ -25,13 +25,9 @@
 
 .section {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 675px;
   overflow: auto;
-  padding: 20px 20px 0px;
-
-  @media #{$mobile-projects} {
-    padding-top: 25px;
-  }
+  padding: 0;
 }
 
 .about {
@@ -83,10 +79,10 @@
 }
 
 .external-link {
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 
   a {
-    text-decoration: none;
+    color: $blue-projects;
   }
 }
 
