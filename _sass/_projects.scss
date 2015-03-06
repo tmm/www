@@ -2,7 +2,7 @@
 
 .body-projects {
   background-color: $white;
-  color: $gray;
+  color: $gray-projects;
   font-family: "Monsterrat",Helvetica,Arial,sans-serif;
   font-size: 16px;
 
@@ -38,13 +38,13 @@
   margin: 25px auto 5px;
 
   h1 {
-    color: $dark-gray;
+    color: $dark-gray-projects;
     font-weight: 300;
     margin: 0rem 0 .25rem;
   }
 
   h2 {
-    color: $gray;
+    color: $gray-projects;
     font-weight: 300;
     margin: 0.5rem 0 0.25rem;
   }
