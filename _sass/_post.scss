@@ -1,40 +1,66 @@
 // modules: post
 
 .body-post {
-  font-size: 18px;
-
-  @media #{$mobile} {
-    font-size: 16px;
-  }
+  
 }
 
 .post {
   margin: 3rem auto 0;
-  max-width: 37.5rem;
-  padding: 0;
+  max-width: 40rem;
+  padding: 0 1rem;
 }
 
 .title {
-  margin-bottom: 3rem; 
+  @include center;
+  margin-bottom: 4rem;
 
   h1 {
-    font: 900 3.5rem $merriweather;
+    font: 700 3.5rem $libre-baskerville;
     margin-bottom: 1rem;
-    @include center;
   }
 
   p {
-    font: 300 1.05rem $lato;
-    @include center;
+    font: 300 1.15rem $lato;
   }
 }
 
 // Markdown Styles
 
-.content h1, h2, h3, h4, h5, h6 {
-  font-family: $lato;
-}
+.content {
+  h2, h3, h4, h5, h6 {
+    font-family: $lato;
+    margin: 1.65rem 0;
+  }
 
-.content p {
-  font-family: merriweather;
+  p {
+    font-family: $libre-baskerville;
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  a {
+    @include link($gray, $green, underline);
+  }
+
+  blockquote {
+    margin: 2.5rem 0;
+
+    p {
+      color: $green;
+      font: 300 1.85rem $lato;
+      line-height: 2.5rem;
+      @include center;
+
+      &::before {
+        content: "“";
+      }
+
+      &::after {
+        content: "”";
+      }
+    }
+  }
+
+
 }

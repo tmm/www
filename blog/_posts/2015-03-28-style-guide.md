@@ -1,23 +1,25 @@
 ---
 layout: post
-title:  "Style Guide"
-date:   2015-03-28 10:29:58
+title: "Style Guide"
+date: 2015-03-28 10:29:58
 ---
 
-##This is the Start of Something Good##
+##This Is The Start Of Something Good—But Not That Good, So Let's All Calm Down##
 
-Welcome to my blog! If you are reading this right now, you have caught me. Let me explain myself - I have yet to finish implementing this blog and the aforementioned style guide. I promise to do so, and you should check back when it is complete! (This message was written Saturday 28 March 2015 and I have every intention to complete this tomorrow.)
+Welcome to my blog! If *you* are **reading** this right now, you have caught me. Let me explain myself—I have yet to finish implementing this blog and the aforementioned style guide. I promise to do so, and you should check back when it is complete! (This message was written Saturday 28 March 2015 and I have every intention to complete this tomorrow.)
 
->The quick brown fox jumped over the lazy dog.
+Now, how about a block quote, followed by some more style explanations. (A [link to the homepage](http://thomasmeagher.com "home") .)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem incidunt error accusantium ratione asperiores fugit in tempora libero! Eveniet alias esse vel corporis labore doloribus eum, possimus harum expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio, blanditiis mollitia. Eveniet amet id expedita sit accusamus, sapiente veritatis perferendis inventore, ad quisquam rem atque error fugiat, est ducimus.
+>The quick brown fox jumped over the lazy dogs. This sentence contains every letter in the alphabet.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem incidunt error accusantium ratione asperiores fugit in tempora libero! Eveniet alias esse vel corporis labore doloribus eum, possimus harum expedita.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, officiis, molestiae. Ipsa mollitia nam voluptatem rerum harum cumque fugit, tempora, nobis assumenda, quae reiciendis ea nesciunt esse in, temporibus maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at [tenetur harum]("hmmm") quod sapiente quas deleniti dolorum impedit placeat perspiciatis amet recusandae libero magni autem eveniet, fugit, eius odit voluptates!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem incidunt error accusantium ratione asperiores fugit in tempora libero! Eveniet alias esse vel corporis labore doloribus eum, possimus harum expedita.
+1. Milk
+2. Eggs
+3. And Cheese
 
-##This is a Level Two Heading##
+- One beats two
+- Two beats three
+- Three beats one
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem incidunt error accusantium ratione asperiores fugit in tempora libero! Eveniet alias esse vel corporis labore doloribus eum, possimus harum expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio, blanditiis mollitia. Eveniet amet id expedita sit accusamus, sapiente veritatis perferendis inventore, ad quisquam rem atque error fugiat, est ducimus.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem incidunt error accusantium ratione asperiores fugit in tempora libero! Eveniet alias esse vel corporis labore doloribus eum, possimus harum expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio, blanditiis mollitia. Eveniet amet id expedita sit accusamus, sapiente veritatis perferendis inventore, ad quisquam rem atque error fugiat, est ducimus.
+***

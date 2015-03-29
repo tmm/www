@@ -15,9 +15,9 @@
   }
 }
 
-@mixin link($color1: $light-gray, $color2: $gray) {
+@mixin link($color1: $light-gray, $color2: $gray, $text-decoration: none) {
   color: $color1;
-  text-decoration: none;
+  text-decoration: $text-decoration;
   -webkit-transition: 0.15s;
   -moz-transition: 0.15s;
   -o-transition: 0.15s;
