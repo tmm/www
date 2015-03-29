@@ -1,24 +1,20 @@
 // modules: variables
 
 // screen sizes
-$mobile-intro: "screen and (max-width: 30rem)";
-$tablet-intro: "screen and (min-width: 30.0265rem) and (max-width: 50rem)";
-
-$mobile-projects: "screen and (max-width: 674px)";
+$mobile: "screen and (max-width: 674px)";
 
 // fonts
+$lato: 'Lato', sans-serif;
 $noto-serif: 'Noto Serif', serif;
-$montserrat: 'Montserrat', sans-serif;
-$font-size: 100%;
+$merriweather: 'Merriweather', serif;
 
 // colors
 $white: #fbfbfb;
-$dark-gray: #292929;
-$green: #27ae60;
+$gray: #534540;
+$light-gray: #988f8c;
+$green: #00b27f;
 $blue: #1D9CE8;
 
 // images
-$twitter1: url('../img/twitter.png') no-repeat;
-$twitter2: url('../img/twitter.svg') no-repeat;
-$github1: url('../img/github.png') no-repeat;
-$github2: url('../img/github.svg') no-repeat;
+$twitter: url('../img/twitter.svg') no-repeat;
+$github: url('../img/github.svg') no-repeat;

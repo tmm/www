@@ -1,41 +1,25 @@
 // modules: projects
 
 .body-projects {
-  background-color: $white;
-  color: $dark-gray;
-  font-family: "Monsterrat",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-family: $lato;
 
-  @media #{$mobile-projects} {
+  @media #{$mobile} {
     font-size: 14px;
   }
 }
 
-.nav-projects {
-  font: 1.15rem $montserrat;
-  @include center;
-  @include list-inline(-2.4375rem, .4375rem, .4375rem);
-
-  margin: 1rem 0 0;
-
-  li>a {
-    @include link;
-  }
-}
-
 .section {
-  margin: 0 auto 2rem;
-  max-width: 675px;
-  overflow: auto;
-  padding: 0;
+  margin: 5rem auto 0;
 }
 
 .about {
-  width: 50%;
-  float: right;
-  display: inline-block;
-  text-align: center;
-  margin: 25px auto 5px;
+  @include center;
+  @include list-inline(-2.5rem, 1rem, 0.3125rem);
+  margin: 1rem 0 0;
+  
+  ul {
+    margin-top: 0.75rem;
+  }
 
   h1 {
     font-weight: 300;
@@ -47,33 +31,18 @@
     margin: 0.5rem 0 0.25rem;
   }
 
-  p {
-    font-size: 18px;
-    font-weight: 300;
-  }
-
-  @media #{$mobile-projects} {
-    width: 100%;
-    float: none;
-    margin: 15px auto 5px;
-  }
-}
-
-.inline-projects {
-  list-style: none;
-  margin-left: -40px;
-
-  li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
+  @media #{$mobile} {
+    margin: 0.94rem 0 0;
   }
 }
 
 .link-projects {
-  margin: 17px 0;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  @media #{$mobile} {
+    font-size: 0.8rem;
+  }
   
   a {
     color: $blue;
@@ -97,31 +66,14 @@
 }
 
 .project-image {
-  width: 50%;
-  float: left;
-  display: inline-block;
-  text-align: center;
-  margin: 25px auto 5px;
+  max-width: 150px;
+  margin: 25px auto 2.5px;
 
-  @media #{$mobile-projects} {
-    width: 100%;
-    float: none;
-    padding: 0px;
+  @media #{$mobile} {
     margin: 25px auto 5px;
   }
 }
 
 .project-icon {
   width: 150px;
-}
-
-.foot-projects {
-  font: 0.75rem $montserrat;
-  @include center;
-
-  margin: 5rem 0 3rem;
-
-  a {
-    @include link;
-  }
 }

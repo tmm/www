@@ -1,54 +1,26 @@
 // modules: intro
 
-.body-intro {
-  background-color: $white;
-  color: $dark-gray;
-  font: $font-size $noto-serif;
-  line-height: 1.75rem;
-}
-
 .head-intro {
   @include center;
-
   margin: 17rem 0 1rem;
-  @media #{$mobile-intro} {
+  
+  @media #{$mobile} {
     margin: 6rem 0 1rem;
-  }
-  @media #{$tablet-intro} {
-    margin: 4rem 0 1rem;
   }
 }
 
 .tag {
   margin: 1rem 0 0;
   font: italic 2.25rem $noto-serif;
-  font-weight: 100;
-}
-
-.nav-intro {
-  font: 1.15rem $montserrat;
-  @include center;
-  @include list-inline(-2.4375rem, .4375rem, .4375rem);
-
-  margin: 0 0 5rem;
-
-  li>a {
-    @include link;
-  }
 }
 
 .foot-intro {
-  font: 1rem $montserrat;
+  margin: 5rem 0 0;
+  font-family: $lato;
   @include center;
-  @include list-inline(-2.4375rem, .4375rem, .4375rem);
-}
-
-.twitter {
-  @include link-social($twitter1, $twitter2);
-  padding-bottom: 1rem;
-}
-
-.github {
-  @include link-social($github1, $github2);
-  padding-bottom: 1rem;
+  @include list-inline();
+  
+  p>a {
+    @include link();
+  }
 }

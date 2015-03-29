@@ -1,0 +1,30 @@
+// modules: base
+
+body {
+  background-color: $white;
+  color: $gray;
+  font-size: 16px;
+}
+
+.nav {
+  font: 1.2rem $lato;
+  @include center;
+  @include list-inline();
+
+  margin: 1rem 0 2rem;
+
+  li>a {
+    @include link;
+  }
+}
+
+.foot {
+  font: 0.75rem $lato;
+  @include center;
+
+  margin: 2rem 0 3rem;
+
+  a {
+    @include link;
+  }
+}

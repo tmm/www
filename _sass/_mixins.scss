@@ -2,48 +2,28 @@
 
 @mixin center { text-align: center; }
 
-@mixin list-inline($margin, $paddingr, $paddingl) {
+@mixin list-inline($margin: -2.4375rem, $li-margin: 0.75rem, $li-padding: 0.4375rem) {
   ul {
     list-style: none;
     margin-left: $margin;
 
     li {
       display: inline-block;
-      margin-top: .75rem;
-      padding-right: $paddingr;
-      padding-left: $paddingl;
-      margin-bottom: .75rem;
+      margin: $li-margin 0;
+      padding: 0 $li-padding;
     }
   }
 }
 
-@mixin link-social($img1, $img2) {
-  padding-left: 1.875rem;
-  color: $dark-gray;
-  background: $img1;
-  background: $img2;
+@mixin link($color1: $light-gray, $color2: $gray) {
+  color: $color1;
   text-decoration: none;
-  opacity: 0.3;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
 
   &:hover {
-    opacity: 1.0;
-  }
-}
-
-@mixin link() {
-  color: $dark-gray;
-  text-decoration: none;
-  opacity: 0.3;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-
-  &:hover {
-    opacity: 1.0;
+    color: $color2;
   }
 }

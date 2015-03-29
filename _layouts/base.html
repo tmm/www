@@ -2,10 +2,11 @@
 <html>
 
   {% include head.html %}
-  
-  {% if page.title == 'Thomas Meagher' %}<body class="body-intro">{% else %}<body class="body-projects">{% endif %}
+
+  <body class="body-{{ page.css }}">
 
     {{ content }}
 
   </body>
+
 </html>

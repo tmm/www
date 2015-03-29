@@ -1,0 +1,31 @@
+// modules: blog
+
+.body-blog {}
+
+.post-list {
+  margin: 3rem auto 0;
+  max-width: 37.5rem;
+  padding: 0;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin: 2.25rem 0 0;
+    }
+  }
+
+  .title {
+    font: 700 2rem $merriweather;
+    margin-bottom: 0.25rem;
+    display: block;
+    
+    a {
+      @include link($gray, $green);
+    }
+  }
+
+  .date {
+    font: 300 1.05rem $lato;
+  }
+}

@@ -1,0 +1,18 @@
+---
+layout: base
+title: Blog - Thomas Meagher
+css: blog
+---
+
+{% include nav.html %}
+
+<div class="post-list">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+        <span class="date">{{ post.date | date: "%A %-d %B %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

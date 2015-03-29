@@ -1,33 +1,19 @@
 // modules: 404
 
-.main-404 {
+.body-404 {
   @include center;
-
   margin: 17rem 0 1rem;
-  @media #{$mobile-intro} {
+  @media #{$mobile} {
     margin: 5rem 0 1rem;
-  }
-  @media #{$tablet-intro} {
-    margin: 4rem 0 1rem;
   }
 }
 
 .number {
   margin: 1rem 0;
-  font: normal 3rem $montserrat;
+  font: normal 3rem $lato;
 }
 
 .rewind {
-  font: normal 1.25rem $montserrat;
-  color: $green;
-  text-decoration: none;
-  opacity: 0.3;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-
-  &:hover {
-    opacity: 1.0;
-  }
+  font: normal 1.25rem $lato;
+  @include link;
 }

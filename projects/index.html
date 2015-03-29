@@ -1,15 +1,10 @@
 ---
 layout: base
 title: Projects - Thomas Meagher
+css: projects
 ---
 
-<div class="nav-projects">
-  <nav>
-    <ul>
-      <li><a href="/">home</a></li>
-    </ul>
-  </nav>
-</div>
+{% include nav.html %}
 
 <div class="section">
 
@@ -21,7 +16,7 @@ title: Projects - Thomas Meagher
     <h1>Time Machine</h1>
     <h2>Re-discover the best products<br>from Product Hunt.</h2>
     
-    <ul class="inline-projects">
+    <ul>
       <li class="link-projects" ><a href="http://thomasmeagher.com/ProductHuntTimeMachine/">Website</a></li>
       <li class="link-projects" ><a href="https://itunes.apple.com/us/app/product-hunt-time-machine/id956311358">App Store</a></li>
       <li class="link-projects" ><a href="https://github.com/thomasmeagher/ProductHuntTimeMachine">GitHub</a></li>
@@ -41,7 +36,7 @@ title: Projects - Thomas Meagher
     <h1>Daily</h1>
     <h2>Keep track of your<br>dos and don'ts, everyday.</h2>
 
-    <ul class="inline-projects">
+    <ul>
       <li class="link-projects" ><a href="http://thomasmeagher.com/Daily/">Website</a></li>
       <li class="link-projects" ><a href="https://itunes.apple.com/us/app/daily-keep-track-your-dos/id942352316">App Store</a></li>
       <li class="link-projects" ><a href="https://github.com/thomasmeagher/Daily">GitHub</a></li>
@@ -61,14 +56,11 @@ title: Projects - Thomas Meagher
     <h1>Upcoming Projects</h1>
     <h2>Tech enthusiasts –<br>subscribe for project updates.</h2>
 
-    <ul class="inline-projects">
+    <ul>
       <li class="link-projects" ><a href="https://meagher.typeform.com/to/JnVbqY">Subscribe</a></li>
     </ul>
   </div>
 
 </div>
 
-<footer class="foot-projects">
-  <p><a href="https://github.com/thomasmeagher/thomasmeagher.github.io">View source on GitHub</a></p>
-</footer>
-
+{% include foot.html %}

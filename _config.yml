@@ -3,8 +3,11 @@ title: Thomas Meagher
 description: "love what you do."
 url: "http://thomasmeagher.com"
 author: "Thomas Meagher"
-keywords: "Thomas,Meagher,startups,iOS,developer,innovate"
+keywords: "Thomas,Meagher,Tom,startups"
 
+# Build settings
 exclude: ["readme.md", "CNAME"]
 include: []
 timezone: America/New_York
+markdown: kramdown
+permalink: pretty
