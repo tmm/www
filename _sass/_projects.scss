@@ -2,14 +2,10 @@
 
 .body-projects {
   font-family: $lato;
-
-  @media #{$mobile} {
-    font-size: 14px;
-  }
 }
 
 .section {
-  margin: 5rem auto 0;
+  margin: 3rem auto 4rem;
 }
 
 .about {

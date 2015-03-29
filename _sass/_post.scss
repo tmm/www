@@ -1,11 +1,7 @@
 // modules: post
 
-.body-post {
-  
-}
-
 .post {
-  margin: 3rem auto 0;
+  margin: 3rem auto 3rem;
   max-width: 40rem;
   padding: 0 1rem;
 }
@@ -27,20 +23,27 @@
 // Markdown Styles
 
 .content {
-  h2, h3, h4, h5, h6 {
+  h2, h3 {
     font-family: $lato;
     margin: 1.65rem 0;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.17rem;
+  }
+
   p {
-    font-family: $libre-baskerville;
-    font-size: 1.05rem;
+    font: 1.05rem $libre-baskerville;
     line-height: 1.8rem;
     margin: 1.5rem 0;
   }
 
   a {
-    @include link($gray, $green, underline);
+    @include link($light-gray, $green, underline);
   }
 
   blockquote {
@@ -62,5 +65,62 @@
     }
   }
 
+  hr {
+    margin: 4rem auto;
+    border: 0;
+    width: 100%;
+    @include center;
+    
+    &::before {
+      content: "***";
+      letter-spacing: 2rem;
+      opacity: 0.45;
+    } 
+  }
 
+  ol, ul {
+    font: 1.05rem $libre-baskerville;
+    line-height: 1.8rem;
+  }
+
+  .bleed-image {
+    margin: 3rem auto 0;
+    img {
+      width: 120%;
+      margin: 0 -10%;
+    }
+  }
+
+  .bleed-caption {
+    color: $light-gray;
+    font: 1rem $lato;
+    margin: 0rem -10% 3rem;
+
+    @media screen and (max-width: 770px) {
+      margin: 0 auto 3rem;
+    }
+  }
+
+  .inline-image {
+    margin: 3rem auto 0;
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .inline-caption {
+    color: $light-gray;
+    font: 0.95rem $lato;
+    margin: 0 0 3rem;
+    text-align: right;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+
+  .footnotes p {
+    margin: 0 0 1.5rem;
+  }
 }
