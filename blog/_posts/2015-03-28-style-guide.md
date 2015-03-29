@@ -33,6 +33,8 @@ Now, how about a block quote, followed by some more style explanations. (A [link
 
 >The quick brown fox jumped over the lazy dogs. This sentence contains every letter in the alphabet.
 
+***
+
 >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis alias deserunt asperiores quasi sapiente incidunt aperiam tempora quae, doloribus dolorem voluptatem, vero quibusdam dolore, saepe, quo distinctio. Itaque, autem, voluptatem!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, officiis, molestiae. Ipsa mollitia nam voluptatem rerum harum cumque fugit, tempora, nobis assumenda, quae reiciendis ea nesciunt esse in, temporibus maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at [tenetur harum]("hmmm") quod sapiente quas deleniti dolorum impedit placeat perspiciatis amet recusandae libero magni autem eveniet, fugit, eius odit voluptates!
