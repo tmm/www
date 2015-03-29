@@ -39,10 +39,6 @@
 .link-projects {
   font-size: 0.9rem;
   font-weight: 700;
-
-  @media #{$mobile} {
-    font-size: 0.8rem;
-  }
   
   a {
     color: $blue;

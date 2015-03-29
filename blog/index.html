@@ -10,8 +10,8 @@ css: blog
   <ul>
     {% for post in site.posts %}
       <li>
-        <span class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-        <span class="date">{{ post.date | date: "%A %-d %B %Y" }}</span>
+        <span class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+        <span class="post-date">{{ post.date | date: "%A %-d %B %Y" }}</span>
       </li>
     {% endfor %}
   </ul>

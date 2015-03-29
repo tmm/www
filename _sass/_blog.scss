@@ -4,28 +4,29 @@
 
 .post-list {
   margin: 3rem auto 0;
-  max-width: 37.5rem;
+  max-width: 35rem;
   padding: 0;
 
   ul {
     list-style-type: none;
+    margin-left: -2.5rem;
 
     li {
       margin: 2.25rem 0 0;
     }
   }
+}
 
-  .title {
-    font: 700 2rem $merriweather;
-    margin-bottom: 0.25rem;
-    display: block;
-    
-    a {
-      @include link($gray, $green);
-    }
+.post-title {
+  font: 700 2rem $merriweather;
+  margin-bottom: 0.25rem;
+  display: block;
+  
+  a {
+    @include link($gray, $green);
   }
+}
 
-  .date {
-    font: 300 1.05rem $lato;
-  }
+.post-date {
+  font: 300 1.05rem $lato;
 }
