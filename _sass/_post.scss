@@ -2,17 +2,17 @@
 
 .post {
   margin: 3rem auto 3rem;
-  max-width: 40rem;
   padding: 0 1rem;
+  max-width: 40rem;
 }
 
 .title {
-  @include center;
   margin-bottom: 4rem;
+  @include center;
 
   h1 {
-    font: 700 3.5rem $libre-baskerville;
     margin-bottom: 1rem;
+    font: 700 3.5rem $libre-baskerville;
   }
 
   p {
@@ -24,8 +24,8 @@
 
 .content {
   h2, h3 {
-    font-family: $lato;
     margin: 1.65rem 0;
+    font-family: $lato;
   }
 
   h2 {
@@ -37,9 +37,9 @@
   }
 
   p {
+    margin: 1.5rem 0;
     font: 1.05rem $libre-baskerville;
     line-height: 1.8rem;
-    margin: 1.5rem 0;
   }
 
   a {
@@ -72,8 +72,9 @@
     @include center;
 
     &::before {
-      content: "***";
       margin-left: 2rem;
+      content: "***";
+      font-size: 1.15rem;
       letter-spacing: 2rem;
       opacity: 0.45;
     } 
@@ -86,21 +87,22 @@
 
   .bleed-image {
     margin: 3rem auto 0;
+    
     img {
-      width: 120%;
       margin: 0 -10%;
+      width: 120%;
 
       @media screen and (max-width: 770px) {
-        width: 100%;
         margin: 0;
+        width: 100%;
       }
     }
   }
 
   .bleed-caption {
-    color: $light-gray;
-    font: 1rem $lato;
     margin: 0rem -10% 3rem;
+    color: $light-gray;
+    font: 300 0.85rem $lato;
 
     @media screen and (max-width: 770px) {
       margin: 0 auto 3rem;
@@ -109,21 +111,34 @@
 
   .inline-image {
     margin: 3rem auto 0;
+    
     img {
-      width: 100%;
       margin: 0;
+      width: 100%;
     }
   }
 
   .inline-caption {
-    color: $light-gray;
-    font: 0.95rem $lato;
     margin: 0 0 3rem;
-    text-align: right;
+    color: $light-gray;
+    font: 300 0.85rem $lato;
+  }
 
-    @media #{$mobile} {
-      text-align: center;
+  .normal-image {
+    margin: 3rem auto 0;
+    max-width: 80%;
+    
+    img {
+      margin: 0 auto;
+      width: 100%;
     }
+  }
+
+  .normal-caption {
+    margin: 0 auto 3rem;
+    max-width: 80%;
+    color: $light-gray;
+    font: 300 0.85rem $lato;
   }
 
   .footnotes p {

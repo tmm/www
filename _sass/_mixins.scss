@@ -4,13 +4,13 @@
 
 @mixin list-inline($margin: -2.4375rem, $li-margin: 0.75rem, $li-padding: 0.4375rem) {
   ul {
-    list-style: none;
     margin-left: $margin;
+    list-style: none;
 
     li {
-      display: inline-block;
       margin: $li-margin 0;
       padding: 0 $li-padding;
+      display: inline-block;
     }
   }
 }

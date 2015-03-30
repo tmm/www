@@ -1,17 +1,38 @@
 // modules: base
 
+/* attribute hierarchy
+margin
+border
+padding
+width
+height
+display
+
+content
+
+background-color
+color
+font
+line-height
+letter-spacing
+
+other attributes
+
+@include
+*/
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: $white;
   color: $gray;
   font-size: 100%;
   text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0;
 }
 
 .nav {
-  font: 1.2rem $lato;
   margin: 1rem 0 2rem;
+  font: 1.2rem $lato;
   @include center;
   @include list-inline();
 
@@ -21,8 +42,8 @@ body {
 }
 
 .foot {
-  font: 1rem $lato;
   margin: 5rem 0 1rem;
+  font: 1rem $lato;
   @include center;
 
   a {

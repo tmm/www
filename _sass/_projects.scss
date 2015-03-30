@@ -6,22 +6,22 @@
 }
 
 .about {
+  margin: 1rem 0 0;
   @include center;
   @include list-inline(-2.5rem, 1rem, 0.3125rem);
-  margin: 1rem 0 0;
   
   ul {
     margin-top: 0.75rem;
   }
 
   h1 {
+    margin: 0 0 0.25rem;
     font-weight: 300;
-    margin: 0rem 0 .25rem;
   }
 
   h2 {
-    font-weight: 300;
     margin: 0.5rem 0 0.25rem;
+    font-weight: 300;
   }
 
   @media #{$mobile} {
@@ -34,18 +34,18 @@
   font-weight: 700;
   
   a {
-    color: $blue;
     border: 2px solid $blue;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 7px 15px;
+    color: $blue;
     text-decoration: none;
 
     &:hover {
-      color: #ffffff;
       background-color: $blue;
+      color: #ffffff;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
       -o-transition: 0.5s;
@@ -55,8 +55,8 @@
 }
 
 .project-image {
-  max-width: 150px;
   margin: 25px auto 2.5px;
+  max-width: 150px;
 
   @media #{$mobile} {
     margin: 25px auto 5px;

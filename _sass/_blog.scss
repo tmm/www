@@ -2,12 +2,12 @@
 
 .post-list {
   margin: 3rem auto 0;
-  max-width: 35rem;
   padding: 0;
+  max-width: 35rem;
 
   ul {
-    list-style-type: none;
     margin-left: -2.5rem;
+    list-style-type: none;
 
     li {
       margin: 2.25rem 0 0;
@@ -17,12 +17,12 @@
 }
 
 .post-title {
-  font: 700 2rem $libre-baskerville;
   margin-bottom: 0.25rem;
   display: block;
+  font: 700 2rem $libre-baskerville;
   
   a {
-    @include link($gray, $green);
+    @include link($gray, $green, none);
   }
 }
 

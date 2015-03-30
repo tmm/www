@@ -1,8 +1,9 @@
 // modules: 404
 
-.body-404 {
-  @include center;
+.error {
   margin: 17rem 0 1rem;
+  @include center;
+  
   @media #{$mobile} {
     margin: 5rem 0 1rem;
   }
@@ -10,10 +11,10 @@
 
 .number {
   margin: 1rem 0;
-  font: normal 3rem $lato;
+  font: 3rem $lato;
 }
 
 .rewind {
-  font: normal 1.25rem $lato;
-  @include link;
+  font: 1.25rem $lato;
+  @include link($light-gray, $green, none);
 }
