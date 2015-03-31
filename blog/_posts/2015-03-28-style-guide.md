@@ -24,7 +24,7 @@ You may have noticed that links are a [light-gray color]() with an underline---t
 
 There are three different image styles: normal, full, and bleed. All images usually have captions for providing context. Full and bleed look the same on mobile devices. *Lorem Ipsum* is used between the images to demonstrate their unique layout effects. [^1]
 
-![Madrid](/blog/assets/wings.jpg)
+![Madrid](/blog/assets/2015/1/wings.jpg)
 {: .normal-image}
 Palacio Real De Madrid By Night -- A Normal Image
 {: .normal-caption}
@@ -35,14 +35,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloremque vol
 
 Dicta id quis libero eos? Eius quisquam earum corporis debitis, quas rerum, vel, quidem ipsam magnam quam temporibus mollitia voluptates explicabo voluptate!
 
-![Madrid](/blog/assets/wings.jpg)
+![Madrid](/blog/assets/2015/1/wings.jpg)
 {: .inline-image}
 Palacio Real De Madrid By Night -- A Full Image
 {: .inline-caption}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fuga dolorum architecto veniam, possimus sed asperiores fugiat sapiente nobis a sit, explicabo dignissimos temporibus quod? Nisi placeat numquam quasi suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis molestiae illo recusandae corporis quas delectus hic ratione, nulla debitis inventore eaque.
 
-![Madrid](/blog/assets/wings.jpg)
+![Madrid](/blog/assets/2015/1/wings.jpg)
 {: .bleed-image}
 Palacio Real De Madrid By Night -- A Bleed Image
 {: .bleed-caption}

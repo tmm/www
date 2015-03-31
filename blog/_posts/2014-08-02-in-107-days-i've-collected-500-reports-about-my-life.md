@@ -4,7 +4,7 @@ title: "In 107 days, I’ve collected 500 reports about my life."
 date: 2014-08-02 10:00:00
 ---
 
-![Are you in front of a screen?](/blog/assets/reporter0.png)
+![Are you in front of a screen?](/blog/assets/2014/1/reporter0.png)
 {: .inline-image}
 
 ##Here’s why you should start.##
@@ -37,7 +37,7 @@ The $3.99 I *circulated* on Reporter is definitely worth the time I *spend* ever
 
 ***
 
-![Push Notification](/blog/assets/reporter1.png)
+![Push Notification](/blog/assets/2014/1/reporter1.png)
 {: .inline-image}
 A push notification I actually like seeing.
 {: .inline-caption}
@@ -50,7 +50,7 @@ Time to Report! is the push notification that I see about five times a day. It p
 
 Reporter has a few has default questions that I originally used—*Are you working? How did you sleep? Who are you with?*—but after a while I added my own and discarded a few of the built-ins.
 
-![Who are you with?](/blog/assets/reporter2.png)
+![Who are you with?](/blog/assets/2014/1/reporter2.png)
 {: .normal-image}
 Who are you with?
 {: .normal-caption}
@@ -59,7 +59,7 @@ My reports almost always comprise four questions: *Who are you with? What are yo
 
 The exception is right before I go to bed. I put Reporter to sleep and am asked: *How many pages did you read tonight?* And when I wake up, Reporter wakes and asks: *How did you sleep?* (Multiple choice: Great, Ok, Poorly, Not at all)
 
-![What are you doing?](/blog/assets/reporter3.png)
+![What are you doing?](/blog/assets/2014/1/reporter3.png)
 {: .normal-image}
 What are you doing?
 {: .normal-caption}
@@ -68,7 +68,7 @@ Besides Reporter latently recording other things, like the temperature, battery 
 
 Most reports take only a few seconds and the power comes when the reports start to add up. I can start looking for answers to questions—*Where do I spend most of my time? Is sleep quality correlated to how often I am in front of a screen? What are my more social activities?* And there are many other trends you start to notice that maybe were unrecognizable before.
 
-![Where are you?](/blog/assets/reporter4.png)
+![Where are you?](/blog/assets/2014/1/reporter4.png)
 {: .normal-image}
 Where are you?
 {: .normal-caption}
@@ -77,7 +77,7 @@ For me, the power of collecting all this data is simply having all the data. I h
 
 Every night when I do not want to read and would rather browse aimlessly on my phone, I remember that I have to report at the end of the night. If I have not read, then a 0 goes into the data set, which irks me a little. Its satisfying to see the in-app visualizations tracking your progress.
 
-![Are you in front of a screen?](/blog/assets/reporter5.png)
+![Are you in front of a screen?](/blog/assets/2014/1/reporter5.png)
 {: .normal-image}
 Are you in front of a screen?
 {: .normal-caption}

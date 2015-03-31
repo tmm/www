@@ -1,13 +1,18 @@
-# Site settings
+# Site Settings
 title: Thomas Meagher
 description: "love what you do."
 url: "http://thomasmeagher.com"
 author: "Thomas Meagher"
 keywords: "Thomas,Meagher,Tom,startups"
 
-# Build settings
+# Conversion
+markdown: kramdown
+highlighter: pygments
+
+# Handling Reading
 exclude: ["readme.md", "CNAME"]
 include: []
+
+# Outputting
 timezone: America/New_York
-markdown: kramdown
 permalink: pretty
