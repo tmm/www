@@ -10,7 +10,7 @@
     list-style-type: none;
 
     li {
-      margin: 2.25rem 0 0;
+      margin: 1.75rem 0 0;
       padding: 0 1rem;
     }
   }
@@ -20,6 +20,7 @@
   margin-bottom: 0.25rem;
   display: block;
   font: 700 1.75rem $lato;
+  line-height: 2rem;
   
   a {
     @include link($gray, $green, none);

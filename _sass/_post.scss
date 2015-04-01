@@ -46,16 +46,16 @@
   }
 
   blockquote {
-    margin: 3rem 0;
 
     &.normal {
-      margin-left: 0;
+      margin: 1.75rem 0 1.7rem auto;
       padding-left: 1.75rem;
       border-left: 2px solid $green;
       color: $light-gray;
     }
     
     &.big {
+      margin: 3rem 0;
 
       p {
         color: $green;

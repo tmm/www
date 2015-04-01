@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Style Guide"
+title: "A Brief Style Guide"
 date: 2015-03-28 10:29:58
 ---
 
@@ -26,12 +26,12 @@ You may have noticed that links are a [underlined]()---they turn green when you 
 >The gods envy us. They envy us because we’re mortal, because any moment may be our last. Everything is more beautiful because we’re doomed.
 {: .big}
 
-Now, here's a regular looking block quote:
+Now, here's a regular looking inline quote:
 
 >The gods envy us. They envy us because we’re mortal, because any moment may be our last. Everything is more beautiful because we’re doomed.
 {: .normal}
 
-There are three different image styles: normal, full, and bleed. All images usually have captions for providing context. Full and bleed usually look the same on mobile devices, depending on your screen size. *Lorem Ipsum* is used between the images to demonstrate their unique layout effects. [^1] You can skim through them if you want.
+There are three different image styles: normal, full, and bleed. All images usually have captions for providing context. Full and bleed usually look the same on mobile devices, depending on your screen size. *Lorem Ipsum* is used between the images to demonstrate their unique layout effects.[^1] You can skim through them if you want.
 
 ![Madrid](/blog/assets/2015/1/wings.jpg)
 {: .image .normal}
@@ -74,7 +74,7 @@ That was a level three heading. Level three headings aren't used very much, but 
 - Rock beats scissors
 - Scissors beats paper
 
-Footnotes are at the bottom. And by clicking on the magical number two at the end of this line, you will be transported instantly there. [^2]
+Footnotes are at the bottom. And by clicking on the magical number two at the end of this line, you will be transported instantly there.[^2]
 
 Thanks for sticking around until the end! Now you can go back to surfing the web or whatever else you were doing before you found your way here. Don't forget to call your mom.
 
