@@ -19,7 +19,7 @@
 .post-title {
   margin-bottom: 0.25rem;
   display: block;
-  font: 700 2rem $libre-baskerville;
+  font: 700 1.75rem $lato;
   
   a {
     @include link($gray, $green, none);
@@ -27,5 +27,6 @@
 }
 
 .post-date {
-  font: 300 1.05rem $lato;
+  color: $light-gray;
+  font: 300 1.0rem $lato;
 }
