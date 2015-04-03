@@ -1,17 +1,25 @@
 // modules: base
 
+html {
+  font-size: 16px;
+}
+@media (min-width: 38em) {
+  html {
+    font-size: 17px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: $white;
   color: $gray;
-  font-size: 100%;
   text-rendering: optimizeLegibility;
 }
 
 .nav {
   margin: 1rem 0 2rem;
-  font: 1.2rem $lato;
+  font: 300 1.2rem $lato;
   @include center;
   @include list-inline();
 
@@ -22,7 +30,7 @@ body {
 
 .foot {
   margin: 5rem 0 1rem;
-  font: 1rem $lato;
+  font: 300 1rem $lato;
   @include center;
 
   a {

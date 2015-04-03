@@ -9,7 +9,7 @@ date: 2014-08-02 10:00:00
 
 ##Here’s why you should start.##
 
-Over the last few months, I have made a conscious effort to learn a little more about myself. Whether its what I spend time doing or who I spend time with, I wanted a lightweight, unobtrusive method for collecting small snippets of data throughout my day.
+Over the last few months, I have made a conscious effort to learn a little more about myself. Whether it's what I spend time doing or who I spend time with, I wanted a lightweight, unobtrusive method for collecting small snippets of data throughout my day.
 
 I tried lot’s of different methods—jotting down notes in small moleskin notebook, pecking away in the iOS notes app—the list goes on and on. None of these methods became ubiquitous in my daily routine and I tended to fade between several at a time. The worst part was that all the data was consciously collected.
 

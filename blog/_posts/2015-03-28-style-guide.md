@@ -9,7 +9,7 @@ date: 2015-03-28 10:29:58
 
 Take a look at that sentence, again.
 
-That sentence contains every letter in the English alphabet. In elementary school, I took a computer typing class. This was in the late 1990s, and besides getting to type: "the quick brown fox jumped over the lazy dogs" a bunch of times, the world of computers was introduced to me. 
+That sentence contains every letter in the English alphabet. In elementary school, I took a computer typing class. This was in the late 1990s, and besides getting to type: "the quick brown fox jumped over the lazy dogs" a bunch of times, the world of computers was introduced to me.
 
 Now---enough nostalgia.
 
