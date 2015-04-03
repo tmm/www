@@ -38,7 +38,11 @@
   p {
     margin: 0 0 1.75rem 0;
     font: 1.15rem $georgia;
-    line-height: 1.75rem;
+    line-height: 1.85rem;
+
+    @media #{$mobile} {
+      line-height: 1.75rem;
+    }
   }
 
   a {
@@ -63,11 +67,11 @@
         line-height: 2rem;
         @include center;
 
-        &::before {
+        &:before {
           content: "“";
         }
 
-        &::after {
+        &:after {
           content: "”";
         }
       }

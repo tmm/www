@@ -97,4 +97,4 @@ Happy reporting!
 
 ###Notes###
 
-This was [originally published on Medium](https://medium.com/@tfm/in-107-days-ive-collected-500-reports-about-my-life-c4454b9d8456) under the same name.
+This was [originally published on Medium](https://medium.com/@tfm/in-107-days-ive-collected-500-reports-about-my-life-c4454b9d8456), under the same name.
