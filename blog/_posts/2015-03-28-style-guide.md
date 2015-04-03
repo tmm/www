@@ -2,6 +2,7 @@
 layout: post
 title: "A Brief Style Guide"
 date: 2015-03-28 10:29:58
+hidden: true
 ---
 
 >The Quick Brown Fox Jumped Over The Lazy Dogs

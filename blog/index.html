@@ -8,10 +8,12 @@ title: Blog - Thomas Meagher
 <div class="post-list">
   <ul>
     {% for post in site.posts %}
+      {% if post.hidden != true %}
       <li>
         <span class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
         <span class="post-date">{{ post.date | date: "%A %-d %B %Y" }}</span>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>appTemplateapptemp</title>
+    <title>Untitled</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="appTemplate" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
-            <path d="M268.675,14.0607143 C305.335714,14.0607143 335.160714,43.8857143 335.160714,80.5464286 L335.160714,269.453571 C335.160714,306.114286 305.335714,335.939286 268.675,335.939286 L79.7678571,335.939286 C43.1071429,335.939286 13.2821429,306.114286 13.2821429,269.453571 L13.2821429,80.5464286 C13.2821429,43.8857143 43.1071429,14.0607143 79.7678571,14.0607143 L268.675,14.0607143 L268.675,14.0607143 Z M268.675,3.34642857 L79.7678571,3.34642857 C37.1321429,3.34642857 2.56785714,37.9107143 2.56785714,80.5464286 L2.56785714,269.453571 C2.56785714,312.089286 37.1321429,346.653571 79.7678571,346.653571 L268.675,346.653571 C311.310714,346.653571 345.875,312.089286 345.875,269.453571 L345.875,80.5464286 C345.875,37.9107143 311.310714,3.34642857 268.675,3.34642857 L268.675,3.34642857 L268.675,3.34642857 Z" id="Shape" fill="#292929" sketch:type="MSShapeGroup"></path>
-            <path d="M0.114285714,349.107143 L348.328571,0.892857143" id="Shape" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup"></path>
-            <path d="M0.114285714,0.892857143 L348.328571,349.107143" id="Shape" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup"></path>
-            <g id="Group" transform="translate(5.571429, 110.714286)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
-                <path d="M0.289285714,127 L337.010714,127" id="Shape"></path>
-                <path d="M0.289285714,64 L337.010714,64" id="Shape"></path>
-                <path d="M0.289285714,0 L337.010714,0" id="Shape"></path>
+        <g id="apptemp" sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="appTemplate">
+                    <path d="M266.675,11.0607143 C303.335714,11.0607143 333.160714,40.8857143 333.160714,77.5464286 L333.160714,266.453571 C333.160714,303.114286 303.335714,332.939286 266.675,332.939286 L77.7678571,332.939286 C41.1071429,332.939286 11.2821429,303.114286 11.2821429,266.453571 L11.2821429,77.5464286 C11.2821429,40.8857143 41.1071429,11.0607143 77.7678571,11.0607143 L266.675,11.0607143 L266.675,11.0607143 Z M266.675,0.34642857 L77.7678571,0.34642857 C35.1321429,0.34642857 0.56785714,34.9107143 0.56785714,77.5464286 L0.56785714,266.453571 C0.56785714,309.089286 35.1321429,343.653571 77.7678571,343.653571 L266.675,343.653571 C309.310714,343.653571 343.875,309.089286 343.875,266.453571 L343.875,77.5464286 C343.875,34.9107143 309.310714,0.34642857 266.675,0.34642857 L266.675,0.34642857 L266.675,0.34642857 Z" id="Shape" fill="#292929"></path>
+                    <path d="M27.1076909,317.113743 L317.610746,26.610696" id="Shape" stroke="#000000" stroke-width="1.25"></path>
+                    <path d="M26.1104774,25.8890494 L317.612821,317.391392" id="Shape" stroke="#000000" stroke-width="1.25"></path>
+                    <g id="Group" transform="translate(3.571429, 107.714286)" stroke="#000000" stroke-width="1.25">
+                        <path d="M0.289285714,127 L337.010714,127" id="Shape"></path>
+                        <path d="M0.289285714,64 L337.010714,64" id="Shape"></path>
+                        <path d="M0.289285714,0 L337.010714,0" id="Shape"></path>
+                    </g>
+                    <g id="Group" transform="translate(108.714286, 3.571429)" stroke="#000000" stroke-width="1.25">
+                        <path d="M126,336.789286 L126,0.0678571429" id="Shape"></path>
+                        <path d="M63,336.789286 L63,0.0678571429" id="Shape"></path>
+                        <path d="M0,336.789286 L0,0.0678571429" id="Shape"></path>
+                    </g>
+                    <g id="Group" transform="translate(22.000000, 30.000000)" stroke="#000000" stroke-width="1.25">
+                        <path d="M299,282.50039 L299,0.478281004" id="Shape"></path>
+                        <path d="M1,282.503991 L1,0.490021048" id="Shape"></path>
+                    </g>
+                    <g id="Group" transform="translate(31.000000, 21.000000)" stroke="#000000" stroke-width="1.25">
+                        <path d="M281.500444,1 L1.48032981,1" id="Shape"></path>
+                        <path d="M281.500444,300 L1.49959856,300" id="Shape"></path>
+                    </g>
+                    <circle id="Oval" stroke="#000000" stroke-width="1.25" cx="172.221429" cy="172" r="148.928571"></circle>
+                    <circle id="Oval" stroke="#000000" stroke-width="1.25" cx="172.221429" cy="172" r="89.8642857"></circle>
+                    <circle id="Oval" stroke="#000000" stroke-width="1.25" cx="172.221429" cy="172" r="63.3928571"></circle>
+                </g>
             </g>
-            <g id="Group" transform="translate(110.714286, 6.571429)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
-                <path d="M126,336.789286 L126,0.0678571429" id="Shape"></path>
-                <path d="M63,336.789286 L63,0.0678571429" id="Shape"></path>
-                <path d="M0,336.789286 L0,0.0678571429" id="Shape"></path>
-            </g>
-            <g id="Group" transform="translate(25.000000, 3.000000)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
-                <path d="M298,343.653571 L298,0.346428571" id="Shape"></path>
-                <path d="M0,343.653571 L0,0.346428571" id="Shape"></path>
-            </g>
-            <g id="Group" transform="translate(2.000000, 25.000000)" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup">
-                <path d="M343.875,0 L0.567857143,0" id="Shape"></path>
-                <path d="M343.875,299 L0.567857143,299" id="Shape"></path>
-            </g>
-            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="148.928571"></circle>
-            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="89.8642857"></circle>
-            <circle id="Oval" stroke="#000000" stroke-width="1.25" sketch:type="MSShapeGroup" cx="174.221429" cy="175" r="63.3928571"></circle>
         </g>
     </g>
 </svg>
