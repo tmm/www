@@ -4,6 +4,7 @@ Thanks for checking out the innards of my website, [thomasmeagher.com](http://th
 
 - Hosted using [CloudFlare](http://www.cloudflare.com) & [GitHub Pages](https://pages.github.com).
 - [Syntatically Awesome Style Sheets (a.k.a Sass)](http://sass-lang.com) help make it pretty.
+- My posts are written in [Kramdown](http://kramdown.gettalong.org/documentation.html).
 - [Jekyll](http://jekyllrb.com) compiles my scss files and generates what you see.
 
 Submit an issue or [tweet at me](http://twitter.com/thomasmeagher) if you have questions, comments, or just want to chat.
