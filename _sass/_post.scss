@@ -171,6 +171,10 @@
 
     ol {
       padding-left: 1.25rem;
+
+      li>p {
+        margin-bottom: .5rem;
+      }
     }
   }
 }

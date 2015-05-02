@@ -23,7 +23,7 @@ body {
   @include center;
   @include list-inline();
 
-  li>a {
+  li a {
     @include link();
   }
 }
