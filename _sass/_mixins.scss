@@ -27,3 +27,27 @@
     color: $color2;
   }
 }
+
+@mixin button($color1, $color2) {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid $color1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 7px 15px;
+  background-color: $color2;
+  color: $color1;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color1;
+    color: $color2;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+}

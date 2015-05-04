@@ -26,7 +26,7 @@
   }
 
   @media #{$mobile} {
-    margin: 3rem auto 2rem;
+    padding: 0 1rem 7.5rem;
   }
 }
 
@@ -55,7 +55,7 @@
 .email {
   width: 99.5%;
   background-color: transparent;
-  color: $light-gray;
+  color: $gray;
   font-size: 1rem;
   border: 0;
   border-bottom: solid 2px $light-gray;
@@ -72,28 +72,8 @@
 }
 
 .button {
-  cursor: pointer;
   width: 100%;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 2px solid $gray;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  padding: 7px 15px;
-  background-color: $white;
-  color: $gray;
-  text-decoration: none;
-
-  &:hover {
-    background-color: $gray;
-    color: #ffffff;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
+  @include button($gray, $white);
 }
 
 .left {

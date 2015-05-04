@@ -30,27 +30,8 @@
 }
 
 .link-projects {
-  font-size: 0.9rem;
-  font-weight: 500;
-  
   a {
-    border: 2px solid $blue;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    padding: 7px 15px;
-    color: $blue;
-    text-decoration: none;
-
-    &:hover {
-      background-color: $blue;
-      color: #ffffff;
-      -webkit-transition: 0.5s;
-      -moz-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s;
-    }
+    @include button($blue, $white);
   }
 }
 
