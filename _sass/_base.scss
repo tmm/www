@@ -16,24 +16,3 @@ body {
   color: $gray;
   text-rendering: optimizeLegibility;
 }
-
-.nav {
-  margin: 1rem 0 2rem;
-  font: 300 1.2rem $lato;
-  @include center;
-  @include list-inline();
-
-  li a {
-    @include link();
-  }
-}
-
-.foot {
-  margin: 5rem 0 1rem;
-  font: 300 1rem $lato;
-  @include center;
-
-  a {
-    @include link();
-  }
-}

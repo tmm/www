@@ -5,8 +5,8 @@ $mobile: "screen and (max-width: 42.125rem)";
 
 // fonts
 $lato: 'Lato', Helvetica, sans-serif;
-$noto-serif: 'Noto Serif', Georgia, serif;
 $georgia: Georgia, serif;
+$noto-serif: 'Noto Serif', $georgia;
 
 // colors
 $white: #fbfbfb;
