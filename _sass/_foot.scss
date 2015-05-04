@@ -53,17 +53,21 @@
 }
 
 .email {
-  width: 99.5%;
+  width: 100%;
   background-color: transparent;
   color: $gray;
   font-size: 1rem;
   border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
   border-bottom: solid 2px $light-gray;
-  padding-bottom: 7px;
+  padding: 7px 0;
   outline: 0;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   &:focus {
     border-color: $gray;
@@ -76,9 +80,9 @@
 
 .button {
   width: 100%;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   @include button($gray, $white);
 }
 
