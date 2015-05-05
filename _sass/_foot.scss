@@ -68,13 +68,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 
   &:focus {
     border-color: $gray;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
   }
 }
 

@@ -5,17 +5,33 @@ title: Blog
 
 {% include nav.html %}
 
-<div class="post-list">
+<div class="blog-post-list">
   <ul>
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       {% if post.hidden != true %}
       <li>
-        <span class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-        <span class="post-date">{{ post.date | date: "%A %-d %B %Y" }}</span>
+        <span class="blog-post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+        <span class="blog-post-date">{{ post.date | date: "%A %-d %B %Y" }}</span>
       </li>
       {% endif %}
     {% endfor %}
   </ul>
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div class="blog-pagination">
+  <div class="blog-button-group">
+    {% if paginator.previous_page == nil %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
+    {% elsif paginator.next_page == nil %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer"><< Newer</a>
+    {% else %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer"><< Newer</a>
+
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
 
 {% include foot.html %}
