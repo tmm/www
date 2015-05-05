@@ -1,20 +1,24 @@
 // modules: 404
 
 .error {
-  margin: 17rem 0 1rem;
+  margin: 5rem 0 1rem;
   @include center;
   
   @media #{$mobile} {
-    margin: 5rem 0 1rem;
+    margin: 4rem 0 1rem;
+  }
+
+  a {
+    font: 300 1.25rem $lato;
+    @include link($light-gray, $green, none);
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 
-.number {
+.error-number {
   margin: 1rem 0;
-  font: 3rem $lato;
-}
-
-.rewind {
-  font: 1.25rem $lato;
-  @include link($light-gray, $green, none);
+  font: 300 3rem $lato;
 }

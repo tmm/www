@@ -1,11 +1,11 @@
 // modules: projects
 
-.section {
+.project-section {
   margin: 3rem auto 4rem;
   font-family: $lato;
 }
 
-.about {
+.project-about {
   margin: 1rem 0 0;
   @include center;
   @include list-inline(-2.5rem, 1rem, 0.3125rem);
