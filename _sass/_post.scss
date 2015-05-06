@@ -178,3 +178,13 @@
     }
   }
 }
+
+.highlight {
+  margin: 0 0 1.75rem 0;
+}
+
+pre {
+  padding: 0.5rem;
+  white-space: pre-wrap;
+  border: 1px solid $light-gray *1.5;
+}
