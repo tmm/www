@@ -21,6 +21,10 @@
   display: block;
   font: 700 1.75rem $lato;
   line-height: 2rem;
+
+  @media #{$mobile} {
+    font-size: 1.5rem;
+  }
   
   a {
     @include link($gray, $green, none);

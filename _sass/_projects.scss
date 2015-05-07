@@ -17,11 +17,19 @@
   h1 {
     margin: 0 0 0.25rem;
     font-weight: 300;
+
+    @media #{$mobile} {
+      font-size: 1.75rem;
+    }
   }
 
   h2 {
     margin: 0.5rem 0 0.25rem;
     font-weight: 300;
+
+    @media #{$mobile} {
+      font-size: 1.25rem;
+    }
   }
 
   @media #{$mobile} {
@@ -41,9 +49,14 @@
 
   @media #{$mobile} {
     margin: 25px auto 5px;
+    max-width: 100px;
   }
 }
 
 .project-icon {
   width: 150px;
+
+  @media #{$mobile} {
+    width: 100px;
+  }
 }

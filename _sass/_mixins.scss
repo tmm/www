@@ -17,9 +17,16 @@
 
 @mixin transition($seconds) {
   -webkit-transition: $seconds;
-  -moz-transition: $seconds;
-  -o-transition: $seconds;
-  transition: $seconds;
+    -moz-transition: $seconds;
+      -o-transition: $seconds;
+        transition: $seconds;
+}
+
+@mixin border-radius($width) {
+  -webkit-border-radius: $width;
+    -moz-border-radius: $width;
+      -o-border-radius: $width;
+        border-radius: $width;
 }
 
 @mixin link($color1: $light-gray, $color2: $gray, $text-decoration: none) {
@@ -38,15 +45,16 @@
   font-size: 0.9rem;
   font-weight: 500;
   border: 2px solid $color1;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
   padding: 7px 15px;
   background-color: $color2;
   color: $color1;
   text-decoration: none;
   @include transition(0.25s);
+  @include border-radius(5px);
+
+  @media #{$mobile} {
+    border-width: 1px;
+  }
 
   &:hover {
     background-color: $color1;

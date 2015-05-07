@@ -25,7 +25,7 @@ But it’s not just Facebook where people are connecting at scale. People connec
 While people are *meeting* more and more often with an increasing amount of people than ever before, does this effect relationship quality? Quantitatively, there aren’t numbers to back this up yet — there haven’t been comprehensive studies on these social interactions. But qualitatively, you can *feel* it.
 
 >Think about how you feel when you are meeting a date for the first time. Do the same butterflies in the pit of your stomach still exist over Tinder?
-{: .big}
+{: .quote-2}
 
 You cannot pick up on social cues: a nervous smile, long role of the eyes, or the moment when you both just giggle because no one has any idea what to say. And this isn’t just inherent to Tinder. It’s in Slack meetings, WhatsApp messages, Snapchat stories — all of them — where you cannot *truly* interact in real time, like you would when the other person is actually two feet in front of your face.
 

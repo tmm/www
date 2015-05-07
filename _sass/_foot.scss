@@ -58,20 +58,18 @@
   color: $gray;
   font-size: 1rem;
   border: 0;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
   border-bottom: solid 2px $light-gray;
   padding: 7px 0;
   outline: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
+    -moz-appearance: none;
   appearance: none;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  @include transition(0.5s);
+  @include border-radius(0);
+
+  @media #{$mobile} {
+    border-bottom-width: 1px;
+  }
 
   &:focus {
     border-color: $gray;
@@ -81,7 +79,7 @@
 .button {
   width: 100%;
   -webkit-appearance: none;
-  -moz-appearance: none;
+    -moz-appearance: none;
   appearance: none;
   @include button($gray, $white);
 }

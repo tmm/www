@@ -6,7 +6,7 @@ hidden: true
 ---
 
 >The Quick Brown Fox Jumped Over The Lazy Dogs
-{: .big}
+{: .quote-2 }
 
 Take a look at that sentence, again.
 
@@ -25,19 +25,19 @@ That was a level two heading, affectionately known as "h2" in the browser world.
 You may have noticed that links are a [underlined]()---they turn green when you hover over them. Speaking of the color green, block quotes are just that.
 
 >The gods envy us. They envy us because we’re mortal, because any moment may be our last. Everything is more beautiful because we’re doomed.
-{: .big}
+{: .quote-2 }
 
 Now, here's a regular looking inline quote:
 
 >The gods envy us. They envy us because we’re mortal, because any moment may be our last. Everything is more beautiful because we’re doomed.
-{: .normal}
+{: .quote-1 }
 
 There are three different image styles: normal, full, and bleed. All images usually have captions for providing context. Full and bleed usually look the same on mobile devices, depending on your screen size. *Lorem Ipsum* is used between the images to demonstrate their unique layout effects.[^1] You can skim through them if you want.
 
 ![Madrid](/blog/assets/2015/1/wings.jpg)
-{: .image .normal}
+{: .image-1 }
 Palacio Real De Madrid By Night -- A Normal Image
-{: .caption .normal}
+{: .caption-1 }
 
 ##More Images##
 
@@ -46,16 +46,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloremque vol
 Dicta id quis libero eos? Eius quisquam earum corporis debitis, quas rerum, vel, quidem ipsam magnam quam temporibus mollitia voluptates explicabo voluptate!
 
 ![Madrid](/blog/assets/2015/1/wings.jpg)
-{: .image .inline}
+{: .image-2 }
 Palacio Real De Madrid By Night -- A Full Image
-{: .caption .inline}
+{: .caption-2 }
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fuga dolorum architecto veniam, possimus sed asperiores fugiat sapiente nobis a sit, explicabo dignissimos temporibus quod? Nisi placeat numquam quasi suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis molestiae illo recusandae corporis quas delectus hic ratione, nulla debitis inventore eaque.
 
 ![Madrid](/blog/assets/2015/1/wings.jpg)
-{: .image .bleed}
+{: .image-3}
 Palacio Real De Madrid By Night -- A Bleed Image
-{: .caption .bleed}
+{: .caption-3}
 
 ***
 
@@ -81,7 +81,7 @@ Thanks for sticking around until the end! Now you can go back to surfing the web
 
 
 >The End.
-{: .big}
+{: .quote-2}
 
 ***
 
