@@ -19,12 +19,8 @@
 .blog-post-title {
   margin-bottom: 0.25rem;
   display: block;
-  font: 700 1.75rem $lato;
+  font: 700 1.5rem $lato;
   line-height: 2rem;
-
-  @media #{$mobile} {
-    font-size: 1.5rem;
-  }
   
   a {
     @include link($gray, $green, none);
@@ -37,7 +33,7 @@
 }
 
 .blog-pagination {
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding-bottom: 2rem;
   max-width: 35rem;
 }

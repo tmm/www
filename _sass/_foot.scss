@@ -3,8 +3,8 @@
 // main
 
 .foot {
-  margin: 5rem 0 2rem;
-  font: 300 1rem $lato;
+  margin: 3rem 0;
+  font: 300 0.9rem $lato;
   @include center;
 
   a {
@@ -59,7 +59,7 @@
   font-size: 1rem;
   border: 0;
   border-bottom: solid 2px $light-gray;
-  padding: 7px 0;
+  padding: 5px 0;
   outline: 0;
   -webkit-appearance: none;
     -moz-appearance: none;
@@ -97,5 +97,5 @@
 .me {
   display: block;
   color: $light-gray;
-  margin: 0.35rem 0 0.65rem;
+  margin: 0.65rem 0;
 }
