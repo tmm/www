@@ -42,19 +42,15 @@
 @mixin button($color1, $color2) {
   @include center;
   cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 2px solid $color1;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border: 1px solid $color1;
   padding: 7px 15px;
   background-color: $color2;
   color: $color1;
   text-decoration: none;
   @include transition(0.25s);
   @include border-radius(5px);
-
-  @media #{$mobile} {
-    border-width: 1px;
-  }
 
   &:hover {
     background-color: $color1;

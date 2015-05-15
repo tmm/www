@@ -17,19 +17,14 @@
   h1 {
     margin: 0 0 0.25rem;
     font-weight: 300;
-
-    @media #{$mobile} {
-      font-size: 1.75rem;
-    }
+    font-size: 1.75rem;
   }
 
   h2 {
+    color: $light-gray;
     margin: 0.5rem 0 0.25rem;
     font-weight: 300;
-
-    @media #{$mobile} {
-      font-size: 1.25rem;
-    }
+    font-size: 1.25rem;
   }
 
   @media #{$mobile} {
@@ -45,7 +40,7 @@
 
 .project-image {
   margin: 25px auto 2.5px;
-  max-width: 150px;
+  max-width: 115px;
 
   @media #{$mobile} {
     margin: 25px auto 5px;
@@ -54,7 +49,7 @@
 }
 
 .project-icon {
-  width: 150px;
+  width: 115px;
 
   @media #{$mobile} {
     width: 100px;
