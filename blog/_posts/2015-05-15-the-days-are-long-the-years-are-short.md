@@ -33,13 +33,13 @@ Every so often, stop caring about what other people think and live minute by min
 
 When you leave school, or any other guided environment, learning never stops. It can actually be more exciting when you step outside the formal, rigid confines and teach yourself. As the teacher, you set your own pace and teach yourself what you want.
 
-Opportunities are bounded only by your desire to learn and do. This year, I taught myself how to code iOS apps. You can do anything with the requisite effort.
+Opportunities are bounded only by your desire to learn and do. This year, I taught myself iOS development, simply because I wanted to. You can do anything with the requisite effort.
 
 Just remember---anything worth doing, is worth overdoing.
 
 ##* Thank & Be Thankful
 
-While simple in theory, it's rather difficult in practice: sincerely thank those that mean something to you. When people do something that benefits you, you should always acknowledge their efforts, even if what they did doesn't work out as exactly planned. They are spending some of their precious time on you so it's the right thing to do.
+While simple in theory, it's rather difficult in practice: sincerely thank those that mean something to you. When people do something that benefits you, you should always acknowledge their efforts, even if what they did doesn't work out exactly as planned. They are spending some of their precious time on you so it's the right thing to do.
 
 Make sure you accurately convey how much you value them. You might not get another chance. Sometimes a simple "Thanks" will work, but I recommend handwritten thank you notes or pulling them aside to tell them. In the long term, it always pays off to do so.
 
