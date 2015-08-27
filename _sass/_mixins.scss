@@ -15,24 +15,18 @@
   }
 }
 
-@mixin transition($seconds) {
-  -webkit-transition: $seconds;
-    -moz-transition: $seconds;
-      -o-transition: $seconds;
-        transition: $seconds;
-}
-
-@mixin border-radius($width) {
-  -webkit-border-radius: $width;
-    -moz-border-radius: $width;
-      -o-border-radius: $width;
-        border-radius: $width;
+@mixin vendor-prefix($name, $value) {
+  -webkit-#{$name}: $value;
+    -moz-#{$name}: $value;
+    -ms-#{$name}: $value;
+      -o-#{$name}: $value;
+        #{$name}: $value;
 }
 
 @mixin link($color1: $light-gray, $color2: $gray, $text-decoration: none) {
   color: $color1;
   text-decoration: $text-decoration;
-  @include transition(0.25s);
+  @include vendor-prefix(transition, 0.25s);
 
   &:hover {
     color: $color2;
@@ -49,8 +43,8 @@
   background-color: $color2;
   color: $color1;
   text-decoration: none;
-  @include transition(0.25s);
-  @include border-radius(5px);
+  @include vendor-prefix(transition, 0.25s);
+  @include vendor-prefix(border-radius, 5px);
 
   &:hover {
     background-color: $color1;

@@ -5,21 +5,21 @@ title: Blog
 
 {% include nav.html %}
 
-<div class="blog-post-list">
+<section class="blog-post-list">
   <ul>
     {% for post in paginator.posts %}
       {% if post.hidden != true %}
       <li>
-        <span class="blog-post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-        <span class="blog-post-date">{{ post.date | date: "%A %-d %B %Y" }}</span>
+        <h3 class="blog-post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <date class="blog-post-date">{{ post.date | date: "%A %-d %B %Y" }}</date>
       </li>
       {% endif %}
     {% endfor %}
   </ul>
-</div>
+</section>
 
 {% if paginator.total_pages > 1 %}
-<div class="blog-pagination">
+<section class="blog-pagination">
   <div class="blog-button-group">
     {% if paginator.previous_page == nil %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
@@ -31,7 +31,7 @@ title: Blog
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
     {% endif %}
   </div>
-</div>
+</section>
 {% endif %}
 
 {% include foot.html %}
