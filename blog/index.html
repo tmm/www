@@ -22,16 +22,14 @@ title: Blog
 <section class="blog-pagination">
   <div class="blog-button-group">
     {% if paginator.previous_page == nil %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older &rarr;</a>
     {% elsif paginator.next_page == nil %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer"><< Newer</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">&larr; Newer</a>
     {% else %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer"><< Newer</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">&larr; Newer</a>
 
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older >></a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older &rarr;</a>
     {% endif %}
   </div>
 </section>
 {% endif %}
-
-{% include foot.html %}
