@@ -1,0 +1,41 @@
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.hidden-sm {
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+}
+
+@each $level, $size in (0, 0), (1, $l1), (2, $l2), (3, $l3), (4, $l4), (5, $l5), (6, $l6) {
+  .mar-#{$level} { margin: #{$size}; }
+  .mar-t-#{$level} { margin-top: #{$size}; }
+  .mar-r-#{$level} { margin-right: #{$size}; }
+  .mar-b-#{$level} { margin-bottom: #{$size}; }
+  .mar-l-#{$level} { margin-left: #{$size}; }
+  .mar-tb-#{$level} {
+    margin-top: #{$size};
+    margin-bottom: #{$size};
+  }
+  .mar-lr-#{$level} {
+    margin-left: #{$size};
+    margin-right: #{$size};
+  }
+}
+
+@each $level, $size in (0, 0), (1, $l1), (2, $l2), (3, $l3), (4, $l4), (5, $l5), (6, $l6) {
+  .pad-#{$level} { padding: #{$size}; }
+  .pad-t-#{$level} { padding-top: #{$size}; }
+  .pad-r-#{$level} { padding-right: #{$size}; }
+  .pad-b-#{$level} { padding-bottom: #{$size}; }
+  .pad-l-#{$level} { padding-left: #{$size}; }
+  .pad-tb-#{$level} {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  }
+  .pad-lr-#{$level} {
+    padding-left: #{$size};
+    padding-right: #{$size};
+  }
+}

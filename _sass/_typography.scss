@@ -1,0 +1,67 @@
+h2, h3, h4,
+.h2, .h3, .h4 {
+  font-family: $sans;
+  font-weight: 600;
+}
+
+h1, .h1 {
+  font-family: $serif;
+  font-size: $font-size-h1;
+  font-weight: 700;
+}
+
+h2, .h2 { font-size: $font-size-h2; }
+
+h3, .h3 {
+  font-size: $font-size-h3;
+  font-style: italic;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+  color: $gray;
+}
+
+p {
+  font-family: $serif;
+  font-size: $font-size-p;
+  font-weight: 400;
+  line-height: $line-height;
+}
+
+b, strong, .bold { font-weight: 700; }
+.bold-semi { font-weight: 600; }
+.bold-heavy { font-weight: 900; }
+
+.sans { font-family: $sans; }
+.serif { font-family: $serif; }
+
+a {
+  color: $gray;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+hr {
+  text-align: center;
+  margin: 4rem auto;
+  border: 0;
+  width: 100%;
+
+  &::before {
+    margin-left: 2rem;
+    content: "***";
+    font-size: 1.15rem;
+    letter-spacing: 2rem;
+    opacity: 0.45;
+  } 
+}
+
+date {
+  font-family: $sans;
+  font-size: $font-size-p;
+  font-weight: 300;
+  color: $gray-light;
+}

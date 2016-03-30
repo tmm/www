@@ -1,22 +1,25 @@
-# Site Settings
-title: Thomas Meagher
-description: "love what you do."
-url: "http://thomasmeagher.com"
-author: "Thomas Meagher"
-keywords: "Thomas,Meagher,Tom,startups"
+# Site settings
+title: Tom Meagher
+email: thom.meagher@gmail.com
+description: ""
+url: "http://meagher.co"
+author: "Tom Meagher"
+keywords: "Tom,Meagher,code,design,start ups,technology"
 
-# Setup
-paginate: 5
-paginate_path: "blog/page:num"
-
-# Conversion
-markdown: kramdown
-highlighter: pygments
-
-# Handling Reading
-exclude: ["readme.md", "CNAME"]
+exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
 include: []
 
 # Outputting
 timezone: America/New_York
 permalink: pretty
+
+# Plugins
+gems: [jekyll-paginate]
+
+# Conversion
+markdown: kramdown
+highlighter: pygments
+
+# Outputting
+paginate: 10
+paginate_path: "blog/page:num"

@@ -1,19 +1,35 @@
-// modules: base
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 17px;
-}
-@media #{$mobile} {
-  html {
-    font-size: 16px;
+  text-rendering: optimizeLegibility;
+  font-size: $font-size;
+  
+  @media screen and (max-width: $sm) {
+    font-size: $font-size-sm;
   }
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: $white;
-  color: $gray;
-  text-rendering: optimizeLegibility;
-  @include vendor-prefix(text-size-adjust, 100%)
+  color: $gray-dark;
+  text-size-adjust: 100%;
+  margin: auto;
+  max-width: 37rem;
+  padding: 1rem;
 }
+
+.colors {
+  display: flex;
+}
+
+.color1, .color2, .color3, .color4 {
+  height: 4px;
+  flex: 25;
+}
+
+.color1 { background-color: $blue; }
+.color2 { background-color: $green; }
+.color3 { background-color: $yellow; }
+.color4 { background-color: $red; }

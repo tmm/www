@@ -1,16 +1,42 @@
-// modules: variables
-
-// screen sizes
-$mobile: "screen and (max-width: 667px)";
-
 // fonts
-$lato: 'Lato', Helvetica, sans-serif;
-$georgia: Georgia, serif;
-$noto-serif: 'Noto Serif', $georgia;
+$sans: 'Lato', Helvetica, sans-serif;
+$serif: Georgia, serif;
 
 // colors
 $white: #fbfbfb;
-$gray: #534540;
-$light-gray: #988f8c;
+$gray-dark: #666666;
+$gray: #ababab;
+$gray-light: #E5E5EA;
+$blue: #5898f1;
 $green: #00b27f;
-$blue: #1D9CE8;
+$yellow: #ec971f;
+$red: #FA5744;
+
+// sizes
+$font-size: 18px;
+$font-size-sm: 17px;
+$font-size-h1: 2.5rem;
+$font-size-h2: 1.75rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-p: 1.15rem;
+
+// heights
+$line-height: 1.75;
+
+// widths
+$sm: 544px; // Small screen / phone
+$md: 768px; // Medium screen / tablet
+$lg: 992px; // Large screen / desktop
+$xl: 1200px; // Extra large screen / wide desktop
+
+// levels
+$l1: 6px;
+$l2: 12px;
+$l3: 18px;
+$l4: 24px;
+$l5: 32px;
+$l6: 36px;
+
+// misc
+$border-radius: 4px;

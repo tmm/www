@@ -1,12 +1,13 @@
 ## Hello, GitHub!
 
-Thanks for checking out the innards of my website, [thomasmeagher.com](http://thomasmeagher.com/)! Here's what's going on:
+Thanks for checking out the innards of my website, [meagher.co](http://meagher.co/)! Here's what's going on:
 
-- Hosted using [CloudFlare](http://www.cloudflare.com) & [GitHub Pages](https://pages.github.com).
+- [GitHub Pages](https://pages.github.com) graciously hosts my site.
+- [CloudFlare](http://www.cloudflare.com) powers my DNS.
 - [Syntatically Awesome Style Sheets (a.k.a Sass)](http://sass-lang.com) help make it pretty.
-- My posts are written in [Kramdown](http://kramdown.gettalong.org/documentation.html).
-- [Jekyll](http://jekyllrb.com) compiles my scss files and generates what you see.
+- My blog posts are written in [Kramdown](http://kramdown.gettalong.org/documentation.html).
+- And [Jekyll](http://jekyllrb.com) does just about everything else.
 
-Submit an issue or [tweet at me](http://twitter.com/thomasmeagher) if you have questions, comments, or just want to chat.
+There's not much more to it.
 
-T.F.M
+Submit an issue or [tweet at me](http://twitter.com/thomasmeagher) if you have questions, comments, or want to chat.
