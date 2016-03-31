@@ -23,3 +23,7 @@ highlighter: pygments
 # Outputting
 paginate: 10
 paginate_path: "blog/page:num"
+
+# Variables
+twitter: thomasmeagher
+github: tmm

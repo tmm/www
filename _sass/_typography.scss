@@ -23,6 +23,7 @@ h4, .h4 {
 }
 
 p {
+  margin: 0 0 1rem;
   font-family: $serif;
   font-size: $font-size-p;
   font-weight: 400;
@@ -42,26 +43,4 @@ a {
   &:hover {
     color: $green;
   }
-}
-
-hr {
-  text-align: center;
-  margin: 4rem auto;
-  border: 0;
-  width: 100%;
-
-  &::before {
-    margin-left: 2rem;
-    content: "***";
-    font-size: 1.15rem;
-    letter-spacing: 2rem;
-    opacity: 0.45;
-  } 
-}
-
-date {
-  font-family: $sans;
-  font-size: $font-size-p;
-  font-weight: 300;
-  color: $gray-light;
 }

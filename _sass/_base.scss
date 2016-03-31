@@ -20,16 +20,39 @@ body {
   padding: 1rem;
 }
 
-.colors {
+hr {
+  text-align: center;
+  margin: 4rem auto;
+  border: 0;
+  width: 100%;
+
+  &::before {
+    margin-left: 2rem;
+    content: "***";
+    font-size: 1.15rem;
+    letter-spacing: 2rem;
+    opacity: 0.45;
+  } 
+}
+
+section {
+  & > * {
+    text-align: justify;
+  }
+}
+
+.color-line {
   display: flex;
+
+  & > div {
+    height: 4px;
+    flex: 25;
+  }
 }
 
-.color1, .color2, .color3, .color4 {
-  height: 4px;
-  flex: 25;
+date {
+  font-family: $sans;
+  font-size: $font-size-p;
+  font-weight: 300;
+  color: $gray;
 }
-
-.color1 { background-color: $blue; }
-.color2 { background-color: $green; }
-.color3 { background-color: $yellow; }
-.color4 { background-color: $red; }
