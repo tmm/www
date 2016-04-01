@@ -35,10 +35,15 @@ hr {
   } 
 }
 
-section {
-  & > * {
-    text-align: justify;
-  }
+img {
+  width: 100%;
+}
+
+date {
+  font-family: $sans;
+  font-size: $font-size-p;
+  font-weight: 300;
+  color: $gray;
 }
 
 .color-line {
@@ -48,11 +53,4 @@ section {
     height: 4px;
     flex: 25;
   }
-}
-
-date {
-  font-family: $sans;
-  font-size: $font-size-p;
-  font-weight: 300;
-  color: $gray;
 }

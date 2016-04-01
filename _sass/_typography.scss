@@ -12,10 +12,7 @@ h1, .h1 {
 
 h2, .h2 { font-size: $font-size-h2; }
 
-h3, .h3 {
-  font-size: $font-size-h3;
-  font-style: italic;
-}
+h3, .h3 { font-size: $font-size-h3; }
 
 h4, .h4 {
   font-size: $font-size-h4;
@@ -28,19 +25,25 @@ p {
   font-size: $font-size-p;
   font-weight: 400;
   line-height: $line-height;
+
+  @media screen and (max-width: $sm) {
+    line-height: $line-height-sm;
+  }
 }
 
 b, strong, .bold { font-weight: 700; }
-.bold-semi { font-weight: 600; }
 .bold-heavy { font-weight: 900; }
 
 .sans { font-family: $sans; }
 .serif { font-family: $serif; }
 
 a {
+  text-decoration: none;
   color: $gray;
+  border-bottom: 1px solid $gray;
 
   &:hover {
     color: $green;
+    border-color: $green;
   }
 }

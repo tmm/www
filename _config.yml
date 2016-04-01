@@ -1,10 +1,11 @@
 # Site settings
 title: Tom Meagher
 email: thom.meagher@gmail.com
-description: ""
+description: "I love making things—often with code, pixels, and words."
 url: "http://meagher.co"
 author: "Tom Meagher"
-keywords: "Tom,Meagher,code,design,start ups,technology"
+keywords: "tom,meagher,code,design,startups,start ups,technology,tech,"
+github: tmm
 
 exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
 include: []
@@ -22,8 +23,4 @@ highlighter: pygments
 
 # Outputting
 paginate: 10
-paginate_path: "blog/page:num"
-
-# Variables
-twitter: thomasmeagher
-github: tmm
+paginate_path: "blog/num"
