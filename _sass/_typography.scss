@@ -1,22 +1,32 @@
-h2, h3, h4,
-.h2, .h3, .h4 {
+h2, h3, h4 {
   font-family: $sans;
   font-weight: 600;
 }
 
-h1, .h1 {
+h1 {
   font-family: $serif;
   font-size: $font-size-h1;
   font-weight: 700;
 }
 
-h2, .h2 { font-size: $font-size-h2; }
+h2 {
+  font-size: $font-size-h2;
+}
 
-h3, .h3 { font-size: $font-size-h3; }
+h3 {
+  font-size: $font-size-h3;
+}
 
-h4, .h4 {
+h4 {
   font-size: $font-size-h4;
   color: $gray;
+
+  & a {
+    border-bottom: 0;
+    color: $gray;
+
+    &:hover { color: $gray; }
+  }
 }
 
 p {
@@ -36,14 +46,3 @@ b, strong, .bold { font-weight: 700; }
 
 .sans { font-family: $sans; }
 .serif { font-family: $serif; }
-
-a {
-  text-decoration: none;
-  color: $gray;
-  border-bottom: 1px solid $gray;
-
-  &:hover {
-    color: $green;
-    border-color: $green;
-  }
-}

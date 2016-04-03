@@ -3,7 +3,10 @@ layout: base
 ---
 
 <header>
-  <h1 class="text-center sans bold-heavy">Tom Meagher</h1>
+  <div class="flex-center mar-t-4">
+    <img src="{{ "/img/tom.png" | prepend: site.baseurl }}">
+  </div>
+  <h1 class="text-center sans bold-heavy mar-tb-3">Tom Meagher</h1>
 </header>
 
 <section>
@@ -21,11 +24,14 @@ layout: base
 
 <section class="mar-b-6">
   <h2 class="mar-b-2">Latest Writing</h2>
-  <h4 class="mar-t-0 mar-b-1">In 107 days, I’ve collected 500 reports about my life.</h4>
-  <p>Over the last few months, I have made a conscious effort to learn a little more about myself. Whether it’s what I spend time doing or who I spend time with, I wanted a lightweight, unobtrusive method for collecting small snippets of data throughout my day. <a href="https://medium.com/@tfm/in-107-days-ive-collected-500-reports-about-my-life-c4454b9d8456#.dom7kfpnq">Continue reading</a></p>
+  {% assign post = site.posts[0] %}
+  <h4 class="mar-t-0 mar-b-1">{{ post.title }}</h4>
+  <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
 </section>
 
 <section class="mar-b-6">
   <h2 class="mar-b-2">Colophon</h2>
-  <p>My serif and sans serif fonts are <a href="https://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a> by Matthew Carter and Lato by <a href="http://www.lukaszdziedzic.eu">Łukasz Dziedzic</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a> with <a href="https://jekyllrb.com">Jekyll</a>. Currently made in Boston, MA.</p>
+  <p>The serif and sans serif fonts are <a href="https://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a> by Matthew Carter and Lato by <a href="http://www.lukaszdziedzic.eu">Łukasz Dziedzic</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a> with <a href="https://jekyllrb.com">Jekyll</a>. Currently made in Boston, MA.</p>
 </section>
+
+{% include nav.html %}

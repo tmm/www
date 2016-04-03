@@ -20,6 +20,16 @@ body {
   padding: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: $gray;
+  border-bottom: 1px solid $gray;
+
+  &:hover {
+    color: $green;
+  }
+}
+
 hr {
   text-align: center;
   margin: 4rem auto;
@@ -35,22 +45,10 @@ hr {
   } 
 }
 
-img {
-  width: 100%;
-}
-
 date {
+  display: block;
   font-family: $sans;
   font-size: $font-size-p;
   font-weight: 300;
   color: $gray;
-}
-
-.color-line {
-  display: flex;
-
-  & > div {
-    height: 4px;
-    flex: 25;
-  }
 }

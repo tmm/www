@@ -1,0 +1,19 @@
+---
+layout: base
+title: Blog
+---
+
+{% include nav.html %}
+
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%B %Y" %}
+{% if currentdate != date %}
+{% unless forloop.first %}</section>{% endunless %}
+<section class="mar-b-6">
+  <h2 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h2>
+  {% assign date = currentdate %}
+{% endif %}
+  <h4 class="mar-t-0 mar-b-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+  <p>{{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
+{% if forloop.last %}</section>{% endif %}
+{% endfor %}
