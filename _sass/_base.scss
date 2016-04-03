@@ -45,10 +45,48 @@ hr {
   } 
 }
 
+// blockquote {
+//   margin: 1.75rem 0 1.7rem auto;
+//   padding-left: 1.5rem;
+//   border-left: 3px solid $green;
+//   color: $gray;
+// }
+
+blockquote {
+ margin: 3rem 0;
+
+ p {
+  text-align: center;
+  color: $green;
+  font: 300 $font-size-h3 $sans;
+  line-height: 2rem;
+
+  &:before { content: "“"; }
+  &:after { content: "”"; }
+}
+}
+
+img {
+  margin: $l6 auto;
+  max-width: 100%;
+}
+
+ol, ul {
+  li { font-family: $serif; }
+  p {
+    margin-bottom: $l1;
+    & .reversefootnote { border-bottom: 0; }
+  }
+}
+
+sup {
+  a { border-bottom: 0; }
+}
+
 date {
   display: block;
   font-family: $sans;
-  font-size: $font-size-p;
+  font-size: 1rem;
   font-weight: 300;
   color: $gray;
 }

@@ -5,8 +5,6 @@ date: 2015-05-15 22:50:00
 excerpt: Tomorrow, I graduate from college.
 ---
 
-##All good things must come to an end
-
 I've been dreading writing this post. Maybe dreading isn't the correct word. More like skillfully delaying until the last moment---which is funny because I don't usually procrastinate anything. Naively though, it seems like by delaying this, I avoid the inevitable for just a little longer.
 
 Tomorrow, I graduate from college.

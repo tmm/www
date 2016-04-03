@@ -8,7 +8,7 @@ excerpt: Over the last few months, I have made a conscious effort to learn a lit
 ![Are you in front of a screen?](/blog/assets/2014/1/reporter0.png)
 {: .image-2 }
 
-##Here’s why you should start.##
+## Here’s why you should start
 
 Over the last few months, I have made a conscious effort to learn a little more about myself. Whether it's what I spend time doing or who I spend time with, I wanted a lightweight, unobtrusive method for collecting small snippets of data throughout my day.
 
@@ -21,7 +21,7 @@ I settled with my iPhone 4s.
 >Money is circulated. Time is spent.
 {: .quote-2 }
 
-One evening, my friend, [Tulio](https://twitter.com/tuliojarocki "Tulio Jarocki on Twitter"), was scrolling through one of Nicholas Felton’s [Personal Annual Reports](http://feltron.com "Feltron.com") and asked me if I had heard of Reporter.
+One evening, my friend, [Tulio](https://www.instagram.com/tuliojarocki/ "Tulio Jarocki"), was scrolling through one of Nicholas Felton’s [Personal Annual Reports](http://feltron.com "Feltron.com") and asked me if I had heard of Reporter.
 
 I said no.
 
@@ -46,9 +46,9 @@ The $3.99 I *circulated* on Reporter is definitely worth the time I *spend* ever
 A push notification I actually like seeing.
 {: .caption-2 }
 
-##Time To Report!##
+## Time To Report!
 
-###What I report every day.###
+### What I report every day
 
 Time to Report! is the push notification that I see about five times a day. It prompts me to quickly avert my attention to capturing my current circumstances.
 
@@ -86,7 +86,7 @@ Every night when I do not want to read and would rather browse aimlessly on my p
 Are you in front of a screen?
 {: .caption-1 }
 
-##Data = Understanding##
+## Data = Understanding
 
 I’m hoping to do something significant with the data at some point so I can really see how my life causally fits together, after only examining it at a superficial level. Until then, I’m satisfied with building habits through the app and being able to reflect on the last 107 days and 500 reports.
 
@@ -96,6 +96,6 @@ Happy reporting!
 
 ***
 
-###Notes###
+### Notes
 
-This was [originally published on Medium](https://medium.com/@tfm/in-107-days-ive-collected-500-reports-about-my-life-c4454b9d8456), under the same name.
+[Originally published on Medium](https://medium.com/@tfm/in-107-days-ive-collected-500-reports-about-my-life-c4454b9d8456) under the same name.

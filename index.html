@@ -3,9 +3,6 @@ layout: base
 ---
 
 <header>
-  <div class="flex-center mar-t-4">
-    <img src="{{ "/img/tom.png" | prepend: site.baseurl }}">
-  </div>
   <h1 class="text-center sans bold-heavy mar-tb-3">Tom Meagher</h1>
 </header>
 
@@ -25,7 +22,7 @@ layout: base
 <section class="mar-b-6">
   <h2 class="mar-b-2">Latest Writing</h2>
   {% assign post = site.posts[0] %}
-  <h4 class="mar-t-0 mar-b-1">{{ post.title }}</h4>
+  <h4 class="mar-t-0">{{ post.title }}</h4>
   <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
 </section>
 

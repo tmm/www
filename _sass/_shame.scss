@@ -1,13 +1,65 @@
-img {
-  width: 30%;
-  border-radius: 55%;
-}
-
 .color-line {
   display: flex;
 
   & > div {
     height: 4px;
     flex: 25;
+  }
+}
+
+// Refactor and remove
+.image-1 {
+  margin: 3rem auto 0;
+  max-width: 80%;
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.image-2 {
+  margin: 3rem auto 0;
+
+  img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.image-3 {
+  margin: 3rem auto 0;
+
+  img {
+    margin: 0 -10%;
+    width: 120%;
+
+    @media screen and (max-width: 770px) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+.caption-1 {
+  margin: 0 auto 3rem;
+  max-width: 80%;
+  color: $gray;
+  font: 300 1rem $sans;
+}
+
+.caption-2 {
+  margin: 0 0 3rem;
+  color: $gray;
+  font: 300 1rem $sans;
+}
+
+.caption-3 {
+  margin: 0rem -10% 3rem;
+  color: $gray;
+  font: 300 1rem $sans;
+
+  @media screen and (max-width: 770px) {
+    margin: 0 auto 3rem;
   }
 }

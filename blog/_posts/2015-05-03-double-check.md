@@ -5,8 +5,6 @@ date: 2015-05-03 22:14:00
 excerpt: It feels great to make things, and you want to see other people use those things—it strokes your maker's ego.
 ---
 
-##The Maker's Ego
-
 When you work on something you think is worthwhile, you can't help wanting to share it with the world. It feels great to make things, and you want to see other people use those things—it strokes your maker's ego.
 
 After all, we usually feel best when we make stuff for other people.
