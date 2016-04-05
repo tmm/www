@@ -22,13 +22,13 @@ Emotions don't like being smooshed together.
 
 Somewhat conveniently though, these milestones naturally segment into different time periods. And segmentation affords us (specifically me, right now) a great opportunity to briefly reflect before the journey continues forward. So without staying up too late before the big day, here are a few things I learned over the last four years, in no particular order.
 
-##* Stay Present
+### Stay Present
 
 It's so easy to get caught up in what people think, what happened in the past, or what's going to happen in the future. Here's the trick: everyone is too focused on themselves to worry about you, and nothing has ever happened in the past or future---everything happens in the now.
 
 Every so often, stop caring about what other people think and live minute by minute, second by second.
 
-##* Learn & Do Anything
+### Learn & Do Anything
 
 When you leave school, or any other guided environment, learning never stops. It can actually be more exciting when you step outside the formal, rigid confines and teach yourself. As the teacher, you set your own pace and teach yourself what you want.
 
@@ -36,7 +36,7 @@ Opportunities are bounded only by your desire to learn and do. This year, I taug
 
 Just remember---anything worth doing, is worth overdoing.
 
-##* Thank & Be Thankful
+### Thank & Be Thankful
 
 While simple in theory, it's rather difficult in practice: sincerely thank those that mean something to you. When people do something that benefits you, you should always acknowledge their efforts, even if what they did doesn't work out exactly as planned. They are spending some of their precious time on you so it's the right thing to do.
 

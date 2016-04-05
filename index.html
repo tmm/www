@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Welcome
 ---
 
 <header>
@@ -8,22 +9,20 @@ layout: base
 
 <section>
   <p>I love making things—often with code, pixels, and words. Small teams with big ideas make me happy. You can find me on <a href="https://twitter.com/thomasmeagher/">Twitter</a>, <a href="https://github.com/tmm/">GitHub</a>, or <a href="mailto:tom@meagher.co">email</a>.</p>
-
-  <p>Welcome to my home on the Internet :)</p>
 </section>
 
 <div class="color-line mar-tb-6">
   <div class="background-blue"></div>
-  <div class="background-green"></div>
-  <div class="background-yellow"></div>
   <div class="background-red"></div>
+  <div class="background-yellow"></div>
+  <div class="background-green"></div>
 </div>
 
 <section class="mar-b-6">
   <h2 class="mar-b-2">Latest Writing</h2>
   {% assign post = site.posts[0] %}
   <h4 class="mar-t-0">{{ post.title }}</h4>
-  <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
+  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
 </section>
 
 <section class="mar-b-6">

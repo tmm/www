@@ -14,6 +14,6 @@ title: Blog
   {% assign date = currentdate %}
 {% endif %}
   <h4 class="mar-t-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-  <p>{{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
+  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
 {% if forloop.last %}</section>{% endif %}
 {% endfor %}
