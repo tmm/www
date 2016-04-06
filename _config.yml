@@ -19,7 +19,6 @@ gems: [jekyll-paginate]
 
 # Conversion
 markdown: kramdown
-highlighter: pygments
 
 # Outputting
 paginate: 10

@@ -2,20 +2,20 @@
 layout: post
 title: "Double Check"
 date: 2015-05-03 22:14:00
-excerpt: It feels great to make things, and you want to see other people use those things—it strokes your maker's ego.
+excerpt: It feels great to make things, especially when other people use those things—it strokes your maker's ego.
 ---
 
-When you work on something you think is worthwhile, you can't help wanting to share it with the world. It feels great to make things, and you want to see other people use those things—it strokes your maker's ego.
+When you work on something you think is worthwhile, you can't help wanting to share it with the world. It feels great to make things, especially when other people use those things—it strokes your maker's ego.
 
 After all, we usually feel best when we make stuff for other people.
 
->I too am not a bit tamed—I too am untranslatable;	 
+> I too am not a bit tamed—I too am untranslatable;
 I sound my barbaric yawp over the roofs of the world.
 {: .quote-2 }
 
 After teaching myself iOS development for a few months, I decided it was time to make something on my own. Over winter break, using my accumulated knowledge, I made an app using the [Product Hunt API](http://www.producthunt.com/v1/oauth/applications "Product Hunt API Dashboard"). The resulting, [Time Machine](https://itunes.apple.com/us/app/product-hunt-time-machine/id956311358 "App Store"), allows you to quickly jump to any day on Product Hunt and view the products.
 
-##Proud & Impatient
+## Proud & Impatient
 
 When the first version was complete, my initial thought was to share it and get feedback. I sent invites to friends and impatiently waited a few hours, but I didn't hear anything back. I had learned iOS development *and* made an useful app.
 

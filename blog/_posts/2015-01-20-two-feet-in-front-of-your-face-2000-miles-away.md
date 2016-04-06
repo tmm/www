@@ -13,13 +13,13 @@ excerpt: How many people do you communicate with on a daily basis without actual
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en" align="center"><p>4/ TL;DR - Proximity is no longer the main determinant in a relationship. Meaningful relationships are in person though.</p>&mdash; Tom Meagher (@thomasmeagher) <a href="https://twitter.com/thomasmeagher/status/557616283320324097">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-##Will Meeting IRL Matter?##
+## Will Meeting IRL Matter?
 
 There’s definitely something to think about here: How many people do you communicate with on a daily basis without *actually* seeing them in person? What’s your relationship like? How far away are you?
 
 It seems trivial that more and more people are connected online everyday. Yet, we have a long way to go — with approximately two-thirds of the world still pre-Internet.[^1] With it taking over 30 years for around 2.3 billion to connect, getting another two-thirds is likely to be much faster due to the acceleration and adoption of technology. As these new users come online, there are many interactions for them to participate in, including becoming more social.
 
-Humans are social animals. And with your social graph growing, no surprise, you have a greater potential to be social. Across Facebook’s social technologies: Facebook, WhatsApp, and Instagram, there are 2 billion *monthly active users*.[^2] Almost the entire connected world in one platform, in case you are counting.[^3]
+Humans are social animals. And with your social graph growing, no surprise, you have a greater potential to be social. Across Facebook’s social technologies: Facebook, WhatsApp, and Instagram, there are 2 billion *monthly active users*.[^2] Almost the entire connected world in one platform in case you are counting.[^3]
 
 But it’s not just Facebook where people are connecting at scale. People connect across almost every industry and niche on the web. Tinderers swipe more than a billion times per day, trying to find love, hookup, or some other form of affection.[^4] Tinder didn’t exist 24 months ago, yet people have flocked to connect through it. Products, like Slack, allow distributed teams to work all across the globe. Twitch brings 45 million gamers together, geeking out about video games.[^5] People exchange 400 million snaps on Snapchat per day.[^6]
 
@@ -38,12 +38,13 @@ And those can only happen IRL (so far).
 
 ***
 
-###Notes###
-This was [originally published on Medium](https://medium.com/@tfm/will-meeting-irl-matter-a4755841c359), under the same name.
+### Notes
+
+[Originally published on Medium](https://medium.com/@tfm/will-meeting-irl-matter-a4755841c359) under the same name.
 
 [^1]: [Internet.org](http://internet.org)
 [^2]: [Facebook's WhatsApp tallies 700M monthly active users](http://www.cnet.com/news/facebooks-whatsapp-messaging-service-tallies-700-million-monthly-active-users/)
-[^3]: Granted there is some overlap
+[^3]: Granted there is likely some overlap
 [^4]: [Tinder stats show women log on more, men swipe more](http://www.dailydot.com/technology/new-tinder-use-stats/)
 [^5]: [Twitch: what is it, and why has Google bought it for $1bn?](http://www.theguardian.com/technology/2014/jul/25/twitch-google-gaming-video-site)
 [^6]: [Snapchat Sees More Daily Photos Than Facebook](http://techcrunch.com/2013/11/19/snapchat-reportedly-sees-more-daily-photos-than-facebook/)
