@@ -6,7 +6,6 @@ excerpt: Over the last few months, I have made a conscious effort to learn a lit
 ---
 
 ![Are you in front of a screen?](/blog/assets/2014/1/reporter0.png)
-{: .image-2 }
 
 ## Here’s why you should start
 
@@ -19,7 +18,6 @@ For this experiment to be effective, I had to find a method that randomly sample
 I settled with my iPhone 4s.
 
 >Money is circulated. Time is spent.
-{: .quote-2 }
 
 One evening, my friend, [Tulio](https://www.instagram.com/tuliojarocki/ "Tulio Jarocki"), was scrolling through one of Nicholas Felton’s [Personal Annual Reports](http://feltron.com "Feltron.com") and asked me if I had heard of Reporter.
 
@@ -28,23 +26,18 @@ I said no.
 The next few minutes, I learned about how [the app](http://www.reporter-app.com "Reporter for iPhone") performs a few randomly timed surveys each day. Each survey, called a report, collects user inputted data as well as data from the phone’s sensors. The data is conveniently structured in exportable JSON files and the survey questions are completely customizable.
 
 >Reporter can illuminate aspects of your life that might be otherwise unmeasurable.
-{: .quote-2 }
 
 If not completely sold on the idea, I was at least intrigued. The lightweight, random experience, centered around the phone was exactly where my other attempted methods fell short. So I fired up the App Store and was disappointed to [see that it cost $3.99](https://itunes.apple.com/us/app/reporter-app/id779697486).
 
 I almost balked at the purchase, but I realized something.
 
 >If Reporter can help me understand the things I care about, perhaps even saving me a few minutes each day, then it would definitely prove valuable.
-{: .quote-1 }
 
 The $3.99 I *circulated* on Reporter is definitely worth the time I *spend* everyday.
 
 ***
 
-![Push Notification](/blog/assets/2014/1/reporter1.png)
-{: .image-2 }
-A push notification I actually like seeing.
-{: .caption-2 }
+![A push notification I actually like seeing.](/blog/assets/2014/1/reporter1.png)
 
 ## Time To Report!
 
@@ -55,36 +48,24 @@ Time to Report! is the push notification that I see about five times a day. It p
 Reporter has a few has default questions that I originally used—*Are you working? How did you sleep? Who are you with?*—but after a while I added my own and discarded a few of the built-ins.
 
 ![Who are you with?](/blog/assets/2014/1/reporter2.png)
-{: .image-1 }
-Who are you with?
-{: .caption-1 }
 
 My reports almost always comprise four questions: *Who are you with? What are you doing? Where are you? Are you in front of a screen?*
 
 The exception is right before I go to bed. I put Reporter to sleep and am asked: *How many pages did you read tonight?* And when I wake up, Reporter wakes and asks: *How did you sleep?* (Multiple choice: Great, Ok, Poorly, Not at all)
 
 ![What are you doing?](/blog/assets/2014/1/reporter3.png)
-{: .image-1 }
-What are you doing?
-{: .caption-1 }
 
 Besides Reporter latently recording other things, like the temperature, battery level, speed, steps, these six questions encompass the only active data I need to capture on my own.
 
 Most reports take only a few seconds and the power comes when the reports start to add up. I can start looking for answers to questions—*Where do I spend most of my time? Is sleep quality correlated to how often I am in front of a screen? What are my more social activities?* And there are many other trends you start to notice that maybe were unrecognizable before.
 
 ![Where are you?](/blog/assets/2014/1/reporter4.png)
-{: .image-1 }
-Where are you?
-{: .caption-1 }
 
 For me, the power of collecting all this data is simply having all the data. I have yet to do anything really significant yet, like one of Felton’s Annual Reports, but I am able to hold myself accountable based on my past behavior. I started my nightly reading habit around the same time that I began reporting.
 
 Every night when I do not want to read and would rather browse aimlessly on my phone, I remember that I have to report at the end of the night. If I have not read, then a 0 goes into the data set, which irks me a little. Its satisfying to see the in-app visualizations tracking your progress.
 
 ![Are you in front of a screen?](/blog/assets/2014/1/reporter5.png)
-{: .image-1 }
-Are you in front of a screen?
-{: .caption-1 }
 
 ## Data = Understanding
 

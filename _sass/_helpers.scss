@@ -46,9 +46,3 @@
   display: flex;
   justify-content: center;
 }
-
-.hidden-sm {
-  @media screen and (max-width: $sm) {
-    display: none;
-  }
-}

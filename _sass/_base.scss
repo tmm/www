@@ -14,7 +14,7 @@ html {
 body {
   background-color: $white;
   color: $gray-dark;
-  text-size-adjust: 100%;
+  font-size-adjust: 100%;
   margin: auto;
   max-width: 37rem;
   padding: 1rem;
@@ -45,37 +45,54 @@ hr {
   } 
 }
 
-// blockquote {
-//   margin: 1.75rem 0 1.7rem auto;
-//   padding-left: 1.5rem;
-//   border-left: 3px solid $green;
-//   color: $gray;
-// }
-
 blockquote {
- margin: 3rem 0;
-
- p {
-  text-align: center;
-  color: $green;
-  font: 300 $font-size-h3 $sans;
-  line-height: 2rem;
-
-  &:before { content: "“"; }
-  &:after { content: "”"; }
-}
+  margin: 1.75rem 0 1.75rem auto;
+  padding-left: 1.5rem;
+  border-left: 4px solid $green;
+  color: $gray;
 }
 
 img {
-  margin: $l6 auto;
+  display: block;
   max-width: 100%;
+  margin: 3rem auto;
+  border-radius: $border-radius;
 }
 
 ol, ul {
-  li { font-family: $serif; }
-  p {
-    margin-bottom: $l1;
-    & .reversefootnote { border-bottom: 0; }
+  
+  li {
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+}
+
+ol {
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      counter-increment: list;
+
+      & > p {
+        display: inline-block;
+        & .reversefootnote { border-bottom: 0; }
+      }
+      
+      &:before {
+        color: $gray-dark;
+        content: counter(list);
+        border-radius: 50%;
+        font-size: 12px;
+        border: 1px solid $gray-light;
+        top: -2px;
+        display: inline-block;
+        font-weight: 600;
+        margin-right: 5px;
+        height: 21px;
+        width: 21px;
+        text-align: center;
+        position: relative;
+      }
   }
 }
 
@@ -83,7 +100,7 @@ sup {
   a { border-bottom: 0; }
 }
 
-date {
+time {
   display: block;
   font-family: $sans;
   font-size: 1rem;

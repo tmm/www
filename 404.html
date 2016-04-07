@@ -4,12 +4,10 @@ title: Something went wrong
 permalink: /404.html
 ---
 
-<section>
-  <h1 class="text-center sans bold-heavy">404</h1>
+<section class="text-center">
+  <h1 class="sans bold-heavy mar-b-0">404</h1>
   
-  <img src="{{ "../img/jim.gif" | prepend: site.baseurl }}" alt="Something went wrong">
+  <img src="{{ "/img/jim.gif" | prepend: site.baseurl }}" alt="{{ page.title }}">
   
-  <nav class="text-center mar-t-4">
-    <a href="/">Back to home</a>
-  </nav>
+  {% include nav.html %}
 </section>

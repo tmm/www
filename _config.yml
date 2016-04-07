@@ -1,11 +1,9 @@
 # Site settings
 title: Tom Meagher
-email: thom.meagher@gmail.com
 description: "I love making things—often with code, pixels, and words."
 url: "http://meagher.co"
 author: "Tom Meagher"
 keywords: "tom,meagher,code,design,startups,start ups,technology,tech,"
-github: tmm
 
 exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
 include: []
@@ -13,6 +11,8 @@ include: []
 # Outputting
 timezone: America/New_York
 permalink: pretty
+paginate: 10
+paginate_path: "blog/num"
 
 # Plugins
 gems: [jekyll-paginate]
@@ -20,6 +20,7 @@ gems: [jekyll-paginate]
 # Conversion
 markdown: kramdown
 
-# Outputting
-paginate: 10
-paginate_path: "blog/num"
+# Custom variables
+github: tmm
+twitter: thomasmeagher
+email: tom@meagher.co
