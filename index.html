@@ -1,5 +1,4 @@
 ---
-layout: base
 title: Home
 ---
 
@@ -11,13 +10,12 @@ title: Home
   <p>I love making things—often with code, pixels, and words. Small teams with big ideas make me happy. You can find me on <a href="https://twitter.com/{{ site.twitter }}/">Twitter</a>, <a href="https://github.com/{{ site.github }}/">GitHub</a>, or <a href="mailto:{{ site.email }}">email</a>.</p>
 </section>
 
-{% include colors.html %}
+{% include color-line.html %}
 
 <section class="mar-b-6">
   <h2 class="mar-b-2">Latest Writing</h2>
   {% assign post = site.posts[0] %}
-  <h4 class="mar-t-0">{{ post.title }}</h4>
-  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
+  {% include post-preview.html %}
 </section>
 
 <section class="mar-b-6">

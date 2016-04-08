@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "In 107 days, I’ve collected 500 reports about my life."
+title: In 107 days, I’ve collected 500 reports about my life.
 date: 2014-08-02 10:00:00
 excerpt: Over the last few months, I have made a conscious effort to learn a little more about myself. Whether it's what I spend time doing or who I spend time with, I wanted a lightweight, unobtrusive method for collecting small snippets of data throughout my day.
 ---

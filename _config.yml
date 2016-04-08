@@ -1,26 +1,44 @@
-# Site settings
 title: Tom Meagher
 description: "I love making things—often with code, pixels, and words."
 url: "http://meagher.co"
 author: "Tom Meagher"
-keywords: "tom,meagher,code,design,startups,start ups,technology,tech,"
+keywords: "tom,meagher,code,design,startups,start ups,technology,tech"
 
-exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
-include: []
-
-# Outputting
-timezone: America/New_York
-permalink: pretty
-paginate: 10
-paginate_path: "blog/num"
-
-# Plugins
-gems: [jekyll-paginate]
-
-# Conversion
-markdown: kramdown
-
-# Custom variables
 github: tmm
 twitter: thomasmeagher
 email: tom@meagher.co
+
+exclude: ["README.md", "CNAME", "LICENSE", ".gitignore", "tmm.sublime-project"]
+include: []
+
+permalink: pretty
+paginate: 10
+paginate_path: "blog/num"
+timezone: America/New_York
+
+gems: [jekyll-paginate]
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "base"
+
+links:
+  - name: home
+    url: /
+  - name: blog
+    url: /blog/

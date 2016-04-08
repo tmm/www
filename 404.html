@@ -1,5 +1,4 @@
 ---
-layout: base
 title: Something went wrong
 permalink: /404.html
 ---
@@ -7,7 +6,7 @@ permalink: /404.html
 <section class="text-center">
   <h1 class="sans bold-heavy mar-b-0">404</h1>
   
-  <img src="{{ "/img/jim.gif" | prepend: site.baseurl }}" alt="{{ page.title }}">
+  <img src="{{ site.baseurl }}/img/jim.gif" alt="{{ page.title }}">
   
   {% include nav.html %}
 </section>

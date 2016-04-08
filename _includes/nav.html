@@ -1,5 +1,6 @@
 <nav class="mar-b-6">
-  <a href="/" class="mar-r-1">home</a>
-  <a href="/blog/" class="mar-r-1">blog</a>
+  {% for page in site.links %}
+    <a href="{{ page.url }}" class="mar-r-1">{{ page.name }}</a>
+  {% endfor %}
   <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 </nav>

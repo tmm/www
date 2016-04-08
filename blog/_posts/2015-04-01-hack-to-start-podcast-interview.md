@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Hack To Start: Episode 35"
 date: 2015-04-01 13:00:00
 ---

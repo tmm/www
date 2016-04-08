@@ -1,5 +1,4 @@
 ---
-layout: base
 title: Blog
 ---
 
@@ -12,8 +11,9 @@ title: Blog
 <section class="mar-b-6">
   <h2 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h2>
   {% assign date = currentdate %}
+  {% endif %}
+  {% include post-preview.html %}
+  {% if forloop.last %}
+</section>
 {% endif %}
-  <h4 class="mar-t-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a></p>
-{% if forloop.last %}</section>{% endif %}
 {% endfor %}

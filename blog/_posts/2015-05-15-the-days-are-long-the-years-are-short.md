@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "The days are long, but the years are short"
+title: The days are long, but the years are short
 date: 2015-05-15 22:50:00
 excerpt: Tomorrow, I graduate from college.
 ---
@@ -9,8 +8,7 @@ I've been dreading writing this post. Maybe dreading isn't the correct word. Mor
 
 Tomorrow, I graduate from college.
 
->The journey is the reward.
-{: .quote-2 }
+> The journey is the reward.
 
 Like most milestones, we try to capture and cram all the successes, failures, and everything else into one defining moment. Freshmen orientation, calculus three, summer vacation, the cute girl down the hall junior year, and the late nights talking and laughing with friends. Everything is combined into one tangled mess, irrespective of what, when, where, or who they happened with.
 
@@ -45,4 +43,3 @@ Make sure you accurately convey how much you value them. You might not get anoth
 Also, take some time to feel thankful for everything and everyone that is a part of your life.
 
 >You often know when you do something for the first time, but you don't often know when you do something for the last time.
-{: .quote-2 }
