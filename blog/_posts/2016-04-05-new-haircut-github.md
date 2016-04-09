@@ -1,6 +1,8 @@
 ---
 title: New haircut, GitHub?
 date: 2016-04-04 22:38:00
+tags:
+- jekyll
 ---
 
 An early adopter's badge of honor, short usernames are typically taken when sites start to gain popularity. After joining [GitHub](https://github.com) on February 22, 2014, I chose a long username---fortunately, I didn't have to settle for it.

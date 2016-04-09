@@ -3,8 +3,9 @@ title: Blog
 ---
 
 {% include nav.html %}
+{% include header.html %}
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 {% assign currentdate = post.date | date: "%B %Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
@@ -17,3 +18,9 @@ title: Blog
 </section>
 {% endif %}
 {% endfor %}
+
+{% for category in site %}
+{{ category }}
+{% endfor %}
+
+{% include pagination.html %}

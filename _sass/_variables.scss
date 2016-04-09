@@ -1,6 +1,7 @@
 // fonts
 $sans: 'Lato', Helvetica, sans-serif;
 $serif: Georgia, serif;
+$code: "Courier New", Courier, monospace;
 
 // colors
 $white: #fff;
@@ -15,15 +16,17 @@ $red: #FA5744;
 // sizes
 $font-size: 17px;
 $font-size-sm: 16px;
-$font-size-h1: 2.5rem;
+$font-size-p: 1.15rem;
+$font-size-h1: 2.35rem;
 $font-size-h2: 1.75rem;
 $font-size-h3: 1.5rem;
 $font-size-h4: 1.25rem;
-$font-size-p: 1.15rem;
+$font-size-h5: 1.15rem;
+$font-size-h6: 1rem;
 
 // heights
-$line-height: 1.7;
-$line-height-sm: 1.6;
+$line-height: 1.5;
+$line-height-sm: 1.45;
 
 // widths
 $sm: 544px; // Small screen / phone
@@ -32,12 +35,12 @@ $lg: 992px; // Large screen / desktop
 $xl: 1200px; // Extra large screen / wide desktop
 
 // levels
-$l1: 6px;
-$l2: 12px;
-$l3: 18px;
-$l4: 24px;
-$l5: 32px;
-$l6: 36px;
+$l1: 0.33rem;
+$l2: 0.67rem;
+$l3: 1rem;
+$l4: 1.33rem;
+$l5: 1.78rem;
+$l6: 2rem;
 
 // misc
 $border-radius: 4px;

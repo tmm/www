@@ -24,6 +24,10 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 
 #### Header Four
 
+##### Header Five
+
+##### Header Six
+
 ### Blockquotes
 
 > The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
@@ -41,8 +45,25 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 ### Code Blocks
 
 {% highlight swift %}
+// A simple function
 func hello_name(name: String = "World") -> String {
 	return "Hello, \(name)!"
+}
+{% endhighlight %}
+
+{% highlight scss %}
+.highlight {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: $border-radius;
+  border: 1px solid #eee;
+  background: #282a36;
+}
+
+pre {
+  font-family: $code;
+  margin: 0;
+  padding: 1rem 12px;
 }
 {% endhighlight %}
 

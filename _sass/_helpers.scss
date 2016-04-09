@@ -20,10 +20,6 @@
     margin-top: $size;
     margin-bottom: $size;
   }
-  .mar-lr-#{$level} {
-    margin-left: $size;
-    margin-right: $size;
-  }
 }
 
 @each $level, $size in (0, 0), (1, $l1), (2, $l2), (3, $l3), (4, $l4), (5, $l5), (6, $l6) {
@@ -36,13 +32,12 @@
     padding-top: $size;
     padding-bottom: $size;
   }
-  .pad-lr-#{$level} {
-    padding-left: $size;
-    padding-right: $size;
-  }
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
 }
+
+.sans { font-family: $sans; }
+.serif { font-family: $serif; }

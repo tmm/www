@@ -34,19 +34,18 @@ hr {
   text-align: center;
   margin: 4rem auto;
   border: 0;
-  width: 100%;
 
   &::before {
-    margin-left: 2rem;
+    color: $gray;
+    margin-left: 3rem;
     content: "***";
-    font-size: 1.15rem;
-    letter-spacing: 2rem;
-    opacity: 0.45;
+    font-size: 1.35rem;
+    letter-spacing: 3rem;
   } 
 }
 
 blockquote {
-  margin: 1.75rem 0 1.75rem auto;
+  margin: $l5 0 $l5 auto;
   padding-left: 1.5rem;
   border-left: 4px solid $green;
   color: $gray;
@@ -61,52 +60,31 @@ img {
 
 ol, ul {
   li {
-    font-size: $font-size;
-    font-family: $serif;
+    font-size: $font-size-p;
+    font-family: $sans;
     line-height: $line-height;
-  }
-}
-
-ol {
-  padding-left: 0;
-  list-style-type: none;
-  
-  li {
-    counter-increment: list;
 
     & > p {
-      display: inline-block;
-      & .reversefootnote { border-bottom: 0; }
-    }
-    
-    &:before {
       font-family: $sans;
-      color: $gray-dark;
-      content: counter(list);
-      border-radius: 50%;
-      font-size: 12px;
-      border: 1px solid $gray-light;
-      top: -2px;
       display: inline-block;
-      font-weight: 600;
-      margin-right: 5px;
-      height: 21px;
-      width: 21px;
-      text-align: center;
-      position: relative;
+      & .reversefootnote {
+        border-bottom: 0;
+      }
     }
   }
 }
 
 sup {
-  a { border-bottom: 0; }
+  a {
+    font-family: $sans;
+    color: $green;
+    border-bottom: 0;
+  }
 }
 
 time {
   display: block;
   font-family: $sans;
-  font-size: 1rem;
-  font-weight: 300;
   color: $gray;
 }
 

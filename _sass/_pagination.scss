@@ -1,0 +1,49 @@
+.pager {
+  @include clearfix();
+  margin: 4rem 0;
+  padding: 0;
+
+  li {
+    float: left;
+    display: inline;
+  }
+
+  a {
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: $sans;
+    font-size: $font-size;
+    text-decoration: none;
+    border: 1px solid $gray-light;
+    border-left: none;
+    padding: 6px 15px;
+    color: $gray-dark;
+
+    &:hover { background-color: $gray-light; }
+
+    &.disabled {
+      color: $gray + 15;
+      background-color: $white;
+      cursor: not-allowed;
+    }
+
+    &.current {
+      background-color: $green;
+      border-color: $green;
+      color: $white;
+    }
+
+    &.prev {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      border-left: 1px solid $gray-light;
+    }
+
+    &.next {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}
