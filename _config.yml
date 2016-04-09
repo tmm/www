@@ -5,7 +5,7 @@ author: "Tom Meagher"
 keywords: "tom,meagher,code,design,startups,start ups,technology,tech"
 
 github: tmm
-twitter: thomasmeagher
+twitter: tomfme
 email: tom@meagher.co
 
 exclude: ["README.md", "CNAME", "LICENSE", ".gitignore", "tmm.sublime-project"]

@@ -1,10 +1,9 @@
 ---
 title: Style Guide
-date: 2016-04-07 16:39:00
-hidden: true
+date: 2014-08-01 16:39:00
 ---
 
-The style guide for blog posts on this site.
+More for my reference, but feel free to take a look.
 
 ## Block Elements
 
@@ -24,13 +23,9 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 
 #### Header Four
 
-##### Header Five
-
-##### Header Six
-
 ### Blockquotes
 
-> The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+> The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
 
 ### Lists
 
@@ -45,26 +40,16 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 ### Code Blocks
 
 {% highlight swift %}
-// A simple function
+// A simple function in Swift
 func hello_name(name: String = "World") -> String {
 	return "Hello, \(name)!"
 }
 {% endhighlight %}
 
-{% highlight scss %}
-.highlight {
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: $border-radius;
-  border: 1px solid #eee;
-  background: #282a36;
-}
-
-pre {
-  font-family: $code;
-  margin: 0;
-  padding: 1rem 12px;
-}
+{% highlight python %}
+# A simple function in Python
+def hello_name(name = "World")
+  return "Hello, {}!".format(name, s)
 {% endhighlight %}
 
 ### Horizontal rules
@@ -77,15 +62,15 @@ Links, emphasis, code, and images.
 
 ### Links
 
-Check out my website's [source on GitHub](https://github.com/tmm/tmm.github.io/).
+Check out my website's [source code on GitHub](https://github.com/tmm/tmm.github.io/).
 
 ### Emphasis
 
-The *quick brown fox* jumped over the **lazy** dogs.
+The *quick brown fox* jumped over the **lazy dogs**.
 
 ### Code
 
-Fire up terminal and run `telnet towel.blinkenlights.nl` in your prompt.
+Fire up your terminal and run `telnet towel.blinkenlights.nl`.
 
 ### Images
 
