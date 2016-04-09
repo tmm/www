@@ -6,14 +6,15 @@ code {
 p {
   code {
     background-color: rgba(116,208,233,0.05);
-    color: $green;
+    color: #37C47B;
   }
 }
 
 .highlight {
   margin: 1rem 0;
-  border-left: 4px solid #888;
-  background: #f5f5f5;
+  border-left: 5px solid #E2E2E2;
+  border-radius: 2px;
+  background: #F9F9F9;
 }
 
 pre {
@@ -30,8 +31,8 @@ pre {
 }
 
 .highlight, .highlight pre, .highlight code {color: #333; }
-.highlight .n { color: $blue; } /* name */
-.highlight .k { color: $green; } /* keyword */
+.highlight .n { color: #1b9af7; } /* name */
+.highlight .k { color: #37C47B; } /* keyword */
 .highlight .o { color: #ed4694; } /* operator */
 .highlight .p {} /* punctuation */
 .highlight .c { color: #888; } /* comment */
@@ -52,31 +53,31 @@ pre {
 .highlight .gs {} /* generic.strong */
 .highlight .gu { color: #888; } /* generic.subheading */ 
 .highlight .gt { color: #ff4351; } /* generic.traceback */ 
-.highlight .kc { color: $blue; } /* keyword.constant */
-.highlight .kd { color: $blue; } /* keyword.declaration */
-.highlight .kp { /* keyword.pseudo */ color: $blue; }
-.highlight .kr { /* keyword.reserved */ color: $blue; }
-.highlight .kt { /* keyword.type */ color: $blue; }
+.highlight .kc { color: #1b9af7; } /* keyword.constant */
+.highlight .kd { color: #1b9af7; } /* keyword.declaration */
+.highlight .kp { /* keyword.pseudo */ color: #1b9af7; }
+.highlight .kr { /* keyword.reserved */ color: #1b9af7; }
+.highlight .kt { /* keyword.type */ color: #1b9af7; }
 .highlight .m { /* literal.number */ color: #ed4694; }
 .highlight .s { /* literal.string */ color: #fc880f; }
-.highlight .na { /* name.attribute */ color: $green; }
-.highlight .nb { /* name.builtin */ color: $blue; }
+.highlight .na { /* name.attribute */ color: #37C47B; }
+.highlight .nb { /* name.builtin */ color: #1b9af7; }
 .highlight .nc { background-color: rgba(123,114,233,.05); border-radius: 2px; color: #7b72e9; } /* name.class */
-.highlight .no { color: $green; } /* name.constant */ 
+.highlight .no { color: #37C47B; } /* name.constant */ 
 .highlight .ni { color: #7b72e9; } /* name.entity */ 
 .highlight .ne { color: #ed4694; } /* name.exception */ 
 .highlight .nf { background-color: rgba(123,114,233,.05); border-radius: 2px; color: #7b72e9; } /* name.function */
 .highlight .nd { color: #ed4694; } /* name.decorator */ 
 .highlight .nn { color: #ed4694; } /* name.namespace */ 
-.highlight .nt { background-color: rgba(27,154,247,.05); border-radius: 2px; color: $blue; } /* name.tag */
+.highlight .nt { background-color: rgba(27,154,247,.05); border-radius: 2px; color: #1b9af7; } /* name.tag */
 .highlight .nv { color: #ed4694; } /* name.variable */
 .highlight .nx { background-color: rgba(237,70,148,.05); border-radius: 2px; color: #ed4694; } /* name.other */
 .highlight .ow { color: #ed4694; } /* operator.word */
 .highlight .w { color: #888; } /* text.whitespace */
-.highlight .mf { color: $green; } /* literal.number.float */
-.highlight .mh { color: $green; } /* literal.number.hex */
-.highlight .mi { color: $green; } /* literal.number.integer */
-.highlight .mo { color: $green; } /* literal.number.oct */
+.highlight .mf { color: #37C47B; } /* literal.number.float */
+.highlight .mh { color: #37C47B; } /* literal.number.hex */
+.highlight .mi { color: #37C47B; } /* literal.number.integer */
+.highlight .mo { color: #37C47B; } /* literal.number.oct */
 .highlight .sb { color: #fc880f; } /* literal.string.backtick */
 .highlight .sc { color: #fc880f; } /* literal.string.char */
 .highlight .sd { color: #fc880f; } /* literal.string.doc */
@@ -89,7 +90,7 @@ pre {
 .highlight .s1 { color: #fc880f; } /* literal.string.single */ 
 .highlight .ss { color: #db49d8; } /* literal.string.symbol */
 .highlight .bp { color: #ed4694; } /* name.builtin.pseudo */
-.highlight .vc { color: $green; } /* name.variable.class */
-.highlight .vg { color: $green; } /* name.variable.global */
-.highlight .vi { color: $green; } /* name.variable.instance */
-.highlight .il { color: $green; } /* literal.number.integer.long */
+.highlight .vc { color: #37C47B; } /* name.variable.class */
+.highlight .vg { color: #37C47B; } /* name.variable.global */
+.highlight .vi { color: #37C47B; } /* name.variable.instance */
+.highlight .il { color: #37C47B; } /* literal.number.integer.long */

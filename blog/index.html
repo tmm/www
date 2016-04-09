@@ -10,7 +10,7 @@ title: Blog
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
 <section class="mar-b-6">
-  <h2 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h2>
+  <h3 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h3>
   {% assign date = currentdate %}
   {% endif %}
   {% include post-preview.html %}

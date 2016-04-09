@@ -18,4 +18,4 @@ There's not much more to it.
 
 ## License
 
-Time Machine is released under the MIT license. See LICENSE for details
+Released under the MIT license. See LICENSE for details.
