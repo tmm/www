@@ -1,0 +1,62 @@
+footer {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: $sm) {
+    align-items: stretch;
+  }
+}
+
+#mc_embed_signup {
+  form {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid $gray-light;
+    border-radius: $border-radius;
+    height: 40px;
+    width: 355px;
+    padding: 2px;
+
+    @media screen and (max-width: $sm) {
+      width: auto;
+    }
+  }
+
+  .mc-field-group {
+    flex: 7.5;
+    display: inline-flex;
+  }
+
+  input, button {
+    box-sizing: border-box;
+    padding: 0 10px;
+    transition: 0.25s;
+    border: 0;
+  }
+
+  input {
+    flex: 1;
+    appearance: none;
+    outline: 0;
+    margin: 0;
+    font-size: $font-size;
+  }
+
+  button {
+    flex: 2.5;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: $sans;
+    text-decoration: none;
+    color: $white;
+    background-color: $green;
+
+    &:hover {
+      background-color: darken($green, 2%);
+    }
+  }
+}

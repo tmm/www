@@ -42,4 +42,4 @@ Make sure you accurately convey how much you value them. You might not get anoth
 
 Also, take some time to feel thankful for everything and everyone that is a part of your life.
 
->You often know when you do something for the first time, but you don't often know when you do something for the last time.
+> You often know when you do something for the first time, but you don't often know when you do something for the last time.

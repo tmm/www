@@ -12,14 +12,21 @@ p {
 
 .highlight {
   margin: 1rem 0;
-  border-radius: $border-radius;
-  border: 1px solid #eee;
+  border-left: 4px solid #888;
   background: #f5f5f5;
 }
 
 pre {
   margin: 0;
   padding: 1rem 12px;
+
+  pre {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .lineno { padding-right: 1.5rem; }
 }
 
 .highlight, .highlight pre, .highlight code {color: #333; }

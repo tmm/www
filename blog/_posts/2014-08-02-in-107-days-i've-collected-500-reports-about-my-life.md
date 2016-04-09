@@ -40,7 +40,7 @@ The $3.99 I *circulated* on Reporter is definitely worth the time I *spend* ever
 
 ## Time To Report!
 
-### What I report every day
+#### What I report every day
 
 Time to Report! is the push notification that I see about five times a day. It prompts me to quickly avert my attention to capturing my current circumstances.
 
@@ -70,7 +70,7 @@ Every night when I do not want to read and would rather browse aimlessly on my p
 
 I’m hoping to do something significant with the data at some point so I can really see how my life causally fits together, after only examining it at a superficial level. Until then, I’m satisfied with building habits through the app and being able to reflect on the last 107 days and 500 reports.
 
-Let me know if you try it out [@thomasmeagher](https://twitter.com/thomasmeagher "Thomas Meagher on Twitter") and what your thoughts are.
+Let me know if you try it out [@{{ site.twitter }}](https://twitter.com/{{ site.twitter }}) and what your thoughts are.
 
 Happy reporting!
 

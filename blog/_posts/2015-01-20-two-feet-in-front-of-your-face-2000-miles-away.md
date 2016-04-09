@@ -1,16 +1,16 @@
 ---
 title: Two feet in front of your face, 2000 miles away
 date: 2015-01-20 20:30:00
-excerpt: How many people do you communicate with on a daily basis without actually seeing them in person? What’s your relationship like? How far away are you?
+excerpt: How many people do you communicate with on a daily basis without actually seeing them in person?
 ---
 
-<blockquote class="twitter-tweet" lang="en" align="center"><p>1/ Given how much social interaction is through tech, I wouldn&#39;t be surprised if most relationships trend away from in person eventually.</p>&mdash; Tom Meagher (@thomasmeagher) <a href="https://twitter.com/thomasmeagher/status/557614929176690691">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en" align="center"><p>1/ Given how much social interaction is through tech, I wouldn&#39;t be surprised if most relationships trend away from in person eventually.</p>&mdash; Tom Meagher (@tomfme) <a href="https://twitter.com/tomfme/status/557614929176690691">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"  align="center"><p>2/ People will have more friends they meet with/have met online than IRL.</p>&mdash; Tom Meagher (@thomasmeagher) <a href="https://twitter.com/thomasmeagher/status/557615194063781888">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"  align="center"><p>2/ People will have more friends they meet with/have met online than IRL.</p>&mdash; Tom Meagher (@tomfme) <a href="https://twitter.com/tomfme/status/557615194063781888">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-conversation="none" lang="en" align="center"><p>3/ Not necessarily a bad thing because you can expand your reach in less time. Already seen this shift in remote work teams, dating, etc.</p>&mdash; Tom Meagher (@thomasmeagher) <a href="https://twitter.com/thomasmeagher/status/557615635275210752">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none" lang="en" align="center"><p>3/ Not necessarily a bad thing because you can expand your reach in less time. Already seen this shift in remote work teams, dating, etc.</p>&mdash; Tom Meagher (@tomfme) <a href="https://twitter.com/tomfme/status/557615635275210752">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-conversation="none" lang="en" align="center"><p>4/ TL;DR - Proximity is no longer the main determinant in a relationship. Meaningful relationships are in person though.</p>&mdash; Tom Meagher (@thomasmeagher) <a href="https://twitter.com/thomasmeagher/status/557616283320324097">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none" lang="en" align="center"><p>4/ TL;DR - Proximity is no longer the main determinant in a relationship. Meaningful relationships are in person though.</p>&mdash; Tom Meagher (@tomfme) <a href="https://twitter.com/tomfme/status/557616283320324097">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Will Meeting IRL Matter?
 

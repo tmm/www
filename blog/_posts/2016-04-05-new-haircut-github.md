@@ -1,19 +1,17 @@
 ---
 title: New haircut, GitHub?
 date: 2016-04-04 22:38:00
-tags:
-- jekyll
 ---
 
-An early adopter's badge of honor, short usernames are typically taken when sites start to gain popularity. After joining [GitHub](https://github.com) in February 2014, I was stuck with a long username---fortunately, I didn't have to settle for it.
+After joining [GitHub](https://github.com) in February 2014, I was stuck with a long username---fortunately, I didn't have to settle for it.
 
-GitHub is one of the few sites that has a [policy](https://help.github.com/articles/name-squatting-policy/) of releasing dormant usernames, and luckily there are plenty of them!
-
-Now, I have [@tmm](https://github.com/tmm).
+Now, I have [{{ site.github }}](https://github.com/{{ site.github }}).
 
 #### But how?
 
-First, I looked for users that joined GitHub early on (2011 and before) and had little to no publicly activity (commits, repositories, and followers/following). Then, all I had to do was contact [GitHub Support](https://github.com/contact) with the username I wanted.
+GitHub is one of the few sites that has a [policy](https://help.github.com/articles/name-squatting-policy/) of releasing dormant usernames, and luckily there are plenty of them!
+
+First, I looked for users that joined GitHub early on (2011 and before) and had little to no publicly activity (commits, repos, and followers/following). Then, all I had to do was contact [GitHub Support](https://github.com/contact) with the username I wanted.
 
 And it worked.
 

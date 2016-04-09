@@ -46,7 +46,7 @@ func hello_name(name: String = "World") -> String {
 }
 {% endhighlight %}
 
-{% highlight python %}
+{% highlight python linenos %}
 # A simple function in Python
 def hello_name(name = "World")
   return "Hello, {}!".format(name, s)

@@ -53,6 +53,6 @@ Without a doubt the worst feeling you can possibly get is making something that 
 
 Eventually everything worked out. The bug was squashed, Time Machine was successfully [featured on Product Hunt](http://www.producthunt.com/posts/time-machine), and I learned an extremely valuable lesson:
 
->If I was sending Time Machine to an investor or journalist to look at, this would have been my only shot. Not only would the app not work, but it would have reflected poorly on me.
+> If I was sending Time Machine to an investor or journalist to look at, this would have been my only shot. Not only would the app not work, but it would have reflected poorly on me.
 
 Yes, it's important to ship quickly and get feedback. But don't forget to sweat the details and double check.

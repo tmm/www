@@ -2,7 +2,7 @@
   .text-#{$type} { text-align: $type; }
 }
 
-@each $name, $color in ("blue", $blue), ("green", $green), ("yellow", $yellow), ("red", $red) {
+@each $name, $color in ("blue", $blue), ("green", $green), ("yellow", $yellow), ("red", $red), ("gray", $gray) {
   .color-#{$name} { color: $color; }
 }
 
@@ -41,3 +41,4 @@
 
 .sans { font-family: $sans; }
 .serif { font-family: $serif; }
+.small { font-size: 1rem; }

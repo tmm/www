@@ -31,17 +31,9 @@ a {
 }
 
 hr {
-  text-align: center;
   margin: 4rem auto;
-  border: 0;
-
-  &::before {
-    color: $gray;
-    margin-left: 3rem;
-    content: "***";
-    font-size: 1.35rem;
-    letter-spacing: 3rem;
-  } 
+  border: 2px solid $gray-light;
+  max-width: 8rem;
 }
 
 blockquote {

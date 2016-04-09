@@ -1,5 +1,5 @@
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<ul class="pager flex-center">
   {% if paginator.previous_page %}
   <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev">Prev</a></li>
   {% else %}
