@@ -42,3 +42,5 @@ links:
     url: /
   - name: blog
     url: /blog/
+  - name: projects
+    url: /projects/
