@@ -1,13 +1,10 @@
 code {
   font-family: $code;
-  font-size: 1rem;
-}
-
-p {
-  code {
-    background-color: rgba(116,208,233,0.05);
-    color: #37C47B;
-  }
+  font-size: .95rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #37C47B;
+  letter-spacing: 1px;
 }
 
 .highlight {
@@ -15,11 +12,16 @@ p {
   border-left: 5px solid #E2E2E2;
   border-radius: 2px;
   background: #F9F9F9;
+  transition: 0.5s;
+
+  &:hover {
+    border-color: #888;
+  }
 }
 
 pre {
   margin: 0;
-  padding: 1rem 12px;
+  padding: 12px;
 
   pre {
     padding-top: 0;
