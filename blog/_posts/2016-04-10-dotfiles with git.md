@@ -1,22 +1,26 @@
 ---
 title: dotfiles with git
 date: 2016-04-10 8:51:00
-tags: [dotfiles, code, git]
+tags: [code, git, dotfiles]
 ---
 
-Tools are really important---people spend almost as much time honing them as they do their craft. They are the connection between the maker and what they are making.
+Tools are really important---they are the connection between the maker and what the maker is making. Craftsmen can spend a lifetime honing them just as they do their craft.
 
-When I first discovered dotfiles, I was immediately sold on the idea.
+The configuration files on a computer with a '.' in front of them are my tools. Refined line by line, hour by hour, in pursuit of workflow nirvana.
+
+When I first discovered [dotfiles](http://dotfiles.github.io), I was immediately sold on the idea:
 
 > Backup, restore, and sync the prefs and settings for your toolbox. [^1]
 
-Zach Holman's [dotfiles](https://github.com/holman/dotfiles) seemed like a great place to start, but despite their really nice organization, symbolic links and set up scripts introduced too much friction.
+The concept would allow me to bring my tools anywhere.
+
+Zach Holman's [dotfiles](https://github.com/holman/dotfiles) seemed like a great place to start, but, despite their really nice organization, symbolic links and set up scripts introduced too much friction.
 
 After further investigation, I found Kyle Fuller's [*Organising dotfiles in a git repository*](https://fuller.li/posts/organising-dotfiles-in-a-git-repository/) and this nugget:
 
 > Git allows you to separate the work tree and the git dir via environment variables or arguments to the git command.
 
-Separating the work tree and git directory makes dotfiles "easily manageable via the git command," which is all I ever wanted to do.
+Separating the work tree and git directory make dotfiles "easily manageable via the git command," which is what I wanted to do.
 
 Onward to the tutorial!
 
@@ -26,7 +30,7 @@ First the code, then the explanation.
 
 {% highlight shell %}
 $ git init --bare $HOME/.dotfiles
-$ alias home='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+$ alias home='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 $ home config --local status.showUntrackedFiles no
 $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 {% endhighlight %}
@@ -36,9 +40,9 @@ $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 3. Hide untracked files so the output of `git status` is manageable
 4. Add `home` alias to `.zshrc` (might be `.bashrc` for you)
 
-#### The awesomeness of dotfiles + git
+#### Create versions with git
 
-Just use `home` instead of `git`.
+Now, just use `home` instead of `git`.
 
 {% highlight shell %}
 $ home status
@@ -51,7 +55,7 @@ $ home push
 
 #### Wrapping up
 
-I recommend committing your local repo to GitHub so you can clone it when you set up a new computer.
+I recommend pushing your local dotfiles repo to [GitHub](https://github.com) so you can clone it when you configure a new computer.
 
 {% highlight shell %}
 $ home clone https://github.com/tmm/dotfiles

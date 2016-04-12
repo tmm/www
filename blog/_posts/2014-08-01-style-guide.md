@@ -3,7 +3,7 @@ title: Style Guide
 date: 2014-08-01 16:39:00
 ---
 
-More for my reference, but feel free to take a look.
+For my reference while writing, but, hey, feel free to take a look.
 
 ## Block Elements
 
@@ -25,7 +25,7 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 
 ### Blockquotes
 
-> The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+> The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
 
 ### Lists
 
@@ -49,7 +49,7 @@ func hello_name(name: String = "World") -> String {
 {% highlight python linenos %}
 # A simple function in Python
 def hello_name(name = "World")
-  return "Hello, {}!".format(name, s)
+  return "Hello, {}!".format(name)
 {% endhighlight %}
 
 ### Horizontal rules

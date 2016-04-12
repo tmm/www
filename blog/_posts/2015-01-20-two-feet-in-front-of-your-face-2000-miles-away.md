@@ -40,8 +40,6 @@ And those can only happen IRL (so far).
 
 ### Notes
 
-[Originally published on Medium](https://medium.com/@tfm/will-meeting-irl-matter-a4755841c359) under the same name.
-
 [^1]: [Internet.org](http://internet.org)
 [^2]: [Facebook's WhatsApp tallies 700M monthly active users](http://www.cnet.com/news/facebooks-whatsapp-messaging-service-tallies-700-million-monthly-active-users/)
 [^3]: Granted there is likely some overlap
