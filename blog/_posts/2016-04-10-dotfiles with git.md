@@ -6,7 +6,7 @@ tags: [code, git, dotfiles]
 
 Tools are really important---they are the connection between the maker and what the maker is making. Craftsmen can spend a lifetime honing them just as they do their craft.
 
-The configuration files on a computer with a '.' in front of them are my tools. Refined line by line, hour by hour, in pursuit of workflow nirvana.
+The configuration files on a computer with a '.' in front of them---aptly named *dotfiles*---are my tools. Refined line by line, hour by hour, in pursuit of workflow nirvana.
 
 When I first discovered [dotfiles](http://dotfiles.github.io), I was immediately sold on the idea:
 
@@ -35,10 +35,10 @@ $ home config --local status.showUntrackedFiles no
 $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 {% endhighlight %}
 
-1. Create a new [bare git repository](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/) in the `~/.dotfiles` directory
-2. Set `home` as alias for `~/.dotfiles` instead of using `git`
-3. Hide untracked files so the output of `git status` is manageable
-4. Add `home` alias to `.zshrc` (might be `.bashrc` for you)
+1. Creates a new [bare git repository](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/) in the `~/.dotfiles` directory
+2. Sets `home` as the alias for `~/.dotfiles` instead of using `git`
+3. Hides untracked files so `git status` output is manageable
+4. Adds `home` alias to `.zshrc` (might be `.bashrc` for you)
 
 #### Create versions with git
 

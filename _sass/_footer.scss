@@ -36,7 +36,6 @@ footer {
 
   input, button {
     box-sizing: border-box;
-    padding: 0 10px;
     transition: 0.25s;
     border: 0;
   }
@@ -47,10 +46,11 @@ footer {
     outline: 0;
     margin: 0;
     font-size: 0.95rem;
+    padding: 0 10px;
   }
 
   button {
-    flex: 2.5;
+    flex: 2.85;
     border-radius: $border-radius;
     cursor: pointer;
     font-size: 0.9rem;
