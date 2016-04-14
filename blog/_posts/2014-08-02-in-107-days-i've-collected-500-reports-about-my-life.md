@@ -62,7 +62,7 @@ Most reports take only a few seconds and the power comes when the reports start 
 
 For me, the power of collecting all this data is simply having all the data. I have yet to do anything really significant yet, like one of Felton’s Annual Reports, but I am able to hold myself accountable based on my past behavior. I started my nightly reading habit around the same time that I began reporting.
 
-Every night when I do not want to read and would rather browse aimlessly on my phone, I remember that I have to report at the end of the night. If I have not read, then a 0 goes into the data set, which irks me a little. Its satisfying to see the in-app visualizations tracking your progress.
+Every night when I do not want to read and would rather browse aimlessly on my phone, I remember that I have to report at the end of the night. If I have not read, then a 0 goes into the data set, which irks me a little. It's satisfying to see the in-app visualizations tracking your progress.
 
 ![Are you in front of a screen?](/blog/assets/2014/1/reporter5.png)
 

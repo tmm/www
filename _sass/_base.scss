@@ -24,6 +24,7 @@ a {
   text-decoration: none;
   color: $gray;
   border-bottom: 1px solid $gray-light;
+  transition: 0.25s;
 
   &:hover {
     color: $green;
@@ -87,4 +88,9 @@ time {
     height: 4px;
     flex: 25;
   }
+}
+
+::selection {
+  background-color: $green;
+  color: $white;
 }

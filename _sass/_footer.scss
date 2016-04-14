@@ -50,18 +50,7 @@ footer {
   }
 
   button {
+    @include button($green);
     flex: 2.85;
-    border-radius: $border-radius;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 700;
-    font-family: $sans;
-    text-decoration: none;
-    color: $white;
-    background-color: $green;
-
-    &:hover {
-      background-color: darken($green, 2%);
-    }
   }
 }
