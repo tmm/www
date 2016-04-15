@@ -1,19 +1,19 @@
 $background: #eee;
 
 code {
+  background-color: $background;
+  color: #37C47B;
   font-family: $code;
   font-size: .95rem;
-  font-weight: 400;
   font-style: normal;
-  color: #37C47B;
+  font-weight: 400;
   letter-spacing: 1px;
-  background: $background;
 }
 
 .highlight {
   margin: 1rem 0;
-  border-radius: $border-radius;
   border: 1px solid $gray-light;
+  border-radius: $border-radius;
   background: $background;
 }
 

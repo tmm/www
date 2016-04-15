@@ -1,37 +1,35 @@
 .pager {
-  @include clearfix();
   margin: 3rem 0;
   padding: 0;
 
   li {
-    float: left;
-    display: inline;
+    display: inline-flex;
   }
 
   a {
-    transition: 0.25s;
-    text-align: center;
-    cursor: pointer;
+    border: 1px solid $gray-light;
+    border-left: none;
+    padding: 4px 15px;
+    color: $gray-dark;
     font-weight: 600;
     font-family: $sans;
     font-size: $font-size;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
-    border: 1px solid $gray-light;
-    border-left: none;
-    padding: 6px 15px;
-    color: $gray-dark;
+    transition: 1s;
 
     &:hover { background-color: $gray-light; }
 
     &.disabled {
-      color: $gray + 15;
       background-color: $white;
+      color: $gray + 15;
       cursor: not-allowed;
     }
 
     &.current {
-      background-color: $green;
       border-color: $green;
+      background-color: $green;
       color: $white;
     }
 

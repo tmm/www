@@ -10,15 +10,15 @@
 }
 
 @mixin button($color) {
-  transition: 0.25s;
   border-radius: $border-radius;
-  cursor: pointer;
+  background-color: $color;
+  color: $white;
   font-size: 0.9rem;
   font-weight: 700;
   font-family: $sans;
+  cursor: pointer;
   text-decoration: none;
-  color: $white;
-  background-color: $color;
+  transition: 0.25s;
 
   &:hover {
     background-color: darken($color, 2%);

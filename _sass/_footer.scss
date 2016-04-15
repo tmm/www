@@ -11,13 +11,13 @@ footer {
 
 #mc_embed_signup {
   form {
-    display: flex;
-    align-items: stretch;
     border: 1px solid $gray-light;
     border-radius: $border-radius;
+    padding: 3px;
     height: 40px;
     width: 345px;
-    padding: 3px;
+    display: flex;
+    align-items: stretch;
     transition: 1s;
 
     &:hover {
@@ -30,23 +30,23 @@ footer {
   }
 
   .mc-field-group {
-    flex: 7.5;
     display: inline-flex;
+    flex: 7.5;
   }
 
   input, button {
+    border: 0;
     box-sizing: border-box;
     transition: 0.25s;
-    border: 0;
   }
 
   input {
+    margin: 0;
+    padding: 0 10px;
     flex: 1;
     appearance: none;
-    outline: 0;
-    margin: 0;
     font-size: 0.95rem;
-    padding: 0 10px;
+    outline: 0;
   }
 
   button {

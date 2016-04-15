@@ -12,18 +12,18 @@ html {
 }
 
 body {
+  margin: auto;
+  padding: 1rem;
+  max-width: 37rem;
   background-color: $white;
   color: $gray-dark;
   font-size-adjust: 100%;
-  margin: auto;
-  max-width: 37rem;
-  padding: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: $gray;
   border-bottom: 1px solid $gray-light;
+  color: $gray;
+  text-decoration: none;
   transition: 0.25s;
 
   &:hover {
@@ -45,10 +45,10 @@ blockquote {
 }
 
 img {
-  display: block;
-  max-width: 100%;
   margin: 3rem auto;
   border-radius: $border-radius;
+  max-width: 100%;
+  display: block;
 }
 
 ol, ul {
@@ -58,8 +58,9 @@ ol, ul {
     line-height: $line-height;
 
     & > p {
-      font-family: $sans;
       display: inline-block;
+      font-family: $sans;
+      
       & .reversefootnote {
         border-bottom: 0;
       }
@@ -69,28 +70,23 @@ ol, ul {
 
 sup {
   a {
-    font-family: $sans;
-    color: $green;
     border-bottom: 0;
+    color: $green;
+    font-family: $sans;
   }
 }
 
 time {
   display: block;
-  font-family: $sans;
   color: $gray;
+  font-family: $sans;
 }
 
 .color-line {
   display: flex;
 
   & > div {
-    height: 4px;
     flex: 25;
+    height: 4px;
   }
-}
-
-::selection {
-  background-color: $green;
-  color: $white;
 }
