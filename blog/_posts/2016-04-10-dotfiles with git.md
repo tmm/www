@@ -30,7 +30,7 @@ First the code, then the explanation.
 
 {% highlight shell %}
 $ git init --bare $HOME/.dotfiles
-$ alias home='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+$ alias home="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 $ home config --local status.showUntrackedFiles no
 $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 {% endhighlight %}
@@ -46,6 +46,8 @@ Now, just use `home` instead of `git`.
 
 {% highlight shell %}
 $ home status
+A .gitconfig
+M .zshrc
 $ home add .gitconfig
 $ home commit -m "Add gitconfig"
 $ home add .zshrc
@@ -58,7 +60,11 @@ $ home push
 I recommend pushing your local dotfiles repo to [GitHub](https://github.com) so you can clone it when you configure a new computer.
 
 {% highlight shell %}
-$ home clone https://github.com/tmm/dotfiles
+$ alias home="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+$ home init
+$ home remote add origin https://github.com/tmm/dotfiles
+$ home fetch
+$ home checkout master
 {% endhighlight %}
 
 ---

@@ -16,7 +16,7 @@ paginate: 5
 paginate_path: "blog/:num"
 timezone: America/New_York
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-compose]
 
 markdown: kramdown
 highlighter: rouge

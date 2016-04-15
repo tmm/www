@@ -10,6 +10,13 @@ code {
   letter-spacing: 1px;
 }
 
+p, li {
+  code {
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+}
+
 .highlight {
   margin: 1rem 0;
   border: 1px solid $gray-light;
