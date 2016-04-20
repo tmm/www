@@ -3,7 +3,7 @@ title: New haircut, GitHub?
 date: 2016-04-04 22:38:00
 ---
 
-After joining [GitHub](https://github.com) in February 2014, I was stuck with a long username---fortunately, I didn't have to settle for it.
+After joining [GitHub](https://github.com) in February 2014, I was stuck with a long username. Fortunately, I didn't have to settle for it.
 
 Now, I have [{{ site.github }}](https://github.com/{{ site.github }}).
 

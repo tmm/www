@@ -1,7 +1,7 @@
 ---
 title: Two feet in front of your face, 2000 miles away
 date: 2015-01-20 20:30:00
-excerpt: How many people do you communicate with on a daily basis without actually seeing them in person?
+excerpt: Will Meeting IRL Matter?
 ---
 
 <blockquote class="twitter-tweet" lang="en" align="center"><p>1/ Given how much social interaction is through tech, I wouldn&#39;t be surprised if most relationships trend away from in person eventually.</p>&mdash; Tom Meagher (@tomfme) <a href="https://twitter.com/tomfme/status/557614929176690691">January 20, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
