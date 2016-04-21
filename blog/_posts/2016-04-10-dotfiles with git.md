@@ -28,12 +28,12 @@ Onward to the tutorial!
 
 First the code, then the explanation.
 
-{% highlight shell %}
+``` shell
 $ git init --bare $HOME/.dotfiles
 $ alias home="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 $ home config --local status.showUntrackedFiles no
 $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
-{% endhighlight %}
+```
 
 1. Creates a new [bare git repository](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/) in the `~/.dotfiles` directory
 2. Sets `home` as the alias for `~/.dotfiles` instead of using `git`
@@ -44,7 +44,7 @@ $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 Now, just use `home` instead of `git`.
 
-{% highlight shell %}
+``` shell
 $ home status
 A .gitconfig
 M .zshrc
@@ -53,19 +53,19 @@ $ home commit -m "Add gitconfig"
 $ home add .zshrc
 $ home commit -m "Add zshrc"
 $ home push
-{% endhighlight %}
+```
 
 #### Wrapping up
 
 I recommend pushing your local dotfiles repo to [GitHub](https://github.com) so you can clone it when you configure a new computer.
 
-{% highlight shell %}
+``` shell
 $ alias home="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 $ home init
 $ home remote add origin https://github.com/tmm/dotfiles
 $ home fetch
 $ home checkout master
-{% endhighlight %}
+```
 
 ---
 

@@ -19,7 +19,9 @@ timezone: America/New_York
 gems: [jekyll-paginate]
 
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 sass:
   style: compressed
 

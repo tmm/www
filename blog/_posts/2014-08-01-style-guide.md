@@ -39,18 +39,18 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 
 ### Code Blocks
 
-{% highlight swift %}
+``` swift
 // A simple function in Swift
-func hello_name(name: String = "World") -> String {
+func helloName(name: String = "World") -> String {
 	return "Hello, \(name)!"
 }
-{% endhighlight %}
+```
 
-{% highlight python linenos %}
+``` python
 # A simple function in Python
 def hello_name(name = "World")
   return "Hello, {}!".format(name)
-{% endhighlight %}
+```
 
 ### Horizontal rules
 
