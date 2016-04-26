@@ -6,7 +6,7 @@ tags: [code, git, dotfiles]
 
 Tools are really important. They are the connection between the maker and what the maker is making. Craftsmen can spend a lifetime honing them just as they do their craft.
 
-The configuration files on a computer with a '.' in front of them---aptly named *dotfiles*---are my tools. Refined line by line, hour by hour, in pursuit of workflow nirvana.
+The configuration files on a computer with a `.` in front of them---aptly named *dotfiles*---are my tools. Refined line by line, hour by hour, in pursuit of workflow nirvana.
 
 When I first discovered [dotfiles](http://dotfiles.github.io), I was immediately sold on the idea:
 
