@@ -33,8 +33,4 @@ Users don't give a shit about tech.
 
 I love code and that won't stop anytime soon. (I am a programmer after all.) But design is key going forward.
 
-I constantly try to learn more.
-
-Make things that function. *And* make them beautiful.
-
-
+Make things that function *and* make them beautiful.
