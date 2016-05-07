@@ -48,7 +48,7 @@ func helloName(name: String = "World") -> String {
 
 ``` python
 # A simple function in Python
-def hello_name(name = "World")
+def hello_name(name = "World"):
   return "Hello, {}!".format(name)
 ```
 
