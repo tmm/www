@@ -82,6 +82,44 @@ time {
   font-family: $sans;
 }
 
+table {
+  margin: 2rem 0;
+  border: 2px solid $gray-light;
+  border-spacing: 0;
+  border-collapse: collapse;
+  min-height: .01%;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  font-family: $sans;
+
+  tbody tr:nth-child(odd) {
+    background-color: $white;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: $gray-light + 20;
+  }
+
+  th, td {
+    // white-space: nowrap;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    color: $gray-dark;
+  }
+
+  th {
+    font-weight: 600;
+    background: $white;
+    border-left: 2px solid $gray-light;
+  }
+
+  td {
+    border-top: 2px solid $gray-light;
+    border-left: 2px solid $gray-light;
+    text-align: left;
+  }
+}
+
 .color-line {
   display: flex;
 
