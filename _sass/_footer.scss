@@ -11,10 +11,10 @@ footer {
 
 #mc_embed_signup {
   form {
-    border: 1px solid $gray-light;
+    border: 2px solid $gray-light;
     border-radius: $border-radius;
     padding: 3px;
-    height: 40px;
+    height: 45px;
     width: 345px;
     display: flex;
     align-items: stretch;
@@ -23,7 +23,7 @@ footer {
     &:hover {
       border-color: $gray;
     }
-
+    
     @media screen and (max-width: $sm) {
       width: auto;
     }
