@@ -1,6 +1,7 @@
 ---
 title: Projects
 layout: post
+comments: false
 ---
 
 Things I have made or am currently making. More on [GitHub](https://github.com/tmm/).
