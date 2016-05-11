@@ -17,7 +17,7 @@ Pre-Spring Break | Post Spring Break
 
 My classes tackled everything---from [collecting and storing tweets](https://github.com/tmm/DS501/blob/master/1/CaseStudy1.ipynb) in MongoDB, using the Twitter streaming API, to performing [textual analysis of movie reviews](https://github.com/tmm/DS501/blob/master/3/CaseStudy3.ipynb) using Scikit-Learn.
 
-Even though I could have learned all these topics on the Internet, the interactive, class-based structure made it more worthwhile.
+Even though I could have learned all these things on the Internet, the interactive, class-based structure made it more worthwhile.
 
 The next semester starts May 16th! 
 

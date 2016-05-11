@@ -24,11 +24,7 @@
     background-color: darken($color, 2%);
   }
 
-  &:focus {
-    background-color: darken($color, 4%);
-  }
-
   &:active {
-    background-color: darken($color, 6%);
+    background-color: lighten($color, 2%);
   }
 }

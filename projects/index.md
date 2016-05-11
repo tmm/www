@@ -1,8 +1,9 @@
 ---
 title: Projects
-layout: post
-comments: false
 ---
+
+{% include nav.html %}
+{% include header.html %}
 
 Things I have made or am currently making. More on [GitHub](https://github.com/tmm/).
 
@@ -17,3 +18,5 @@ Re-discover the best products from Product Hunt. [App Store](https://itunes.appl
 #### [meagher.co](https://github.com/tmm/tmm.github.io)
 
 My website and blog. [GitHub](https://github.com/tmm/tmm.github.io)
+
+{% include footer.html %}
