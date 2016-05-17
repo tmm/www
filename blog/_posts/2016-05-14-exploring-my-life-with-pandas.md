@@ -114,10 +114,9 @@ Perhaps because you are more tired.
 
 However, the closest I got to a *strong* correlation was pages read versus step count. (Pages read versus photos taken was the second highest.)
 
-_|Pages Read|Step Count|Photos Taken
-Pages Read|1|**-0.237353**|-0.165393
-Step Count|**-0.237353**|1|0.572885
-Photos Taken|-0.165393|0.572885|1
+_|Pages Read|Step Count
+Pages Read|1|**-0.237353**
+Step Count|**-0.237353**|1
 
 Unfortuntately, I don't think there is a satisfying *quantitative* answer here. Or at least not with the data I have.
 
