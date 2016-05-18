@@ -61,7 +61,7 @@ I recommend pushing your local dotfiles repo to [GitHub](https://github.com) so 
 
 ``` shell
 $ alias home="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-$ home init
+$ home init .dotfiles
 $ home remote add origin https://github.com/tmm/dotfiles
 $ home fetch
 $ home checkout master
