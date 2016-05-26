@@ -1,6 +1,6 @@
 ---
 title: Paul Graham's Essays
-date: 2016-05-14 21:03:00
+date: 2016-05-25 21:03:00
 ---
 
 Like many others, [Paul Graham's essays](http://paulgraham.com/articles.html) introduced me to startups. I still remember sitting in a class lecture [mesmerized by his words](http://paulgraham.com/start.html)---not paying attention to anything else.
