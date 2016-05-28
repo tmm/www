@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  border-bottom: 1px solid $gray-light;
+  border-bottom: 2px solid $gray-light;
   color: $gray;
   text-decoration: none;
   transition: 0.25s;
@@ -102,7 +102,6 @@ table {
   }
 
   th, td {
-    // white-space: nowrap;
     padding: 0.6rem 1rem 0.6rem 1rem;
     color: $gray-dark;
   }
@@ -120,11 +119,31 @@ table {
   }
 }
 
+.me {
+  margin: 2rem auto 1rem;
+  border-radius: 50%;
+  max-width: 25%;
+}
+
 .color-line {
   display: flex;
 
   & > div {
-    flex: 25;
+    flex: 6.25;
     height: 4px;
   }
+}
+
+.button {
+  border: 2px solid $gray-light;
+  border-radius: $border-radius;
+  padding: 2px 5px;
+  background-color: $white;
+  color: $gray;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: $sans;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s;
 }

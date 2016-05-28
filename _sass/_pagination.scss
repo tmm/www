@@ -7,7 +7,7 @@
   }
 
   a {
-    border: 1px solid $gray-light;
+    border: 2px solid $gray-light;
     border-left: none;
     padding: 4px 15px;
     color: $gray-dark;
@@ -28,7 +28,6 @@
     }
 
     &.current {
-      border-color: $green;
       background-color: $green;
       color: $white;
     }
@@ -36,7 +35,7 @@
     &.prev {
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      border-left: 1px solid $gray-light;
+      border-left: 2px solid $gray-light;
     }
 
     &.next {

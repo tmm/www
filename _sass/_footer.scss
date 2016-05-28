@@ -18,10 +18,10 @@ footer {
     width: 345px;
     display: flex;
     align-items: stretch;
-    transition: 1s;
+    transition: 0.25s;
 
     &:hover {
-      border-color: $gray;
+      border-color: $gray-light - 12;
     }
     
     @media screen and (max-width: $sm) {

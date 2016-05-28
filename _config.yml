@@ -1,8 +1,8 @@
 title: Tom Meagher
-description: "I love making things—often with code, pixels, and words."
+description: "I love making things—often with code, data, or words."
 url: "http://meagher.co"
 author: "Tom Meagher"
-keywords: "tom,meagher,code,design,startups,start ups,startups,technology,tech,swift,ios"
+keywords: "tom,tomfme,meagher,code,design,startups,start ups,startups,technology,tech,data,design"
 
 github: tmm
 twitter: tomfme
@@ -45,5 +45,3 @@ links:
     url: /
   - name: blog
     url: /blog/
-  - name: projects
-    url: /projects/

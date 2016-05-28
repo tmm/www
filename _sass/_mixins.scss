@@ -21,10 +21,6 @@
   transition: 0.25s;
 
   &:hover {
-    background-color: darken($color, 2%);
-  }
-
-  &:active {
     background-color: lighten($color, 2%);
   }
 }
