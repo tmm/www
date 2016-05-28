@@ -1,4 +1,4 @@
-$background: #eee;
+$background: $gray-light + 20;
 
 code {
   background-color: $background;
@@ -12,7 +12,7 @@ code {
 
 p, li {
   code {
-    border: 1px solid $gray-light;
+    border: 2px solid $gray-light;
     border-radius: 2px;
     padding: 0 2px;
   }
@@ -20,7 +20,7 @@ p, li {
 
 .highlight {
   margin: 1rem 0;
-  border: 1px solid $gray-light;
+  border: 2px solid $gray-light;
   border-radius: $border-radius;
   background: $background;
 }

@@ -33,7 +33,7 @@ a {
 
 hr {
   margin: 4rem auto;
-  border: 2px solid $gray-light;
+  border: 1px solid $gray-light;
   max-width: 8rem;
 }
 
@@ -119,12 +119,6 @@ table {
   }
 }
 
-.me {
-  margin: 2rem auto 1rem;
-  border-radius: 50%;
-  max-width: 25%;
-}
-
 .color-line {
   display: flex;
 
@@ -138,7 +132,6 @@ table {
   border: 2px solid $gray-light;
   border-radius: $border-radius;
   padding: 2px 5px;
-  background-color: $white;
   color: $gray;
   font-size: 0.8rem;
   font-weight: 700;
@@ -146,4 +139,5 @@ table {
   cursor: pointer;
   text-decoration: none;
   transition: 0.25s;
+  white-space: nowrap;
 }
