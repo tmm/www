@@ -5,9 +5,9 @@ date: 2016-05-25 21:03:00
 
 Like many others, [Paul Graham's essays](http://paulgraham.com/articles.html) introduced me to startups. I still remember sitting in a class lecture [mesmerized by his words](http://paulgraham.com/start.html)---not paying attention to anything else.
 
-Recently, I started to re-read them from the beginning. (Starting with *Programming Bottom-Up*.) What follows are not only my favorite, but also interesting quotes.
+Recently, I started to re-read them from the beginning. (Starting with [*Programming Bottom-Up*](http://paulgraham.com/progbot.html).) What follows are my favorite quotes.
 
-I will continue to update with more quotes as I progress. You can also view them in a [Google Sheet](https://docs.google.com/spreadsheets/d/1rGQTvoIyGY54qaGLDB6FEOuHvvfzHJantuXqrVmGtQA/edit?usp=sharing).
+---
 
 #### [Design and Research](http://paulgraham.com/desres.html) (Jan 2003)
 
