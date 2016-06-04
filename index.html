@@ -1,39 +1,19 @@
 ---
-title: Tom Meagher
+title: Tom Meagher, v23.
+layout: temp
 ---
 
 <header>
-  <h1 class="text-center">Howdy, I'm Tom.</h1>
+  <h1>Tom Meagher, v23.</h1>
+  <h2>Solving problems with data & code.</h2>
 </header>
 
-<section>
-  <p>I love making things—often with code, data, or words. You can find me on <a href="https://twitter.com/{{ site.twitter }}/">Twitter</a>, <a href="https://github.com/{{ site.github }}/">GitHub</a>, and <a href="mailto:{{ site.email }}">email</a>.
-</section>
+{% assign post = site.posts.first %}
+<p>I enjoy making simple, usable things for humans. Read my latest <a href="{{ post.url | prepend: site.baseurl }}">writing</a>.</p>
 
-<div class="color-line mar-tb-6">
-  <div class="background-blue"></div>
-  <div class="background-red"></div>
-  <div class="background-yellow"></div>
-  <div class="background-green"></div>
-  <div class="background-blue"></div>
-  <div class="background-red"></div>
-  <div class="background-yellow"></div>
-  <div class="background-green"></div>
-  <div class="background-blue"></div>
-  <div class="background-red"></div>
-  <div class="background-yellow"></div>
-  <div class="background-green"></div>
-</div>
+<p>You can find me on <a href="https://twitter.com/{{ site.twitter }}">Twitter</a>, <a href="https://github.com/{{ site.github }}">GitHub</a>, and <a href="mailto:{{ site.email }}">email</a>.</p>
 
-<section class="mar-b-6">
-  <h3 class="mar-b-2">Latest Writing</h3>
-  {% assign post = site.posts.first %}
-  {% include post-preview.html %}
-</section>
-
-<section class="mar-b-6">
-  <h3 class="mar-b-2">Colophon</h3>
-  <p>The serif and sans serif fonts are <a href="https://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a> and <a href="http://www.lukaszdziedzic.eu">Lato</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a> with <a href="https://jekyllrb.com">Jekyll</a>. Currently made in Boston, MA.</p>
-</section>
-
-{% include nav.html %}
+<nav>
+  <a href="/" class="current">home</a>
+  <a href="/blog/">blog</a>
+</nav>

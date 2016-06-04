@@ -1,9 +1,7 @@
 ---
 title: Blog
+layout: page
 ---
-
-{% include nav.html %}
-{% include header.html %}
 
 {% for post in paginator.posts %}
 {% assign currentdate = post.date | date: "%B %Y" %}
@@ -20,5 +18,3 @@ title: Blog
 {% endfor %}
 
 {% include pagination.html %}
-
-{% include footer.html %}
