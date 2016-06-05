@@ -2,18 +2,18 @@
 title: Blog
 ---
 
-{% include nav.html %}
-
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
 <section class="mar-b-6">
   <h3 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h3>
-  {% assign date = currentdate %}
-  {% endif %}
-  <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>, {{ post.date | date: "%B %-d" }}</p>
-  {% if forloop.last %}
+  <ul class="post-list">
+    {% assign date = currentdate %}
+    {% endif %}
+    <li class="post-item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %d" }}</span></li>
+    {% if forloop.last %}
+  </ul>
 </section>
 {% endif %}
 {% endfor %}

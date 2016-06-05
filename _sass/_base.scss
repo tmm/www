@@ -30,7 +30,6 @@ a {
   border-bottom: 1px solid $gray-light;
   color: darken($gray, 20);
   text-decoration: none;
-  transition: 0.25s;
 
   &:hover {
     color: $blue;
@@ -67,7 +66,7 @@ ol, ul {
     font-size: 110%;
 
     & > p {
-      font-family: $serif;
+      font-size: 100%;
 
       & .reversefootnote {
         border-bottom: 0;
@@ -81,6 +80,10 @@ sup {
     border-bottom: 0;
     color: darken($gray, 10);
     font-family: $sans;
+
+    &:hover {
+      color: $red;
+    }
   }
 }
 
@@ -129,18 +132,17 @@ table {
 
 nav {
   border-bottom: 1px solid $gray-light;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   font-weight: 300;
   text-transform: uppercase;
   
   a {
     margin-right: 10px;
     border-bottom: 1px solid $gray-light;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     background-color: transparent;
     color: darken($gray, 20);
     font-family: $mono;
-    transition: 0.25s;
     
     &:hover, &.current {
       border-bottom: 1px solid $blue;
@@ -158,8 +160,43 @@ footer {
 }
 
 .intro {
-  color: darken($gray, 20);
+  color: darken($gray, 30);
   font-size: 1.75rem;
   font-weight: 300;
   text-align: center;
 }
+
+.post-list {
+  margin-left: -2.5rem;
+
+  & li:first-child {
+    border-top: 1px solid $gray-light;
+  }
+}
+
+.post-item {
+  display: flex;
+  border-bottom: 1px solid $gray-light;
+  padding: 0.5rem 0;
+  width: 100%;
+  list-style-type: none;
+  font-family: $sans;
+  font-size: 90%;
+
+  a {
+    flex-grow: 1;
+    border-bottom: 0;
+    color: $black;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.post-date {
+  justify-self: flex-end;
+  color: darken($gray, 20);
+  font-size: 80%;
+}
+

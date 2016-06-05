@@ -2,7 +2,7 @@ $background: $gray-light + 20;
 
 code {
   background-color: $background;
-  color: $blue;
+  color: $black;
   font-family: $mono;
   font-size: 0.97rem;
   font-style: normal;
@@ -12,7 +12,7 @@ code {
 
 p, li {
   code {
-    border: 2px solid $gray-light;
+    border: 1px solid $gray-light;
     border-radius: 2px;
     padding: 0 2px;
   }
@@ -20,7 +20,7 @@ p, li {
 
 .highlight {
   margin: 1rem 0;
-  border: 2px solid $gray-light;
+  border: 1px solid $gray-light;
   border-radius: 4px;
   background: $background;
 }
