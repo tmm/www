@@ -12,11 +12,9 @@ exclude: ["README.md", "CNAME", "LICENSE", ".gitignore", "tmm.sublime-project", 
 include: []
 
 permalink: pretty
-paginate: 5
-paginate_path: "blog/:num"
 timezone: America/New_York
 
-gems: [jekyll-paginate]
+gems: []
 
 markdown: kramdown
 kramdown:
@@ -32,16 +30,9 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: "base"
-
-links:
-  - name: home
-    url: /
-  - name: blog
-    url: /blog/

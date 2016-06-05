@@ -1,38 +1,20 @@
 // fonts
-$sans: 'Lato', Helvetica, sans-serif;
-$serif: Georgia, serif;
-$code: 'Source Code Pro', monospace;
+$sans: Roboto, -apple-system, Helvetica, Arial, sans-serif;
+$serif: Alegreya, 'Times New Roman', Georgia, serif;
+$mono: 'Roboto Mono', monospace;
 
 // colors
-$white: #fff;
-$gray-dark: #555;
-$gray: #a0a0a0;
-$gray-light: #E5E5EA;
-$blue: #5898f1;
-$green: #00b27f;
-$yellow: #FEC04C;
-$red: #FA5744;
-
-// sizes
-$font-size: 17px;
-$font-size-sm: 16px;
-$font-size-p: 1.15rem;
-$font-size-h1: 2.35rem;
-$font-size-h2: 1.75rem;
-$font-size-h3: 1.5rem;
-$font-size-h4: 1.25rem;
-$font-size-h5: 1.15rem;
-$font-size-h6: 1rem;
-
-// heights
-$line-height: 1.5;
-$line-height-sm: 1.45;
+$white: #FAFAFA;
+$black: #222;
+$gray: #bbb;
+$gray-light: #E5E5E5;
+$blue: #0087F8;
 
 // widths
-$sm: 544px; // Small screen / phone
-$md: 768px; // Medium screen / tablet
-$lg: 992px; // Large screen / desktop
-$xl: 1200px; // Extra large screen / wide desktop
+$sm: 544px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 // levels
 $l1: 0.33rem;
@@ -41,6 +23,3 @@ $l3: 1rem;
 $l4: 1.33rem;
 $l5: 1.78rem;
 $l6: 2rem;
-
-// misc
-$border-radius: 4px;

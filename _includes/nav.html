@@ -1,5 +1,4 @@
-<nav class="mar-b-6">
-  {% for page in site.links %}
-    <a href="{{ page.url }}" class="mar-r-1">{{ page.name }}</a>
-  {% endfor %}
+<nav class="mar-t-3 mar-b-6">
+  <a href="/" {% if page.title == 'Home'%}class="current"{% endif %}>home</a>
+  <a href="/blog/" {% if page.title == 'Blog'%}class="current"{% endif %}>blog</a>
 </nav>

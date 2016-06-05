@@ -1,66 +1,74 @@
 *, *:before, *:after {
   box-sizing: border-box;
-}
-
-html {
   text-rendering: optimizeLegibility;
-  font-size: $font-size;
-  
-  @media screen and (max-width: $sm) {
-    font-size: $font-size-sm;
-  }
 }
 
 body {
   margin: auto;
   padding: 1rem;
-  max-width: 37rem;
+  max-width: 38rem;
   background-color: $white;
-  color: $gray-dark;
-  font-size-adjust: 100%;
+  color: $black;
+  font-family: $sans;
+  font-size: 18px;
+  line-height: 145%;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  font-family: $serif;
+  font-size: 110%;
+  line-height: 140%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 a {
-  border-bottom: 2px solid $gray-light;
-  color: $gray;
+  border-bottom: 1px solid $gray-light;
+  color: darken($gray, 20);
   text-decoration: none;
   transition: 0.25s;
 
   &:hover {
-    color: $green;
+    color: $blue;
   }
 }
 
 hr {
   margin: 4rem auto;
-  border: 3px solid $gray-light;
+  border: 1px solid $gray-light;
   max-width: 6rem;
 }
 
 blockquote {
-  margin: $l5 0 $l5 auto;
-  padding-left: 1.25rem;
-  border-left: 3px solid $green;
-  color: $gray;
+  margin: 3rem 0;
+
+  p {
+    color: $blue;
+    font: 300 1.5rem $sans;
+    line-height: 2rem;
+    text-align: center;
+  }
 }
 
 img {
   margin: 3rem auto;
-  border-radius: $border-radius;
+  border-radius: 4px;
   max-width: 100%;
   display: block;
 }
 
 ol, ul {
   li {
-    font-size: $font-size-p;
-    font-family: $sans;
-    line-height: $line-height;
+    font-family: $serif;
+    font-size: 110%;
 
     & > p {
-      display: inline-block;
-      font-family: $sans;
-      
+      font-family: $serif;
+
       & .reversefootnote {
         border-bottom: 0;
       }
@@ -71,73 +79,87 @@ ol, ul {
 sup {
   a {
     border-bottom: 0;
-    color: $green;
+    color: darken($gray, 10);
     font-family: $sans;
   }
 }
 
 time {
   display: block;
-  color: $gray;
+  color: darken($gray, 10);
   font-family: $sans;
 }
 
 table {
   margin: 2rem 0;
-  border: 2px solid $gray-light;
+  border: 1px solid $gray-light;
   border-spacing: 0;
   border-collapse: collapse;
   min-height: .01%;
   overflow-x: auto;
   width: 100%;
   max-width: 100%;
-  font-family: $sans;
+  font-family: $serif;
 
   tbody tr:nth-child(odd) {
     background-color: $white;
   }
 
   tbody tr:nth-child(even) {
-    background-color: $gray-light + 20;
+    background-color: lighten($gray-light, 10);
   }
 
   th, td {
     padding: 0.6rem 1rem 0.6rem 1rem;
-    color: $gray-dark;
+    color: $black;
   }
 
   th {
     font-weight: 600;
     background: $white;
-    border-left: 2px solid $gray-light;
+    border-left: 1px solid $gray-light;
   }
 
   td {
-    border-top: 2px solid $gray-light;
-    border-left: 2px solid $gray-light;
+    border-top: 1px solid $gray-light;
+    border-left: 1px solid $gray-light;
     text-align: left;
   }
 }
 
-.color-line {
-  display: flex;
-
-  & > div {
-    flex: 6.25;
-    height: 2px;
+nav {
+  border-bottom: 1px solid $gray-light;
+  padding-bottom: 7px;
+  font-weight: 300;
+  text-transform: uppercase;
+  
+  a {
+    margin-right: 10px;
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 9px;
+    background-color: transparent;
+    color: darken($gray, 20);
+    font-family: $mono;
+    transition: 0.25s;
+    
+    &:hover, &.current {
+      border-bottom: 1px solid $blue;
+      color: $blue;
+      background-color: transparent;
+    }
   }
 }
 
-.button {
-  border: 2px solid $gray-light;
-  border-radius: $border-radius;
-  padding: 2px 5px;
+footer {
   color: $gray;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.95rem;
   font-family: $sans;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.25s;
-  white-space: nowrap;
+  font-weight: 400;
+}
+
+.intro {
+  color: darken($gray, 20);
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: center;
 }

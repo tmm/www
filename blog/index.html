@@ -1,20 +1,19 @@
 ---
 title: Blog
-layout: page
 ---
 
-{% for post in paginator.posts %}
-{% assign currentdate = post.date | date: "%B %Y" %}
+{% include nav.html %}
+
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
 <section class="mar-b-6">
   <h3 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h3>
   {% assign date = currentdate %}
   {% endif %}
-  {% include post-preview.html %}
+  <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>, {{ post.date | date: "%B %-d" }}</p>
   {% if forloop.last %}
 </section>
 {% endif %}
 {% endfor %}
-
-{% include pagination.html %}

@@ -2,8 +2,8 @@ $background: $gray-light + 20;
 
 code {
   background-color: $background;
-  color: $green;
-  font-family: $code;
+  color: $blue;
+  font-family: $mono;
   font-size: 0.97rem;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@ p, li {
 .highlight {
   margin: 1rem 0;
   border: 2px solid $gray-light;
-  border-radius: $border-radius;
+  border-radius: 4px;
   background: $background;
 }
 
