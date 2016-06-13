@@ -109,7 +109,7 @@ table {
   }
 
   tbody tr:nth-child(even) {
-    background-color: lighten($gray-light, 10);
+    background-color: darken($white, 1);
   }
 
   th, td {

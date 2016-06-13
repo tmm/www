@@ -7,7 +7,7 @@ For my reference while writing, but, hey, feel free to take a look.
 
 ## Block Elements
 
-Paragraphs, headers, blockquotes, lists, code blocks, and horizontal rules.
+Paragraphs, headers, blockquotes, lists, tables, code blocks, and horizontal rules.
 
 ### Paragraphs
 
@@ -36,6 +36,14 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 1. Swift
 2. Python
 3. Java
+
+### Tables
+
+Hero | Villan
+--- | ---
+Spider-Man | Green Goblin
+Batman | Joker
+Spaces | Tabs
 
 ### Code Blocks
 
