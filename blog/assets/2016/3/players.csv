@@ -1,0 +1,528 @@
+id,name,nationality,position,birth_date,market_value,team_id,team_name,team_short_name
+16,Bastian Schweinsteiger,Germany,Central Midfield,1984-08-01,18000000,66,Manchester United FC,ManU
+409,David de Gea,Spain,Keeper,1990-11-07,30000000,66,Manchester United FC,ManU
+412,Phil Jones,England,Centre Back,1992-02-21,15000000,66,Manchester United FC,ManU
+413,Marcos Rojo,Argentina,Centre Back,1990-03-20,18000000,66,Manchester United FC,ManU
+414,Chris Smalling,England,Centre Back,1989-11-22,14000000,66,Manchester United FC,ManU
+417,Patrick McNair,Northern Ireland,Centre Back,1995-04-27,4500000,66,Manchester United FC,ManU
+418,Luke Shaw,England,Left-Back,1995-07-12,21000000,66,Manchester United FC,ManU
+420,Daley Blind,Netherlands,Centre Back,1990-03-09,17000000,66,Manchester United FC,ManU
+421,Michael Carrick,England,Defensive Midfield,1981-07-28,4000000,66,Manchester United FC,ManU
+422,Ander Herrera,Spain,Attacking Midfield,1989-08-14,28000000,66,Manchester United FC,ManU
+423,Marouane Fellaini,Belgium,Central Midfield,1987-11-22,20000000,66,Manchester United FC,ManU
+426,Juan Mata,Spain,Right Wing,1988-04-28,34000000,66,Manchester United FC,ManU
+428,Jesse Lingard,England,Left Wing,1992-12-15,1000000,66,Manchester United FC,ManU
+429,Ashley Young,England,Left Wing,1985-07-09,10000000,66,Manchester United FC,ManU
+432,Antonio Valencia,Ecuador,Right-Back,1985-08-04,10000000,66,Manchester United FC,ManU
+433,Wayne Rooney,England,Secondary Striker,1985-10-24,40000000,66,Manchester United FC,ManU
+767,Sergio Romero,Argentina,Keeper,1987-02-22,5000000,66,Manchester United FC,ManU
+977,Matteo Darmian,Italy,Right-Back,1989-12-02,15000000,66,Manchester United FC,ManU
+2043,Morgan Schneiderlin,France,Defensive Midfield,1989-11-08,28000000,66,Manchester United FC,ManU
+2329,Anthony Martial,France,Centre Forward,1995-12-05,25000000,66,Manchester United FC,ManU
+4797,Adnan Januzaj,Belgium,Left Wing,1995-02-05,8000000,66,Manchester United FC,ManU
+5582,Sam Johnstone,England,Keeper,1993-03-25,250000,66,Manchester United FC,ManU
+5583,Andreas Pereira,Brazil,Attacking Midfield,1996-01-01,500000,66,Manchester United FC,ManU
+5584,Memphis Depay,Netherlands,Left Wing,1994-02-13,28000000,66,Manchester United FC,ManU
+6477,Cameron Borthwick-Jackson,England,Left-Back,1997-02-02,,66,Manchester United FC,ManU
+6478,Will Keane,England,Centre Forward,1993-01-11,300000,66,Manchester United FC,ManU
+270,Kevin Wimmer,Austria,Centre Back,1992-11-15,7500000,73,Tottenham Hotspur FC,Spurs
+374,Heung-Min Son,"Korea, South",Left Wing,1992-07-08,25000000,73,Tottenham Hotspur FC,Spurs
+1671,Tom Carroll,England,Central Midfield,1992-05-28,3000000,73,Tottenham Hotspur FC,Spurs
+1760,Hugo Lloris,France,Keeper,1986-12-26,22000000,73,Tottenham Hotspur FC,Spurs
+1761,Michel Vorm,Netherlands,Keeper,1983-10-20,5000000,73,Tottenham Hotspur FC,Spurs
+1764,Jan Vertonghen,Belgium,Centre Back,1987-04-24,19000000,73,Tottenham Hotspur FC,Spurs
+1768,Eric Dier,England,Defensive Midfield,1994-01-15,10000000,73,Tottenham Hotspur FC,Spurs
+1770,Ben Davies,Wales,Left-Back,1993-04-24,8000000,73,Tottenham Hotspur FC,Spurs
+1771,Danny Rose,England,Left-Back,1990-07-02,11000000,73,Tottenham Hotspur FC,Spurs
+1773,Kyle Walker,England,Right-Back,1990-05-28,13000000,73,Tottenham Hotspur FC,Spurs
+1779,Moussa Dembélé,Belgium,Central Midfield,1987-07-16,14000000,73,Tottenham Hotspur FC,Spurs
+1781,Nabil Bentaleb,Algeria,Defensive Midfield,1994-11-24,10000000,73,Tottenham Hotspur FC,Spurs
+1782,Ryan Mason,England,Central Midfield,1991-06-13,7500000,73,Tottenham Hotspur FC,Spurs
+1783,Christian Eriksen,Denmark,Attacking Midfield,1992-02-14,27000000,73,Tottenham Hotspur FC,Spurs
+1784,Nacer Chadli,Belgium,Left Wing,1989-08-02,13000000,73,Tottenham Hotspur FC,Spurs
+1787,Érik Lamela,Argentina,Right Wing,1992-03-04,22000000,73,Tottenham Hotspur FC,Spurs
+1788,Harry Kane,England,Centre Forward,1993-07-28,25000000,73,Tottenham Hotspur FC,Spurs
+2036,Toby Alderweireld,Belgium,Centre Back,1989-03-02,15000000,73,Tottenham Hotspur FC,Spurs
+2123,Kieran Trippier,England,Right-Back,1990-09-19,6000000,73,Tottenham Hotspur FC,Spurs
+2991,Clinton N'Jie,Cameroon,Centre Forward,1993-08-15,10000000,73,Tottenham Hotspur FC,Spurs
+5585,Dele Alli,England,Central Midfield,1996-04-11,5000000,73,Tottenham Hotspur FC,Spurs
+6479,Josh Onomah,England,Attacking Midfield,1997-04-27,,73,Tottenham Hotspur FC,Spurs
+526,Juan Iturbe,Argentina,Right Wing,1993-06-04,15000000,1044,AFC Bournemouth,Bournemouth
+1686,Adam Smith,England,Right-Back,1991-04-29,1500000,1044,AFC Bournemouth,Bournemouth
+1715,Sylvain Distin,France,Centre Back,1977-12-16,750000,1044,AFC Bournemouth,Bournemouth
+2006,Glenn Murray,England,Centre Forward,1983-09-25,4000000,1044,AFC Bournemouth,Bournemouth
+2218,Tokelo Rantie,South Africa,Centre Forward,1990-09-08,1000000,1044,AFC Bournemouth,Bournemouth
+2854,Max Gradel,Cote d'Ivoire,Left Wing,1987-11-30,8000000,1044,AFC Bournemouth,Bournemouth
+5587,Artur Boruc,Poland,Keeper,1980-02-20,1000000,1044,AFC Bournemouth,Bournemouth
+5588,Adam Federici,Australia,Keeper,1985-01-31,1000000,1044,AFC Bournemouth,Bournemouth
+5590,Steve Cook,England,Centre Back,1991-04-19,3000000,1044,AFC Bournemouth,Bournemouth
+5591,Tommy Elphick,England,Centre Back,1987-09-07,1500000,1044,AFC Bournemouth,Bournemouth
+5593,Tyrone Mings,England,Left-Back,1993-03-13,6000000,1044,AFC Bournemouth,Bournemouth
+5595,Charlie Daniels,England,Left-Back,1986-09-07,2000000,1044,AFC Bournemouth,Bournemouth
+5596,Simon Francis,England,Right-Back,1985-02-16,2000000,1044,AFC Bournemouth,Bournemouth
+5597,Eunan O'Kane,Ireland,Central Midfield,1990-07-10,1500000,1044,AFC Bournemouth,Bournemouth
+5598,Dan Gosling,England,Central Midfield,1990-02-02,2000000,1044,AFC Bournemouth,Bournemouth
+5599,Harry Arter,Ireland,Central Midfield,1989-12-28,1500000,1044,AFC Bournemouth,Bournemouth
+5600,Andrew Surman,England,Central Midfield,1986-08-20,1500000,1044,AFC Bournemouth,Bournemouth
+5601,Shaun MacDonald,Wales,Central Midfield,1988-06-17,500000,1044,AFC Bournemouth,Bournemouth
+5602,Matt Ritchie,Scotland,Right Midfield,1989-09-10,6000000,1044,AFC Bournemouth,Bournemouth
+5603,Marc Pugh,England,Left Wing,1987-04-02,2000000,1044,AFC Bournemouth,Bournemouth
+5604,Junior Stanislas,England,Left Wing,1989-11-26,4000000,1044,AFC Bournemouth,Bournemouth
+5605,Joshua King,Norway,Centre Forward,1992-01-15,2000000,1044,AFC Bournemouth,Bournemouth
+5606,Callum Wilson,England,Centre Forward,1992-02-27,7000000,1044,AFC Bournemouth,Bournemouth
+5657,Lewis Grabban,Jamaica,Centre Forward,1988-01-12,4000000,1044,AFC Bournemouth,Bournemouth
+6480,Marius Adamonis,Lithuania,Keeper,1997-05-13,50000,1044,AFC Bournemouth,Bournemouth
+6481,Stéphane Zubar,Guadeloupe,Centre Back,1986-10-09,250000,1044,AFC Bournemouth,Bournemouth
+6482,Rhoys Wiggins,Wales,Left-Back,1987-11-04,750000,1044,AFC Bournemouth,Bournemouth
+6483,Benik Afobe,England,Centre Forward,1993-02-12,9000000,1044,AFC Bournemouth,Bournemouth
+542,Micah Richards,England,Centre Back,1988-06-24,5500000,58,Aston Villa FC,Aston Villa
+1794,Joleon Lescott,England,Centre Back,1982-08-16,3000000,58,Aston Villa FC,Aston Villa
+1869,Brad Guzan,United States,Keeper,1984-09-09,4000000,58,Aston Villa FC,Aston Villa
+1872,Jores Okore,Denmark,Centre Back,1992-08-11,5500000,58,Aston Villa FC,Aston Villa
+1874,Ciaran Clark,Ireland,Centre Back,1989-09-26,5000000,58,Aston Villa FC,Aston Villa
+1876,Aly Cissokho,France,Left-Back,1987-09-15,3000000,58,Aston Villa FC,Aston Villa
+1878,Alan Hutton,Scotland,Right-Back,1984-11-30,2000000,58,Aston Villa FC,Aston Villa
+1880,Carlos Sánchez,Colombia,Defensive Midfield,1986-02-06,5000000,58,Aston Villa FC,Aston Villa
+1881,Ashley Westwood,England,Defensive Midfield,1990-04-01,4000000,58,Aston Villa FC,Aston Villa
+1885,Leandro Bacuna,Netherlands,Right-Back,1991-08-21,3000000,58,Aston Villa FC,Aston Villa
+1886,Kieran Richardson,England,Left-Back,1984-10-21,1500000,58,Aston Villa FC,Aston Villa
+1887,Jack Grealish,England,Left Wing,1995-09-10,4500000,58,Aston Villa FC,Aston Villa
+1888,Charles N'Zogbia,France,Right Wing,1986-05-28,2000000,58,Aston Villa FC,Aston Villa
+1890,Gabriel Agbonlahor,England,Centre Forward,1986-10-13,4000000,58,Aston Villa FC,Aston Villa
+1893,Libor Kozák,Czech Republic,Centre Forward,1989-05-30,3500000,58,Aston Villa FC,Aston Villa
+2109,Scott Sinclair,England,Left Wing,1989-03-25,3500000,58,Aston Villa FC,Aston Villa
+2603,Jordan Amavi,France,Left-Back,1994-03-09,10000000,58,Aston Villa FC,Aston Villa
+2663,Jordan Veretout,France,Central Midfield,1993-03-01,8000000,58,Aston Villa FC,Aston Villa
+2769,Idrissa Gueye,Senegal,Central Midfield,1989-09-26,9000000,58,Aston Villa FC,Aston Villa
+3049,Jordan Ayew,Ghana,Centre Forward,1991-09-11,9000000,58,Aston Villa FC,Aston Villa
+3502,Carles Gil,Spain,Right Wing,1992-11-22,4000000,58,Aston Villa FC,Aston Villa
+4105,Adama Traoré,Spain,Right Wing,1996-01-25,8000000,58,Aston Villa FC,Aston Villa
+5609,Mark Bunn,England,Keeper,1984-11-16,750000,58,Aston Villa FC,Aston Villa
+5610,Rudy Gestede,Benin,Centre Forward,1988-10-09,7000000,58,Aston Villa FC,Aston Villa
+1710,Joel Robles,Spain,Keeper,1990-06-17,3000000,62,Everton FC,Everton
+1711,Tim Howard,United States,Keeper,1979-03-06,2000000,62,Everton FC,Everton
+1712,John Stones,England,Centre Back,1994-05-28,25000000,62,Everton FC,Everton
+1713,Phil Jagielka,England,Centre Back,1982-08-17,4500000,62,Everton FC,Everton
+1716,Leighton Baines,England,Left-Back,1984-12-11,18000000,62,Everton FC,Everton
+1717,Seamus Coleman,Ireland,Right-Back,1988-10-11,19000000,62,Everton FC,Everton
+1718,Tony Hibbert,England,Right-Back,1981-02-20,500000,62,Everton FC,Everton
+1719,Muhamed Besic,Bosnia-Herzegovina,Defensive Midfield,1992-09-10,5000000,62,Everton FC,Everton
+1720,Gareth Barry,England,Defensive Midfield,1981-02-23,2500000,62,Everton FC,Everton
+1721,James McCarthy,Ireland,Central Midfield,1990-11-12,17000000,62,Everton FC,Everton
+1722,Darron Gibson,Ireland,Central Midfield,1987-10-25,3000000,62,Everton FC,Everton
+1723,Bryan Oviedo,Costa Rica,Left-Back,1990-02-18,3000000,62,Everton FC,Everton
+1724,Steven Pienaar,South Africa,Left Wing,1982-03-17,2000000,62,Everton FC,Everton
+1725,Ross Barkley,England,Attacking Midfield,1993-12-05,16000000,62,Everton FC,Everton
+1726,Leon Osman,England,Central Midfield,1981-05-17,1000000,62,Everton FC,Everton
+1728,Kevin Mirallas,Belgium,Left Wing,1987-10-05,15000000,62,Everton FC,Everton
+1731,Romelu Lukaku,Belgium,Centre Forward,1993-05-13,28000000,62,Everton FC,Everton
+1734,Arouna Koné,Cote d'Ivoire,Centre Forward,1983-11-11,1500000,62,Everton FC,Everton
+1785,Aaron Lennon,England,Right Wing,1987-04-16,6000000,62,Everton FC,Everton
+1882,Tom Cleverley,England,Central Midfield,1989-08-12,9000000,62,Everton FC,Everton
+3150,Felipe Mattioni,Brazil,Right-Back,1988-10-15,500000,62,Everton FC,Everton
+3476,Gerard Deulofeu,Spain,Right Wing,1994-03-13,6000000,62,Everton FC,Everton
+5611,Ramiro Funes Mori,Argentina,Centre Back,1991-03-05,8000000,62,Everton FC,Everton
+5612,Brendan Galloway,England,Left-Back,1996-03-17,1500000,62,Everton FC,Everton
+5613,Tyias Browning,England,Right-Back,1994-05-27,750000,62,Everton FC,Everton
+5614,Leandro Rodríguez,Uruguay,Centre Forward,1992-11-19,1500000,62,Everton FC,Everton
+6484,Francisco Júnior,Portugal,Central Midfield,1992-01-18,250000,62,Everton FC,Everton
+6485,Oumar Niasse,Senegal,Centre Forward,1990-04-18,10000000,62,Everton FC,Everton
+179,Sebastian Prödl,Austria,Centre Back,1987-06-21,3000000,346,Watford FC,Watford
+305,Valon Behrami,Switzerland,Defensive Midfield,1985-04-19,3500000,346,Watford FC,Watford
+512,José Holebas,Greece,Left-Back,1984-06-27,2000000,346,Watford FC,Watford
+885,Miguel Britos,Uruguay,Centre Back,1985-07-17,3500000,346,Watford FC,Watford
+1777,Étienne Capoue,France,Defensive Midfield,1988-07-11,7500000,346,Watford FC,Watford
+1817,Costel Pantilimon,Romania,Keeper,1987-02-01,6000000,346,Watford FC,Watford
+1995,Adlène Guédioura,Algeria,Central Midfield,1985-11-12,1000000,346,Watford FC,Watford
+2150,Nathan Aké,Netherlands,Left-Back,1995-02-18,2000000,346,Watford FC,Watford
+3184,Nordin Amrabat,Morocco,Left Wing,1987-03-31,6000000,346,Watford FC,Watford
+3275,Allan Nyom,Cameroon,Right-Back,1988-05-10,4000000,346,Watford FC,Watford
+3583,Mario Suárez,Spain,Defensive Midfield,1987-02-24,8000000,346,Watford FC,Watford
+5617,Heurelho Gomes,Brazil,Keeper,1981-02-15,750000,346,Watford FC,Watford
+5618,Rene Gilmartin,Ireland,Keeper,1987-05-31,250000,346,Watford FC,Watford
+5619,Essaïd Belkalem,Algeria,Centre Back,1989-01-01,2000000,346,Watford FC,Watford
+5620,Joel Ekstrand,Sweden,Centre Back,1989-02-04,1500000,346,Watford FC,Watford
+5621,Craig Cathcart,Northern Ireland,Centre Back,1989-02-06,1000000,346,Watford FC,Watford
+5622,Tom Hoban,Ireland,Centre Back,1994-01-24,1000000,346,Watford FC,Watford
+5624,Juan Carlos Paredes,Ecuador,Right-Back,1987-07-08,2000000,346,Watford FC,Watford
+5625,Lloyd Doyley,Jamaica,Centre Back,1982-12-01,250000,346,Watford FC,Watford
+5626,Ben Watson,England,Central Midfield,1985-07-09,1500000,346,Watford FC,Watford
+5627,Ikechi Anya,Scotland,Right Midfield,1988-01-03,2500000,346,Watford FC,Watford
+5628,Lloyd Dyer,England,Left Midfield,1982-09-13,750000,346,Watford FC,Watford
+5629,José Manuel Jurado,Spain,Attacking Midfield,1986-06-29,7000000,346,Watford FC,Watford
+5630,Almen Abdi,Switzerland,Attacking Midfield,1986-10-21,2500000,346,Watford FC,Watford
+5631,Steven Berghuis,Netherlands,Right Wing,1991-12-19,5000000,346,Watford FC,Watford
+5632,Troy Deeney,England,Centre Forward,1988-06-29,8000000,346,Watford FC,Watford
+5633,Obbi Oulare,Belgium,Centre Forward,1996-01-08,6000000,346,Watford FC,Watford
+5634,Odion Ighalo,Nigeria,Centre Forward,1989-06-16,4000000,346,Watford FC,Watford
+6486,Sean Murray,Ireland,Central Midfield,1993-10-11,750000,346,Watford FC,Watford
+6487,Mathias Ranégie,Sweden,Centre Forward,1984-06-14,700000,346,Watford FC,Watford
+892,Gökhan Inler,Switzerland,Central Midfield,1984-06-27,7500000,338,Leicester City FC,Foxes
+1061,Shinji Okazaki,Japan,Centre Forward,1986-04-16,8000000,338,Leicester City FC,Foxes
+1677,Nathan Dyer,England,Right Wing,1987-11-29,4500000,338,Leicester City FC,Foxes
+1683,Kasper Schmeichel,Denmark,Keeper,1986-11-05,4500000,338,Leicester City FC,Foxes
+1684,Mark Schwarzer,Australia,Keeper,1972-10-06,500000,338,Leicester City FC,Foxes
+1685,Ben Hamer,England,Keeper,1987-11-20,500000,338,Leicester City FC,Foxes
+1687,Liam Moore,England,Centre Back,1993-01-31,2500000,338,Leicester City FC,Foxes
+1688,Wes Morgan,Jamaica,Centre Back,1984-01-21,1500000,338,Leicester City FC,Foxes
+1690,Marcin Wasilewski,Poland,Centre Back,1980-06-09,500000,338,Leicester City FC,Foxes
+1694,Danny Simpson,England,Right-Back,1987-01-04,2000000,338,Leicester City FC,Foxes
+1696,Danny Drinkwater,England,Central Midfield,1990-03-05,3000000,338,Leicester City FC,Foxes
+1697,Andy King,Wales,Central Midfield,1988-10-29,3000000,338,Leicester City FC,Foxes
+1698,Matty James,England,Central Midfield,1991-07-22,2500000,338,Leicester City FC,Foxes
+1700,Marc Albrighton,England,Left Midfield,1989-11-18,1500000,338,Leicester City FC,Foxes
+1701,Jeffrey Schlupp,Ghana,Left-Back,1992-12-23,6000000,338,Leicester City FC,Foxes
+1702,Riyad Mahrez,Algeria,Right Wing,1991-02-21,11000000,338,Leicester City FC,Foxes
+1706,Leonardo Ulloa,Argentina,Centre Forward,1986-07-26,8500000,338,Leicester City FC,Foxes
+1708,Jamie Vardy,England,Centre Forward,1987-01-11,6000000,338,Leicester City FC,Foxes
+1844,Robert Huth,Germany,Centre Back,1984-08-18,5000000,338,Leicester City FC,Foxes
+2897,N'Golo Kanté,France,Central Midfield,1991-03-29,7000000,338,Leicester City FC,Foxes
+4597,Christian Fuchs,Austria,Left-Back,1986-04-07,3000000,338,Leicester City FC,Foxes
+6488,Daniel Amartey,Ghana,Defensive Midfield,1994-12-21,3000000,338,Leicester City FC,Foxes
+6489,Demarai Gray,England,Left Wing,1996-06-28,4000000,338,Leicester City FC,Foxes
+1008,Yann M'Vila,France,Defensive Midfield,1990-06-29,7000000,71,Sunderland AFC,Sunderland
+1767,Younès Kaboul,France,Centre Back,1986-01-04,4500000,71,Sunderland AFC,Sunderland
+1775,DeAndre Yedlin,United States,Right-Back,1993-07-09,1500000,71,Sunderland AFC,Sunderland
+1816,Vito Mannone,Italy,Keeper,1988-03-02,2500000,71,Sunderland AFC,Sunderland
+1819,John O'Shea,Ireland,Centre Back,1981-04-30,1000000,71,Sunderland AFC,Sunderland
+1821,Wes Brown,England,Centre Back,1979-10-13,500000,71,Sunderland AFC,Sunderland
+1822,Patrick van Aanholt,Netherlands,Left-Back,1990-08-29,3500000,71,Sunderland AFC,Sunderland
+1823,Billy Jones,England,Right-Back,1987-03-24,2000000,71,Sunderland AFC,Sunderland
+1826,Lee Cattermole,England,Defensive Midfield,1988-03-21,3500000,71,Sunderland AFC,Sunderland
+1828,Jack Rodwell,England,Central Midfield,1991-03-11,9000000,71,Sunderland AFC,Sunderland
+1829,Sebastian Larsson,Sweden,Central Midfield,1985-06-06,3500000,71,Sunderland AFC,Sunderland
+1832,Adam Johnson,England,Right Wing,1987-07-14,7500000,71,Sunderland AFC,Sunderland
+1924,Steve Harper,England,Keeper,1975-03-14,250000,71,Sunderland AFC,Sunderland
+2031,Fabio Borini,Italy,Left Wing,1991-03-29,8000000,71,Sunderland AFC,Sunderland
+2547,Valentin Roberge,France,Centre Back,1987-06-09,1500000,71,Sunderland AFC,Sunderland
+2745,Wahbi Khazri,Tunisia,Attacking Midfield,1991-02-08,7500000,71,Sunderland AFC,Sunderland
+3019,Ola Toivonen,Sweden,Secondary Striker,1986-07-03,4000000,71,Sunderland AFC,Sunderland
+3026,Lamine Koné,Cote d'Ivoire,Centre Back,1989-02-01,2500000,71,Sunderland AFC,Sunderland
+3629,Jermain Defoe,England,Centre Forward,1982-10-07,6000000,71,Sunderland AFC,Sunderland
+3633,Dame N'Doye,Senegal,Centre Forward,1985-02-21,5500000,71,Sunderland AFC,Sunderland
+4590,Jan Kirchhoff,Germany,Centre Back,1990-10-01,2000000,71,Sunderland AFC,Sunderland
+5636,Adam Matthews,Wales,Right-Back,1992-01-13,2500000,71,Sunderland AFC,Sunderland
+5637,Duncan Watmore,England,Right Wing,1994-03-08,250000,71,Sunderland AFC,Sunderland
+5638,Jeremain Lens,Netherlands,Left Wing,1987-11-24,12000000,71,Sunderland AFC,Sunderland
+6490,Jordan Pickford,England,Keeper,1994-03-07,500000,71,Sunderland AFC,Sunderland
+1733,Steven Naismith,Scotland,Secondary Striker,1986-09-14,5000000,68,Norwich City FC,Norwich
+1752,Matt Jarvis,England,Left Wing,1986-05-22,3000000,68,Norwich City FC,Norwich
+1800,Andre Wisdom,England,Right-Back,1993-05-09,5000000,68,Norwich City FC,Norwich
+1802,Youssuf Mulumbu,Congo DR,Defensive Midfield,1987-01-25,3500000,68,Norwich City FC,Norwich
+1806,Graham Dorrans,Scotland,Central Midfield,1987-05-05,3500000,68,Norwich City FC,Norwich
+1943,Robbie Brady,Ireland,Left-Back,1992-01-14,6000000,68,Norwich City FC,Norwich
+4729,Timm Klose,Switzerland,Centre Back,1988-05-09,3000000,68,Norwich City FC,Norwich
+5639,John Ruddy,England,Keeper,1986-10-24,4500000,68,Norwich City FC,Norwich
+5641,Declan Rudd,England,Keeper,1991-01-16,500000,68,Norwich City FC,Norwich
+5642,Russell Martin,Scotland,Centre Back,1986-01-04,3000000,68,Norwich City FC,Norwich
+5643,Sébastien Bassong,Cameroon,Centre Back,1986-07-09,3000000,68,Norwich City FC,Norwich
+5644,Ryan Bennett,England,Centre Back,1990-03-06,1500000,68,Norwich City FC,Norwich
+5645,Martin Olsson,Sweden,Left-Back,1988-05-17,4000000,68,Norwich City FC,Norwich
+5647,Steven Whittaker,Scotland,Right-Back,1984-06-16,2000000,68,Norwich City FC,Norwich
+5648,Alexander Tettey,Norway,Defensive Midfield,1986-04-04,3500000,68,Norwich City FC,Norwich
+5649,Jonathan Howson,England,Central Midfield,1988-05-21,3000000,68,Norwich City FC,Norwich
+5650,Gary O'Neil,England,Central Midfield,1983-05-18,1000000,68,Norwich City FC,Norwich
+5652,Wesley Hoolahan,Ireland,Attacking Midfield,1982-05-20,1000000,68,Norwich City FC,Norwich
+5653,Nathan Redmond,England,Right Wing,1994-03-06,6500000,68,Norwich City FC,Norwich
+5655,Dieumerci Mbokani,Congo DR,Centre Forward,1985-11-22,8500000,68,Norwich City FC,Norwich
+5658,Cameron Jerome,England,Centre Forward,1986-08-14,3000000,68,Norwich City FC,Norwich
+5659,Kyle Lafferty,Northern Ireland,Centre Forward,1987-09-16,3000000,68,Norwich City FC,Norwich
+5661,Patrick Bamford,England,Centre Forward,1993-09-05,5000000,68,Norwich City FC,Norwich
+6288,Ivo Pinto,Portugal,Right-Back,1990-01-07,4000000,68,Norwich City FC,Norwich
+6491,Remi Matthews,England,Keeper,1994-02-10,,68,Norwich City FC,Norwich
+6492,Vadis Odjidja-Ofoe,Belgium,Central Midfield,1989-02-21,4500000,68,Norwich City FC,Norwich
+6493,Anthony Andreu,France,Central Midfield,1988-05-22,500000,68,Norwich City FC,Norwich
+1790,Emmanuel Adebayor,Togo,Centre Forward,1984-02-26,5000000,354,Crystal Palace FC,Crystal
+1837,Connor Wickham,England,Centre Forward,1993-03-31,8000000,354,Crystal Palace FC,Crystal
+1895,Alex McCarthy,England,Keeper,1989-12-03,4000000,354,Crystal Palace FC,Crystal
+1909,Jordon Mutch,England,Central Midfield,1991-12-02,5500000,354,Crystal Palace FC,Crystal
+1978,Wayne Hennessey,Wales,Keeper,1987-01-24,2000000,354,Crystal Palace FC,Crystal
+1980,Julián Speroni,Argentina,Keeper,1979-05-18,500000,354,Crystal Palace FC,Crystal
+1982,Scott Dann,England,Centre Back,1987-02-14,3000000,354,Crystal Palace FC,Crystal
+1983,Brede Hangeland,Norway,Centre Back,1981-06-20,1000000,354,Crystal Palace FC,Crystal
+1984,Damien Delaney,Ireland,Centre Back,1981-07-20,1000000,354,Crystal Palace FC,Crystal
+1985,Patrick McCarthy,Ireland,Centre Back,1983-05-31,500000,354,Crystal Palace FC,Crystal
+1986,Zeki Fryers,England,Left-Back,1992-09-09,3000000,354,Crystal Palace FC,Crystal
+1987,Joel Ward,England,Right-Back,1989-10-29,4000000,354,Crystal Palace FC,Crystal
+1989,Martin Kelly,England,Right-Back,1990-04-27,5000000,354,Crystal Palace FC,Crystal
+1990,Adrian Mariappa,Jamaica,Centre Back,1986-10-03,2000000,354,Crystal Palace FC,Crystal
+1991,James McArthur,Scotland,Central Midfield,1987-10-07,7000000,354,Crystal Palace FC,Crystal
+1992,Joe Ledley,Wales,Central Midfield,1987-01-21,5000000,354,Crystal Palace FC,Crystal
+1993,Mile Jedinak,Australia,Central Midfield,1984-08-03,6000000,354,Crystal Palace FC,Crystal
+1999,Yala Bolasie,Congo DR,Left Wing,1989-05-24,10000000,354,Crystal Palace FC,Crystal
+2001,Wilfried Zaha,England,Right Wing,1992-11-10,6000000,354,Crystal Palace FC,Crystal
+2002,Jason Puncheon,England,Right Wing,1986-06-26,5000000,354,Crystal Palace FC,Crystal
+2004,Fraizer Campbell,England,Centre Forward,1987-09-13,3500000,354,Crystal Palace FC,Crystal
+2005,Dwight Gayle,England,Centre Forward,1990-10-20,4000000,354,Crystal Palace FC,Crystal
+2007,Marouane Chamakh,Morocco,Centre Forward,1984-01-10,2000000,354,Crystal Palace FC,Crystal
+2587,Yohan Cabaye,France,Central Midfield,1986-01-14,16000000,354,Crystal Palace FC,Crystal
+2763,Pape Souaré,Senegal,Left-Back,1990-06-06,5000000,354,Crystal Palace FC,Crystal
+3635,Chung-Yong Lee,"Korea, South",Right Wing,1988-07-02,2000000,354,Crystal Palace FC,Crystal
+5660,Bakary Sako,Mali,Left Wing,1988-04-26,5000000,354,Crystal Palace FC,Crystal
+5662,Kwesi Appiah,Ghana,Centre Forward,1990-08-12,250000,354,Crystal Palace FC,Crystal
+242,Abdul Rahman Baba,Ghana,Left-Back,1994-07-02,15000000,61,Chelsea FC,Chelsea
+435,Falcao,Colombia,Centre Forward,1986-02-10,35000000,61,Chelsea FC,Chelsea
+1840,Asmir Begovic,Bosnia-Herzegovina,Keeper,1987-06-20,12000000,61,Chelsea FC,Chelsea
+2138,Thibaut Courtois,Belgium,Keeper,1992-05-11,35000000,61,Chelsea FC,Chelsea
+2140,Jamal Blackman,England,Keeper,1993-10-27,250000,61,Chelsea FC,Chelsea
+2141,Gary Cahill,England,Centre Back,1985-12-19,20000000,61,Chelsea FC,Chelsea
+2142,Kurt Zouma,France,Centre Back,1994-10-27,12000000,61,Chelsea FC,Chelsea
+2143,John Terry,England,Centre Back,1980-12-07,4000000,61,Chelsea FC,Chelsea
+2145,César Azpilicueta,Spain,Left-Back,1989-08-28,23000000,61,Chelsea FC,Chelsea
+2147,Branislav Ivanovic,Serbia,Right-Back,1984-02-22,17000000,61,Chelsea FC,Chelsea
+2148,Nemanja Matic,Serbia,Defensive Midfield,1988-08-01,40000000,61,Chelsea FC,Chelsea
+2149,John Obi Mikel,Nigeria,Defensive Midfield,1987-04-22,10000000,61,Chelsea FC,Chelsea
+2151,Cesc Fàbregas,Spain,Central Midfield,1987-05-04,50000000,61,Chelsea FC,Chelsea
+2153,Oscar,Brazil,Attacking Midfield,1991-09-09,38000000,61,Chelsea FC,Chelsea
+2154,Willian,Brazil,Right Wing,1988-08-09,30000000,61,Chelsea FC,Chelsea
+2155,Eden Hazard,Belgium,Left Wing,1991-01-07,70000000,61,Chelsea FC,Chelsea
+2158,Diego Costa,Spain,Centre Forward,1988-10-07,50000000,61,Chelsea FC,Chelsea
+2159,Loïc Rémy,France,Centre Forward,1987-01-02,12000000,61,Chelsea FC,Chelsea
+3428,Pedro,Spain,Right Wing,1987-07-28,25000000,61,Chelsea FC,Chelsea
+3641,Ruben Loftus-Cheek,England,Central Midfield,1996-01-23,2000000,61,Chelsea FC,Chelsea
+5663,Kenedy,Brazil,Left Wing,1996-02-08,8000000,61,Chelsea FC,Chelsea
+5664,Bertrand Traoré,Burkina Faso,Centre Forward,1995-09-06,4000000,61,Chelsea FC,Chelsea
+6494,Marco Amelia,Italy,Keeper,1982-04-02,250000,61,Chelsea FC,Chelsea
+6495,Matt Miazga,United States,Centre Back,1995-07-19,150000,61,Chelsea FC,Chelsea
+6496,Alexandre Pato,Brazil,Centre Forward,1989-09-02,11000000,61,Chelsea FC,Chelsea
+472,Alberto Paloschi,Italy,Centre Forward,1990-01-04,6000000,72,Swansea City FC,Swans
+1654,Lukasz Fabianski,Poland,Keeper,1985-04-18,7000000,72,Swansea City FC,Swans
+1657,Federico Fernández,Argentina,Centre Back,1989-02-21,9000000,72,Swansea City FC,Swans
+1658,Ashley Williams,Wales,Centre Back,1984-08-23,6500000,72,Swansea City FC,Swans
+1659,Jordi Amat,Spain,Centre Back,1992-03-21,2000000,72,Swansea City FC,Swans
+1660,Kyle Bartley,England,Centre Back,1991-05-22,1000000,72,Swansea City FC,Swans
+1661,Neil Taylor,Wales,Left-Back,1989-02-07,4500000,72,Swansea City FC,Swans
+1662,Stephen Kingsley,Scotland,Left-Back,1994-07-23,500000,72,Swansea City FC,Swans
+1663,Ángel Rangel,Spain,Right-Back,1982-10-28,1500000,72,Swansea City FC,Swans
+1668,Sung-Yong Ki,"Korea, South",Defensive Midfield,1989-01-24,10000000,72,Swansea City FC,Swans
+1670,Leon Britton,England,Central Midfield,1982-09-16,1500000,72,Swansea City FC,Swans
+1672,Matt Grimes,England,Central Midfield,1995-07-15,2000000,72,Swansea City FC,Swans
+1673,Modou Barrow,The Gambia,Right Wing,1992-10-13,1500000,72,Swansea City FC,Swans
+1674,Gylfi Sigurdsson,Iceland,Attacking Midfield,1989-09-09,11000000,72,Swansea City FC,Swans
+1675,Wayne Routledge,England,Left Wing,1985-01-07,3000000,72,Swansea City FC,Swans
+1676,Jefferson Montero,Ecuador,Left Wing,1989-09-01,5500000,72,Swansea City FC,Swans
+1679,Bafetimbi Gomis,France,Centre Forward,1985-08-06,8000000,72,Swansea City FC,Swans
+1681,Marvin Emnes,Netherlands,Centre Forward,1988-05-27,1500000,72,Swansea City FC,Swans
+1774,Kyle Naughton,England,Right-Back,1988-11-11,5500000,72,Swansea City FC,Swans
+1908,Leroy Fer,Netherlands,Central Midfield,1990-01-05,8500000,72,Swansea City FC,Swans
+2047,Jack Cork,England,Defensive Midfield,1989-06-25,4000000,72,Swansea City FC,Swans
+2956,André Ayew,Ghana,Left Wing,1989-12-17,13000000,72,Swansea City FC,Swans
+5665,Kristoffer Nordfeldt,Sweden,Keeper,1989-06-23,3000000,72,Swansea City FC,Swans
+6497,Kenji Gorré,Netherlands,Left Wing,1994-09-29,100000,72,Swansea City FC,Swans
+1669,Jonjo Shelvey,England,Central Midfield,1992-02-27,12000000,67,Newcastle United FC,Newcastle
+1786,Andros Townsend,England,Right Wing,1991-07-16,8000000,67,Newcastle United FC,Newcastle
+2058,Tim Krul,Netherlands,Keeper,1988-04-03,8000000,67,Newcastle United FC,Newcastle
+2059,Rob Elliot,Ireland,Keeper,1986-04-30,1000000,67,Newcastle United FC,Newcastle
+2061,Fabricio Coloccini,Argentina,Centre Back,1982-01-22,2000000,67,Newcastle United FC,Newcastle
+2063,Steven Taylor,England,Centre Back,1986-01-23,3000000,67,Newcastle United FC,Newcastle
+2064,Curtis Good,Australia,Centre Back,1993-03-23,500000,67,Newcastle United FC,Newcastle
+2066,Massadio Haidara,France,Left-Back,1992-12-02,2000000,67,Newcastle United FC,Newcastle
+2067,Paul Dummett,Wales,Left-Back,1991-09-26,3500000,67,Newcastle United FC,Newcastle
+2069,Daryl Janmaat,Netherlands,Right-Back,1989-07-22,7500000,67,Newcastle United FC,Newcastle
+2070,Cheik Tioté,Cote d'Ivoire,Defensive Midfield,1986-06-21,7500000,67,Newcastle United FC,Newcastle
+2071,Vurnon Anita,Netherlands,Defensive Midfield,1989-04-04,4000000,67,Newcastle United FC,Newcastle
+2072,Moussa Sissoko,France,Central Midfield,1989-08-16,15000000,67,Newcastle United FC,Newcastle
+2073,Jack Colback,England,Defensive Midfield,1989-10-24,7500000,67,Newcastle United FC,Newcastle
+2078,Siem de Jong,Netherlands,Attacking Midfield,1989-01-28,9000000,67,Newcastle United FC,Newcastle
+2081,Rolando Aarons,England,Left Wing,1995-11-16,1000000,67,Newcastle United FC,Newcastle
+2082,Gabriel Obertan,France,Right Wing,1989-02-26,1000000,67,Newcastle United FC,Newcastle
+2083,Yoan Gouffran,France,Left Wing,1986-05-25,6000000,67,Newcastle United FC,Newcastle
+2085,Papiss Demba Cissé,Senegal,Centre Forward,1985-06-03,8000000,67,Newcastle United FC,Newcastle
+2087,Emmanuel Rivière,France,Centre Forward,1990-03-03,5000000,67,Newcastle United FC,Newcastle
+2088,Ayoze Pérez,Spain,Centre Forward,1993-07-23,7000000,67,Newcastle United FC,Newcastle
+2278,Chancel Mbemba,Congo DR,Centre Back,1994-08-08,10000000,67,Newcastle United FC,Newcastle
+2298,Aleksandar Mitrovic,Serbia,Centre Forward,1994-09-16,14000000,67,Newcastle United FC,Newcastle
+2541,Seydou Doumbia,Cote d'Ivoire,Centre Forward,1987-12-31,15000000,67,Newcastle United FC,Newcastle
+2751,Henri Saivet,Senegal,Attacking Midfield,1990-10-26,2500000,67,Newcastle United FC,Newcastle
+2826,Sylvain Marveaux,France,Attacking Midfield,1986-04-15,2000000,67,Newcastle United FC,Newcastle
+5667,Karl Darlow,England,Keeper,1990-10-08,3500000,67,Newcastle United FC,Newcastle
+5668,Jamaal Lascelles,England,Centre Back,1993-11-11,4000000,67,Newcastle United FC,Newcastle
+5669,Georginio Wijnaldum,Netherlands,Attacking Midfield,1990-11-11,18000000,67,Newcastle United FC,Newcastle
+6498,Freddie Woodman,England,Keeper,1997-03-04,250000,67,Newcastle United FC,Newcastle
+6499,Kevin Mbabu,Switzerland,Right-Back,1995-04-19,,67,Newcastle United FC,Newcastle
+6500,Ivan Toney,England,Centre Forward,1996-03-16,500000,67,Newcastle United FC,Newcastle
+1076,Oriol Romeu,Spain,Defensive Midfield,1991-09-24,5000000,340,Southampton FC,Southampton
+1920,Charlie Austin,England,Centre Forward,1989-07-05,13000000,340,Southampton FC,Southampton
+2033,Fraser Forster,England,Keeper,1988-03-17,12000000,340,Southampton FC,Southampton
+2034,Paulo Gazzaniga,Argentina,Keeper,1992-01-02,1000000,340,Southampton FC,Southampton
+2035,Kelvin Davis,England,Keeper,1976-09-29,250000,340,Southampton FC,Southampton
+2037,Florin Gardos,Romania,Centre Back,1988-10-29,5000000,340,Southampton FC,Southampton
+2038,Maya Yoshida,Japan,Centre Back,1988-08-24,5000000,340,Southampton FC,Southampton
+2039,José Fonte,Portugal,Centre Back,1983-12-22,5000000,340,Southampton FC,Southampton
+2040,Ryan Bertrand,England,Left-Back,1989-08-05,10000000,340,Southampton FC,Southampton
+2041,Matt Targett,England,Left-Back,1995-09-18,2000000,340,Southampton FC,Southampton
+2044,Victor Wanyama,Kenya,Defensive Midfield,1991-06-25,15000000,340,Southampton FC,Southampton
+2045,Steven Davis,Northern Ireland,Central Midfield,1985-01-01,5500000,340,Southampton FC,Southampton
+2046,James Ward-Prowse,England,Central Midfield,1994-11-01,9000000,340,Southampton FC,Southampton
+2048,Harrison Reed,England,Central Midfield,1995-01-27,1500000,340,Southampton FC,Southampton
+2049,Dusan Tadic,Serbia,Left Wing,1988-11-20,15000000,340,Southampton FC,Southampton
+2051,Jay Rodríguez,England,Left Wing,1989-07-29,13000000,340,Southampton FC,Southampton
+2052,Sadio Mané,Senegal,Left Wing,1992-04-10,18000000,340,Southampton FC,Southampton
+2054,Shane Long,Ireland,Centre Forward,1987-01-22,9000000,340,Southampton FC,Southampton
+2055,Graziano Pellè,Italy,Centre Forward,1985-07-15,11000000,340,Southampton FC,Southampton
+2057,Sam Gallagher,England,Centre Forward,1995-09-15,500000,340,Southampton FC,Southampton
+2303,Maarten Stekelenburg,Netherlands,Keeper,1982-09-22,1000000,340,Southampton FC,Southampton
+2502,Cédric Soares,Portugal,Right-Back,1991-08-31,9500000,340,Southampton FC,Southampton
+3187,Juanmi,Spain,Secondary Striker,1993-05-20,7000000,340,Southampton FC,Southampton
+5670,Virgil van Dijk,Netherlands,Centre Back,1991-07-08,10000000,340,Southampton FC,Southampton
+5671,Cuco Martina,Curacao,Right-Back,1989-09-25,1500000,340,Southampton FC,Southampton
+5672,Jordy Clasie,Netherlands,Defensive Midfield,1991-06-27,10000000,340,Southampton FC,Southampton
+6501,Jason McCarthy,England,Centre Back,1995-11-07,,340,Southampton FC,Southampton
+1952,David Ospina,Colombia,Keeper,1988-08-31,8000000,57,Arsenal FC,Arsenal
+1954,Per Mertesacker,Germany,Centre Back,1984-09-29,15000000,57,Arsenal FC,Arsenal
+1955,Laurent Koscielny,France,Centre Back,1985-09-10,20000000,57,Arsenal FC,Arsenal
+1956,Kieran Gibbs,England,Left-Back,1989-09-26,13000000,57,Arsenal FC,Arsenal
+1957,Nacho Monreal,Spain,Left-Back,1986-02-26,12000000,57,Arsenal FC,Arsenal
+1959,Calum Chambers,England,Centre Back,1995-01-20,12000000,57,Arsenal FC,Arsenal
+1960,Héctor Bellerín,Spain,Right-Back,1995-03-19,5000000,57,Arsenal FC,Arsenal
+1961,Mathieu Flamini,France,Defensive Midfield,1984-03-07,4000000,57,Arsenal FC,Arsenal
+1962,Mikel Arteta,Spain,Central Midfield,1982-03-26,2500000,57,Arsenal FC,Arsenal
+1963,Francis Coquelin,France,Defensive Midfield,1991-05-13,7000000,57,Arsenal FC,Arsenal
+1964,Jack Wilshere,England,Central Midfield,1992-01-01,25000000,57,Arsenal FC,Arsenal
+1965,Aaron Ramsey,Wales,Central Midfield,1990-12-26,28000000,57,Arsenal FC,Arsenal
+1967,Mesut Özil,Germany,Attacking Midfield,1988-10-15,40000000,57,Arsenal FC,Arsenal
+1968,Tomás Rosicky,Czech Republic,Attacking Midfield,1980-10-04,1500000,57,Arsenal FC,Arsenal
+1969,Santi Cazorla,Spain,Central Midfield,1984-12-13,26000000,57,Arsenal FC,Arsenal
+1970,Alex Oxlade-Chamberlain,England,Right Wing,1993-08-15,20000000,57,Arsenal FC,Arsenal
+1972,Alexis Sánchez,Chile,Left Wing,1988-12-19,55000000,57,Arsenal FC,Arsenal
+1973,Theo Walcott,England,Right Wing,1989-03-16,25000000,57,Arsenal FC,Arsenal
+1974,Joel Campbell,Costa Rica,Right Wing,1992-06-26,5000000,57,Arsenal FC,Arsenal
+1975,Olivier Giroud,France,Centre Forward,1986-09-30,24000000,57,Arsenal FC,Arsenal
+1976,Danny Welbeck,England,Centre Forward,1990-11-26,17000000,57,Arsenal FC,Arsenal
+2139,Petr Cech,Czech Republic,Keeper,1982-05-20,12000000,57,Arsenal FC,Arsenal
+2343,Mohamed Elneny,Egypt,Defensive Midfield,1992-07-11,4000000,57,Arsenal FC,Arsenal
+3244,Gabriel Paulista,Brazil,Centre Back,1990-11-26,12000000,57,Arsenal FC,Arsenal
+6502,Matt Macey,England,Keeper,1994-09-09,,57,Arsenal FC,Arsenal
+6503,Alex Iwobi,Nigeria,Left Wing,1996-05-03,,57,Arsenal FC,Arsenal
+480,Angelo Ogbonna,Italy,Centre Back,1988-05-23,9000000,563,West Ham United FC,West Ham
+782,Pedro Obiang,Spain,Central Midfield,1992-03-27,8000000,563,West Ham United FC,West Ham
+1735,Adrián,Spain,Keeper,1987-01-03,6000000,563,West Ham United FC,West Ham
+1737,Raphael Spiegel,Switzerland,Keeper,1992-12-19,500000,563,West Ham United FC,West Ham
+1738,Winston Reid,New Zealand,Centre Back,1988-07-03,9000000,563,West Ham United FC,West Ham
+1739,James Tomkins,England,Centre Back,1989-03-29,6000000,563,West Ham United FC,West Ham
+1740,James Collins,Wales,Centre Back,1983-08-23,2000000,563,West Ham United FC,West Ham
+1741,Doneil Henry,Canada,Centre Back,1993-04-20,500000,563,West Ham United FC,West Ham
+1742,Aaron Cresswell,England,Left-Back,1989-12-15,8000000,563,West Ham United FC,West Ham
+1743,Joey O'Brien,Ireland,Right-Back,1986-02-17,1500000,563,West Ham United FC,West Ham
+1744,Carl Jenkinson,England,Right-Back,1992-02-08,8000000,563,West Ham United FC,West Ham
+1746,Alex Song,Cameroon,Defensive Midfield,1987-09-09,12000000,563,West Ham United FC,West Ham
+1747,Cheikhou Kouyaté,Senegal,Defensive Midfield,1989-12-21,11000000,563,West Ham United FC,West Ham
+1748,Mark Noble,England,Central Midfield,1987-05-08,7000000,563,West Ham United FC,West Ham
+1756,Andy Carroll,England,Centre Forward,1989-01-06,10000000,563,West Ham United FC,West Ham
+1757,Enner Valencia,Ecuador,Centre Forward,1989-11-04,11000000,563,West Ham United FC,West Ham
+1758,Diafra Sakho,Senegal,Centre Forward,1989-12-24,10000000,563,West Ham United FC,West Ham
+1860,Victor Moses,Nigeria,Right Wing,1990-12-12,7500000,563,West Ham United FC,West Ham
+1948,Nikica Jelavic,Croatia,Centre Forward,1985-08-27,5000000,563,West Ham United FC,West Ham
+2953,Dimitri Payet,France,Attacking Midfield,1987-03-29,15000000,563,West Ham United FC,West Ham
+5673,Darren Randolph,Ireland,Keeper,1987-05-12,1000000,563,West Ham United FC,West Ham
+5675,Reece Oxford,England,Centre Back,1998-12-16,750000,563,West Ham United FC,West Ham
+5676,Manuel Lanzini,Argentina,Attacking Midfield,1993-02-15,6000000,563,West Ham United FC,West Ham
+5677,Michail Antonio,England,Left Wing,1990-03-28,7000000,563,West Ham United FC,West Ham
+6504,Reece Burke,England,Centre Back,1996-09-02,750000,563,West Ham United FC,West Ham
+6505,Lewis Page,England,Left-Back,1996-05-20,,563,West Ham United FC,West Ham
+6506,Sam Byram,England,Right-Back,1993-09-16,3500000,563,West Ham United FC,West Ham
+6507,Emmanuel Emenike,Nigeria,Centre Forward,1987-05-10,10000000,563,West Ham United FC,West Ham
+21,Xherdan Shaqiri,Switzerland,Right Wing,1991-10-10,17000000,70,Stoke City FC,Stoke
+113,Joselu,Spain,Centre Forward,1990-03-27,6000000,70,Stoke City FC,Stoke
+1841,Jack Butland,England,Keeper,1993-03-10,4000000,70,Stoke City FC,Stoke
+1843,Ryan Shawcross,England,Centre Back,1987-10-04,9000000,70,Stoke City FC,Stoke
+1845,Philipp Wollscheid,Germany,Centre Back,1989-03-06,5000000,70,Stoke City FC,Stoke
+1846,Marc Wilson,Ireland,Centre Back,1987-08-17,4000000,70,Stoke City FC,Stoke
+1849,Erik Pieters,Netherlands,Left-Back,1988-08-07,3000000,70,Stoke City FC,Stoke
+1850,Marc Muniesa,Spain,Centre Back,1992-03-27,3000000,70,Stoke City FC,Stoke
+1851,Geoff Cameron,United States,Centre Back,1985-07-11,3000000,70,Stoke City FC,Stoke
+1852,Phil Bardsley,Scotland,Right-Back,1985-06-28,2000000,70,Stoke City FC,Stoke
+1856,Glenn Whelan,Ireland,Defensive Midfield,1984-01-13,2000000,70,Stoke City FC,Stoke
+1858,Charlie Adam,Scotland,Central Midfield,1985-12-10,4500000,70,Stoke City FC,Stoke
+1859,Stephen Ireland,Ireland,Attacking Midfield,1986-08-22,2000000,70,Stoke City FC,Stoke
+1861,Marko Arnautovic,Austria,Left Wing,1989-04-19,5000000,70,Stoke City FC,Stoke
+1863,Bojan Krkic,Spain,Secondary Striker,1990-08-28,7000000,70,Stoke City FC,Stoke
+1864,Jonathan Walters,Ireland,Right Wing,1983-09-20,3500000,70,Stoke City FC,Stoke
+1865,Peter Odemwingie,Nigeria,Right Wing,1981-07-15,1500000,70,Stoke City FC,Stoke
+1867,Mame Diouf,Senegal,Centre Forward,1987-12-16,10000000,70,Stoke City FC,Stoke
+1868,Peter Crouch,England,Centre Forward,1981-01-30,2000000,70,Stoke City FC,Stoke
+1870,Shay Given,Ireland,Keeper,1976-04-20,500000,70,Stoke City FC,Stoke
+2016,Glen Johnson,England,Right-Back,1984-08-23,7000000,70,Stoke City FC,Stoke
+2185,Ibrahim Afellay,Netherlands,Left Wing,1986-04-02,4000000,70,Stoke City FC,Stoke
+2949,Giannelli Imbula,France,Defensive Midfield,1992-09-12,16000000,70,Stoke City FC,Stoke
+5678,Jakob Haugaard,Denmark,Keeper,1992-05-01,750000,70,Stoke City FC,Stoke
+6508,Dionatan Teixeira,Slovakia,Centre Back,1992-07-24,500000,70,Stoke City FC,Stoke
+222,Roberto Firmino,Brazil,Attacking Midfield,1991-10-02,35000000,64,Liverpool FC,Liverpool
+1892,Christian Benteke,Belgium,Centre Forward,1990-12-03,35000000,64,Liverpool FC,Liverpool
+1898,Steven Caulker,England,Centre Back,1991-12-29,7500000,64,Liverpool FC,Liverpool
+2008,Simon Mignolet,Belgium,Keeper,1988-03-06,12000000,64,Liverpool FC,Liverpool
+2010,Dejan Lovren,Croatia,Centre Back,1989-07-05,13000000,64,Liverpool FC,Liverpool
+2011,Mamadou Sakho,France,Centre Back,1990-02-13,18000000,64,Liverpool FC,Liverpool
+2012,Martin Skrtel,Slovakia,Centre Back,1984-12-15,13000000,64,Liverpool FC,Liverpool
+2013,Kolo Touré,Cote d'Ivoire,Centre Back,1981-03-19,2000000,64,Liverpool FC,Liverpool
+2014,Alberto Moreno,Spain,Left-Back,1992-07-05,15000000,64,Liverpool FC,Liverpool
+2015,José Enrique,Spain,Left-Back,1986-01-23,3000000,64,Liverpool FC,Liverpool
+2017,Jon Flanagan,England,Right-Back,1993-01-01,7000000,64,Liverpool FC,Liverpool
+2020,Jordan Henderson,England,Central Midfield,1990-06-17,28000000,64,Liverpool FC,Liverpool
+2021,Emre Can,Germany,Defensive Midfield,1994-01-12,15000000,64,Liverpool FC,Liverpool
+2022,Joe Allen,Wales,Central Midfield,1990-03-14,10000000,64,Liverpool FC,Liverpool
+2024,Adam Lallana,England,Attacking Midfield,1988-05-10,20000000,64,Liverpool FC,Liverpool
+2025,Coutinho,Brazil,Attacking Midfield,1992-06-12,30000000,64,Liverpool FC,Liverpool
+2029,Daniel Sturridge,England,Centre Forward,1989-09-01,25000000,64,Liverpool FC,Liverpool
+2042,Nathaniel Clyne,England,Right-Back,1991-04-05,17000000,64,Liverpool FC,Liverpool
+2105,James Milner,England,Central Midfield,1986-01-04,14000000,64,Liverpool FC,Liverpool
+2133,Danny Ings,England,Centre Forward,1992-07-23,12000000,64,Liverpool FC,Liverpool
+2730,Tiago Ilori,Portugal,Centre Back,1993-02-26,4000000,64,Liverpool FC,Liverpool
+2775,Divock Origi,Belgium,Centre Forward,1995-04-18,9000000,64,Liverpool FC,Liverpool
+3637,Danny Ward,Wales,Keeper,1993-06-22,350000,64,Liverpool FC,Liverpool
+3638,Jordon Ibe,England,Right Wing,1995-12-08,5000000,64,Liverpool FC,Liverpool
+5681,Ádám Bogdán,Hungary,Keeper,1987-09-27,2000000,64,Liverpool FC,Liverpool
+5682,Joe Gomez,England,Centre Back,1997-05-23,2500000,64,Liverpool FC,Liverpool
+5683,Lucas Leiva,Brazil,Defensive Midfield,1987-01-09,12000000,64,Liverpool FC,Liverpool
+5684,Jordan Rossiter,England,Central Midfield,1997-03-24,750000,64,Liverpool FC,Liverpool
+5685,João Carlos Teixeira,Portugal,Attacking Midfield,1993-01-18,750000,64,Liverpool FC,Liverpool
+6509,Connor Randall,England,Right-Back,1995-10-21,,64,Liverpool FC,Liverpool
+6510,Kevin Stewart,England,Defensive Midfield,1993-09-07,100000,64,Liverpool FC,Liverpool
+415,Jonny Evans,Northern Ireland,Centre Back,1988-01-03,6000000,74,West Bromwich Albion FC,West Bromwich
+425,Darren Fletcher,Scotland,Central Midfield,1984-02-01,2000000,74,West Bromwich Albion FC,West Bromwich
+1791,Ben Foster,England,Keeper,1983-04-03,4000000,74,West Bromwich Albion FC,West Bromwich
+1792,Boaz Myhill,Wales,Keeper,1982-11-09,1000000,74,West Bromwich Albion FC,West Bromwich
+1795,Jonas Olsson,Sweden,Centre Back,1983-03-10,1500000,74,West Bromwich Albion FC,West Bromwich
+1796,Craig Dawson,England,Right-Back,1990-05-06,3000000,74,West Bromwich Albion FC,West Bromwich
+1797,Gareth McAuley,Northern Ireland,Centre Back,1979-12-05,500000,74,West Bromwich Albion FC,West Bromwich
+1798,Sébastien Pocognoli,Belgium,Left-Back,1987-08-01,2000000,74,West Bromwich Albion FC,West Bromwich
+1801,Cristian Gamboa,Costa Rica,Right-Back,1989-10-24,2000000,74,West Bromwich Albion FC,West Bromwich
+1803,Claudio Yacob,Argentina,Defensive Midfield,1987-07-18,4000000,74,West Bromwich Albion FC,West Bromwich
+1805,Craig Gardner,England,Central Midfield,1986-11-25,3000000,74,West Bromwich Albion FC,West Bromwich
+1807,Chris Brunt,Northern Ireland,Left Midfield,1984-12-14,4000000,74,West Bromwich Albion FC,West Bromwich
+1808,James Morrison,Scotland,Central Midfield,1986-05-25,5000000,74,West Bromwich Albion FC,West Bromwich
+1810,Stéphane Sessègnon,Benin,Secondary Striker,1984-06-01,4000000,74,West Bromwich Albion FC,West Bromwich
+1814,Saido Berahino,England,Centre Forward,1993-08-04,15000000,74,West Bromwich Albion FC,West Bromwich
+1815,Victor Anichebe,Nigeria,Centre Forward,1988-04-23,3500000,74,West Bromwich Albion FC,West Bromwich
+1906,Sandro,Brazil,Defensive Midfield,1989-03-15,8000000,74,West Bromwich Albion FC,West Bromwich
+1928,James Chester,Wales,Centre Back,1989-01-23,6000000,74,West Bromwich Albion FC,West Bromwich
+1971,Serge Gnabry,Germany,Right Wing,1995-07-14,3500000,74,West Bromwich Albion FC,West Bromwich
+2032,Rickie Lambert,England,Centre Forward,1982-02-16,3000000,74,West Bromwich Albion FC,West Bromwich
+2406,José Salomón Rondón,Venezuela,Centre Forward,1989-09-16,15000000,74,West Bromwich Albion FC,West Bromwich
+3628,Callum McManaman,England,Right Wing,1991-04-25,5000000,74,West Bromwich Albion FC,West Bromwich
+5586,Alex Pritchard,England,Attacking Midfield,1993-05-03,3000000,74,West Bromwich Albion FC,West Bromwich
+5686,Jack Rose,England,Keeper,1994-11-30,,74,West Bromwich Albion FC,West Bromwich
+5687,James McClean,Ireland,Left Wing,1989-04-22,3000000,74,West Bromwich Albion FC,West Bromwich
+46,Kevin de Bruyne,Belgium,Right Wing,1991-06-28,60000000,65,Manchester City FC,ManCity
+1678,Wilfried Bony,Cote d'Ivoire,Centre Forward,1988-12-10,25000000,65,Manchester City FC,ManCity
+1883,Fabian Delph,England,Central Midfield,1989-11-21,10000000,65,Manchester City FC,ManCity
+2027,Raheem Sterling,England,Left Wing,1994-12-08,50000000,65,Manchester City FC,ManCity
+2089,Joe Hart,England,Keeper,1987-04-19,16000000,65,Manchester City FC,ManCity
+2090,Willy Caballero,Argentina,Keeper,1981-09-28,4500000,65,Manchester City FC,ManCity
+2091,Richard Wright,England,Keeper,1977-11-05,250000,65,Manchester City FC,ManCity
+2092,Eliaquim Mangala,France,Centre Back,1991-02-13,28000000,65,Manchester City FC,ManCity
+2093,Vincent Kompany,Belgium,Centre Back,1986-04-10,30000000,65,Manchester City FC,ManCity
+2095,Martín Demichelis,Argentina,Centre Back,1980-12-20,2000000,65,Manchester City FC,ManCity
+2097,Aleksandar Kolarov,Serbia,Left-Back,1985-11-10,11000000,65,Manchester City FC,ManCity
+2098,Gaël Clichy,France,Left-Back,1985-07-26,11000000,65,Manchester City FC,ManCity
+2099,Pablo Zabaleta,Argentina,Right-Back,1985-01-16,18000000,65,Manchester City FC,ManCity
+2100,Bacary Sagna,France,Right-Back,1983-02-14,6000000,65,Manchester City FC,ManCity
+2102,Fernandinho,Brazil,Central Midfield,1985-05-04,28000000,65,Manchester City FC,ManCity
+2103,Yaya Touré,Cote d'Ivoire,Central Midfield,1983-05-13,22000000,65,Manchester City FC,ManCity
+2106,Samir Nasri,France,Left Wing,1987-06-26,21000000,65,Manchester City FC,ManCity
+2107,David Silva,Spain,Attacking Midfield,1986-01-08,38000000,65,Manchester City FC,ManCity
+2108,Jesús Navas,Spain,Right Wing,1985-11-21,20000000,65,Manchester City FC,ManCity
+3483,Nicolás Otamendi,Argentina,Centre Back,1988-02-12,32000000,65,Manchester City FC,ManCity
+5689,Sergio Agüero,Argentina,Centre Forward,1988-06-02,60000000,65,Manchester City FC,ManCity
+5690,Kelechi Iheanacho,Nigeria,Centre Forward,1996-10-03,750000,65,Manchester City FC,ManCity
+6511,Luke Brattan,Australia,Defensive Midfield,1990-03-08,500000,65,Manchester City FC,ManCity
