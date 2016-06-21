@@ -4,7 +4,7 @@ code {
   background-color: $background;
   color: $black;
   font-family: $mono;
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 1px;
@@ -24,11 +24,12 @@ p, li {
   border: 1px solid $gray-light;
   border-radius: 4px;
   background: $background;
+  line-height: 130%;
 }
 
 pre {
   margin: 0;
-  padding: 12px;
+  padding: 16px;
 
   pre {
     padding-top: 0;
