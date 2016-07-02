@@ -8,7 +8,7 @@ github: tmm
 twitter: tomfme
 email: tom@meagher.co
 
-exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
+exclude: ["README.md", "CNAME", "LICENSE", ".gitignore", "sketch"]
 include: []
 
 permalink: pretty
