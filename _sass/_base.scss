@@ -53,7 +53,7 @@ blockquote {
   }
 }
 
-img {
+img, video {
   margin: 3rem auto;
   border-radius: 4px;
   max-width: 100%;
@@ -181,7 +181,6 @@ footer {
 }
 
 .post-item {
-  display: flex;
   border-bottom: 1px solid $gray-light;
   padding: 0.5rem 0;
   width: 100%;
@@ -190,7 +189,7 @@ footer {
   font-size: 90%;
 
   a {
-    flex-grow: 1;
+    display: flex;
     border-bottom: 0;
     color: $black;
 
@@ -198,6 +197,10 @@ footer {
       color: $red;
     }
   }
+}
+
+.post-title {
+  flex-grow: 1;
 }
 
 .post-date {

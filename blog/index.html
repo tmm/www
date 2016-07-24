@@ -11,7 +11,7 @@ title: Blog
   <ul class="post-list">
     {% assign date = currentdate %}
     {% endif %}
-    <li class="post-item"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %d" }}</span></li>
+    <li class="post-item"><a href="{{ post.url | prepend: site.baseurl }}"><span class="post-title">{{ post.title }}</span> <span class="post-date">{{ post.date | date: "%b %d" }}</span></a></li>
     {% if forloop.last %}
   </ul>
 </section>

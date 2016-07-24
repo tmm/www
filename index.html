@@ -3,13 +3,12 @@ title: Home
 ---
 
 <header class="mar-tb-6">
-<img src="{{ site.baseurl }}/img/tom.png" alt="me" class="me">
 <h1 class="intro">I'm Tom Meagher (<i>MAH-hur</i>), a data scientist that likes storytelling and soccer.</h1>
 </header>
 
 <section>
   {% assign post = site.posts.first %}
-  <p>I enjoy making simple things for humans and geeking out about technology startups. Read my latest <a href="{{ post.url | prepend: site.baseurl }}">writing</a>.</p>
+  <p>I enjoy making simple things for humans and geeking out about technology products. Read my latest <a href="{{ post.url | prepend: site.baseurl }}">writing</a>.</p>
 
   <p>You can find me on <a href="https://twitter.com/{{ site.twitter }}">Twitter</a>, <a href="https://github.com/{{ site.github }}">GitHub</a>, and <a href="mailto:{{ site.email }}">email</a>.</p>
 </section>
