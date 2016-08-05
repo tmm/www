@@ -1,5 +1,5 @@
 ---
-title: "Zawinski's Law"
+title: "Zawinski’s Law"
 date: 2016-07-25 19:22:00
 ---
 
@@ -38,7 +38,7 @@ With those very plausible sounding reasons in mind, we turn to the name of this 
 
 > Every program attempts to expand until it can read email. Those programs which cannot so expand are replaced by ones which can.[^1]
 
-Albeit a somewhat loose interpretation, these companies create email systems because they *have* to. Their software engineers do it to themselves. It might start out innocently as, "let's just send the user a notification/reminder/alert/message," but quickly it becomes the user needs to "customize the message text," "view/organize messages" (inbox), "search messages"[^2], etc.
+Albeit a somewhat loose interpretation, these companies create email systems because they *have* to. Their software engineers do it to themselves. It might start out innocently as, "let's just send the user a notification/reminder/alert/message," but quickly it becomes the user needs to "customize the message text," "view/organize messages" (inbox), "search messages", etc.[^2]
 
 Just as email is sticky for users, it's also sticky for companies that provide it. Many join the email business and never leave it.
 

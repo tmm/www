@@ -1,5 +1,5 @@
 ---
-title: Paul Graham's Essays
+title: Paul Graham’s Essays
 date: 2016-05-25 21:03:00
 ---
 
