@@ -5,7 +5,7 @@ date: 2016-09-11 15:32:00
 
 Humans are innately bad at understanding high dimensional data. After all, our world only includes *three* dimensions. If you don't believe me---think about what a *four* dimensional sphere looks like. (Then [check out this gif](https://upload.wikimedia.org/wikipedia/en/c/c7/4dSphere01t.gif).)
 
-This dimensional *deficit* impaires our ability to make informed decision about important everyday things, like finance. How you compare two mutal funds---when you look past their rate of return---becomes like comparing two unknown foods by their nutrition facts and ingredients.
+This dimensional *deficit* impairs our ability to make informed decision about important everyday things, like finance. How you compare two mutual funds---when you look past their rate of return---becomes like comparing two unknown foods by their nutrition facts and ingredients.
 
 > What if you used an already recognizable object seen in nature to describe fund characteristics?
 
