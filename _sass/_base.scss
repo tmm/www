@@ -131,23 +131,27 @@ table {
 }
 
 nav {
+  display: flex;
   border-bottom: 1px solid $gray-light;
-  padding-bottom: 6px;
-  font-weight: 300;
-  text-transform: uppercase;
+  height: 36px;
   
   a {
     margin-right: 10px;
+    margin-bottom: -1px;
     border-bottom: 1px solid $gray-light;
-    padding-bottom: 8px;
     background-color: transparent;
     color: darken($gray, 20);
     font-family: $mono;
+    font-weight: 300;
+    text-transform: uppercase;
     
     &:hover, &.current {
-      border-bottom: 1px solid $blue;
+      border-color: $blue;
       color: $blue;
-      background-color: transparent;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
