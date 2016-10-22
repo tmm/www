@@ -176,6 +176,35 @@ footer {
   text-align: center;
 }
 
+.feature-item {
+  display: flex;
+  border: 2px solid $gray-light;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 75px;
+
+  &:hover {
+    border: 3px solid $green;
+    transition: .15s;
+  }
+}
+
+.feature-title {
+  color: $green;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.feature-date {
+  color: darken($gray, 20);
+  font-size: .9rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .post-list {
   margin-left: -2.5rem;
 
