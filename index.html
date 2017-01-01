@@ -1,5 +1,4 @@
 ---
-title: Home
 ---
 
 <header class="intro mar-tb-7">
@@ -9,27 +8,35 @@ title: Home
     </h1>
 </header>
 
-<div class="posts">
+<section id="featured" class="mar-b-7">
+  <h3 class="section__title">Featured</h3>
+  <div class="feature-list">
+    <a id="feature1" class="feature" href="">
+        <span class="feature__title feature--light">New Year, New Site</span>
+        <time class="feature__date feature--light" datetime="2017-1-1">January 2017</time>
+    </a>
+    <a id="feature2" class="feature" href="/blog/2016/08/25/roses-and-thorns/">
+        <span class="feature__title feature--light">Roses & Thorns</span>
+        <time class="feature__date feature--light" datetime="2016-8-25">August 2016</time>
+    </a>
+</div>
+</section>
+
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
-<section class="mar-b-6">
-  <h3 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h3>
+<section id="y{{post.date | date: "%Y"}}" class="mar-b-7">
+  <h3 class="section__title">{{ currentdate }}</h3>
   <div class="post-list">
     {% assign date = currentdate %}
     {% endif %}
-    <div class="post">
-        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    <a class="post" href="{{ post.url | prepend: site.baseurl }}">
         <span class="post__title">{{ post.title }}</span>
-        <span class="post__excerpt">{{ post.content | strip_html | truncatewords: 25 }}</span>
-        <a class="post__more" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
-    </div>
+        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d" }}</time>
+    </a>
     {% if forloop.last %}
 </div>
 </section>
 {% endif %}
 {% endfor %}
-
-{% include footer.html %}
-</div>

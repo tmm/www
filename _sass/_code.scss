@@ -1,4 +1,4 @@
-$background: #F7F7F7;
+$background: $gray-lightest;
 $comment: #888;
 $name: #1b9af7;
 $keyword: #37C47B;
@@ -12,7 +12,7 @@ code {
   background-color: $background;
   color: $black;
   font-family: $mono;
-  font-size: 0.9rem;
+  font-size: .95rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 1px;
@@ -20,24 +20,20 @@ code {
 
 p, li {
   code {
-    border: 1px solid $gray-light;
-    border-radius: 2px;
-    padding: 0 2px;
+    padding: 0 3px;
     white-space: nowrap;
   }
 }
 
 .highlight {
   margin: 1rem 0;
-  border: 1px solid $gray-light;
-  border-radius: 4px;
   background: $background;
   line-height: 123%;
 }
 
 pre {
   margin: 0;
-  padding: 16px;
+  padding: 10px 8px;
 
   pre {
     padding-top: 0;

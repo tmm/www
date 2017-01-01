@@ -6,7 +6,7 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="keywords" content="{{ site.keywords }}">
 
-  <title>{{ page.title }} – {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,400i|Lato:400,400i,700,900|Roboto+Mono:400,300">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">

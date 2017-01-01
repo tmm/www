@@ -25,3 +25,11 @@
     padding-bottom: $size;
   }
 }
+
+@each $name, $color in ('github', #333), ('medium', #00AB72), ('twitter', #00A3EC), ('email', #FF554A), ('keybase', #FF6F29), ('hacker-news', #FF6327) {
+  .link-#{$name} {    
+    &:hover {
+      color: $color !important;
+    }
+  }
+}
