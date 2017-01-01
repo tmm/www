@@ -4,9 +4,6 @@
 }
 
 body {
-  margin: auto;
-  padding: 1rem;
-  max-width: 39rem;
   background-color: $white;
   color: $black;
   font-family: $sans;
@@ -131,19 +128,14 @@ table {
 }
 
 nav {
-  display: flex;
-  border-bottom: 1px solid $gray-light;
-  height: 36px;
-  
+display: flex;
+  justify-content: center;
   a {
+    border: 0;
     margin-right: 10px;
-    margin-bottom: -1px;
-    border-bottom: 1px solid $gray-light;
-    background-color: transparent;
-    color: darken($gray, 20);
-    font-family: $mono;
-    font-weight: 300;
-    text-transform: uppercase;
+    color: gray;
+    font-size: .95rem;
+    font-family: $sans;
     
     &:hover, &.current {
       border-color: $blue;
@@ -166,79 +158,75 @@ footer {
 .me {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .intro {
-  color: darken($gray, 30);
-  font-size: 1.75rem;
-  font-weight: 300;
+  margin: auto;
+  max-width: 39rem;
   text-align: center;
-}
 
-.feature-item {
-  display: flex;
-  border: 2px solid $gray-light;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  height: 75px;
+  &__head {
+    color: $black;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
 
-  &:hover {
-    border: 3px solid $green;
-    transition: .15s;
+  &__sub {
+    margin-top: $l1;
+    color: $gray;
+    font-size: 1.35rem;
   }
 }
 
-.feature-title {
-  color: $green;
-  font-size: 1.15rem;
-  font-weight: 400;
-  margin: 0;
-}
+.posts {
+  background-color: $gray-lightest;
+  padding: 1rem 1rem 2rem;
 
-.feature-date {
-  color: darken($gray, 20);
-  font-size: .9rem;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.post-list {
-  margin-left: -2.5rem;
-
-  & li:first-child {
-    border-top: 1px solid $gray-light;
+  section {
+    margin: auto;
+    max-width: 39rem;
   }
 }
 
-.post-item {
-  border-bottom: 1px solid $gray-light;
-  padding: 0.5rem 0;
+.post {
+  background-color: $white;
+  margin-bottom: $l3;
+  border: 1px solid $gray-light;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  padding: 1rem;
   width: 100%;
   list-style-type: none;
   font-family: $sans;
   font-size: 90%;
 
-  a {
-    display: flex;
-    border-bottom: 0;
-    color: $black;
+  &__date {
+    margin-bottom: .25rem;
+    display: block;
+    color: $gray;
+    font-size: .8rem;
+  }
 
-    &:hover {
-      color: $red;
-    }
+  &__title {
+    margin-bottom: .5rem;
+    display: block;
+    font-family: $sans;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  &__excerpt {
+    margin-bottom: .5rem;
+    display: block;
+    font-family: $serif;
+    font-size: 1.15rem;
+  }
+
+  &__more {
+    display: block;
+    color: $gray;
+    border: 0;
+    font-size: .8rem;
   }
 }
-
-.post-title {
-  flex-grow: 1;
-}
-
-.post-date {
-  justify-self: flex-end;
-  color: darken($gray, 20);
-  font-size: 80%;
-}
-

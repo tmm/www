@@ -2,13 +2,34 @@
 title: Home
 ---
 
-<header class="mar-tb-6">
-<h1 class="intro">I'm Tom Meagher (<i>MAH-hur</i>), a data scientist that likes storytelling and soccer.</h1>
+<header class="intro mar-tb-7">
+    <h1 class="intro__head">Yo! I'm Tom Meagher (<i>MAH-hur</i>),
+        <div class="intro__sub">a data scientist that likes storytelling and soccer.
+        </div>
+    </h1>
 </header>
 
-<section>
-  {% assign post = site.posts.first %}
-  <p>I enjoy making simple things for humans and geeking out about technology products. Read my latest <a href="{{ post.url | prepend: site.baseurl }}">writing</a>.</p>
-
-  <p>You can find me on <a href="https://twitter.com/{{ site.twitter }}">Twitter</a>, <a href="https://github.com/{{ site.github }}">GitHub</a>, and <a href="mailto:{{ site.email }}">email</a>.</p>
+<div class="posts">
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%Y" %}
+{% if currentdate != date %}
+{% unless forloop.first %}</section>{% endunless %}
+<section class="mar-b-6">
+  <h3 id="y{{post.date | date: "%Y"}}" class="mar-b-2">{{ currentdate }}</h3>
+  <div class="post-list">
+    {% assign date = currentdate %}
+    {% endif %}
+    <div class="post">
+        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <span class="post__title">{{ post.title }}</span>
+        <span class="post__excerpt">{{ post.content | strip_html | truncatewords: 25 }}</span>
+        <a class="post__more" href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+    </div>
+    {% if forloop.last %}
+</div>
 </section>
+{% endif %}
+{% endfor %}
+
+{% include footer.html %}
+</div>
