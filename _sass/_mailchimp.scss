@@ -37,10 +37,13 @@
     border: 1px solid $gray-light;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     padding: .65rem .75rem;
     font-size: 1rem;
     outline: 0;
-
+    -webkit-appearance: none;
+    
     &:hover {
       border-color: $blue;
       transition: border-color .25s;

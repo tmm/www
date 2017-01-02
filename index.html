@@ -25,10 +25,10 @@
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
+{% unless forloop.first %}</section>{% endunless %}
 {% if currentdate == '2014' %}
     {% include mailchimp.html %}
 {% endif %}
-{% unless forloop.first %}</section>{% endunless %}
 <section id="y{{post.date | date: "%Y"}}" class="mar-b-7">
   <h3 class="section__title">{{ currentdate }}</h3>
   <div class="post-list">
