@@ -15,7 +15,7 @@ body {
 }
 
 p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   font-family: $serif;
   font-size: 110%;
   line-height: 140%;
@@ -150,6 +150,7 @@ table {
 
     &:hover {
       color: $blue;
+      transition: color .25s;
     }
   }
 
@@ -308,6 +309,8 @@ footer {
   
   &:hover {
     color: $blue;
+    padding-left: 1rem;
+    transition: all .25s;
   }
 
   &__title {

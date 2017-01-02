@@ -1,82 +1,74 @@
 #mc_embed_signup {
   margin: 3rem 0;
+  border: 1px solid $gray-light;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  padding: .5rem 1rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: $gray-lightest;
+}
 
-  @media screen and (max-width: $sm) {
-    align-items: stretch;
+.mc-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  
+  &__main {
+    color: $black;
+    font-size: .95rem;
+    font-family: $sans;
   }
 
-  form {
-    border: 2px solid $gray-light;
-    border-radius: 4px;
-    padding: 3px;
-    height: 45px;
-    width: 345px;
-    display: flex;
-    align-items: stretch;
-    transition: .25s;
-    background-color: #fff;
+  &__sub {
+    color: $gray;
+    font-size: .95rem;
+    font-family: $sans;
+  }
+}
+
+.mc-form {
+  display: flex;
+
+  &__email {
+    flex: 8;
+    color: $black;
+    margin-right: 0;
+    border: 1px solid $gray-light;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: .65rem .75rem;
+    font-size: 1rem;
+    outline: 0;
 
     &:hover {
-      border-color: $gray-light - 12;
+      border-color: $blue;
+      transition: border-color .25s;
     }
-    
-    @media screen and (max-width: $sm) {
-      width: auto;
+
+    &:focus {
+      border-color: $red;
+      transition: border-color .25s;
     }
   }
 
-  .mc-title {
-    margin: 0 0 .5rem;
+  &__button {
+    flex: 2;
+    background-color: $white;
     color: $black;
-    font-family: $sans;
-    font-size: 1rem;
-    font-weight: 500;
-
-    span {
-      color: $gray;
-    }
-  }
-
-  .mc-field-group {
-    display: inline-flex;
-    flex: 7.5;
-    background-color: #fff;
-  }
-
-  input, button {
-    border: 0;
-    box-sizing: border-box;
-    transition: .25s;
-  }
-
-  input {
-    margin: 0;
-    padding: 0 10px;
-    flex: 1;
-    appearance: none;
-    background-color: #fff;
-    font-family: $sans;
-    font-size: .95rem;
-    outline: 0;
-  }
-
-  button {
-    flex: 2.85;
-    border-radius: 4px;
-    background-color: $green;
-    color: $white;
+    margin-left: 0;
+    border: 1px solid $gray-light;
+    border-left-width: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: .65rem .75rem;
     font-size: .9rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: $sans;
     cursor: pointer;
-    text-decoration: none;
-    transition: .25s;
 
-    &:hover {
-      background-color: dark($green, 10%);
+    &:focus {
+      outline: 0;
     }
   }
 }

@@ -11,7 +11,7 @@
 <section id="featured" class="mar-b-7">
   <h3 class="section__title">Featured</h3>
   <div class="feature-list">
-    <a id="feature1" class="feature" href="">
+    <a id="feature1" class="feature" href="/blog/2017/01/01/new-year-new-site/">
         <span class="feature__title feature--light">New Year, New Site</span>
         <time class="feature__date feature--light" datetime="2017-1-1">January 2017</time>
     </a>
@@ -25,6 +25,9 @@
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
+{% if currentdate == '2014' %}
+    {% include mailchimp.html %}
+{% endif %}
 {% unless forloop.first %}</section>{% endunless %}
 <section id="y{{post.date | date: "%Y"}}" class="mar-b-7">
   <h3 class="section__title">{{ currentdate }}</h3>
