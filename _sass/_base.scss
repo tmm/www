@@ -249,7 +249,6 @@ footer {
   flex: 1;
   display: block;
   padding: 1rem;
-  background-color: $blue;
   text-decoration: none;
 
   &__title {
@@ -281,18 +280,21 @@ footer {
   }
 }
 
-#feature1 {
-  background: url(../img/new.jpg);
+
+#f-1 {
+  background: url(../img/new.png);
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: $gray-light;
 }
 
-#feature2 {
-  background: url(../img/roses.jpg);
+#f-2 {
+  background: url(../img/roses.png);
   background-size: 100%;
   background-position: bottom center;
   background-repeat: no-repeat;
+  background-color: $gray-light;
 }
 
 .post {

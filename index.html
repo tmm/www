@@ -11,14 +11,12 @@
 <section id="featured" class="mar-b-7">
   <h3 class="section__title">Featured Writing</h3>
   <div class="feature-list">
-    <a id="feature1" class="feature" href="/blog/2017/01/01/new-year-new-site/">
-        <span class="feature__title feature--light">New Year, New Site</span>
-        <time class="feature__date feature--light" datetime="2017-1-1">January 2017</time>
+    {% for post in site.featured %}
+    <a id="f-{{ post.id }}" class="feature" href="{{ post.url }}">
+        <span class="feature__title feature--{{ post.type }}">{{ post.title }}</span>
+        <time class="feature__date feature--{{ post.type }}" datetime="2017-1-1">{{ post.date }}</time>
     </a>
-    <a id="feature2" class="feature" href="/blog/2016/08/25/roses-and-thorns/">
-        <span class="feature__title feature--light">Roses & Thorns</span>
-        <time class="feature__date feature--light" datetime="2016-8-25">August 2016</time>
-    </a>
+    {% endfor %}
 </div>
 </section>
 
