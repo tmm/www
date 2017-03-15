@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $gray;
+  transition: color .2s;
 
   &:hover {
     color: $red;
@@ -147,10 +148,10 @@ table {
   a {
     color: $gray;
     text-decoration: none;
+    transition: color .25s;
 
     &:hover {
       color: $blue;
-      transition: color .25s;
     }
   }
 
@@ -186,6 +187,15 @@ footer {
     color: $gray;
     font-size: 1.35rem;
     font-weight: 500;
+  }
+}
+
+.whoami {
+  color: $gray-light;
+  transition: color .25s;
+
+  &:hover {
+    color: $blue;
   }
 }
 
@@ -308,11 +318,11 @@ footer {
   font-size: .95rem;
   color: $black;
   text-decoration: none;
+  transition: color .25s, padding-left .25s;
   
   &:hover {
     color: $blue;
     padding-left: 1rem;
-    transition: all .25s;
   }
 
   &__title {

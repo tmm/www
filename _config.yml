@@ -39,13 +39,13 @@ defaults:
 
 featured:
   - id: 1
-    title: New Year, New Site
-    date: January 2017
+    title: whoami
+    date: 2017-03-14 21:11:00
     type: light
-    url: /blog/2017/01/01/new-year-new-site/
+    url: /blog/2017/03/14/whoami/
   - id: 2
     title: Roses & Thorns
-    date: August 2016
+    date: 2016-08-25 19:56:00
     type: light
     url: /blog/2016/08/25/roses-and-thorns/
 

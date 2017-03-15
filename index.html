@@ -3,7 +3,7 @@
 
 <header class="intro mar-tb-7">
     <h1 class="intro__head">Yo! I'm Tom Meagher (<i>MAH-hur</i>),
-        <div class="intro__sub">an engineer that likes storytelling and soccer.
+        <div class="intro__sub">a <a href="/blog/2017/03/14/whoami/" class="whoami">____________</a> that likes storytelling and soccer.
         </div>
     </h1>
 </header>
@@ -14,7 +14,7 @@
     {% for post in site.featured %}
     <a id="f-{{ post.id }}" class="feature" href="{{ post.url }}">
         <span class="feature__title feature--{{ post.type }}">{{ post.title }}</span>
-        <time class="feature__date feature--{{ post.type }}" datetime="2017-1-1">{{ post.date }}</time>
+        <time class="feature__date feature--{{ post.type }}" datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">{{ post.date | date: "%B %Y" }}</time>
     </a>
     {% endfor %}
 </div>
