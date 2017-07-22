@@ -1,6 +1,6 @@
 // fonts
-$sans: 'Lato', -apple-system, Helvetica, Arial, sans-serif;
-$serif: 'Alegreya', 'Times New Roman', Georgia, serif;
+$sans: Avenir, -apple-system, Helvetica, Arial, sans-serif;
+$serif: Alegreya, 'Times New Roman', Georgia, serif;
 $mono: 'Roboto Mono', monospace;
 
 // colors
@@ -9,15 +9,11 @@ $black: #333;
 $gray: #888;
 $gray-light: #E8E8E8;
 $gray-lightest: #FAFAFA;
-$green: #00AB72;
 $blue: #0087F8;
-$red: #FF554A;
+$orange: #ff5722;
 
 // widths
 $sm: 544px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
 
 // levels
 $l1: 0.33rem;

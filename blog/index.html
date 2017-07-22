@@ -1,0 +1,29 @@
+---
+---
+
+<a href="/" class="back">home</a>
+
+<header class="blog mar-tb-7">
+  <h1 class="blog__head">Archive</h1>
+</header>
+
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%Y" %}
+{% if currentdate != date %}
+{% unless forloop.first %}</section>{% endunless %}
+<section id="y{{post.date | date: "%Y"}}" class="group mar-b-7">
+  <div class="group__title">
+    <span>{{ currentdate }}</span>
+  </div>
+  <div class="group__list">
+    {% assign date = currentdate %}
+    {% endif %}
+    <a class="post" href="{{ post.url | prepend: site.baseurl }}">
+        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%m.%Y" }}</time>
+        <span class="post__title">{{ post.title }}</span>
+    </a>
+    {% if forloop.last %}
+</div>
+</section>
+{% endif %}
+{% endfor %}

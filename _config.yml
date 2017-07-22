@@ -1,20 +1,19 @@
 title: Tom Meagher
-description: "Solving problems with data and code."
+description: "Making Internet things."
 url: "http://meagher.co"
 author: "Tom Meagher"
-keywords: "tom,tomfme,meagher,code,design,startups,start ups,data science,technology,tech,data,design,engineering"
+keywords: "tom,tomfme,meagher,code,design,startups,technology,tech,design"
 github: tmm
 medium: tfm
 twitter: tomfme
 email: tom@meagher.co
 
 exclude: ["README.md", "CNAME", "LICENSE", ".gitignore"]
-include: ["résumé.pdf"]
 
 permalink: pretty
 timezone: America/New_York
 
-gems: []
+plugins: []
 
 markdown: kramdown
 kramdown:
@@ -36,18 +35,6 @@ defaults:
       type: "pages"
     values:
       layout: "base"
-
-featured:
-  - id: 1
-    title: whoami
-    date: 2017-03-14 21:11:00
-    type: light
-    url: /blog/2017/03/14/whoami/
-  - id: 2
-    title: Roses & Thorns
-    date: 2016-08-25 19:56:00
-    type: light
-    url: /blog/2016/08/25/roses-and-thorns/
 
 about:
   - name: Angel List
