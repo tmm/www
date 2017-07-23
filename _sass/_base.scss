@@ -90,6 +90,15 @@ img, video {
     left: auto;
   }
   max-width: 100%;
+
+  @media screen and (max-width: $sm) {
+    border-radius: 0;
+    margin: {
+      left: -1rem;
+      right: -1rem;
+    }
+    max-width: calc(100% + 2rem);
+  }
 }
 
 ol, ul {
@@ -264,7 +273,7 @@ footer {
       weight: 600;
     }
     letter-spacing: 2px;
-    padding-top: .65rem;
+    padding-top: .66rem;
     text-transform: uppercase;
   }
 
@@ -339,5 +348,12 @@ footer {
       weight: 700;
     }
     letter-spacing: 2px;
+  }
+}
+
+.jim {
+  margin: {
+    bottom: 2rem;
+    top: 0;
   }
 }

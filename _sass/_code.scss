@@ -11,10 +11,12 @@ $class: #7b72e9;
 code {
   background-color: $background;
   color: $black;
-  font-family: $mono;
-  font-size: .85rem;
-  font-style: normal;
-  font-weight: 400;
+  font: {
+    family: $mono;
+    size: .75rem;
+    style: normal;
+    weight: 400;
+  }
   letter-spacing: 1px;
 }
 
@@ -26,14 +28,26 @@ p, li {
 }
 
 .highlight {
-  margin: 1rem 0;
   background: $background;
   line-height: 123%;
+  margin: {
+    bottom: 1rem;
+    left: -1.5rem;
+    right: -1.5rem;
+    top: 1rem;
+  }
+
+  @media screen and (max-width: $sm) {
+    margin: {
+      left: -1rem;
+      right: -1rem;
+    }
+  }
 }
 
 pre {
   margin: 0;
-  padding: 12px 8px;
+  padding: 25px;
 
   pre {
     padding-top: 0;
