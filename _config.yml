@@ -4,7 +4,6 @@ url: "http://meagher.co"
 author: "Tom Meagher"
 keywords: "tom,tomfme,meagher,code,design,startups,technology,tech,design"
 github: tmm
-medium: tfm
 twitter: tomfme
 email: tom@meagher.co
 
@@ -35,33 +34,3 @@ defaults:
       type: "pages"
     values:
       layout: "base"
-
-about:
-  - name: Angel List
-    username: meagher
-    url: https://angel.co/meagher
-    class: angel-list
-  - name: Github
-    username: tmm
-    url: https://github.com/tmm
-    class: github
-  - name: Hacker News
-    username: meagher
-    url: https://news.ycombinator.com/user?id=meagher
-    class: hacker-news
-  - name: Keybase
-    username: meagher
-    url: https://keybase.io/meagher
-    class: keybase
-  - name: Medium
-    username: tfm
-    url: https://medium.com/@tfm
-    class: medium
-  - name: Twitter
-    username: tomfme
-    url: https://twitter.com/tomfme
-    class: twitter
-  - name: Email
-    username: tom@meagher.co
-    class: email
-    url: mailto:tom@meagher.co
