@@ -3,6 +3,7 @@
 }
 
 html {
+  background-color: $orange;
   font-size: 18px; 
   text-rendering: optimizeLegibility;
 }
@@ -12,6 +13,10 @@ body {
   color: $black;
   font-family: $sans;
   line-height: 145%;
+  min-height: 100vh;
+}
+
+.body__container {
   margin: auto;
   max-width: 34rem;
   padding: 1rem;
@@ -273,7 +278,7 @@ footer {
       weight: 600;
     }
     letter-spacing: 2px;
-    padding-top: .66rem;
+    padding-top: .65rem;
     text-transform: uppercase;
   }
 
@@ -351,9 +356,13 @@ footer {
   }
 }
 
-.jim {
-  margin: {
-    bottom: 2rem;
-    top: 0;
+.error {
+  background: {
+    image: url(../img/whale.jpeg);
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
   }
+  height: 100vh;
+  width: 100vw;
 }
