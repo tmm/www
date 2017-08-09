@@ -3,9 +3,10 @@
 }
 
 html {
-  background-color: $orange;
+  background-color: $gray-lightest;
   font-size: 18px; 
   text-rendering: optimizeLegibility;
+  transition: background-color 2s;
 }
 
 body {
@@ -232,7 +233,7 @@ footer {
 
 .intro {
   &__head {
-    color: $black;
+    color: $black-dark;
     font: {
       size: 1.25rem;
       weight: 700;
