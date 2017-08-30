@@ -18,4 +18,4 @@ There's not much more to it.
 
 ## License
 
-Released under the MIT license. See LICENSE for details.
+Released under the MIT license. See [LICENSE](https://github.com/tmm/tmm.github.io/LICENSE) for details.

@@ -82,4 +82,4 @@ Fire up your terminal and run `telnet towel.blinkenlights.nl`.
 
 ### Images
 
-![Jim](/img/jim.gif)
+![Jim](/img/whale.jpeg)
