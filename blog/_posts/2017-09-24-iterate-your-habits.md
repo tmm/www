@@ -3,7 +3,7 @@ title: Iterate Your Habits
 date: 2017-09-24 19:54:00
 ---
 
-The thing about habits is some—perhaps most—aren't meant to last forever. We often hold on to them far past their expiration. When they are no longer healthy, helpful, or what we *actually* want from ourselves. Why? Because humans are creatures of habit. We need something to ground us. They are *shortcuts* allowing us spend time on more important things: swiping right on Tinder, binge watching Netflix after work, etc.
+The thing about habits is some—perhaps most—aren't meant to last forever. We often hold on to them far past their expiration. When they are no longer healthy, helpful, or what we *actually* want from ourselves. Why? Because humans are creatures of habit. We need something to ground us. They are *shortcuts* allowing us to spend time on more important things: swiping right on Tinder, binge watching Netflix after work, etc.
 
 I joke, but something I've been thinking about more and more lately is *iterating* upon my habits. Taking a fresh look at habits I practice and evaluating if they still provide meaningful value. Or if I'm just doing them because I've *always* done them. They might have made complete sense until they became involuntary parts of my day. I'm not the same person I was a year ago, why should I do the same habits?
 
