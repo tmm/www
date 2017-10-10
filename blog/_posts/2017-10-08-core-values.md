@@ -13,5 +13,7 @@ date: 2017-10-08 11:22:00
 
 5. Treat others well.
 
-6. Stay present.
+6. Pay it forward.
+
+7. Stay present.
 
