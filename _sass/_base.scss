@@ -48,8 +48,9 @@ a {
 
 hr {
   border: 0;
+  height: 25px;
   margin: {
-    bottom: 5rem;
+    bottom: 4rem;
     left: auto;
     right: auto;
     top: 4rem
@@ -59,7 +60,6 @@ hr {
 
   &::before {
     color: $gray;
-    margin-left: 2rem;
     content: "•••";
     font-size: 1rem;
     letter-spacing: 1rem;
@@ -359,7 +359,7 @@ footer {
 
 .error {
   background: {
-    image: url(../img/whale.jpeg);
+    image: url(../img/ocean.jpg);
     size: cover;
     position: center center;
     repeat: no-repeat;
