@@ -15,9 +15,11 @@
 	justify-content: center;
 }
 .mc__input {
+	-webkit-appearance: none;
 	background-color: transparent;
 	border: {
 		color: #dbdfe4;
+		radius: 0;
 		top-left-radius: 5px;
 		bottom-left-radius: 5px;
 		style: solid;
@@ -39,6 +41,7 @@
 .mc__button {
 	background: #ff6d92 linear-gradient(to bottom left, #f5b200 0, #fc636b 75%);
 	border: {
+		radius: 0;
 		top-right-radius: 5px;
 		bottom-right-radius: 5px;
 		width: 0;
