@@ -1,3 +1,23 @@
+p, li {
+  code {
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    font: {
+      family: $mono;
+      weight: 400;
+      size: .9rem;
+    }
+    line-height: 1.45;
+    overflow: scroll;
+    padding: {
+      bottom: 0;
+      left: 3px;
+      right: 3px;
+      top: 0;
+    }
+    white-space: nowrap;
+  }
+}
 .highlight {
   background-color: #f6f8fa;
   border-radius: 3px;
@@ -7,6 +27,7 @@
     size: .9rem;
   }
   line-height: 1.45;
+  overflow: scroll;
   padding: 1rem;
 }
 .highlight .hll { background-color: #ffffcc }
@@ -72,6 +93,9 @@
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 .dark {
+  p, li {
+    code { background-color: #333333; }
+  }
   .highlight { background-color: #333333; }
   .highlight pre { background-color: #333; }
   .highlight .hll { background-color: #333333 }

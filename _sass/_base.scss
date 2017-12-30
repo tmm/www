@@ -70,9 +70,18 @@ hr {
       weight: 400;
     }
     letter-spacing: 1rem;
+    margin-left: 1.5rem;
     position: relative;
     top: -30px;
   }
+}
+ol,
+ul {
+  font: {
+    family: $serif;
+    size: 1.1rem;
+  }
+  line-height: 1.58;
 }
 blockquote {
   margin: {

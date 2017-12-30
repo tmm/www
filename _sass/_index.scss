@@ -43,7 +43,10 @@
   padding-left: 1.5rem;
 }
 .t-section__list-item {
-  font-size: .95rem;
+  font: {
+    family: $sans;
+    size: .95rem;
+  }
   margin-bottom: .25rem;
 }
 .t-section__list-item-time {
