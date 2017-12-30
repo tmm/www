@@ -13,6 +13,8 @@ Paragraphs, headers, blockquotes, lists, tables, code blocks, and horizontal rul
 
 The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
 
+The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+
 ### Headers
 
 # Header One
@@ -25,7 +27,7 @@ The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over t
 
 ### Blockquotes
 
-> The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+> When you have eliminated the impossible, whatever remains, however improbable, must be the truth.
 
 ### Lists
 
@@ -47,17 +49,17 @@ Spaces | Tabs
 
 ### Code Blocks
 
-``` swift
-// A simple function in Swift
-func helloName(name: String = "World") -> String {
-	return "Hello, \(name)!"
-}
-```
-
 ``` python
 # A simple function in Python
 def hello_name(name = "World"):
   return "Hello, {}!".format(name)
+```
+
+``` swift
+// A simple function in Swift
+func helloName(name: String = "World") -> String {
+  return "Hello, \(name)!"
+}
 ```
 
 ### Horizontal rules
@@ -82,4 +84,4 @@ Fire up your terminal and run `telnet towel.blinkenlights.nl`.
 
 ### Images
 
-![Jim](/img/whale.jpeg)
+![Jim](/assets/images/jim.gif)

@@ -1,26 +1,25 @@
-// fonts
-$sans: Avenir, -apple-system, Helvetica, Arial, sans-serif;
-$serif: Alegreya, 'Times New Roman', Georgia, serif;
+$colors: (
+  black: (
+    base: #000000,
+    serif: rgba(0,0,0,.9),
+  ),
+  gray: (
+    base: #d9d9d9,
+    dark: #181818,
+  ),
+  green: (
+    base: #59c48e,
+  ),
+  orange: (
+    base: #ff5722,
+  ),
+  white: (
+    base: #fcfcfc,
+    serif: rgba(255,255,255,.9),
+  )
+);
+$root-container-width: 36rem;
+$root-font-size: 18px;
+$sans: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif: Georgia, Cambria, 'Times New Roman', Times, serif;
 $mono: 'Roboto Mono', monospace;
-
-// colors
-$white: #ffffff;
-$black: #272727;
-$black-dark: #000000;
-$gray: #888888;
-$gray-light: #E8E8E8;
-$gray-lightest: #fafafa;
-$blue: #0087F8;
-$orange: #ff5722;
-
-// widths
-$sm: 544px;
-
-// levels
-$l1: 0.33rem;
-$l2: 0.67rem;
-$l3: 1rem;
-$l4: 1.33rem;
-$l5: 1.78rem;
-$l6: 2rem;
-$l7: 3rem;

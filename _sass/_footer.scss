@@ -1,0 +1,89 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+.footer {
+  @include respond-to(md) {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  @include flex-column;
+  border: {
+    color: color(gray);
+    style: solid;
+    width: 1px;
+  }
+  border-left: 0;
+  border-right: 0;
+  color: color(black);
+  margin: {
+    bottom: 1rem;
+    top: 2rem;
+  }
+  padding: {
+    bottom: 1rem;
+    top: 1rem;
+  }
+}
+.footer__left,
+.footer__right {
+  @include respond-to(md) {
+    flex: 1;
+    padding: {
+      bottom: 1rem;
+      top: 1rem;
+    }
+  }
+ }
+.footer__left {
+  @include respond-to(md) {
+    border-right: {
+      color: color(gray);
+      style: solid;
+      width: 1px;
+    }
+    margin: 0;
+    padding-right: 1rem;
+  }
+  margin-bottom: 1.5rem;
+}
+.footer__right {
+  @include respond-to(md) {
+    padding-left: 1rem;
+  }
+}
+.footer__title {
+  @include respond-to(md) {
+    margin-bottom: 1rem;
+  }
+  font: {
+    size: .8rem;
+    weight: 600;
+  }
+  margin-bottom: .25rem;
+}
+.footer__content {
+  @include respond-to(md) {
+    text-align: justify;
+  }
+  font-size: .85rem;
+}
+.footer__legal {
+  font-size: .7rem;
+}
+
+.dark {
+  .footer {
+    border-color: color(gray, dark);
+    color: color(white);
+  }
+  .footer__left {
+    @include respond-to(md) { border-right-color: color(gray, dark); }
+  }
+  .footer__title,
+  .footer__content { color: color(white); }
+  .footer__legal {
+    font-size: .7rem;
+  }
+}

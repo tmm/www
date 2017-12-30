@@ -2,18 +2,17 @@
 layout: base
 ---
 
-<a href="/" class="back">home</a>
+<article class="post">
+    <header class="post__header">
+        <time class="post__time" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%a, %B %-d, %Y" }}</time>
+        <h1 class="post__title">{{ page.title }}</h1>
+    </header>
 
-<article class="mar-tb-7">
-  {% include header.html %}
+    {{ content }}
 
-  {{ content }}
+    <p class="post__thanks">Thanks for reading! Thoughts? Email me (tom@meagher.co) or leave a comment below.</p>
 </article>
 
 <br>
 
-{% include mailchimp.html %}
-
 {% include disqus.html %}
-
-{% include footer.html %}

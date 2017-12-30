@@ -1,160 +1,136 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+@import "variables";
+@import "functions";
+@import "mixins";
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 html {
-  background-color: $gray-lightest;
-  font-size: 18px; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font: {
+    family: $sans;
+    size: $root-font-size;
+  }
+  height: 100vh;
   text-rendering: optimizeLegibility;
-  transition: background-color 2s;
+  width: 100vw;
 }
-
 body {
-  background-color: $white;
-  color: $black;
-  font-family: $sans;
-  line-height: 145%;
-  min-height: 100vh;
+  margin: 0;
+  &.light {
+    background-color: color(white);
+    color: color(black);
+  }
+  &.dark {
+    background-color: color(black);
+    color: color(white);
+  }
 }
-
-.body__container {
-  margin: auto;
-  max-width: 34rem;
-  padding: 1rem;
+a {
+  color: color(black);
+  &:hover { color: color(orange); }
 }
-
 p {
+  @include respond-to(md) {
+    font-size: 1.15rem;
+  }
+
+  color: color(black, serif);
   font: {
     family: $serif;
-    size: 110%;
+    size: 1rem;
   }
-  line-height: 140%;
-  margin-bottom: 1.5rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-a {
-  color: $gray;
-  text-decoration: none;
-
-  &:hover {
-    color: $orange;
-  }
-}
-
-hr {
-  border: 0;
-  height: 25px;
+  line-height: 1.58;
   margin: {
-    bottom: 4rem;
-    left: auto;
-    right: auto;
-    top: 4rem
-  }
-  text-align: center;
-  width: 100%;
-
-  &::before {
-    color: $gray;
-    content: "•••";
-    font-size: 1rem;
-    letter-spacing: 1rem;
+    bottom: 1.75rem;
+    top: 0;
   }
 }
+hr {
+  display: block;
+  border: 0;
+  margin: {
+    bottom: 2.3rem;
+    top: 2.8rem;
+  }
+  overflow: visible;
+  text-align: center;
 
+  &:before {
+    content: '...';
+    color: rgba(0,0,0,.68);
+    display: inline-block;
+    font: {
+      size: 1.67rem;
+      style: italic;
+      weight: 400;
+    }
+    letter-spacing: 1rem;
+    position: relative;
+    top: -30px;
+  }
+}
 blockquote {
   margin: {
-    top: 3rem;
     bottom: 3rem;
-    right: 0;
     left: 0;
+    right: 0;
+    top: 3rem;
   }
 
   p {
-    color: $blue;
+    color: color(green);
     font: {
       family: $sans;
-      size: 1.45rem;
-      weight: 300;
+      size: 1.5rem;
+      weight: 500;
     }
     line-height: 2rem;
     text-align: center;
   }
 }
-
-img, video {
+img,
+video {
   border-radius: 3px;
   display: block;
   margin: {
-    top: 3rem;
     bottom: 3rem;
-    right: auto;
     left: auto;
+    right: auto;
+    top: 3rem;
   }
   max-width: 100%;
-
-  @media screen and (max-width: $sm) {
-    border-radius: 0;
-    margin: {
-      left: -1rem;
-      right: -1rem;
-    }
-    max-width: calc(100% + 2rem);
-  }
 }
-
-ol, ul {
-  li {
-    font: {
-      family: $serif;
-      size: 110%;
-    }
-
-    & > p {
-      font-size: 100%;
-
-      & .reversefootnote {
-        border-bottom: 0;
-      }
-    }
-  }
-}
-
 sup {
+  margin-right: .5rem;
+  position: relative;
+  vertical-align: baseline;
   a {
+    background-image: none !important;
     border-bottom: 0;
-    color: $gray;
-    font-family: $sans;
-
-    &:hover {
-      color: $orange;
+    color: color(black, serif);
+    font: {
+      family: $sans;
+      size: .8rem;
     }
+    position: absolute;
   }
 }
-
-time {
-  color: $gray;
-  display: block;
-  font-family: $sans;
-}
-
 table {
   border: {
-    collapse: collapse;
-    color: $gray-light;
-    spacing: 0;
+    color: color(gray);
     style: solid;
     width: 1px;
   }
-  font-family: $serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: $sans;
   margin: {
     bottom: 2rem;
-    left: 0;
-    right: 0;
     top: 2rem;
   }
   max-width: 100%;
@@ -162,16 +138,9 @@ table {
   overflow-x: auto;
   width: 100%;
 
-  tbody tr:nth-child(odd) {
-    background-color: $white;
-  }
-
-  tbody tr:nth-child(even) {
-    background-color: lighten($gray-lightest, 1);
-  }
-
-  th, td {
-    color: $black;
+  th,
+  td {
+    color: color(black, serif);
     padding: {
       bottom: 0.6rem;
       left: 1rem;
@@ -179,191 +148,105 @@ table {
       top: 0.6rem;
     }
   }
-
   th {
-    background: $white;
     border-left: {
-      color: $gray-light;
+      color: color(gray);
       style: solid;
       width: 1px;
     }
     font-weight: 600;
   }
-
   td {
-    border-left: {
-      color: $gray-light;
+    border: {
+      color: color(gray);
       style: solid;
       width: 1px;
     }
-    border-top: {
-      color: $gray-light;
-      style: solid;
-      width: 1px;
-    }
+    border-bottom: 0;
+    border-right: 0;
     text-align: left;
   }
 }
 
-footer {
-  color: $gray;
-  font: {
-    family: $sans;
-    size: 0.8rem;
-    weight: 400;
-  }
-}
-
-.back {
-  color: $gray-light;
-  font: {
-    family: $mono;
-    size: .85rem;
-    weight: 600;
-  }
-  left: 1rem;
-  letter-spacing: 2px;
-  position: fixed;
-  text-transform: uppercase;
-
-  @media screen and (max-width: $sm) {
-    position: absolute;
-  }
-}
-
-.intro {
-  &__head {
-    color: $black-dark;
-    font: {
-      size: 1.25rem;
-      weight: 700;
-    }
-    letter-spacing: 2px;
-  }
-
-  &__sub {
-    color: $black;  
-    font-size: 1rem;
-  }
-}
-
-.group {
-  border-top: {
-    color: $gray-light;
-    style: solid;
-    width: 1px;
-  }
-  display: flex;
-
-  @media screen and (max-width: $sm) {
-    flex-direction: column;
-  }
-}
-
-.group__title {
-  flex: 1.5;
-  padding: {
+.t-button {
+  @include respond-to(md) {
+    bottom: 2rem;
     right: 2rem;
-    top: .5rem;
   }
-
-  span {
-    border-top: {
-      color: $orange;
-      style: solid;
-      width: 1px;
-    }
-    font: {
-      family: $mono;
-      size: .85rem;
-      weight: 600;
-    }
-    letter-spacing: 2px;
-    padding-top: .65rem;
-    text-transform: uppercase;
+  -webkit-appearance: none;
+  background: {
+    color: color(white);
+    image: url('../assets/icons/pointer-dark.svg');
+    position: center;
+    repeat: no-repeat;
+    size: 2rem;
   }
-
-  @media screen and (max-width: $sm) {
-    margin-bottom: .5rem;
-  }
-}
-
-.group__list {
-  flex: 8.5;
-
-  @media screen and (max-width: $sm) {
-    border-top: {
-      color: $gray-light;
-      style: solid;
-      width: 1px;
-    }
-  }
-}
-
-.post {
-  border-bottom: {
-    color: $gray-light;
+  border: {
+    color: color(gray);
+    radius: 50%;
     style: solid;
     width: 1px;
   }
-  color: $black;
-  display: flex;
-  font: {
-    family: $sans;
-    size: .9rem;
+  bottom: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  outline: 0;
+  position: fixed;
+  right: 1rem;
+  transition: {
+    duration: .5s;
+    property: border-color, transform;
+  }
+  width: 2.5rem;
+  &:hover {
+    border-color: color(black);
+    transform: translateY(-5px);
+  }
+  &:active { transform: translateY(2px); }
+}
+#app {
+  margin: {
+    bottom: 4rem;
+    left: auto;
+    right: auto;
+    top: 2rem;
   }
   padding: {
-    bottom: 0.64rem;
-    top: 0.64rem;
+    left: 1rem;
+    right: 1rem;
   }
-  text-decoration: none;
-  width: 100%;
-
-  &__title {
-    font-weight: 500;
-  }
-
-  &__date {
-    color: $gray;
-    margin-right: 1.5rem;
+  max-width: $root-container-width;
+}
+.footnotes {
+  ul,
+  ol {
+    padding-left: 1rem;
   }
 }
 
-.archive {
-  color: $gray;
-  display: flex;
-  font: {
-    family: $sans;
-    size: .9rem;
-    weight: 500;
+.dark {
+  a {
+    color: color(white);
+    &:hover { color: color(orange); }
   }
-  justify-content: flex-end;
-  padding: {
-    bottom: 0.64rem;
-    top: 0.64rem;
+  p { color: color(white, serif); }
+  hr:before { color: rgba(255,255,255,.68); }
+  sup {
+    a { color: color(white, serif); }
   }
-  text-decoration: none;
-  width: 100%;
-}
-
-.blog {
-  &__head {
-    color: $black;
-    font: {
-      size: 1.25rem;
-      weight: 700;
+  table {
+    border-color: color(gray, dark);
+    th,
+    td { color: color(white, serif); }
+    th { border-left-color: color(gray, dark); }
+    td { border-color: color(gray, dark); }
+  }
+  .t-button {
+    background: {
+      color: color(black);
+      image: url('../assets/icons/pointer-light.svg');
     }
-    letter-spacing: 2px;
+    border-color: color(gray, dark);
+    &:hover { border-color: color(white); }
   }
-}
-
-.error {
-  background: {
-    image: url(../img/ocean.jpg);
-    size: cover;
-    position: center center;
-    repeat: no-repeat;
-  }
-  height: 100vh;
-  width: 100vw;
 }
