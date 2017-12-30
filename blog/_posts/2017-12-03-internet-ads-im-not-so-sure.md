@@ -33,6 +33,8 @@ I support a journalling app, [Day One](http://help.dayoneapp.com/day-one-2-0/day
 
 ***
 
+*Thanks to [Himanshu Sahay](https://www.linkedin.com/in/himanshusahay/) and [Tim Petri](https://www.linkedin.com/in/timpetri/) for reading drafts of this.*
+
 [^1]: [*The Web's Grain*](https://www.frankchimero.com/writing/the-webs-grain/), written by [Frank Chimero](https://www.frankchimero.com), one of my favorite reads on the Interwebs.
 
 [^2]: Kevin Kelly from the fantastic *On Margins* podcast by Craig Mod: *Here’s a little bit inside stuff from the magazines, and I always objected to this, which was that when you have a magazine that you’re only going to subscribers, you can do amazing things with the cover, because the covers are all designed for magazines on the people who don’t subscribe. We’re trying to win over people who are not your fans, and so all the people who are your fans, you’re ignoring them.*

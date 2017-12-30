@@ -18,7 +18,7 @@ p, li {
     white-space: nowrap;
   }
 }
-.highlight {
+pre.highlight {
   background-color: #f6f8fa;
   border-radius: 3px;
   font: {
@@ -93,10 +93,8 @@ p, li {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 .dark {
-  p, li {
-    code { background-color: #333333; }
-  }
-  .highlight { background-color: #333333; }
+  p, li { code { background-color: #333333; } }
+  pre.highlight { background-color: #333; }
   .highlight pre { background-color: #333; }
   .highlight .hll { background-color: #333333 }
   .highlight .c { color: #008800; font-style: italic; background-color: #0f140f } /* Comment */
