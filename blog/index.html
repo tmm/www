@@ -2,29 +2,26 @@
 title: Archive
 ---
 
-<a href="/" class="back">home</a>
-
-<header class="blog mar-tb-7">
-  <h1 class="blog__head">Archive</h1>
+<header class="t-header">
+    <h1 class="t-header__title">Archive</h1>
+    <div class="t-header__description">Everything published on this site. Subscribe for updates <a href="http://eepurl.com/c9a305">here</a>.</div>
 </header>
 
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% unless forloop.first %}</section>{% endunless %}
-<section id="y{{post.date | date: "%Y"}}" class="group mar-b-7">
-  <div class="group__title">
-    <span>{{ currentdate }}</span>
-  </div>
-  <div class="group__list">
-    {% assign date = currentdate %}
-    {% endif %}
-    <a class="post" href="{{ post.url | prepend: site.baseurl }}">
-        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%m.%Y" }}</time>
-        <span class="post__title">{{ post.title }}</span>
-    </a>
-    {% if forloop.last %}
-</div>
+<section class="t-section" id="y{{post.date | date: "%Y"}}">
+    <h2 class="t-section__title">{{ currentdate }}:</h2>
+    <ul class="t-section__list">
+        {% assign date = currentdate %}
+        {% endif %}
+        <li class="t-section__list-item">
+            <a class="t-section__list-item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <time class="t-section__list-item-time" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%m.%Y" }}</time>
+        </li>
+        {% if forloop.last %}
+    </ul>
 </section>
 {% endif %}
 {% endfor %}

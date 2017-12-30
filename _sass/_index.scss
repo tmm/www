@@ -1,0 +1,67 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+.t-header {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+}
+.t-header__title {
+  font: {
+    size: 1.5rem;
+    weight: 700;
+  }
+  margin: 0;
+}
+.t-header__description {
+  font-size: 1.05rem;
+}
+.t-section {
+  margin-bottom: 2rem;
+}
+.t-section__title {
+  font: {
+    size: 1rem;
+    weight: 700;
+  }
+  margin: {
+    bottom: .75rem;
+    top: 0;
+  }
+}
+.t-section__list-container {
+  @include respond-to(md) {
+    @include flex-row;
+  }
+}
+.t-section__list {
+  @include respond-to(md) {
+    padding-left: 2.2rem;
+  }
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.t-section__list-item {
+  font-size: .95rem;
+  margin-bottom: .25rem;
+}
+.t-section__list-item-time {
+  color: rgba(0,0,0,.5);
+  font-size: .85rem;
+}
+.t-section__paragraph {
+  color: color(black);
+  font: {
+    family: $sans;
+    size: 1rem;
+  }
+  margin: {
+    bottom: .25rem;
+    top: 0;
+  }
+}
+
+.dark {
+  .t-section__list-item-time { color: rgba(255,255,255,.5); }
+}

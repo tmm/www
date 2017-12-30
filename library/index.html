@@ -1,0 +1,31 @@
+---
+title: Library
+---
+
+<header class="t-header">
+    <h1 class="t-header__title">The Library</h1>
+    <div class="t-header__description">A collection of my favorites items—physical and digital—that I have discovered throughout my travels all over the World and on the Web.</div>
+</header>
+
+<div class="t-library">
+    {% for item in site.library %}
+    <div class="t-library__item">
+        <a href="{{item.link}}">
+            <div class="t-library__item-image-container">
+                {% if item.image %}
+                <img
+                    class="t-library__item-image"
+                    src="./assets/{{item.image}}"
+                >
+                {% else %}
+                <div class="t-library__item-placeholder">
+                    {{item.title}}
+                </div>
+                {% endif %}
+            </div>
+            <div class="t-library__item-title">{{item.title}}</div>
+            <div class="t-library__item-author">{{item.author}} {% if item.year %}· {{item.year}}{% endif %}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

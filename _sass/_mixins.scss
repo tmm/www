@@ -1,0 +1,26 @@
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media screen and (min-width: 576px) { @content; }
+  }
+  @else if $media == md {
+    @media screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == lg {
+    @media screen and (min-width: 992px) { @content; }
+  }
+  @else if $media == xl {
+    @media screen and (min-width: 1200px) { @content; }
+  }
+}
