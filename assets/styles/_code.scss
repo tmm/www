@@ -1,0 +1,49 @@
+@import "variables";
+
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 400;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Regular.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Regular.woff') format('woff');
+}
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 700;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Bold.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Bold.woff') format('woff');
+}
+code {
+  background-color: #282a36;
+  color: #ffffff;
+  font: {
+    family: $mono;
+    size: .9rem;
+  }
+}
+pre[class*="language-"] {
+  background-color: #282a36;
+  padding: .5rem;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  font: {
+    family: $mono;
+    size: .9rem;
+  }
+  hyphens: none;
+  line-height: 1.5;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre;
+  word: {
+    spacing: normal;
+    break: normal;
+    wrap: normal;
+  }
+}

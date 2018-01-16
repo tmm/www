@@ -1,0 +1,22 @@
+$colors: (
+  black: (
+    base: #232323,
+    serif: rgba(0,0,0,.9),
+  ),
+  gray: (
+    base: #747474,
+    dark: #323232,
+    light: #d9d9d9,
+  ),
+  green: (
+    base: #00c266,
+  ),
+  white: (
+    base: #fcfcfc,
+    serif: rgba(255,255,255,.9),
+  )
+);
+$root-container-width: 32rem;
+$root-font-size: 18px;
+$sans: Lato, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mono: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
