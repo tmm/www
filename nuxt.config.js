@@ -38,15 +38,16 @@ module.exports = {
       const fs = require('fs');
       const POSTS_DIR = './blog';
       const files = fs.readdirSync(POSTS_DIR);
-      return files.map((fileName) => {
+      const getPostUrl = (fileName) => {
         // Regex https://regexr.com/3j04b
         const slugRegex = /^(\d+)-(\d+)-(\d+)-(.*)(?:\.md)$/g;
-        const match = slugRegex
+        const postPath = slugRegex
           .exec(fileName)
-          .slice(1, 5);
-        const postPath = match.join('/');
+          .slice(1, 5)
+          .join('/');
         return `/blog/${postPath}/`;
-      });
+      };
+      return files.map(fileName => getPostUrl(fileName));
     },
   },
   head: {
@@ -141,5 +142,8 @@ module.exports = {
     ],
   },
   loading: { color: '#00c266' },
+  plugins: [
+    { src: '@/plugins/ga.js', ssr: false },
+  ],
   router: { mode: 'history' },
 };

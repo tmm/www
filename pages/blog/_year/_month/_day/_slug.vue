@@ -38,6 +38,11 @@
   import Prism from 'prismjs';
   import VueDisqus from 'vue-disqus/VueDisqus.vue';
 
+  const helloName = (name = "World") => {
+    return `Hello, ${name}!`
+  };
+  helloName();
+
   export default {
     components: {
       'vue-disqus': VueDisqus,
@@ -88,8 +93,8 @@
       },
     },
     filters: {
-      formatDate: (any) => {
-        const date = new Date(any);
+      formatDate: (dateString) => {
+        const date = new Date(dateString);
         const months = [
           'January',
           'February',
@@ -175,9 +180,9 @@
       }
       font-style: italic;
       margin: {
-        bottom: 2rem;
+        bottom: 1.5rem;
         left: 0;
-        top: 2rem;
+        top: 1.5rem;
       }
       padding-left: 1.25rem;
     }
@@ -286,9 +291,20 @@
         text-align: left;
       }
     }
-    .footnotes {
-      ul,
-      ol { padding-left: 1rem; }
+    ul,
+    ol { padding-left: 1rem; }
+    .footnotes-sep {
+      border: {
+        color: color(black);
+        style: solid;
+        width: 1px;
+      }
+      margin: {
+        bottom: 3rem;
+        top: 3rem;
+      }
+      max-width: 1.5rem;
+      &:before { display: none; };
     }
   }
 </style>

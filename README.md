@@ -4,7 +4,7 @@ Thanks for checking out the innards of [my website](https://meagher.co/). Here's
 
 * [GitHub Pages](https://pages.github.com) graciously hosts my site.
 * [CloudFlare](http://www.cloudflare.com) powers my DNS (and SSL ftw 🔒).
-* Syntatically Awesome Style Sheets [(a.k.a Sass)](http://sass-lang.com) help make it pretty.
+* Syntactically Awesome Style Sheets [(a.k.a Sass)](http://sass-lang.com) help make it pretty.
 * The beautiful sans-serif and monospaced fonts are [Lato](https://latofonts.com) and [Fira Code](https://github.com/tonsky/FiraCode).
 * My blog posts are written in [Markdown](https://daringfireball.net/projects/markdown/).
 * And [Nuxt](https://nuxtjs.org/) does just about everything else.

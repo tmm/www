@@ -67,8 +67,6 @@ $ home fetch
 $ home checkout master
 ```
 
----
-
 ### Notes
 
 [My dotfiles](https://github.com/tmm/dotfiles) on GitHub.

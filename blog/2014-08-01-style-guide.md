@@ -64,7 +64,7 @@ func helloName(name: String = "World") -> String {
 
 ``` js
 // A simple function in Javascript
-const helloName = (name = "World") => {
+const helloName = (name = 'World') => {
   return `Hello, ${name}!`
 }
 ```
