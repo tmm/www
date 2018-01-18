@@ -45,8 +45,22 @@
       ]),
     },
     head() {
+      const meta = [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'This is my site. There are many like it, but this one is mine.',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'tom, tomfme, meagher, code, design, startups, technology, tech, design',
+        },
+      ];
       return {
-        title: 'Tom Meagher, Programmer',
+        title: 'Programmer, etc.',
+        titleTemplate: '%s – Tom Meagher',
+        meta,
       }
     },
   };

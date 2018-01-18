@@ -3,8 +3,8 @@
     <navbar/>
 
     <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <nuxt-link to="/">Home page</nuxt-link>
+    <h1 v-else>Something went wrong</h1>
+    <div>Well, that's awkward. <nuxt-link to="/">Back to home</nuxt-link></div>
 
     <foot/>
   </div>

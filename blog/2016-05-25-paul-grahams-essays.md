@@ -7,8 +7,6 @@ Like many others, [Paul Graham's essays](http://paulgraham.com/articles.html) in
 
 Recently, I started to re-read them from the beginning. (Starting with [*Programming Bottom-Up*](http://paulgraham.com/progbot.html).) What follows are my favorite quotes.
 
----
-
 #### [Design and Research](http://paulgraham.com/desres.html) (Jan 2003)
 
 > Design doesn't have to be new, but it has to be good. Research doesn't have to be good, but it has to be new.

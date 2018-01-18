@@ -163,6 +163,7 @@
     margin-bottom: 2rem;
   }
   .post__title {
+    font-size: 1.15rem;
     margin: {
       bottom: .25rem;
       top: 0;
@@ -194,10 +195,10 @@
     video {
       display: block;
       margin: {
-        bottom: 3rem;
+        bottom: 1.5rem;
         left: auto;
         right: auto;
-        top: 3rem;
+        top: 1.5rem;
       }
       max-width: 100%;
     }
@@ -251,12 +252,8 @@
       border-collapse: collapse;
       border-spacing: 0;
       margin: {
-        bottom: 2rem;
-        top: 2rem;
-      }
-      margin: {
-        bottom: 2rem;
-        top: 2rem;
+        bottom: 1.5rem;
+        top: 1.5rem;
       }
       max-width: 100%;
       min-height: .01%;
@@ -279,6 +276,7 @@
           width: 1px;
         }
         font-weight: 600;
+        text-align: left;
       }
       td {
         border: {

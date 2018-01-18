@@ -26,5 +26,3 @@ I think it turned out nicely. (Let me know how much you hate it below.)
 ![Old Site](/blog/assets/2017/01/02.png)
 
 Good luck in 2017! You'll do great.
-
----

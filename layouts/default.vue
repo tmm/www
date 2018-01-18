@@ -34,6 +34,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
+    color: color(black);
     font: {
       family: $sans;
       size: $root-font-size;
@@ -43,20 +44,25 @@
     width: 100vw;
   }
   body {
+    background-color: color(white);
     margin: 0;
   }
   p {
+    color: color(black);
     font-size: 1rem;
     line-height: 1.5;
     margin: {
       bottom: 1.35rem;
-      top: 0;
+      top: 1.35rem;
     }
   }
   a {
     color: color(black);
     text-decoration-skip: ink;
     &:hover { color: color(green); }
+  }
+  h1 {
+    font-size: 2rem;
   }
   #app {
     margin: {

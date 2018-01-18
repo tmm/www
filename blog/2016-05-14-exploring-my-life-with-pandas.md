@@ -18,16 +18,18 @@ Charts and code follow.
 
 After importing my Reporter CSV export into a Pandas `DataFrame` and cleaning it up, I was left with 20 columns. (Which I later renamed to make them easier to work with.)
 
-Timestamp of Report (GMT)|Timestamp of Report (Local Time)
-Latitude|Longitude
-Weather|Number of Photos Added
-Ambient Audio (dB)|Ambient Audio Description
-Number of Steps|What did you learn today?
-Where are you?|What are you doing?
-Who are you with?|How did you sleep?
-How many pages did you read tonight?|Are you in front of a screen?
-What book are you reading?|Did you exercise today?
-What are you thinking about?|Are you wearing your retainer?
+Columns | -
+--- | ---
+Timestamp of Report (GMT) | Timestamp of Report (Local Time)
+Latitude | Longitude
+Weather | Number of Photos Added
+Ambient Audio (dB) | Ambient Audio Description
+Number of Steps | What did you learn today?
+Where are you? | What are you doing?
+Who are you with? | How did you sleep?
+How many pages did you read tonight? | Are you in front of a screen?
+What book are you reading? | Did you exercise today?
+What are you thinking about? | Are you wearing your retainer?
 
 They span multiple data types from categorical to numeric, and most everything in between.
 
@@ -114,20 +116,15 @@ Perhaps because you are more tired.
 
 However, the closest I got to a *strong* correlation was pages read versus step count. (Pages read versus photos taken was the second highest.)
 
-_|Pages Read|Step Count
-Pages Read|1|**-0.237353**
-Step Count|**-0.237353**|1
+_ | Pages Read | Step Count
+--- | --- | ---
+Pages Read | 1 | **-0.237353**
+Step Count | **-0.237353** | 1
 
 Unfortuntately, I don't think there is a satisfying *quantitative* answer here. Or at least not with the data I have.
 
 Qualitatively though, I think it was because I was in India having the time of my life with my friends.
 
 And that's good enough for me.
-
----
-
-### Notes
-
-Tweet [@tomfme](https://twitter.com/tomfme) if you want to play around with my data or code.
 
 [^1]: This is sort of terrifying.
