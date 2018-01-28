@@ -36,6 +36,7 @@
     "eslint-plugin-vue": "^4.1.0",
     "front-matter-loader": "^0.2.0",
     "node-sass": "^4.7.2",
+    "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6",
     "vue-style-loader": "^3.0.3"
   }
