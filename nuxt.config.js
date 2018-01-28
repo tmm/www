@@ -34,6 +34,7 @@ module.exports = {
     },
   },
   generate: {
+    dir: 'docs',
     routes() {
       const fs = require('fs');
       const POSTS_DIR = './blog';
