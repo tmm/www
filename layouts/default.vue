@@ -31,13 +31,16 @@
     box-sizing: inherit;
   }
   html {
+    @include respond-to(sm) {
+      font-size: $root-font-size;
+    }
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     color: color(black);
     font: {
       family: $sans;
-      size: $root-font-size;
+      size: $root-font-size * .95;
     }
     height: 100vh;
     text-rendering: optimizeLegibility;

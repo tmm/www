@@ -28,7 +28,7 @@
   .foot {
     font-size: .8rem;
     margin: {
-      bottom: 4rem;
+      bottom: 3.5rem;
       top: 2rem;
     }
   }

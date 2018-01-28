@@ -2,8 +2,18 @@
   <div id="app">
     <navbar/>
 
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>Something went wrong</h1>
+    <h1
+      v-if="error.statusCode === 404"
+      class="error__header"
+    >
+      Page not found
+    </h1>
+    <h1
+      v-else
+      class="error__header"
+    >
+      Something went wrong
+    </h1>
     <div>Well, that's awkward. <nuxt-link to="/">Back to home</nuxt-link></div>
 
     <foot/>
@@ -26,8 +36,8 @@
     },
     head() {
       return {
-        title: 'Merp',
-        titleTemplate: '%s – Tom Meagher',
+        title: 'Not Found',
+        titleTemplate: '%s ~ Tom Meagher',
       }
     },
   };
@@ -76,5 +86,11 @@
     color: color(black);
     text-decoration-skip: ink;
     &:hover { color: color(green); }
+  }
+  .error__header {
+    font: {
+      size: 1rem;
+      weight: bold;
+    }
   }
 </style>

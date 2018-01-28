@@ -24,7 +24,7 @@
     </template>
 
     <div v-else>
-      <h1>Something went wrong</h1>
+      <h1 class="error__header">Page not found</h1>
       <div>Well, that's awkward. <nuxt-link to="/">Back to home</nuxt-link></div>
     </div>
   </section>
@@ -96,25 +96,28 @@
       formatDate: (dateString) => {
         const date = new Date(dateString);
         const months = [
-          'January',
-          'February',
-          'March',
-          'April',
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
           'May',
-          'June',
-          'July',
-          'August',
-          'September',
-          'October',
-          'November',
-          'December'
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+          'Oct',
+          'Nov',
+          'Dec'
         ];
         return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
       },
     },
     head() {
       if (!this.activePost) {
-        return { title: 'Not Found' };
+        return {
+          title: 'Not Found',
+          titleTemplate: '%s ~ Tom Meagher',
+        };
       }
       const description = this.activePost.description || '';
       const keywords = this.activePost.keywords ? this.activePost.keywords : [];
@@ -143,7 +146,7 @@
 
       return {
         title: this.activePost.title,
-        titleTemplate: '%s – Tom Meagher',
+        titleTemplate: '%s ~ Tom Meagher',
         meta: [].concat(meta, twitterMeta, ogMeta),
       };
     },
@@ -163,14 +166,17 @@
     margin-bottom: 2rem;
   }
   .post__title {
-    font-size: 1.15rem;
+    font: {
+      size: 1rem;
+      weight: bold;
+    }
     margin: {
       bottom: .25rem;
       top: 0;
     }
   }
   .post__date {
-    font-size: .85rem;
+    font-size: .8rem;
   }
   .post {
     blockquote {
@@ -303,6 +309,12 @@
       }
       max-width: 1.5rem;
       &:before { display: none; };
+    }
+  }
+  .error__header {
+    font: {
+      size: 1rem;
+      weight: bold;
     }
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section>
     <header class="t-blog">
-      <h1>Archive</h1>
+      <h1 class="t-blog__header">Archive</h1>
     </header>
 
     <blog-list
@@ -27,7 +27,7 @@
     head() {
       return {
         title: 'Blog',
-        titleTemplate: '%s – Tom Meagher',
+        titleTemplate: '%s ~ Tom Meagher',
       }
     },
   };
@@ -38,6 +38,14 @@
   @import '../../assets/styles/functions';
   @import '../../assets/styles/mixins';
 
-  .t-blog {
+  .t-blog__header {
+    font: {
+      size: 1rem;
+      weight: bold;
+    }
+    margin: {
+      bottom: 1.5rem;
+      top: 0;
+    }
   }
 </style>

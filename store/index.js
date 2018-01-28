@@ -15,7 +15,6 @@ const store = () => new Vuex.Store({
       },
       email: 'tom@meagher.co',
     },
-    links: [],
     posts: [],
   },
   actions: {
@@ -71,28 +70,6 @@ const store = () => new Vuex.Store({
   getters: {
     activePost: state => state.activePost,
     author: state => state.author,
-    links: state => [
-      {
-        name: 'Email',
-        username: state.author.email,
-        href: `mailto:${state.author.email}?subject=Hi there!`,
-      },
-      {
-        name: 'GitHub',
-        username: state.author.social.github,
-        href: `https://github.com/${state.author.social.github}`,
-      },
-      {
-        name: 'Medium',
-        username: state.author.social.medium,
-        href: `https://medium.com/@${state.author.social.medium}`,
-      },
-      {
-        name: 'Twitter',
-        username: state.author.social.twitter,
-        href: `https://twitter.com/${state.author.social.twitter}`,
-      },
-    ],
     posts: state => state.posts,
   },
 });

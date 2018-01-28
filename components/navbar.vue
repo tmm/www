@@ -1,11 +1,12 @@
 <template>
   <nav class="navbar">
     <div class="navbar__left">
-      <nuxt-link to="/" class="navbar__link" >Tom Meagher, Programmer</nuxt-link>
+      <nuxt-link to="/" class="navbar__link logo" >Tom Meagher</nuxt-link>
     </div>
     <div class="navbar__right">
       <nuxt-link to="/blog/" class="navbar__link">Blog</nuxt-link>
-      <nuxt-link to="/favorites/" class="navbar__link">Favorites</nuxt-link>
+      <a href="https://twitter.com/tomfme" class="navbar__link">Twitter</a>
+      <a href="mailto:tom@meagher.co?Hi there!" class="navbar__link">Email</a>
     </div>
   </nav>
 </template>
@@ -40,10 +41,14 @@
   .navbar__link {
     font: {
       size: .9rem;
-      weight: 500;
+      weight: 400;
     }
     margin-right: 1rem;
     text-decoration: none;
     &:last-child { margin-right: 0; }
+    &.logo {
+      color: color(green);
+      font-weight: bold;
+    }
   }
 </style>

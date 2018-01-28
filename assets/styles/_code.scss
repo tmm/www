@@ -19,11 +19,11 @@
        url('/assets/fonts/fira-code/FiraCode-Bold.woff') format('woff');
 }
 code {
-  background-color: #282a36;
-  color: #ffffff;
+  background-color: #f6f8fa;
+  color: color(black);
   font: {
     family: $mono;
-    size: .9rem;
+    size: 1rem;
   }
 }
 pre[class*="language-"] {
@@ -51,6 +51,10 @@ pre[class*="language-"] {
     spacing: normal;
     break: normal;
     wrap: normal;
+  }
+  code {
+    background-color: transparent;
+    color: #ffffff;
   }
 }
 .token.comment,

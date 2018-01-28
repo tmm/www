@@ -12,21 +12,10 @@
         <span class="t-list-item__title">{{ post.title }}</span>
         <time
           :datetime="post.date"
-          class="t-list-item__description"
+          class="t-list-item__time"
         >
           {{post.date | formatDate}}
         </time>
-      </nuxt-link>
-    </li>
-    <li
-      v-if="$route.name !== 'blog'"
-      class="t-list-item footer"
-    >
-      <nuxt-link
-        to="/blog/"
-        class="t-list-item__link"
-      >
-        Browse the Archive
       </nuxt-link>
     </li>
   </ul>
@@ -42,7 +31,7 @@
       formatDate: (any) => {
         const date = new Date(any);
         const month = date.getMonth() + 1;
-        return `${month < 10 ? 0 : ''}${month}.${date.getFullYear()}`
+        return `${month < 10 ? 0 : ''}${month}/${date.getFullYear()}`
       },
     },
   };
@@ -64,26 +53,19 @@
   .t-list-item {
     @include flex-row;
     border-bottom: {
-      color: color(black);
+      color: color(gray, light);
       style: solid;
       width: 1px;
-    }
-    &.footer {
-      border: 0;
-      font: {
-        size: .75rem;
-        weight: 500;
-      }
     }
   }
   .t-list-item__link {
     @include flex-row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     height: 100%;
     padding: {
-      bottom: .2rem;
-      top: .85rem;
+      bottom: .7rem;
+      top: .7rem;
     }
     text-decoration: none;
     transition: {
@@ -96,11 +78,11 @@
   .t-list-item__title {
     font: {
       size: .9rem;
-      weight: 600;
+      weight: 500;
     }
   }
-  .t-list-item__description {
+  .t-list-item__time {
     color: color(gray);
-    font-size: .85rem;
+    font-size: .75rem;
   }
 </style>

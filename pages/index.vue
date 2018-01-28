@@ -1,30 +1,18 @@
 <template>
-  <section>
+  <section class="t-home">
     <header class="t-header">
-      <h1 class="t-header__intro">
-        I'm Tom Meagher (MAH-hur):<br>a programmer, writer, and walk enthusiast.
-      </h1>
+      <p class="t-header__intro"><span>Hello & Welcome.</span> I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast.</p>
     </header>
-
-    <blog-list
-      :posts="posts.slice(0,6)"
-    />
-
-    <ul class="t-list">
-      <li
-        v-for="link in links"
-        :key="link.name"
-        class="t-list-item"
-      >
-        <a
-          :href="link.href"
-          class="t-list-item__link"
-        >
-          <span class="t-list-item__title">{{ link.name }}</span>
-          <time class="t-list-item__description">{{ link.username }}</time>
-        </a>
-      </li>
-    </ul>
+    <p class="t-para">
+      Currently, I work at <a href="https://kit.com" target="_blank">kit.com</a>, primarily building for the Web. Most of my projects—including this site—are public on
+      <a href="https://github.com/tmm" target="_blank">GitHub</a>.
+    </p>
+    <p class="t-para">
+      I'm always happy to help or point you in the right direction. The best ways to contact me are <a href="https://twitter.com/tofme" target="_blank">Twitter</a> and <a href="mailto:tom@meagher.co?Hi there!">email</a>.
+    </p>
+    <p class="t-para">
+      If you're still looking for more Tom-things, I suggest browsing the <nuxt-link to="/blog/">Archive</nuxt-link>, visiting <a href="https://notational.co" target="_blank">Notational</a>, or taking a look at my <nuxt-link to="/blog/2017/10/08/core-values/">Core Values</nuxt-link>.
+    </p>
   </section>
 </template>
 
@@ -40,7 +28,6 @@
     computed: {
       ...mapGetters([
         'author',
-        'links',
         'posts',
       ]),
     },
@@ -49,7 +36,7 @@
         {
           hid: 'description',
           name: 'description',
-          content: 'This is my site. There are many like it, but this one is mine.',
+          content: 'I\'m Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast.',
         },
         {
           hid: 'keywords',
@@ -58,8 +45,8 @@
         },
       ];
       return {
-        title: 'Programmer, etc.',
-        titleTemplate: '%s – Tom Meagher',
+        title: 'Code, etc.',
+        titleTemplate: '%s ~ Tom Meagher',
         meta,
       }
     },
@@ -71,66 +58,21 @@
   @import '../assets/styles/functions';
   @import '../assets/styles/mixins';
 
+  .t-home {
+    margin-bottom: 4rem;
+  }
   .t-header {
-    line-height: 1.35;
     margin-bottom: 2rem;
-    &:after {
-      background-color: color(black);
-      content: '';
-      display: block;
-      height: 1px;
-      margin-top: 1.5rem;
-      width: 1rem;
-    }
   }
   .t-header__intro {
     font: {
-      size: 1.5rem;
-      weight: 700;
+      size: 1.15rem;
+      weight: 400;
     }
     margin: 0;
+    span { font-weight: bold; }
   }
-  .t-list {
-    list-style-type: none;
-    margin: {
-      bottom: 2rem;
-      top: 0;
-    }
-    padding: 0;
-  }
-  .t-list-item {
-    @include flex-row;
-    border-bottom: {
-      color: color(black);
-      style: solid;
-      width: 1px;
-    }
-  }
-  .t-list-item__link {
-    @include flex-row;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 100%;
-    padding: {
-      bottom: .2rem;
-      top: .85rem;
-    }
-    text-decoration: none;
-    transition: {
-      property: padding-left;
-      duration: .25s;
-    }
-    width: 100%;
-    &:hover { padding-left: .5rem }
-  }
-  .t-list-item__title {
-    font: {
-      size: .9rem;
-      weight: 600;
-    }
-  }
-  .t-list-item__description {
-    color: color(gray);
-    font-size: .85rem;
+  .t-para {
+    font-size: .95rem;
   }
 </style>
