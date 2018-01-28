@@ -1,0 +1,17 @@
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media screen and (min-width: 600px) { @content; }
+  }
+}

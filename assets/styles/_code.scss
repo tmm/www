@@ -1,0 +1,119 @@
+@import "variables";
+
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 400;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Regular.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Regular.woff') format('woff');
+}
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 700;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Bold.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Bold.woff') format('woff');
+}
+code {
+  background-color: #f6f8fa;
+  color: color(black);
+  font: {
+    family: $mono;
+    size: 1rem;
+  }
+}
+pre[class*="language-"] {
+  background-color: #282a36;
+  overflow: scroll;
+  padding: .5rem;
+  ::selection { background-color: #44475a; }
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  font: {
+    family: $mono;
+    size: .9rem;
+  }
+  hyphens: none;
+  line-height: 1.5;
+  margin: {
+    bottom: 1.5rem;
+    top: 1.5rem;
+  }
+  tab-size: 4;
+  text-align: left;
+  white-space: pre;
+  word: {
+    spacing: normal;
+    break: normal;
+    wrap: normal;
+  }
+  code {
+    background-color: transparent;
+    color: #ffffff;
+  }
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6272a4;
+}
+.token.punctuation {
+  color: #ffffff;
+}
+.token.selector,
+.token.tag {
+  color: #ff79c6;
+}
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+  color: #f1fa8c;
+}
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+  color: #f1fa8c;
+}
+.token.operator {
+  color: #ff79c6;
+}
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #8be9fd;
+}
+.token.atrule,
+.token.keyword {
+  color: #8be9fd;
+}
+.token.function {
+  color: #50fa7b;
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ff79c6;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}

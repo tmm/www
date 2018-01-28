@@ -1,0 +1,42 @@
+{
+  "name": "tmm.github.io",
+  "version": "1.0.0",
+  "description": "This is my site. There are many like it, but this one is mine.",
+  "author": "Tom Meagher <thom.meagher@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern plugins/ga.js .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "front-matter": "^2.3.0",
+    "markdown-it": "^8.4.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-prism": "^1.1.1",
+    "nuxt": "^1.0.0-rc11",
+    "prismjs": "^1.9.0",
+    "vue-disqus": "^2.0.4",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "css-loader": "^0.28.8",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.1.0",
+    "front-matter-loader": "^0.2.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-style-loader": "^3.0.3"
+  }
+}
