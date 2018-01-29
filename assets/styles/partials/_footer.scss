@@ -1,0 +1,23 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+.footer {
+  @include flex-row;
+  align-items: flex-end;
+  font-size: .8rem;
+  justify-content: space-between;
+  margin: {
+    bottom: 3.5rem;
+    top: 2rem;
+  }
+  img {
+    height: 1.5rem;
+    transition: {
+      duration: .15s;
+      property: transform;
+      timing-function: cubic-bezier(.11,.65,1,1.69);
+    }
+    &:hover { transform: scale(1.5); }
+  }
+}

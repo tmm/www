@@ -52,13 +52,20 @@ Spaces | Tabs
 ``` python
 # A simple function in Python
 def hello_name(name = "World"):
-  return "Hello, {}!".format(name)
+  return f"Hello, {name}!"
 ```
 
 ``` swift
 // A simple function in Swift
 func helloName(name: String = "World") -> String {
   return "Hello, \(name)!"
+}
+```
+
+``` js
+// A simple function in Javascript
+const helloName = (name = 'World') => {
+  return `Hello, ${name}!`
 }
 ```
 
@@ -84,4 +91,4 @@ Fire up your terminal and run `telnet towel.blinkenlights.nl`.
 
 ### Images
 
-![Jim](/assets/images/jim.gif)
+![Jim](/blog/assets/2014/0/jim.gif)

@@ -5,7 +5,7 @@ date: 2016-04-04 22:38:00
 
 After joining [GitHub](https://github.com) in February 2014, I was stuck with a long username. Fortunately, I didn't have to settle for it.
 
-Now, I have [{{ site.github }}](https://github.com/{{ site.github }}).
+Now, I have [@tmm](https://github.com/tmm).
 
 #### But how?
 

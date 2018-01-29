@@ -1,31 +1,3 @@
-title: Tom Meagher
-description: "Making Internet things."
-url: "http://meagher.co"
-author: "Tom Meagher"
-keywords: "tom,tomfme,meagher,code,design,startups,technology,tech,design"
-github: tmm
-twitter: tomfme
-email: tom@meagher.co
-
-exclude: [
-  ".gitignore",
-  "CNAME",
-  "LICENSE",
-  "README.md",
-]
-
-permalink: pretty
-timezone: America/New_York
-
-plugins: []
-
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-sass:
-  style: compressed
-
 defaults:
   -
     scope:
@@ -39,67 +11,25 @@ defaults:
       type: "pages"
     values:
       layout: "base"
-
-library: [
-  {
-    title: The Alchemist,
-    author: Paulo Coelho,
-    year: 1988,
-    image: the-alchemist.jpg,
-    link: 'https://www.amazon.com/Alchemist-Paulo-Coelho/dp/0062315005/'
-  },
-  {
-    title: The Web's Grain,
-    author: Frank Chimero,
-    year: 2015,
-    image: the-webs-grain.png,
-    link: 'https://frankchimero.com/writing/the-webs-grain/'
-  },
-  {
-    title: Siddhartha,
-    author: Hermann Hesse,
-    year: 1922,
-    image: siddhartha.jpg,
-    link: 'https://www.amazon.com/Siddhartha-Hermann-Hesse/dp/0553208845/'
-  },
-  {
-    title: The Shape of Things to Come,
-    author: Ian Parker,
-    year: 2015,
-    image: the-shape-of-things-to-come.jpg,
-    link: 'https://www.newyorker.com/magazine/2015/02/23/shape-things-come'
-  },
-  {
-    title: Designing in the Borderlands,
-    author: Frank Chimero,
-    year: 2014,
-    image: designing-in-the-borderlands.png,
-    link: 'https://frankchimero.com/writing/designing-in-the-borderlands/'
-  },
-  {
-    title: Lying,
-    author: Sam Harris,
-    year: 2011,
-    image: lying.jpg,
-    link: 'https://www.amazon.com/Lying-Sam-Harris/dp/1940051002/'
-  },
-  {
-    title: American Inquisitors,
-    author: Walter Lippmann,
-    year: 1928,
-    image: american-inquisitors.jpg,
-    link: 'https://www.amazon.com/American-Inquisitors-Walter-Lippmann/dp/1560006358/'
-  },
-  {
-    title: Stuff,
-    author: Paul Graham,
-    year: 2007,
-    link: 'http://paulgraham.com/stuff.html'
-  },
-  {
-    title: '1,000 True Fans',
-    author: Kevin Kelly,
-    year: 2008,
-    link: 'http://kk.org/thetechnium/1000-true-fans/'
-  },
+exclude: [
+  '.gitignore',
+  'CNAME',
+  'LICENSE',
+  'README.md',
+  'sketch',
 ]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+  sass_dir: 'assets/styles'
+timezone: America/New_York
+
+title: Tom Meagher
+description: "I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast."
+url: "https://meagher.co"
+author: "Tom Meagher"
+keywords: 'tom, tomfme, meagher, code, design, startups, technology, tech, design'

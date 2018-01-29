@@ -32,7 +32,7 @@ None are from the classroom.
 
 ### Stay Present
 
-It's so easy to get caught up in what people think, what happened in the past, or what's going to happen in the future. Here are the tricks
+It's so easy to get caught up in what people think, what happened in the past, or what's going to happen in the future. Here are the tricks:
 
 - Everyone is too focused on themselves to worry about you.
 - Nothing has ever happened in the past or future---everything happens in the now.

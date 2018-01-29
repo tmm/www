@@ -80,7 +80,7 @@ After only superficial exploration, I’m hoping to do something significant wit
 
 Until then, I’m content with building habits through the app and reflecting on the last 107 days and 500 reports.
 
-Let me know if you try it out [@{{ site.twitter }}](https://twitter.com/{{ site.twitter }}) and what your thoughts are.
+Let me know if you try it out [@tomfme](https://twitter.com/tomfme) and what your thoughts are.
 
 Happy reporting!
 

@@ -1,0 +1,156 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+@import './code';
+
+.post__header {
+  margin-bottom: 2rem;
+}
+.post__title {
+  font: {
+    size: 1rem;
+    weight: bold;
+  }
+  margin: {
+    bottom: .25rem;
+    top: 0;
+  }
+}
+.post__date {
+  font-size: .8rem;
+}
+.post {
+  margin-bottom: 5rem;
+  blockquote {
+    border-left: {
+      color: color(green);
+      style: solid;
+      width: 2px;
+    }
+    font-style: italic;
+    margin: {
+      bottom: 1.5rem;
+      left: 0;
+      top: 1.5rem;
+    }
+    padding-left: 1.25rem;
+  }
+  ol,
+  ul {
+    line-height: 1.5;
+  }
+  img,
+  video {
+    display: block;
+    margin: {
+      bottom: 1.5rem;
+      left: auto;
+      right: auto;
+      top: 1.5rem;
+    }
+    max-width: 100%;
+  }
+  sup {
+    font-style: normal;
+    margin-right: .5rem;
+    position: relative;
+    vertical-align: baseline;
+    a {
+      background-image: none !important;
+      border-bottom: 0;
+      color: color(black, serif);
+      font: {
+        family: $sans;
+        size: .7rem;
+      }
+      position: absolute;
+      text-decoration: none;
+    }
+  }
+  hr {
+    @include flex-row;
+    @include flex-center;
+    border: 0;
+    height: 0;
+    margin: {
+      bottom: 2.75rem;
+      top: 2.15rem;
+    }
+    overflow: visible;
+    text-align: center;
+
+    &:before {
+      content: '...';
+      color: rgba(0,0,0,.68);
+      font: {
+        size: 1.67rem;
+        weight: 400;
+      }
+      letter-spacing: 1rem;
+      margin-left: 1rem;
+      position: relative;
+      top: 0;
+    }
+  }
+  table {
+    border: {
+      color: color(gray, light);
+      style: solid;
+      width: 1px;
+    }
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: {
+      bottom: 1.5rem;
+      top: 1.5rem;
+    }
+    max-width: 100%;
+    min-height: .01%;
+    overflow-x: auto;
+    width: 100%;
+
+    th,
+    td {
+      padding: {
+        bottom: 0.6rem;
+        left: 1rem;
+        right: 1rem;
+        top: 0.6rem;
+      }
+    }
+    th {
+      border-left: {
+        color: color(gray, light);
+        style: solid;
+        width: 1px;
+      }
+      font-weight: 600;
+      text-align: left;
+    }
+    td {
+      border: {
+        color: color(gray, light);
+        style: solid;
+        width: 1px;
+      }
+      border-bottom: 0;
+      border-right: 0;
+      text-align: left;
+    }
+  }
+  ul,
+  ol { padding-left: 1rem; }
+  .footnotes-sep {
+    border: {
+      color: color(black);
+      style: solid;
+      width: 1px;
+    }
+    margin: {
+      bottom: 3rem;
+      top: 3rem;
+    }
+    max-width: 1.5rem;
+    &:before { display: none; };
+  }
+}

@@ -128,6 +128,6 @@ And that's good enough for me.
 
 ### Notes
 
-Tweet [@{{ site.twitter }}](https://twitter.com/{{ site.twitter }}) if you want to play around with my data or code.
+Tweet [@tomfme](https://twitter.com/tomfme) if you want to play around with my data or code.
 
 [^1]: This is sort of terrifying.
