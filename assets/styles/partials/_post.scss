@@ -67,31 +67,6 @@
       text-decoration: none;
     }
   }
-  hr {
-    @include flex-row;
-    @include flex-center;
-    border: 0;
-    height: 0;
-    margin: {
-      bottom: 2.75rem;
-      top: 2.15rem;
-    }
-    overflow: visible;
-    text-align: center;
-
-    &:before {
-      content: '...';
-      color: rgba(0,0,0,.68);
-      font: {
-        size: 1.67rem;
-        weight: 400;
-      }
-      letter-spacing: 1rem;
-      margin-left: 1rem;
-      position: relative;
-      top: 0;
-    }
-  }
   table {
     border: {
       color: color(gray, light);

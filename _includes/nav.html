@@ -1,22 +1,33 @@
 <nav class="navbar">
-    <div class="navbar__left">
-        <a href="/" class="navbar__link logo">Tom Meagher</a>
-    </div>
-    <div class="navbar__right">
-        <a href="/blog/" class="navbar__link">Blog</a>
-        <a
-          class="navbar__link"
-          href="https://twitter.com/tomfme"
-          target="_blank"
-        >
-          Twitter
-        </a>
-        <a
-          class="navbar__link"
-          href="mailto:tom@meagher.co?Hi there!"
-          target="_blank"
-        >
-          Email
-        </a>
-    </div>
+  <div class="navbar__left">
+    <a href="/" class="navbar__link logo">Tom Meagher</a>
+  </div>
+  <div class="navbar__right">
+    <a
+      class="navbar__link {% if page.title == 'About' %}active{% endif %}"
+      href="/about/"
+    >
+      About
+    </a>
+    <a
+      class="navbar__link {% if page.title == 'Archive' %}active{% endif %}"
+      href="/blog/"
+    >
+      Blog
+    </a>
+    <a
+      class="navbar__link"
+      href="https://twitter.com/tomfme"
+      target="_blank"
+    >
+      Twitter
+    </a>
+    <a
+      class="navbar__link"
+      href="mailto:tom@meagher.co?Hi there!"
+      target="_blank"
+    >
+      Email
+    </a>
+  </div>
 </nav>

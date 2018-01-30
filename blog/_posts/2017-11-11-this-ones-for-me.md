@@ -22,5 +22,3 @@ I miss them every day. My grandfather passed away in June 2015. My grandmother m
 We talked so often that for a while we scheduled 5:15p on Wednesdays for our conversations. I was walking home from work and she had some time before starting dinner. Some days I would run a little late. So she would call me. "Is it five-fifteen yet?" she would say when I picked up the phone.
 
 It was an invitation for me to tell her how my day went and start speaking. Five-fifteen. It's as if she was saying: *I'm ready to listen, go ahead.*
-
-***

@@ -2,10 +2,6 @@
 title: Archive
 ---
 
-<header class="t-blog__header">
-  <h1 class="t-blog__header-title">Archive</h1>
-</header>
-
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}

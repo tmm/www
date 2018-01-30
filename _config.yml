@@ -27,9 +27,8 @@ sass:
   style: compressed
   sass_dir: 'assets/styles'
 timezone: America/New_York
-
 title: Tom Meagher
-description: "I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast."
+description: "I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC."
 url: "https://meagher.co"
 author: "Tom Meagher"
 keywords: 'tom, tomfme, meagher, code, design, startups, technology, tech, design'

@@ -26,6 +26,7 @@
   margin-right: 1rem;
   text-decoration: none;
   &:last-child { margin-right: 0; }
+  &.active { font-weight: bold; }
   &.logo {
     color: color(green);
     font-weight: bold;
