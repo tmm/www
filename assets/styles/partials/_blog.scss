@@ -3,19 +3,13 @@
 @import 'mixins';
 
 .t-blog__header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .t-blog__header-title {
   font: {
     size: 1rem;
     weight: bold;
   }
-  margin: {
-    bottom: .5rem;
-    top: 0;
-  }
-}
-.t-blog__header-description {
   margin: 0;
 }
 .t-section {

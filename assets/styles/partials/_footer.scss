@@ -5,19 +5,29 @@
 .footer {
   @include flex-row;
   align-items: flex-end;
+    border-top: {
+    color: color(gray, light);
+    style: solid;
+    width: 1px;
+  }
   font-size: .8rem;
   justify-content: space-between;
   margin: {
-    bottom: 3.5rem;
+    bottom: 5rem;
     top: 2rem;
   }
+  padding-top: .5rem;
   img {
-    height: 1.5rem;
+    -webkit-filter: grayscale(1);
+    height: 1.25rem;
     transition: {
       duration: .15s;
       property: transform;
       timing-function: cubic-bezier(.11,.65,1,1.69);
     }
-    &:hover { transform: scale(1.5); }
+    &:hover {
+      -webkit-filter: grayscale(0);
+      transform: scale(1.5);
+    }
   }
 }
