@@ -6,5 +6,7 @@
         {{ content }}
         {% include footer.html %}
     </body>
+    {% if jekyll.environment != "development" %}
     {% include ga.html %}
+    {% endif %}
 </html>
