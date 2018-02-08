@@ -24,5 +24,3 @@ As the clock ticks, people might forget about the time they cooked a certain mea
 It might not be as strong as it once was. Somewhere inside of you though, it's there. Once you have felt that feeling, it is a part of you forever.
 
 Harness it, and change your world.
-
----

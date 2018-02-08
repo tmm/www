@@ -10,5 +10,3 @@ My best advice is to take a break.
 Even if you feel as though you are *just one more thing* away from getting it to work. Because too often promises of stopping after the next failure are never honored. Usually, after a long walk or good night's sleep, *somehow* it ends up working itself out.
 
 When it finally works, programming feels pretty close to a super power. And that makes everything---including the set up---worth it.
-
----

@@ -12,5 +12,3 @@ Perspective manifests itself in a very *interesting* way. Sometimes roses and th
 A modest exchange: a rose for a rose and a thorn for a thorn. Most likely you are all the better for the trade. Sharing in the joys of each others' roses and commiserating over the thorns.
 
 There's no better time than just before you go to sleep, or perhaps over a late-night cup of chai, to slow down and share before the day resets.
-
----
