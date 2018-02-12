@@ -13,5 +13,4 @@ Before you read any further, I encourage you to [listen](https://www.farnamstree
 
 He covers everything from his foundational core beliefs, the "[monkey mind](https://en.wikipedia.org/wiki/Mind_monkey)," being true to yourself, mental models, and [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman). I implore you to [listen](https://www.farnamstreetblog.com/2017/02/naval-ravikant-reading-decision-making/).
 
----
 [^1]: I was lucky enough to be the [subject of one](/blog/2015/04/01/hack-to-start-podcast-interview/) before too!
