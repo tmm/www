@@ -8,6 +8,7 @@
 *:after {
   box-sizing: inherit;
 }
+
 html {
   @include respond-to(sm) {
     font-size: $root-font-size;
@@ -24,10 +25,12 @@ html {
   text-rendering: optimizeLegibility;
   width: 100vw;
 }
+
 body {
   background-color: color(white);
   margin: 0;
 }
+
 p {
   color: color(black);
   font-size: 1rem;
@@ -37,14 +40,17 @@ p {
     top: 1.35rem;
   }
 }
+
 a {
   color: color(black);
   text-decoration-skip: ink;
   &:hover { color: color(green); }
 }
+
 h1 {
   font-size: 2rem;
 }
+
 hr {
   @include flex-row;
   @include flex-center;
@@ -70,6 +76,7 @@ hr {
     top: 0;
   }
 }
+
 #app {
   margin: {
     bottom: 1rem;
@@ -83,6 +90,21 @@ hr {
     right: 1rem;
   }
 }
+
+.t-version {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(360deg, #000 0%, #434343 50%, color(white) 100%);
+  color: color(black);
+  font: {
+    family: $mono;
+    weight: 600;
+    size: 1.75rem;
+  }
+  margin-top: 0;
+  text-align: center
+} 
+
 .t-header__title {
   font-size: 1rem;
   margin: {

@@ -16,7 +16,8 @@
     top: 0;
   }
 }
-.post__date {
+.post__date,
+.post__reading-time {
   font-size: .8rem;
 }
 .post {
@@ -27,7 +28,6 @@
       style: solid;
       width: 2px;
     }
-    font-style: italic;
     margin: {
       bottom: 1.5rem;
       left: 0;

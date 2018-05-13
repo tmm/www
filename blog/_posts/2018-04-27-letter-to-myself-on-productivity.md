@@ -13,7 +13,7 @@ Let's look at how you currently do things and what you could do to make yourself
 
 ---
 
-1/ Think before you leap
+**1/ Think before you leap**
 
 Oftentimes, whenever you get excited about something or there is just a new thing to do, you dive right in—head first. This enthusiasm is generally pretty awesome. Others enjoy it and it's infectious to be around. There are downsides though.
 
@@ -27,7 +27,7 @@ Once you've thought about theses things, you're almost ready to dive in.
 
 Go for a walk down the block. Come back. And then start.
 
-2/ Take breaks
+**2/ Take breaks**
 
 What a simple concept, yet not easy to do. Every once in a while, stop what you are doing and free your mind and body from it. You'll be more productive when you come back fresh after a break instead of repeatedly banging your head against the wall. Diminishing returns are very real.
 
@@ -43,7 +43,7 @@ I once heard that looking at a screen increases your cognitive load by 20% insta
 
 Somewhat screen-related: Don't bring your phone to the bathroom. It's disgusting.
 
-3/ Nurture relationships
+**3/ Nurture relationships**
 
 How do these relate to productivity?
 
@@ -57,7 +57,7 @@ Never set expectations and fail to meet them.
 
 It's easy to put relationships second to the work. To forget about them until they are unrepairable or just not how you wanted them to turn out. Remember that after the work is done, it disappears and the relationships remain.
 
-4/ Record learnings
+**4/ Record learnings**
 
 The only thing that is worse than a tiger bite, is a tiger bite that could have been avoided. Make sure you don't repeat painful mistakes again.
 

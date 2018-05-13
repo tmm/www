@@ -11,6 +11,13 @@ layout: base
     >
       {{ page.date | date: '%b %-d, %Y' }}
     </time>
+    <span class="post__reading-time">
+    {% capture words %} {{ page.content | number_of_words | minus: 250 }} {% endcapture %}
+    {% unless words contains "-" %}
+    ∙
+    {{ words | plus: 250 | divided_by: 180 | append: " min read" }}
+    {% endunless %}
+    </span>
   </header>
 
   {{ content }}

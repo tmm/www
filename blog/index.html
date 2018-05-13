@@ -2,31 +2,19 @@
 title: Archive
 ---
 
-{% for post in site.posts %}
-{% assign currentdate = post.date | date: "%Y" %}
-{% if currentdate != date %}
-{% unless forloop.first %}</section>{% endunless %}
-<section class="t-section" id="y{{post.date | date: "%Y"}}">
-    <h2 class="t-section__title">{{ currentdate }}</h2>
+{% assign items_grouped = site.posts | group_by_exp:'post', "post.date | date: '%Y'" %}
+{% for group in items_grouped %}
+  <section class="t-section" id="y{{group.name}}">
+    <h2 class="t-section__title">{{ group.name }}</h2>
     <ul class="t-list">
-      {% assign date = currentdate %}
-      {% endif %}
-      <li class="t-list-item">
-        <a
-          class="t-list-item__link"
-          href="{{ post.url | prepend: site.baseurl }}"
-        >
-          <span class="t-list-item__title">{{ post.title }}</span>
-          <time
-            class="t-list-item__time"
-            datetime="{{ post.date | date: "%Y-%m-%d" }}"
-          >
-            {{ post.date | date: "%m.%Y" }}
-          </time>
-        </a>
-      </li>
-      {% if forloop.last %}
+    {% for item in group.items %}
+    <li class="t-list-item">
+      <a class="t-list-item__link" href="{{ item.url | prepend: site.baseurl }}">
+        <span class="t-list-item__title">{{ item.title }}</span>
+        <time class="t-list-item__time" datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%m.%Y" }}</time>
+      </a>
+    </li>
+    {% endfor %}
     </ul>
-</section>
-{% endif %}
+  </section>  
 {% endfor %}

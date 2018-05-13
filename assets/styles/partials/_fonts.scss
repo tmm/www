@@ -38,3 +38,22 @@
   src: url('/assets/fonts/lato/Lato-Bold.woff2') format('woff2'),
        url('/assets/fonts/lato/Lato-Bold.woff') format('woff');
 }
+
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 400;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Regular.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Regular.woff') format('woff');
+}
+@font-face {
+  font: {
+    family: 'Fira Code';
+    style: normal;
+    weight: 700;
+  }
+  src: url('/assets/fonts/fira-code/FiraCode-Bold.woff2') format('woff2'),
+       url('/assets/fonts/fira-code/FiraCode-Bold.woff') format('woff');
+}
