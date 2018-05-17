@@ -92,9 +92,6 @@ hr {
 }
 
 .t-version {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(360deg, #000 0%, #434343 50%, color(white) 100%);
   color: color(black);
   font: {
     family: $mono;
