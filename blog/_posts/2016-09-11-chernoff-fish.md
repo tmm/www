@@ -17,10 +17,4 @@ I thought the concept was really cool, but it wasn't interactive (yet). I couldn
 
 ![Boom](/blog/assets/2016/5/screenshot.png)
 
-You can check out the [final result right here](http://tmm-archive.github.io/chernoff-fish/)! (I recommend going crazy on the *Randomize* button.)
-
----
-
-### Notes
-
-All my code is [on GitHub](https://github.com/tmm/chernoff-fish).
+You can check out the [final result right here](http://tmm-archive.github.io/chernoff-fish/)! (I recommend going crazy on the *Randomize* button.) Or head to [GitHub](https://github.com/tmm/chernoff-fish) to see how it's implemented.

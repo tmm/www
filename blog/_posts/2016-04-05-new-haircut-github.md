@@ -17,8 +17,6 @@ And it worked.
 
 ![GitHub Email](/blog/assets/2016/1/1.png)
 
-***
-
 ### Notes
 
 Changing your username has [unintended side effects](https://help.github.com/articles/what-happens-when-i-change-my-username/).

@@ -11,9 +11,9 @@ Paragraphs, headers, blockquotes, lists, tables, code blocks, and horizontal rul
 
 ### Paragraphs
 
-The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.[^1]
 
-The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
+The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.[^2] The quick brown fox jumped over the lazy dogs. The quick brown fox jumped over the lazy dogs.
 
 ### Headers
 
@@ -92,3 +92,6 @@ Fire up your terminal and run `telnet towel.blinkenlights.nl`.
 ### Images
 
 ![Jim](/blog/assets/2014/0/jim.gif)
+
+[^1]: This is a footnote.
+[^2]: You'll often find [cool things](https://www.fs.blog/2017/02/naval-ravikant-reading-decision-making/) down here.

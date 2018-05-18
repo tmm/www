@@ -34,20 +34,16 @@ Because it's so sticky it constantly brings back users. In case you missed the I
 
 Users, data, and identity management seem like an intoxicating combination for why you would jump into the email game. That said, we are also excluding the most obvious reason—companies pay a lot of money for email.
 
-With those very plausible sounding reasons in mind, we turn to the name of this post, "Zawinski's Law." You guessed it! It's actually a law:
+With those very plausible sounding reasons in mind, we turn to the name of this post: Zawinski's Law.[^1] You guessed it! It's actually a law:
 
-> Every program attempts to expand until it can read email. Those programs which cannot so expand are replaced by ones which can.[^1]
+> Every program attempts to expand until it can read email. Those programs which cannot so expand are replaced by ones which can.[^2]
 
-Albeit a somewhat loose interpretation, these companies create email systems because they *have* to. Their software engineers do it to themselves. It might start out innocently as, "let's just send the user a notification/reminder/alert/message," but quickly it becomes the user needs to "customize the message text," "view/organize messages" (inbox), "search messages", etc.[^2]
+Albeit a somewhat loose interpretation, these companies create email systems because they *have* to. Their software engineers do it to themselves. It might start out innocently as, "let's just send the user a notification/reminder/alert/message," but quickly it becomes the user needs to "customize the message text," "view/organize messages" (inbox), "search messages", etc.[^3]
 
 Just as email is sticky for users, it's also sticky for companies that provide it. Many join the email business and never leave it.
 
-***
+[^1]: I first discovered Zawiski's Law in Gabriel Weinberg's delightful *[Mental Models I Find Repeatedly Useful](https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d#.1lxyolll0)*.
 
-### Notes
+[^2]: [Zawinski's Law on Wikipedia](https://en.wikipedia.org/wiki/Jamie_Zawinski#Principles)
 
-I first discovered Zawiski's Law in Gabriel Weinberg's delightful *[Mental Models I Find Repeatedly Useful](https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d#.1lxyolll0)*.
-
-[^1]: [Zawinski's Law on Wikipedia](https://en.wikipedia.org/wiki/Jamie_Zawinski#Principles)
-
-[^2]: Paul Buchheit started Gmail as a [search engine for email](http://time.com/43263/gmail-10th-anniversary/).
+[^3]: Paul Buchheit started Gmail as a [search engine for email](http://time.com/43263/gmail-10th-anniversary/).

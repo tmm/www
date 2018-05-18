@@ -124,10 +124,4 @@ Qualitatively though, I think it was because I was in India having the time of m
 
 And that's good enough for me.
 
----
-
-### Notes
-
-Tweet [@tomfme](https://twitter.com/tomfme) if you want to play around with my data or code.
-
 [^1]: This is sort of terrifying.

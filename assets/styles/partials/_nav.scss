@@ -14,10 +14,12 @@
   margin-bottom: 2rem;
   padding-bottom: .35rem;
 }
+
 .navbar__left,
 .navbar__right {
   @include flex-row;
 }
+
 .navbar__link {
   font: {
     size: .9rem;

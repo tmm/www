@@ -7,10 +7,12 @@ pre {
     size: .9rem;
   }
 }
+
 code.highlighter-rouge {
   background-color: #f6f8fa;
   color: color(black);
 }
+
 div.highlighter-rouge { 
   margin: {
     bottom: 1.5rem;
@@ -60,6 +62,7 @@ $dt-yellow: #f1fa8c;
   color: $dt-gray-light;
   hyphens: none;
   line-height: 1.5;
+  max-height: 36rem;
   overflow: scroll;
   padding: .5rem;
   tab-size: 4; 

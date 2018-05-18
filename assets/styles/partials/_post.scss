@@ -6,6 +6,7 @@
 .post__header {
   margin-bottom: 2rem;
 }
+
 .post__title {
   font: {
     size: 1rem;
@@ -16,17 +17,19 @@
     top: 0;
   }
 }
+
 .post__date,
 .post__reading-time {
   font-size: .8rem;
 }
+
 .post {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   blockquote {
     border-left: {
       color: color(gray, light);
       style: solid;
-      width: 2px;
+      width: 4px;
     }
     margin: {
       bottom: 1.5rem;
@@ -34,9 +37,7 @@
       top: 1.5rem;
     }
     padding-left: 1.25rem;
-    * {
-      color: color(gray);
-    }
+    * { color: color(gray); }
   }
   ol,
   ul {
@@ -132,6 +133,7 @@
     &:before { display: none; };
   }
 }
+
 .post__nav {
   @include respond-to(sm) {
     @include flex-row;
@@ -140,7 +142,6 @@
   @include flex-column;
   border: {
     color: color(gray, light);
-    right: 0;
     style: solid;
     width: 1px;
   }
@@ -152,6 +153,7 @@
     top: 1rem;
   }
 }
+
 .post__nav-link {
   &.previous { margin-bottom: 1rem; }
   @include flex-column;
@@ -172,6 +174,7 @@
   }
   text-align: center;
 }
+
 .post__nav-link-title {
   @include respond-to(sm) {
     font-size: 1rem;
@@ -184,9 +187,32 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .post__nav-link-date {
   font-size: .8rem;
 }
+
+.thanks {
+  margin-top: 3rem;
+  font-size: .85rem;
+}
+
+.footnotes {
+  border-top: {
+    color: color(gray, light);
+    style: solid;
+    width: 1px;
+  }
+  margin-top: 3rem;
+  li p {
+    margin: {
+      bottom: .75rem;
+      top: .75rem;
+    }
+  }
+  * { font-size: .85rem; }
+}
+
 twitterwidget {
   margin: {
     left: auto;

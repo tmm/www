@@ -21,10 +21,6 @@ When two industries collide it's difficult to tell which will come out on top. T
 
 My money is on technology.
 
----
-
-### Notes
-
 [^1]: Post-2008 when a large number of these companies were founded.
 
 [^2]: Software is eating the world—every company is a technology company, or has to become one to stay relevant in the long term. [First penned by Marc Andreessen](http://www.wsj.com/articles/SB10001424053111903480904576512250915629460).

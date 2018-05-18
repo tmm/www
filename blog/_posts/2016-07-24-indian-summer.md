@@ -9,8 +9,6 @@ I rode a Moped in [Goa](https://en.wikipedia.org/wiki/Goa), stayed up way too la
 
 I learned a lot about culture, food (such a tasty thing to learn), and of course, myself. I know super *cliche* to say—and I'm not much for them. But I did. There's something extremely liberating about leaving your material possessions behind and living out of a suitcase.
 
----
-
 <video controls>
   <source src="/blog/assets/2016/4/rain.m4v" type="video/mp4">
 Your browser does not support the video tag.

@@ -12,10 +12,10 @@ Wow! It's been over four months since I last posted something on here. A bunch o
 
 These are just the big things. Many people helped me over these months: giving feedback, advice, and time. For that I'm grateful.
 
-***
+–
 
-*Thanks for reading and enjoy what's left of your summer!*
+Thanks for reading and enjoy what's left of your summer!
 
-*If you're around NYC, I would love to talk about tech/projects/anything else you're working on. You can [email](mailto:meagher.co) or [tweet](https://twitter.com/tomfme) me.*
+If you're around NYC, I would love to talk about tech/projects/anything else you're working on. You can [email](mailto:meagher.co) or [tweet](https://twitter.com/tomfme) me.
 
-*Written floating in the [Ionian Sea](https://en.wikipedia.org/wiki/Ionian_Sea).*
+Written floating somewhere in the [Ionian Sea](https://en.wikipedia.org/wiki/Ionian_Sea).

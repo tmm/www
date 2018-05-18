@@ -173,8 +173,6 @@ print("Done.")
 print("======================================")
 ```
 
----
-
 ## Notes
 
 You can read more about the [API internals here](http://api.football-data.org/api_internals) and view the [documentation here](http://api.football-data.org/documentation).

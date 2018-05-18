@@ -29,6 +29,7 @@ I find myself asking these questions every once in a while helps me stay more pr
 
 ***
 
-*There are many other great ways to change habits, like adding/removing [triggers](https://duckduckgo.com/?q=habit+triggers). I only present my favorites.*
+There are many other great ways to change habits, like adding or removing [triggers](https://duckduckgo.com/?q=habit+triggers). I only present my favorites.
 
-*Thanks to [Himanshu Sahay](https://www.linkedin.com/in/himanshusahay/) for reading drafts of this.*
+{: .thanks}
+Thanks to [Himanshu Sahay](https://www.linkedin.com/in/himanshusahay/) for reading drafts of this.
