@@ -80,9 +80,5 @@
     outline: 0;
     padding: .5rem;
     text-transform: uppercase;
-    &:hover {
-        background-color: color(green);
-        border-color: color(green);
-        color: color(white);
-    }
+    &:hover { border-color: color(gray); }
 }
