@@ -57,14 +57,17 @@ $dt-yellow: #f1fa8c;
  * Styles
  */
 
+ pre.highlight {
+  overflow: scroll;
+  padding: .5rem;
+ }
+
 .highlight {
   background: $dt-gray-dark;
   color: $dt-gray-light;
   hyphens: none;
   line-height: 1.5;
   max-height: 36rem;
-  overflow: scroll;
-  padding: .5rem;
   tab-size: 4; 
   word: {
     spacing: normal;

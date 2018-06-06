@@ -4,7 +4,26 @@ title: Code, etc.
 
 <h1 class="t-version">version <span id="version">xx.xxxxxxxx</span></h1>
 
-<p>I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC.</p>
+<p class="t-intro">I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC.</p>
+
+<section class="t-section" id="recent-posts">
+    <h2 class="t-section__title">Recent Posts</h2>
+    <ul class="t-list">
+        {% for post in site.posts limit:4 %}
+        <li class="t-list-item">
+            <a class="t-list-item__link" href="{{ post.url | prepend: site.baseurl }}">
+                <span class="t-list-item__title">{{ post.title }}</span>
+                <time class="t-list-item__time" datetime="{{ post.date | date: " %Y-%m-%d " }}">{{ post.date | date: "%m.%Y" }}</time>
+            </a>
+        </li>
+        {% endfor %}
+        <li class="t-list-item archive">
+            <a class="t-list-item__link archive" href="/blog/">
+                <span class="t-list-item__title archive">Archive →</span>
+            </a>
+        </li>
+    </ul>
+</section>
 
 <script>
     const el = document.querySelector('#version');

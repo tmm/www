@@ -6,7 +6,7 @@
 
 .t-section__title {
   font: {
-    size: 1rem;
+    size: .9rem;
     weight: bold;
   }
   margin: {
@@ -36,6 +36,9 @@
     style: solid;
     width: 1px;
   }
+  &.archive {
+    border-bottom: 0;
+  }
 }
 
 .t-list-item__link {
@@ -53,13 +56,22 @@
     duration: .25s;
   }
   width: 100%;
-  &:hover { padding-left: .5rem }
+  &:hover { padding-left: .5rem; }
+
+  &.archive {
+    justify-content: flex-end;
+    &:hover { padding-left: 0; }    
+  }
 }
 
 .t-list-item__title {
   font: {
     size: .9rem;
     weight: 500;
+  }
+  &.archive {
+    color: color(gray);
+    font-size: .75rem;
   }
 }
 
