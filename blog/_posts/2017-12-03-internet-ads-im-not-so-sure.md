@@ -5,7 +5,9 @@ date: 2017-12-03 11:41:00
 
 Do you remember the Internet without ads? Most likely not.
 
-I vaguely remember in the early 2000s you could surf for what felt like hours without seeing any. Maybe I'm misremembering. Maybe ads were less intrusive. Maybe they were less *follow-you-around-the-web-until-you-buy-the-shoes-you-looked-at* annoying. It's really difficult to imagine an Internet without them nowadays. They aren't naturally part of the Web's grain, but they've cemented themselves to it pretty darn well.[^1]
+I vaguely remember in the early 2000s you could surf for what felt like hours without seeing any. Maybe I'm misremembering. Maybe ads were less intrusive. Maybe they were less *follow-you-around-the-web-until-you-buy-the-shoes-you-looked-at* annoying. It's really difficult to imagine an Internet without them nowadays. They aren't naturally part of the Web's grain, but they've cemented themselves to it pretty darn well.<!--more-->[^1]
+
+<!--more-->
 
 Let's consider something like Spotify or Bloomberg.com.
 

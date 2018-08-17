@@ -1,5 +1,15 @@
 @font-face {
   font: {
+    family: 'Bungee Shade';
+    style: normal;
+    weight: normal;
+  }
+  src: url('/assets/fonts/bungee-shade/Bungee-Shade.woff2') format('woff2'),
+       url('/assets/fonts/bungee-shade/Bungee-Shade.woff') format('woff');
+}
+
+@font-face {
+  font: {
     family: 'Lato';
     style: normal;
     weight: normal;
@@ -46,6 +56,16 @@
   }
   src: url('/assets/fonts/lato/Lato-Bold.woff2') format('woff2'),
        url('/assets/fonts/lato/Lato-Bold.woff') format('woff');
+}
+
+@font-face {
+  font: {
+    family: 'Lato';
+    style: normal;
+    weight: 900;
+  }
+  src: url('/assets/fonts/lato/Lato-Black.woff2') format('woff2'),
+  url('/assets/fonts/lato/Lato-Black.woff') format('woff');
 }
 
 @font-face {

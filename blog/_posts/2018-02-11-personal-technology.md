@@ -6,8 +6,8 @@ date: 2018-02-11 10:42:00
 I want you to watch about a minute of the video below. Pay close attention to the opening bit  as Jony Ive tells the story of the Apple Watch's design.
 
 <iframe
-  width="100%"
-  height="304"
+  width="560"
+  height="315"
   src="https://www.youtube.com/embed/38IqQpwPe7s?rel=0&amp;controls=0&amp;showinfo=0&amp;start=3875"
   frameborder="0"
   allow="autoplay; encrypted-media"
@@ -16,6 +16,8 @@ I want you to watch about a minute of the video below. Pay close attention to th
 </iframe>
 
 Pretty great, right? Ive's crisp British accent, Apple's trademark cinematography. The folks in Cupertino certainly know how to draw you in. (No shame if you want to watch more.) Did you notice it though?
+
+<!--more-->
 
 Nestled amongst words and phrases, like "individuality," "intimate," and "connects with the wearer," was the word: "personal." Ive (and Tim Cook) attach it to the watch a lot throughout the rest of the presentation. Maybe this is all just pedantic, handwavy marketing speak, but I believe it.
 

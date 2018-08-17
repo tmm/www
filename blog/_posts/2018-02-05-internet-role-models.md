@@ -7,6 +7,8 @@ There's so much to consume on the Web.
 
 What's interesting to me is that I spend (or try to spend) just as much time going deep into an individuals creator's work as I do discovering new content. I really enjoy reading someone's ideas and seeing how they develop over time. Often I feel as though this is how content is best consumed—indulging on the main course instead of assembling your bites from a blog post buffet.
 
+<!--more-->
+
 I've learned a lot from people this way. People I don't know. And likely don't know me. I consider these people my Internet Role models. They've motivated me to build something new, demand more from myself, and see the world differently. They've cheered me up when I felt bad.
 
 I could write more about them. But rather than you read anymore of my writing, I'd rather you spend some time getting to know them.

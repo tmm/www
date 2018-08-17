@@ -1,6 +1,6 @@
 $colors: (
   black: (
-    base: #323232,
+    base: #282a36,
   ),
   gray: (
     base: #666c78,
@@ -8,13 +8,20 @@ $colors: (
     light: #e7e9ee,
   ),
   green: (
-    base: #00c266,
+    base: #00c75a,
+  ),
+  red: (
+    base: #e85c42,
   ),
   white: (
-    base: #ffffff,
+    base: #fffefc,
   )
 );
-$root-container-width: 32rem;
+$root-container-width: 36rem;
 $root-font-size: 18px;
+$display: 'Bungee Shade', Helvetica, cursive;
 $sans: Lato, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $mono: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+// new styles
+$sidebar-width: 18rem;

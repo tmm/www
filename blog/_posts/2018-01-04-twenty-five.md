@@ -7,6 +7,8 @@ Today, I turned 25.
 
 I definitely feel another year older. Sometimes—most years in fact—I feel the same. But this year, I definitely *feel* older. I accomplished, and did a lot, during 24. I moved cities and jobs, said goodbye to people I love, and spent a ton of time on airplanes. Maybe that's why?
 
+<!--more-->
+
 Whatever the case, I'm tremendously excited for 25.
 
 Even though I'm only hours into a quarter century, I can't help thinking that I need to move faster already. There's so much I want to do, and 25 seems like the year to do it.

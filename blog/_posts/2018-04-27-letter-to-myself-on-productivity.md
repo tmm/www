@@ -11,6 +11,8 @@ Just you and me.
 
 Let's look at how you currently do things and what you could do to make yourself more productive.
 
+<!--more-->
+
 ---
 
 **1/ Think before you leap**

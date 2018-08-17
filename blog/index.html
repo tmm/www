@@ -2,19 +2,15 @@
 title: Archive
 ---
 
-{% assign items_grouped = site.posts | group_by_exp:'post', "post.date | date: '%Y'" %}
-{% for group in items_grouped %}
-  <section class="t-section" id="y{{group.name}}">
-    <h2 class="t-section__title">{{ group.name }}</h2>
-    <ul class="t-list">
-    {% for item in group.items %}
+<div class="blog">
+  <ul class="t-list">
+    {% for post in site.posts %}
     <li class="t-list-item">
-      <a class="t-list-item__link" href="{{ item.url | prepend: site.baseurl }}">
-        <span class="t-list-item__title">{{ item.title }}</span>
-        <time class="t-list-item__time" datetime="{{ item.date | date: "%Y-%m-%d" }}">{{ item.date | date: "%m.%Y" }}</time>
+      <a class="t-list-item__link" href="{{ post.url | prepend: site.baseurl }}">
+        <span class="t-list-item__title">{{ post.title }}</span>
+        <time class="t-list-item__time" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: '%b %-d, %Y' }}</time>
       </a>
     </li>
     {% endfor %}
-    </ul>
-  </section>  
-{% endfor %}
+  </ul>
+</div>

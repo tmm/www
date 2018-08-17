@@ -2,83 +2,77 @@
 @import './functions';
 @import './mixins';
 
-.mc-embed-signup {
-    margin-bottom: 3rem;
-}
-
-.mc-field-group {
-    @include flex-column;
-}
-
-.mc-field-label {
-    font-size: .85rem;
-    margin-bottom: .5rem;
-}
-
 .mc-field-input {
-    @include flex-row; 
-    height: 2.33rem;
-    margin-bottom: .5rem;
+  @include flex-row;
+  height: 2rem;
 }
 
 .mc-field-email {
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: {
-        color: color(gray, light);
-        style: solid;
-        radius: 2px;
-        width: 1px;
-    }
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: 0;
-    flex: 7;
-    font: {
-        family: $sans;
-        size: .85rem;
-    }
-    outline: 0;
-    padding: .5rem;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: {
+    color: color(black);
+    style: solid;
+    radius: 4px;
+    width: 1px;
+  }
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  font: {
+    family: $sans;
+    size: .8rem;
+  }
+  outline: 0;
+  padding: .5rem;
+  width: 70%;
+  &::placeholder { color: color(black); }
 }
 
 .mc-field-email.mce_inline_error {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; 
+  border-color: color(red) !important;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.mc-field-email.mce_inline_error + .mc-field-button {
+  border-color: color(red) !important;
 }
 
 .mce-success-response,
 .mce_inline_error {
-    border-radius: 2px;
-    font-size: .85rem;
+  border-radius: 2px;
+  font-size: .8rem;
 }
 
 .response {
-    font-size: .85rem;
+  margin-top: .5rem;
+  font-size: .75rem;
 }
 
 .mc-field-button {
-    -webkit-appearance: none;
-    background-color: color(gray, light);
-    border: {
-        color: color(gray, light);
-        style: solid;
-        radius: 2px;
-        width: 1px;
-    }
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; 
-    color: color(gray, dark);
-    cursor: pointer;
-    flex: 3;
-    font: {
-        family: $sans;
-        weight: 600;
-        size: .65rem;
-    }
-    letter-spacing: 1px;
-    outline: 0;
-    padding: .5rem;
-    text-transform: uppercase;
-    &:hover { border-color: color(gray); }
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: {
+    color: color(black);
+    style: solid;
+    radius: 4px;
+    width: 1px;
+  }
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: color(black);
+  cursor: pointer;
+  font: {
+    family: $sans;
+    weight: bold;
+    size: .7rem;
+  }
+  outline: 0;
+  padding: .5rem;
+  width: 30%;
+  &:hover {
+    background-color: color(green);
+    color: color(white)
+  }
 }

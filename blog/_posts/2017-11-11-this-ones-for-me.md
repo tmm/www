@@ -7,6 +7,8 @@ I was working on another post. One that I'm really proud of and excited to share
 
 This one's for me. You're most certainly welcome to continue reading below though. If not, see you back here soon.
 
+<!--more-->
+
 --
 
 Everyone knows someone that listens *really* well. Perhaps you're that person: Providing the perfect amount of eye contact, head nodding, and subtle encouragement. We should all strive to be this.

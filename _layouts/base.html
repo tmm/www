@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
-    <body id="app">
-        {% include nav.html %}
-        {{ content }}
-        {% include footer.html %}
+    <body class="app">
+      {% include navbar.html %}
+      {{ content }}
     </body>
     {% if jekyll.environment != "development" %}
     {% include ga.html %}

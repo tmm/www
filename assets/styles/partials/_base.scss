@@ -19,7 +19,7 @@ html {
   color: color(black);
   font: {
     family: $sans;
-    size: $root-font-size * .95;
+    size: $root-font-size * .9;
   }
   height: 100vh;
   text-rendering: optimizeLegibility;
@@ -77,43 +77,10 @@ hr {
   }
 }
 
-#app {
+.app {
   margin: {
-    bottom: 1rem;
     left: auto;
     right: auto;
-    top: 1.25rem;
   }
   max-width: $root-container-width;
-  padding: {
-    left: 1rem;
-    right: 1rem;
-  }
-}
-
-.t-version {
-  color: color(black);
-  font: {
-    family: $mono;
-    weight: 600;
-    size: 1.5rem;
-  }
-  margin-top: 0;
-  text-align: center
-} 
-
-.t-intro {
-  margin-bottom: 2.5rem;
-}
-
-.t-header__title {
-  font-size: 1rem;
-  margin: {
-    bottom: .5rem;
-    top: 0;
-  }
-}
-
-.strike {
-  text-decoration: line-through;
 }

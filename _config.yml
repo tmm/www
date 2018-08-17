@@ -18,6 +18,11 @@ exclude: [
   'README.md',
   'sketch',
 ]
+paginate: 10
+plugins: [
+  'jekyll-paginate'
+]
+excerpt_separator: <!--more-->
 kramdown:
   input: GFM
   syntax_highlighter: rouge

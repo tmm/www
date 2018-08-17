@@ -1,0 +1,21 @@
+<article class="post preview">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="{{ include.url | prepend: site.baseurl }}">
+        {{include.title}}
+      </a>
+    </h1>
+    <time
+      class="post__date"
+      datetime="{{ page.date | date: '%Y-%m-%d' }}"
+    >
+      {{ include.date | date: '%b %-d, %Y' }}
+    </time>
+  </header>
+
+  {{ include.excerpt | smartify }}
+
+  <a class="post__link" href="{{ include.url | prepend: site.baseurl }}">
+    Read more
+  </a>
+</article>

@@ -7,6 +7,8 @@ Since I've been using Docker more lately, I wanted my dev set up to be as close 
 
 For example, let's assume that you have a website container (`example.com`) and an api container running off a subdomain (`api.example.com`). In production, you'll run everything on SSL, but locally you might not. Setting up SSL locally is usually a pain, and likely means you would create separate `nginx.conf`s for each environment, etc. It would be much easier to use environment variables and have the configuration updated accordingly.
 
+<!--more-->
+
 This is exactly what we will do! You won't need separate files for all your environments nor will you have to use something like [`jwilder/nginx-proxy`](https://github.com/jwilder/nginx-proxy).[^1]
 
 First we'll create a wildcard certificate for our dev environment—instead of `example.com` and `api.example.com`, we will use `example.local` and `api.example.local`. Then we'll set up our mac to trust the certificate. Finally, we can use environment variables to make our `nginx.conf` dynamic based on where the containers are running.
