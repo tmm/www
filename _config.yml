@@ -1,34 +1,23 @@
+author: 'Tom Meagher'
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
+      path: ''
+      type: 'pages'
     values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "base"
-exclude: [
-  '.gitignore',
-  'CNAME',
-  'LICENSE',
-  'README.md',
-  'sketch',
-]
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-markdown: kramdown
+      layout: 'base'
+description: "I’m Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC."
+exclude:
+  - '.gitignore'
+  - 'CNAME'
+  - 'LICENSE'
+  - 'README.md'
+  - 'sketch'
+keywords: 'tom, tomfme, meagher, code, design, startups, technology, tech, design'
 permalink: pretty
 sass:
   style: compressed
   sass_dir: 'assets/styles'
 timezone: America/New_York
 title: Tom Meagher
-description: "I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC."
 url: "https://meagher.co"
-author: "Tom Meagher"
-keywords: 'tom, tomfme, meagher, code, design, startups, technology, tech, design'

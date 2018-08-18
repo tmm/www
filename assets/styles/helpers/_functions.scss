@@ -1,0 +1,3 @@
+@function color($theme: 'night', $color: 'font', $tone: 'base') {
+  @return map-get(map-get(map-get($themes, $theme), $color), $tone);
+}

@@ -1,48 +1,11 @@
 ---
-title: Code, etc.
 ---
 
-<h1 class="t-version">version <span id="version">xx.xxxxxxxx</span></h1>
+<h1>Hi, I’m Tom.</h1>
 
-<p class="t-intro">I'm Tom Meagher (MAH-hur): a programmer, blogger, and walk enthusiast living in NYC.</p>
+<p>I’m a programmer, blogger, and walk enthusiast living in NYC. Currently I work at <a href="https://patreon.com" target="_blank">Patreon</a>.</p>
 
-<section class="t-section" id="recent-posts">
-    <h2 class="t-section__title">Recent Posts</h2>
-    <ul class="t-list">
-        {% for post in site.posts limit:4 %}
-        <li class="t-list-item">
-            <a class="t-list-item__link" href="{{ post.url | prepend: site.baseurl }}">
-                <span class="t-list-item__title">{{ post.title }}</span>
-                <time class="t-list-item__time" datetime="{{ post.date | date: " %Y-%m-%d " }}">{{ post.date | date: "%m.%Y" }}</time>
-            </a>
-        </li>
-        {% endfor %}
-        <li class="t-list-item archive">
-            <a class="t-list-item__link archive" href="/blog/">
-                <span class="t-list-item__title archive">Archive →</span>
-            </a>
-        </li>
-    </ul>
-</section>
+<p>Most of my code is public on
+<a href="https://github.com/tmm" target="_blank">GitHub</a>. Check out my blog on tech and Internet products, <a href="https://websgrain.com" target="_blank">The Web’s Grain</a>.</p>
 
-<script>
-    const el = document.querySelector('#version');
-    const renderAge = () => {
-        const dob = new Date(1993, 1, 4, 18, 51);
-        const now = new Date;
-        const duration = now - dob;
-        const years = duration / 31556900000;
-        const majorMinor = years
-            .toFixed(8)
-            .toString()
-            .split('.');
-
-        const year = majorMinor[0];
-        const milliseconds = majorMinor[1];
-
-        requestAnimationFrame(() =>
-            el.innerHTML = `${year}.${milliseconds}`);
-    };
-
-    setInterval(renderAge, 100);
-</script>
+<p>The best ways to contact me are <a href="https://twitter.com/tomfme" target="_blank">Twitter</a> and <a href="mailto:tom@meagher.co" target="_blank">email</a>.</p>
