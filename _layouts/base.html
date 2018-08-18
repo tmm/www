@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-    <body class="app">
-      {% include navbar.html %}
-      {{ content }}
-    </body>
-    {% if jekyll.environment != "development" %}
-    {% include ga.html %}
-    {% endif %}
+  {% include head.html %}
+  <body class="night">
+    <img src="assets/icons/night.svg" id="night">
+    <img src="assets/icons/day.svg" id="day">
+    <img src="assets/icons/sepia.svg" id="sepia">
+    <img src="assets/icons/dusk.svg" id="dusk">
+    {{ content }}
+  </body>
+  {% if jekyll.environment != "development" %}
+  {% include ga.html %}
+  {% endif %}
+
+  <script>
+    const setTheme = (t1, t2) => {
+      document.body.classList.replace(t1, t2)
+    }
+
+    const setFavicons = (t1, t2) => {
+      const links = document.querySelectorAll("link[rel*='icon']")
+      links.forEach(link => { link.href = link.href.replace(t1, t2) })
+    }
+
+    const initTheme = (t1, t2) => {
+      document
+        .getElementById(t1)
+        .addEventListener(
+          'click',
+          () => {
+            setTheme(t1, t2)
+            setFavicons(t1, t2)
+            localStorage.setItem('theme', t2)
+          }
+        )
+    }
+
+    const theme = localStorage.getItem('theme') || 'night'
+    setTheme('night', theme)
+    setFavicons('night', theme)
+
+    initTheme('night', 'day')
+    initTheme('day', 'sepia')
+    initTheme('sepia', 'dusk')
+    initTheme('dusk', 'night')
+  </script>
 </html>

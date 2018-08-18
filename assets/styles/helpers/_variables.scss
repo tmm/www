@@ -1,0 +1,42 @@
+$root-container-width: 18rem;
+$root-font-size: 18px;
+$sans: Lato, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$themes: (
+  night: (
+    background: (
+      base: #111,
+    ),
+    font: (
+      base: #fff,
+      secondary: #aaa,
+    ),
+  ),
+  day: (
+    background: (
+      base: #fff,
+    ),
+    font: (
+      base: #111,
+      secondary: #404040,
+    ),
+  ),
+  sepia: (
+    background: (
+      base: #f8f2e4,
+    ),
+    font: (
+      base: #242424,
+      secondary: #444,
+    ),
+  ),
+  dusk: (
+    background: (
+      base: #3c3c3c,
+    ),
+    font: (
+      base: #d2d2d2,
+      secondary: #a0a0a0,
+    ),
+  ),
+);
+$transition-duration: 2000ms;

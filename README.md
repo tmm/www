@@ -5,7 +5,6 @@ Thanks for checking out the innards of [my website](https://meagher.co/). Here's
 - [GitHub Pages](https://pages.github.com) graciously hosts my site.
 - [CloudFlare](https://www.cloudflare.com) powers my DNS (and SSL ftw).
 - Syntactically Awesome Style Sheets (a.k.a [Sass](https://sass-lang.com)) help make it pretty.
-- My blog posts are written in [Kramdown](https://kramdown.gettalong.org/documentation.html).
 - And [Jekyll](https://jekyllrb.com) does just about everything else.
 
 There's not much more to it.
@@ -30,8 +29,6 @@ Configuration file: /Users/tom/_code/tmm.github.io/_config.yml
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
 ```
-
-You can create a new blog post by running `bash new-post.sh`.
 
 ## Contact
 

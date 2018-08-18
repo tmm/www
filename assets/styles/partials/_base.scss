@@ -1,7 +1,8 @@
-@import './variables';
-@import './functions';
-@import './mixins';
-@import './fonts';
+@import '../helpers/variables';
+@import '../helpers/functions';
+@import '../helpers/mixins';
+@import '../helpers/fonts';
+@import '../helpers/animations';
 
 *,
 *:before,
@@ -16,71 +17,205 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  color: color(black);
+  color: color(night, font);
   font: {
     family: $sans;
-    size: $root-font-size * .9;
+    size: $root-font-size * .95;
   }
   height: 100vh;
   text-rendering: optimizeLegibility;
+  transition: {
+    duration: $transition-duration;
+    property: color;
+  }
   width: 100vw;
+
+  &.night { color: color(night, font); }
+  &.day { color: color(day, font); }
+  &.sepia { color: color(sepia, font); }
+  &.dusk { color: color(dusk, font); }
 }
 
 body {
-  background-color: color(white);
-  margin: 0;
+  @include respond-to(sm) {
+    margin: {
+      left: 10rem;
+      right: 0;
+      top: 8rem;
+    }
+  }
+  animation: {
+    delay: .75s;
+    duration: 2000ms;
+    fill-mode: both;
+    name: fadeIn;
+  }
+  background-color: color(night, background);
+  color: color(night, font, secondary);
+  margin: {
+    left: 2rem;
+    right: 2rem;
+    top: 6rem;
+  }
+  max-width: $root-container-width;
+  transition: {
+    duration: $transition-duration;
+    property: background-color, color;
+  }
+
+  &.night {
+    background-color: color(night, background);
+    color: color(night, font, secondary);
+  }
+
+  &.day {
+    background-color: color(day, background);
+    color: color(day, font, secondary);
+  }
+
+  &.sepia {
+    background-color: color(sepia, background);
+    color: color(sepia, font, secondary);
+  }
+
+  &.dusk {
+    background-color: color(dusk, background);
+    color: color(dusk, font, secondary);
+  }
 }
 
 p {
-  color: color(black);
-  font-size: 1rem;
-  line-height: 1.5;
+  animation: {
+    delay: .9s;
+    duration: 2000ms;
+    fill-mode: both;
+    name: fadeIn;
+  }
+  color: color(night, font, secondary);
+  font-size: .95rem;
+  line-height: 1.3rem;
   margin: {
-    bottom: 1.35rem;
-    top: 1.35rem;
+    bottom: 1.45rem;
+    top: 0;
+  }
+  transition: {
+    duration: $transition-duration;
+    property: color;
   }
 }
 
 a {
-  color: color(black);
-  text-decoration-skip: ink;
-  &:hover { color: color(green); }
+  color: color(night, font);
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  transition: {
+    duration: $transition-duration;
+    property: color;
+  }
+
+  &:hover {
+    color: color(night, font);
+    &::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: color(night, font);
+    transform-origin: bottom right;
+    transition: {
+      duration: .25s;
+      property: transform;
+      timing-function: ease-out;
+    }
+  }
 }
 
 h1 {
-  font-size: 2rem;
-}
-
-hr {
-  @include flex-row;
-  @include flex-center;
-  border: 0;
-  height: 0;
-  margin: {
-    bottom: 2.75rem;
-    top: 2.15rem;
+  color: color(night, font);
+  font: {
+    size: 1.15rem;
+    weight: 900;
   }
-  overflow: visible;
-  text-align: center;
-
-  &:before {
-    content: '...';
-    color: rgba(0,0,0,.68);
-    font: {
-      size: 1.67rem;
-      weight: 400;
-    }
-    letter-spacing: 1rem;
-    margin-left: 1rem;
-    position: relative;
+  margin: {
+    bottom: 2rem;
     top: 0;
   }
+  transition: {
+    duration: $transition-duration;
+    property: color;
+  }
 }
 
-.app {
-  margin: {
-    left: auto;
-    right: auto;
+img {
+  @include respond-to(sm) {
+    left: 2rem;
   }
-  max-width: $root-container-width;
+  cursor: pointer;
+  height: 1rem;
+  position: absolute;
+  top: 2rem;
+  width: 1rem;
+}
+
+.night {
+  #day { display: none }
+  #sepia { display: none }
+  #dusk { display: none }
+  p { color: color(night, font, secondary); }
+  a {
+    color: color(night, font);
+    &:hover { color: color(night, font); }
+    &::after { background-color: color(night, font); }
+  }
+  h1 { color: color(night, font); }
+}
+
+.day {
+  #night { display: none }
+  #sepia { display: none }
+  #dusk { display: none }
+  p { color: color(day, font, secondary); }
+  a {
+    color: color(day, font);
+    &:hover { color: color(day, font); }
+    &::after { background-color: color(day, font); }
+  }
+  h1 { color: color(day, font); }
+}
+
+.sepia {
+  #night { display: none }
+  #day { display: none }
+  #dusk { display: none }
+  p { color: color(sepia, font, secondary); }
+  a {
+    color: color(sepia, font);
+    &:hover { color: color(sepia, font); }
+    &::after { background-color: color(sepia, font); }
+  }
+  h1 { color: color(sepia, font); }
+}
+
+.dusk {
+  #night { display: none }
+  #day { display: none }
+  #sepia { display: none }
+  p { color: color(dusk, font, secondary); }
+  a {
+    color: color(dusk, font);
+    &:hover { color: color(dusk, font); }
+    &::after { background-color: color(dusk, font); }
+  }
+  h1 { color: color(dusk, font); }
 }
