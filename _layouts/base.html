@@ -2,46 +2,72 @@
 <html lang="en">
   {% include head.html %}
   <body class="night">
-    <img src="assets/icons/night.svg" id="night">
-    <img src="assets/icons/day.svg" id="day">
-    <img src="assets/icons/sepia.svg" id="sepia">
-    <img src="assets/icons/dusk.svg" id="dusk">
+    <img src="assets/icons/night.svg" id="night" />
+    <img src="assets/icons/day.svg" id="day" />
+    <img src="assets/icons/sepia.svg" id="sepia" />
+    <img src="assets/icons/dusk.svg" id="dusk" />
     {{ content }}
   </body>
-  {% if jekyll.environment != "development" %}
-  {% include ga.html %}
-  {% endif %}
+  {% if jekyll.environment != "development" %} {% include ga.html %} {% endif %}
 
   <script>
     const setTheme = (t1, t2) => {
-      document.body.classList.replace(t1, t2)
-    }
+      document.body.classList.replace(t1, t2);
+    };
 
     const setFavicons = (t1, t2) => {
-      const links = document.querySelectorAll("link[rel*='icon']")
-      links.forEach(link => { link.href = link.href.replace(t1, t2) })
-    }
+      const links = document.querySelectorAll("link[rel*='icon']");
+      links.forEach(link => {
+        link.href = link.href.replace(t1, t2);
+      });
+    };
 
     const initTheme = (t1, t2) => {
-      document
-        .getElementById(t1)
-        .addEventListener(
-          'click',
-          () => {
-            setTheme(t1, t2)
-            setFavicons(t1, t2)
-            localStorage.setItem('theme', t2)
-          }
-        )
-    }
+      document.getElementById(t1).addEventListener("click", () => {
+        setTheme(t1, t2);
+        setFavicons(t1, t2);
+        localStorage.setItem("theme", t2);
+      });
+    };
 
-    const theme = localStorage.getItem('theme') || 'night'
-    setTheme('night', theme)
-    setFavicons('night', theme)
+    const theme = localStorage.getItem("theme") || "night";
+    setTheme("night", theme);
+    setFavicons("night", theme);
 
-    initTheme('night', 'day')
-    initTheme('day', 'sepia')
-    initTheme('sepia', 'dusk')
-    initTheme('dusk', 'night')
+    initTheme("night", "day");
+    initTheme("day", "sepia");
+    initTheme("sepia", "dusk");
+    initTheme("dusk", "night");
+  </script>
+  <script>
+    console.log(`
+    +--------------------------------+
+    |     Welcome to the Innards     |
+    |           meagher.co           |
+    +--------------------------------+
+    |     _________           ,_     |
+    |    | ------- |        c(..)o   |
+    |    || hello ||      \\__(-)     |
+    |    || world ||          /\\     |
+    |    ||_______||       __/||     |
+    |    [ -=    . ]--.       ||     |
+    |  |=============| \\_     \\/     |
+    |  |=============| [|]    /|     |
+    |   -------------  [_]   |  \\    |
+    |                        m  m    |
+    +--------------------------------+
+    | Thanks for being curious! If   |
+    | you need help with this site   |
+    | or anything else: react.js,    |
+    | vue.js, js, python, django,    |
+    | docker, jekyll, terraform,     |
+    | aws, etc. drop me a note at    |
+    | tom@meagher.co or tweet me     |
+    | https://twitter.com/tomfme.    |
+    |                                |
+    | You can view the source on     |
+    | GitHub (https://git.io/fhN6L). |
+    +--------------------------------+
+    `);
   </script>
 </html>
