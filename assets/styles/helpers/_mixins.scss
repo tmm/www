@@ -15,6 +15,12 @@
 
 @mixin respond-to($media) {
   @if $media == sm {
-    @media screen and (min-width: 600px) { @content; }
+    @media screen and (min-width: 600px) {
+      @content;
+    }
+  } @else if $media == md {
+    @media screen and (min-width: 960px) {
+      @content;
+    }
   }
 }

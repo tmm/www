@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="night">
+  <body class="day">
     <img src="assets/icons/night.svg" id="night" />
     <img src="assets/icons/day.svg" id="day" />
     <img src="assets/icons/sepia.svg" id="sepia" />
@@ -12,32 +12,44 @@
 
   <script>
     const setTheme = (t1, t2) => {
-      document.body.classList.replace(t1, t2);
-    };
+      document.body.classList.replace(t1, t2)
+    }
 
     const setFavicons = (t1, t2) => {
-      const links = document.querySelectorAll("link[rel*='icon']");
+      const links = document.querySelectorAll("link[rel*='icon']")
       links.forEach(link => {
-        link.href = link.href.replace(t1, t2);
-      });
-    };
+        link.href = link.href.replace(t1, t2)
+      })
+    }
 
     const initTheme = (t1, t2) => {
       document.getElementById(t1).addEventListener("click", () => {
-        setTheme(t1, t2);
-        setFavicons(t1, t2);
-        localStorage.setItem("theme", t2);
-      });
-    };
+        setTheme(t1, t2)
+        setFavicons(t1, t2)
+        localStorage.setItem("theme", t2)
+      })
+    }
 
-    const theme = localStorage.getItem("theme") || "night";
-    setTheme("night", theme);
-    setFavicons("night", theme);
+    let theme
+    const now = new Date().getHours()
+    console.log(now)
+    if (now > 7 && now <= 13) {
+      theme = "day"
+    } else if (now > 13 && now <= 19) {
+      theme = "sepia"
+    } else if (now > 19 && now <= 1) {
+      theme = "night"
+    } else {
+      theme = "dusk"
+    }
 
-    initTheme("night", "day");
-    initTheme("day", "sepia");
-    initTheme("sepia", "dusk");
-    initTheme("dusk", "night");
+    setTheme("day", theme)
+    setFavicons("day", theme)
+
+    initTheme("dusk", "day")
+    initTheme("day", "sepia")
+    initTheme("sepia", "night")
+    initTheme("night", "dusk")
   </script>
   <script>
     console.log(`
@@ -68,6 +80,6 @@
     | You can view the source on     |
     | GitHub (https://git.io/fhN6L). |
     +--------------------------------+
-    `);
+    `)
   </script>
 </html>
