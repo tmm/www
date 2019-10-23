@@ -1,85 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="day">
-    <img src="assets/icons/night.svg" id="night" />
-    <img src="assets/icons/day.svg" id="day" />
-    <img src="assets/icons/sepia.svg" id="sepia" />
-    <img src="assets/icons/dusk.svg" id="dusk" />
+  <body>
     {{ content }}
   </body>
-  {% if jekyll.environment != "development" %} {% include ga.html %} {% endif %}
-
   <script>
-    const setTheme = (t1, t2) => {
-      document.body.classList.replace(t1, t2)
-    }
-
-    const setFavicons = (t1, t2) => {
-      const links = document.querySelectorAll("link[rel*='icon']")
-      links.forEach(link => {
-        link.href = link.href.replace(t1, t2)
-      })
-    }
-
-    const initTheme = (t1, t2) => {
-      document.getElementById(t1).addEventListener("click", () => {
-        setTheme(t1, t2)
-        setFavicons(t1, t2)
-        localStorage.setItem("theme", t2)
-      })
-    }
-
-    let theme
-    const now = new Date().getHours()
-    console.log(now)
-    if (now > 7 && now <= 13) {
-      theme = "day"
-    } else if (now > 13 && now <= 19) {
-      theme = "sepia"
-    } else if (now > 19 && now <= 1) {
-      theme = "night"
-    } else {
-      theme = "dusk"
-    }
-
-    setTheme("day", theme)
-    setFavicons("day", theme)
-
-    initTheme("dusk", "day")
-    initTheme("day", "sepia")
-    initTheme("sepia", "night")
-    initTheme("night", "dusk")
-  </script>
-  <script>
-    console.log(`
-    +--------------------------------+
-    |     Welcome to the Innards     |
-    |           meagher.co           |
-    +--------------------------------+
-    |     _________           ,_     |
-    |    | ------- |        c(..)o   |
-    |    || hello ||      \\__(-)     |
-    |    || world ||          /\\     |
-    |    ||_______||       __/||     |
-    |    [ -=    . ]--.       ||     |
-    |  |=============| \\_     \\/     |
-    |  |=============| [|]    /|     |
-    |   -------------  [_]   |  \\    |
-    |                        m  m    |
-    +--------------------------------+
-    | Thanks for being curious! If   |
-    | you need help with this site   |
-    | or anything else: react.js,    |
-    | vue.js, js, python, django,    |
-    | docker, jekyll, terraform,     |
-    | aws, etc. drop me a note at    |
-    | tom@meagher.co or tweet me     |
-    | https://twitter.com/tomfme.    |
-    |                                |
-    | You can view the source on     |
-    | GitHub (https://git.io/fhN6L). |
-    +--------------------------------+
-    `)
+    console.log(`Hi, friend.`)
+    console.log(`The web is both a home and a trap.`)
+    console.log(`Art is anything that takes time.`)
+    console.log(`The medium is the message.`)
   </script>
 </html>

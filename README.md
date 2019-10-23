@@ -30,12 +30,6 @@ Configuration file: /Users/tom/_code/tmm.github.io/_config.yml
   Server running... press ctrl-c to stop.
 ```
 
-## Contact
-
-* Submit an [issue](https://github.com/tmm/tmm.github.io/issues)
-* [Twitter](https://twitter.com/tomfme/)
-* tom@meagher.co
-
 ## License
 
-Released under the MIT license. See [LICENSE](https://github.com/tmm/tmm.github.io/blob/master/LICENSE) for details.
+[MIT](LICENSE) © [Tom Meagher](https://meagher.co)
