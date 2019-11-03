@@ -5,7 +5,7 @@ defaults:
       type: "pages"
     values:
       layout: "base"
-description: "Tom Meagher lives in NYC and does tech things."
+description: "Tom Meagher: Programmer, New York City"
 exclude:
   - ".gitignore"
   - "CNAME"
