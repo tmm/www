@@ -8,14 +8,14 @@
 
     <style>
         ::selection {
-            background-color: hsl(114, 35%, 50%);
+            background-color: hsl(114, 75%, 10%);
         }
 
         html {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            color: hsl(109, 0%, 0%);
             box-sizing: border-box;
+            color: hsl(109, 0%, 100%);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                 Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             font-size: 16px;
@@ -29,8 +29,8 @@
         }
 
         body {
-            background-color: hsl(240, 0%, 85%);
-            color: hsl(109, 0%, 3%);
+            background-color: hsl(109, 0%, 3%);
+            color: hsl(240, 0%, 85%);
             line-height: 1.5;
             margin-left: auto;
             margin-right: auto;
@@ -47,7 +47,7 @@
         }
 
         a {
-            color: hsl(240, 100%, 50%);
+            color: hsl(240, 75%, 75%);
             text-decoration-style: dotted;
         }
 
@@ -75,33 +75,34 @@
         }
 
         span {
-            color: hsl(240, 13%, 40%);
+            color: hsl(240, 10%, 45%);
         }
 
         img {
+            margin-bottom: 0.25rem;
             width: 7rem;
         }
 
-        @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: light) {
             ::selection {
-                background-color: hsl(114, 75%, 10%);
+                background-color: hsl(114, 35%, 50%);
             }
 
             html {
-                color: hsl(109, 0%, 100%);
+                color: hsl(109, 0%, 0%);
             }
 
             body {
-                background-color: hsl(109, 0%, 3%);
-                color: hsl(240, 0%, 85%);
+                background-color: hsl(240, 0%, 85%);
+                color: hsl(109, 0%, 3%);
             }
 
             a {
-                color: hsl(240, 75%, 75%);
+                color: hsl(240, 100%, 50%);
             }
 
             span {
-                color: hsl(240, 10%, 45%);
+                color: hsl(240, 13%, 40%);
             }
         }
     </style>
@@ -151,7 +152,7 @@
         <h3>Previously</h3>
         <ul>
             <li><a onclick="sa('click_mutevc')" href="https://mute.vc?ref=meagher.co" target="_blank">Mute.vc</a></li>
-            <li><a onclick="sa('click_kit')" href="https://kit.co" target="_blank">Kit.co<strike>m</strike></a></li>
+            <li><a onclick="sa('click_kit')" href="https://kit.co" target="_blank">Kit.com</a></li>
             <li><a onclick="sa('click_notational')" href="https://notational.co" target="_blank">Notational.co</a></li>
             <li><a onclick="sa('click_sapient')" href="https://sapient.com" target="_blank">Sapient.com</a></li>
             <li><a onclick="sa('click_wpi')" href="https://wpi.edu" target="_blank">Wpi.edu</a></li>
@@ -183,7 +184,7 @@
             If you’ve made it this far, I would love to get to know you. Send an e-mail to <a
                 onclick="sa('click_favorite_color')" href="mailto:tom@meagher.co?subject=My favorite color is..."
                 target="_blank">tom@meagher.co</a> with an
-            answer to "What’s your favorite color?"
+            answer to “What’s your favorite color?”
         </p>
         <p><span>Note: No one ever does this. I would be soOoOo thrilled if you did.</span></p>
     </section>
