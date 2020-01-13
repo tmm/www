@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tom Meagher</title>
     <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="twitter:title" content="Tom Meagher’s Personal Site" />
+    <meta name="twitter:image" content="https://meagher.co/card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@tomfme" />
 
     <style>
         ::selection {
@@ -47,8 +51,13 @@
         }
 
         a {
+            border-bottom: 1px dotted hsl(240, 75%, 75%);
             color: hsl(240, 75%, 75%);
-            text-decoration-style: dotted;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
         }
 
         h1 {
@@ -98,6 +107,7 @@
             }
 
             a {
+                border-bottom-color: hsl(240, 100%, 50%);
                 color: hsl(240, 100%, 50%);
             }
 
