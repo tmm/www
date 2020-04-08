@@ -8,7 +8,7 @@ const LinkItem = ({ name, href, to, children }) => {
     let action
     if (href) {
         action = (
-            <a href={href} target="_blank" onClick={click}>
+            <a href={href} rel="noopener" target="_blank" onClick={click}>
                 {children}
             </a>
         )
