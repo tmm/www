@@ -45,7 +45,7 @@ module.exports = {
                 {
                     name: '2017–2018',
                     children: 'Kit.com',
-                    href: 'https://kit.com',
+                    href: 'https://kit.co',
                 },
                 {
                     name: '2017',

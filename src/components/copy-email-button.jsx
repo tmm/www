@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useCopyToClipboard } from 'react-use'
 import { graphql, useStaticQuery } from 'gatsby'
+import sa from 'gatsby-plugin-simple-analytics'
 
 const CopyEmailButton = () => {
     const {
@@ -19,6 +20,7 @@ const CopyEmailButton = () => {
     const [copied, setCopied] = useState(false)
     const [state, copyToClipboard] = useCopyToClipboard()
     const copyEmail = () => {
+        sa('click_copy_email')
         copyToClipboard(email)
     }
     useEffect(() => {
