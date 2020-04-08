@@ -7,7 +7,7 @@ module.exports = {
     siteMetadata: {
         title: author,
         url: `https://${url}`,
-        description: 'The web is both a home and a trap',
+        description: 'The web is both a home and a trap.',
         author,
         email,
         twitter,
