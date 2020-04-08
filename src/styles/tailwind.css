@@ -161,6 +161,7 @@ littlefoot
     @apply rounded-lg;
     @apply text-body;
     @apply text-xs;
+    @apply w-6;
 }
 .littlefoot-footnote__button:hover {
     @apply bg-accent;
@@ -192,6 +193,15 @@ littlefoot
 }
 .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
     background-image: linear-gradient(to top, var(--colors-background) 50%, rgba(250,250,250,0) 100%);
+}
+@media only screen and (max-width: 640px) {
+    .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before,
+    .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
+        @apply hidden;
+    }
+}
+.littlefoot-footnote.is-scrollable::after {
+    @apply hidden;
 }
 /* purgecss end ignore */
 
