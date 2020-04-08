@@ -3,7 +3,7 @@ title: Own Your Email Address
 date: 2020-02-07
 path: /own-your-email/
 published: true
-description: ''
+description: A realization that I don’t own my email address.
 ---
 
 Over the last few years, I've made an effort to stop using Google products and start using products made by folks that (I think) are better stewards of my data, attention, and privacy.

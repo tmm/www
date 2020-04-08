@@ -496,7 +496,7 @@ module.exports = {
         overflow: ['responsive'],
         padding: ['responsive'],
         placeholderColor: ['responsive', 'focus'],
-        pointerEvents: ['responsive'],
+        pointerEvents: ['responsive', 'disabled'],
         position: ['responsive'],
         resize: ['responsive'],
         stroke: ['responsive'],

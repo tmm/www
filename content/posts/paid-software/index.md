@@ -3,7 +3,7 @@ title: Thoughts On Building Paid Software
 date: 2020-01-19
 path: /paid-software/
 published: true
-description: ''
+description: Approaches for building products you can charge for.
 ---
 
 Something I've had top of mind for a while is the idea of building paid software. Not in a business-school-make-money kind of way though.

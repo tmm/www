@@ -5,6 +5,7 @@ import useButtondown from '@/hooks/use-buttondown'
 const Form = () => {
     const {
         email,
+        isFocused,
         isLoading,
         message,
         isValid,
@@ -15,11 +16,15 @@ const Form = () => {
     } = useButtondown()
 
     return (
-        <form className="mb-32 mt-10 max-w-sm pt-12" onSubmit={handleSubmit}>
+        <form className="mb-30 mt-12 m-auto max-w-sm" onSubmit={handleSubmit}>
             <div className="font-medium mb-1 text-muted text-sm">
                 Get an email when I publish a new post
             </div>
-            <div className="border-b flex py-2 w-full">
+            <div
+                className={`border-b flex py-2 w-full ${
+                    isFocused ? 'border-accent' : ''
+                }`}
+            >
                 <input
                     className="bg-transparent outline-none placeholder-muted pr-2 flex-1"
                     disabled={isLoading}
@@ -30,7 +35,7 @@ const Form = () => {
                     onFocus={handleFocus}
                 />
                 <button
-                    className="text-body text-sm font-semibold"
+                    className="text-body text-sm font-semibold hover:text-heading disabled:pointer-events-none"
                     disabled={isLoading || !isValid}
                 >
                     {isLoading ? 'Subscribing...' : 'Subscribe'}

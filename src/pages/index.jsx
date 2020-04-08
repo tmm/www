@@ -26,7 +26,7 @@ const Index = ({
         <Layout>
             <Helmet title="Tom Meagher" />
             <section className="mb-8 mt-12">
-                <h1 className="font-normal leading-normal mb-3 text-heading">
+                <h1 className="font-medium leading-normal mb-3 text-heading">
                     {author}
                 </h1>
                 <p>

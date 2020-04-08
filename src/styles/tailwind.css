@@ -78,8 +78,14 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold;
+    @apply font-medium;
+    @apply text-heading;
     line-height: normal;
+}
+
+h4 {
+    @apply mb-2;
+    @apply mt-5;
 }
 
 ul,

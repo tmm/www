@@ -44,7 +44,7 @@ const Post = ({
     return (
         <article className="my-12" ref={articleEl}>
             <header className="flex items-center justify-between mb-3">
-                <h1 className="font-normal inline-block mv-0 text-heading">
+                <h1 className="font-medium inline-block mv-0 text-heading">
                     <Link
                         className="no-underline"
                         to={slug}
