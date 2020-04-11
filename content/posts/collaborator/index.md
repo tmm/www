@@ -34,13 +34,21 @@ I'm not looking for much in a potential collaborator. Someone that has wonky
 ideas and enthusiasm is preferred. Previous design or engineering skills would be nice,
 but aren't that important. Location doesn't matter, but I'm in NYC.
 
-Most of our time would be spent getting to know each other and exploring things
-one or both of us are interested in. We would exchange excited text messages at
-random times about an idea one of us just had on the subway, etc.
+Most of our time would be spent getting to know each other well, and then
+exploring things one or both of us are interested in. We would exchange excited
+text messages at random times about an idea one of us just had on the subway,
+etc. Before we build anything, I think it's important we have empathy for each
+other. [^2]
 
 If this sounds like something you are interested in, or have a friend that might
-be, send me an email or Twitter DM so we can start chatting. Even if we don't
-end up working together, I love meeting people on the Internet.
+be, send me an email (tom@meagher.co) or [Twitter
+DM](https://twitter.com/awkweb) so we can start chatting. You can simply say hi
+and that you read this post.
 
+Even if we don't end up working together now, I love meeting people on the Internet.
 
 [^1]: Semi-contrived analogy alert.
+
+[^2]: So much about working together is about trust, and giving and
+  receiving feedback that we should be able to feel for each other to operate
+  well and have the most fun.
