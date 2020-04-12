@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Layout from '@/layouts/default'
-import LinkItem from '@/components/link-item'
+import HomeLink from '@/components/home-link'
 import CopyEmailButton from '@/components/copy-email-button'
 
 const Index = ({
@@ -48,7 +48,7 @@ const Index = ({
                 <h4 className="font-normal mb-2 text-heading">Presence</h4>
                 <div className="md:pl-8">
                     {presenceData.map((x) => (
-                        <LinkItem key={x.name} {...x} />
+                        <HomeLink key={x.name} {...x} />
                     ))}
                 </div>
             </section>
@@ -63,9 +63,9 @@ const Index = ({
                                 frontmatter: { date, title },
                             },
                         }) => (
-                            <LinkItem key={id} name={date} to={slug}>
+                            <HomeLink key={id} name={date} to={slug} truncate>
                                 {title}
-                            </LinkItem>
+                            </HomeLink>
                         ),
                     )}
                 </div>
@@ -74,7 +74,7 @@ const Index = ({
                 <h4 className="font-normal mb-2 text-heading">Timeline</h4>
                 <div className="md:pl-8">
                     {timeline.map((x) => (
-                        <LinkItem key={`${x.name}-${x.href}`} {...x} />
+                        <HomeLink key={`${x.name}-${x.href}`} {...x} />
                     ))}
                 </div>
             </section>

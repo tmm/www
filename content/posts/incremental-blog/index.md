@@ -24,7 +24,7 @@ Code snippets are a good example of a lurking stubbed toe. None of my posts cont
 
 Another happy side effect of building my blog in increments is it encourages me to write more. There are features I want to add (search, tagging, an archive), but don't make sense for a blog with only a few posts. There's no utility in pagination unless I write more posts than fit on a page.
 
-Right now this process works well. I anticipate it will continue. It also protects me from blog envy, where I rush to add a shiny feature I see on another blog.[^2]
+Currently this process works well. I anticipate it will continue. It also protects me from blog envy, where I rush to add a shiny feature I see on another blog.[^2]
 
 [^1]: I finally put a name to this idea when I saw [Frank](https://frankchimero.com) and [Jonnie](https://destroytoday.com)'s blogs. Both are redesigning their blogs publicly by [documenting](https://frankchimero.com/blog/2019/redesign) [changes](https://destroytoday.com/blog/hello-world).
 

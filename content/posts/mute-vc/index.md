@@ -54,7 +54,7 @@ Edit 1/16/20: Mentioned in [The Verge](https://www.theverge.com/interface/2020/1
 
 Edit 1/20/20: Hunted on [Product Hunt](https://www.producthunt.com/posts/mute-vc) and tweeted by [@DHH](https://twitter.com/dhh/status/1219302297928224768).
 
-[^1]: That said, there are a non-trivial number of bad investors that I'm sure are lovely people personally, but professionally, are not. They treat founders poorly, promote their own agendas/companies without disclosure, etc. all while pulling down [absurdly large management fees](https://hbr.org/2014/08/venture-capitalists-get-paid-well-to-lose-money). (Watch [Chamath's lashing](https://www.cnbc.com/2018/10/10/start-up-economy-is-a-ponzi-scheme-says-chamath-palihapitiya.html) if you want to rage).
+[^1]: That said, there are a non-trivial number of bad investors that I'm sure are lovely people personally, but professionally, are not. They treat founders poorly, promote their own agendas/companies without disclosure, etc. all while pulling down [absurdly large management fees](https://hbr.org/2014/08/venture-capitalists-get-paid-well-to-lose-money). (Watch [Chamath's lashing](https://www.cnbc.com/2018/10/10/start-up-economy-is-a-ponzi-scheme-says-chamath-palihapitiya.html) if you want to rage.)
 
 [^2]: Maybe it is a little bit who I follow. I like following people in tech. VC Twitter overlaps significantly with Tech Twitter.
 

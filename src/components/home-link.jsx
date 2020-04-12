@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import sa from 'gatsby-plugin-simple-analytics'
 
-const LinkItem = ({ name, href, to, children }) => {
+const HomeLink = ({ name, href, to, children, truncate = false }) => {
     const click = () => sa(`click_home_${name}`)
     let action
     if (href) {
@@ -22,7 +22,10 @@ const LinkItem = ({ name, href, to, children }) => {
         action = children
     }
     return (
-        <div className="truncate whitespace-no-wrap">
+        <div
+            className={truncate ? 'truncate whitespace-no-wrap' : null}
+            style={{ marginBottom: '1px' }}
+        >
             <div
                 className="
                     font-medium
@@ -42,4 +45,4 @@ const LinkItem = ({ name, href, to, children }) => {
     )
 }
 
-export default LinkItem
+export default HomeLink

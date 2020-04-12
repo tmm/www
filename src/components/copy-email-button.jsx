@@ -3,10 +3,10 @@ import { useCopyToClipboard } from 'react-use'
 import { graphql, useStaticQuery } from 'gatsby'
 import sa from 'gatsby-plugin-simple-analytics'
 
-const CopyEmailButton = () => {
+const CopyEmailButton = ({ email }) => {
     const {
         site: {
-            siteMetadata: { email },
+            siteMetadata: { email: defaultEmail },
         },
     } = useStaticQuery(graphql`
         query {
@@ -17,26 +17,56 @@ const CopyEmailButton = () => {
             }
         }
     `)
+    const value = email ?? defaultEmail
     const [copied, setCopied] = useState(false)
     const [state, copyToClipboard] = useCopyToClipboard()
+
     const copyEmail = () => {
         sa('click_copy_email')
-        copyToClipboard(email)
+        copyToClipboard(value)
     }
+
     useEffect(() => {
         if (state.value) {
             setCopied(true)
-            setTimeout(() => setCopied(false), 2000)
+            setTimeout(() => setCopied(false), 1500)
         }
     }, [state])
+
     return (
-        <button
-            className="underline hover:text-accent"
-            title="Click to copy"
-            onClick={copyEmail}
-        >
-            {copied ? 'Copied to clipboard!' : email}
-        </button>
+        <span className="inline-block relative">
+            <button
+                className="underline hover:text-accent"
+                title="Click to copy"
+                onClick={copyEmail}
+            >
+                {value}
+            </button>
+            {copied && (
+                <span
+                    className="
+                        absolute
+                        bg-background
+                        border
+                        px-2
+                        rounded-sm
+                        shadow
+                        text-sm
+                        whitespace-no-wrap
+                        z-10
+                    "
+                    style={{
+                        bottom: '1.45rem',
+                        left: '50%',
+                        paddingBottom: '2px',
+                        paddingTop: '2px',
+                        transform: 'translate(-50%, 0)',
+                    }}
+                >
+                    Copied to clipboard!
+                </span>
+            )}
+        </span>
     )
 }
 

@@ -1,10 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import sa from 'gatsby-plugin-simple-analytics'
 
 import { useStore } from '@/store'
 import useMount from '@/hooks/use-mount'
+import CopyEmailButton from '@/components/copy-email-button'
+import Thanks from '@/components/thanks'
+
+const shortcodes = { CopyEmailButton, Thanks }
 
 const Post = ({
     post: {
@@ -42,21 +47,23 @@ const Post = ({
         }
     }, [appearance]) // eslint-disable-line react-hooks/exhaustive-deps
     return (
-        <article className="my-12" ref={articleEl}>
-            <header className="flex items-center justify-between mb-3">
-                <h1 className="font-medium inline-block mv-0 text-heading">
-                    <Link
-                        className="no-underline"
-                        to={slug}
-                        onClick={() => click(title)}
-                    >
-                        {title}
-                    </Link>
-                </h1>{' '}
-                <time className="inline-block text-muted">{date}</time>
-            </header>
-            <MDXRenderer>{body}</MDXRenderer>
-        </article>
+        <MDXProvider components={shortcodes}>
+            <article className="my-12" ref={articleEl}>
+                <header className="flex items-center justify-between mb-3">
+                    <h1 className="font-medium inline-block mv-0 text-heading">
+                        <Link
+                            className="no-underline"
+                            to={slug}
+                            onClick={() => click(title)}
+                        >
+                            {title}
+                        </Link>
+                    </h1>{' '}
+                    <time className="inline-block text-muted">{date}</time>
+                </header>
+                <MDXRenderer>{body}</MDXRenderer>
+            </article>
+        </MDXProvider>
     )
 }
 

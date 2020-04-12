@@ -114,11 +114,8 @@ twitter widget
 =========================== */
 .twitter-tweet {
     @apply mx-auto;
+    @apply my-6 !important;
     max-width: 520px;
-}
-
-.EmbeddedTweet {
-    background: red !important;
 }
 
 /* ===========================
@@ -152,6 +149,36 @@ gatsby image
 }
 
 /* ===========================
+footnotes
+=========================== */
+sup a {
+    @apply no-underline;
+}
+
+.footnotes {
+    @apply mt-8;
+    @apply text-body;
+    font-size: 0.9rem;
+}
+
+.footnotes hr {
+    @apply mb-4;
+}
+
+.footnotes ol {
+    @apply pl-4;
+}
+
+.footnotes li {
+    @apply mb-3;
+}
+
+.footnote-backref {
+    @apply no-underline;
+    margin-left: 4px;
+}
+
+/* ===========================
 littlefoot
 =========================== */
 .littlefoot-footnote__button {
@@ -163,20 +190,24 @@ littlefoot
     @apply text-xs;
     @apply w-6;
 }
+
 .littlefoot-footnote__button:hover {
     @apply bg-accent;
     @apply text-background;
 }
+
 .littlefoot-footnote {
     @apply bg-background;
     @apply border-border;
     @apply rounded;
     @apply shadow;
 }
+
 .littlefoot-footnote__wrapper {
     @apply bg-background;
     @apply rounded;
 }
+
 .littlefoot-footnote__content {
     @apply bg-background;
     @apply leading-normal;
@@ -184,10 +215,12 @@ littlefoot
     @apply pb-3;
     @apply rounded;
 }
+
 .littlefoot-footnote__tooltip {
     @apply bg-background;
     @apply border-border;
 }
+
 .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before {
     background-image: linear-gradient(to bottom, var(--colors-background) 50%, rgba(250,250,250,0) 100%);
 }
@@ -202,6 +235,13 @@ littlefoot
 }
 .littlefoot-footnote.is-scrollable::after {
     @apply hidden;
+}
+
+.is-positioned-bottom .littlefoot-footnote__tooltip {
+    top: -0.5em;
+}
+.is-positioned-top .littlefoot-footnote__tooltip {
+    bottom: -0.5em;
 }
 /* purgecss end ignore */
 
