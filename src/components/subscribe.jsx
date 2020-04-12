@@ -16,7 +16,7 @@ const Form = () => {
     } = useButtondown()
 
     return (
-        <form className="mb-30 mt-12 m-auto max-w-sm" onSubmit={handleSubmit}>
+        <form className="mb-30 mt-24 m-auto max-w-sm" onSubmit={handleSubmit}>
             <div className="font-medium mb-1 text-muted text-sm">
                 Get an email when I publish a new post
             </div>

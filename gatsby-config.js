@@ -87,6 +87,7 @@ module.exports = {
             ],
             products: [
                 { name: 'Are.na', href: 'https://are.na' },
+                { name: 'Buttondown', href: 'https://buttondown.email' },
                 { name: 'Futureland', href: 'https://futureland.tv' },
                 { name: 'Linear', href: 'https://linear.app' },
                 { name: 'Privacy Badger', href: 'https://privacybadger.org' },

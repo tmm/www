@@ -49,8 +49,10 @@ const CopyEmailButton = ({ email }) => {
                         bg-background
                         border
                         px-2
+                        py-2
                         rounded-sm
                         shadow
+                        text-heading
                         text-sm
                         whitespace-no-wrap
                         z-10

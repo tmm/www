@@ -18,7 +18,7 @@ My goal was to spend more time writing and less time coding.
 
 The concept of "incrementally building a blog" gave me permission to not build anything until I stubbed my toe while writing, publishing, or reading a post.[^1] It empowered me to worry less about the packaging of my ideas and focus more on how I communicated them.
 
-Practically, how does this process work? First, I write a post in [Markdown](https://www.markdownguide.org), either in [Roam](https://roamresearch.com) or my [text editor](https://code.visualstudio.com). Then, I add it to my local blog site and see how it "looks." If the post renders incorrectly, I'll add the simplest fix needed to hit "publish."
+Practically, how does this process work? First, I write a post in [Markdown](https://www.markdownguide.org), either in [Roam](https://roamresearch.com) or Vim. Then, I add it to my local blog site and see how it "looks." If the post renders incorrectly, I'll add the simplest fix needed to hit "publish."
 
 Code snippets are a good example of a lurking stubbed toe. None of my posts contain inline code or code blocks yet. Eventually some probably will. Until they do, there's no reason to spend time adding support for syntax highlighting or other code-related features.
 

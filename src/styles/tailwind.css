@@ -67,6 +67,7 @@ p {
 a {
     @apply underline;
     color: inherit;
+    text-decoration-color: currentColor;
 }
 a:hover {
     @apply text-accent;
@@ -212,8 +213,14 @@ littlefoot
     @apply bg-background;
     @apply leading-normal;
     @apply px-4;
-    @apply pb-3;
     @apply rounded;
+    @apply text-heading;
+    @apply text-sm;
+}
+@media only screen and (max-width: 640px) {
+    .littlefoot-footnote__content {
+        @apply text-base;
+    }
 }
 
 .littlefoot-footnote__tooltip {
