@@ -84,11 +84,13 @@ module.exports = {
                 },
                 { name: 'Tim Petri', href: 'https://timpetri.com' },
                 { name: 'Abhi Vyas', href: 'https://abhi.nyc' },
+                { name: 'Toby Shorin', href: 'https://tobyshorin.com' },
             ],
             products: [
                 { name: 'Are.na', href: 'https://are.na' },
                 { name: 'Buttondown', href: 'https://buttondown.email' },
                 { name: 'Futureland', href: 'https://futureland.tv' },
+                { name: 'Kinopio', href: 'https://kinopio.club' },
                 { name: 'Linear', href: 'https://linear.app' },
                 { name: 'Privacy Badger', href: 'https://privacybadger.org' },
                 { name: 'Render', href: 'https://render.com' },
