@@ -65,8 +65,10 @@ function useButtondown() {
                 )
                 setEmail('')
             } else {
+                const data = await response.json()
+                const message = data?.[0] ?? 'Something went wrong'
                 setIsError(true)
-                setMessage('Something went wrong')
+                setMessage(message)
             }
         } finally {
             setIsLoading(false)
