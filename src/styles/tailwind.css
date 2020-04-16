@@ -152,8 +152,36 @@ gatsby image
 /* ===========================
 footnotes
 =========================== */
+sup {
+    @apply align-middle;
+    @apply bg-fill;
+    @apply cursor-pointer;
+    @apply font-medium;
+    @apply h-4;
+    @apply inline-flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply leading-none;
+    @apply rounded-lg;
+    @apply text-body;
+    @apply text-xs;
+    @apply top-auto;
+    @apply w-6;
+
+    margin: 0 .1em 0 .2em;
+    padding: 0 .5em;
+    top: -.1em;
+}
 sup a {
     @apply no-underline;
+    @apply text-center;
+}
+sup a:hover {
+    @apply text-background;
+}
+sup:hover {
+    @apply bg-accent;
+    @apply text-background;
 }
 
 .footnotes {
