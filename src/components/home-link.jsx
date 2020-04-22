@@ -35,7 +35,7 @@ const HomeLink = ({ name, href, to, children, truncate = false }) => {
                     w-full
                     max-w-item
                     mr-3
-                    md:mr-5
+                    md:mr-6
                 "
             >
                 {name}

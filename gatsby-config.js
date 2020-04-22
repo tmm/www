@@ -85,6 +85,7 @@ module.exports = {
                 { name: 'Tim Petri', href: 'https://timpetri.com' },
                 { name: 'Abhi Vyas', href: 'https://abhi.nyc' },
                 { name: 'Toby Shorin', href: 'https://tobyshorin.com' },
+                { name: 'Kent De Bruin', href: 'https://www.kentdebruin.com' },
             ],
             products: [
                 { name: 'Are.na', href: 'https://are.na' },

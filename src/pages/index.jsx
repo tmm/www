@@ -46,7 +46,7 @@ const Index = ({
             </section>
             <section className="mb-8">
                 <h4 className="font-normal mb-2 text-heading">Presence</h4>
-                <div className="md:pl-8">
+                <div>
                     {presenceData.map((x) => (
                         <HomeLink key={x.name} {...x} />
                     ))}
@@ -54,7 +54,7 @@ const Index = ({
             </section>
             <section className="mb-8">
                 <h4 className="font-normal mb-2 text-heading">Writing</h4>
-                <div className="md:pl-8">
+                <div>
                     {posts.map(
                         ({
                             node: {
@@ -72,7 +72,7 @@ const Index = ({
             </section>
             <section className="mb-8">
                 <h4 className="font-normal mb-2 text-heading">Timeline</h4>
-                <div className="md:pl-8">
+                <div>
                     {timeline.map((x) => (
                         <HomeLink key={`${x.name}-${x.href}`} {...x} />
                     ))}
