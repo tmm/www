@@ -77,7 +77,7 @@ module.exports = {
                 { name: 'Latika Sridhar', href: 'https://patreon.com/latika' },
                 { name: 'Atty Eleti', href: 'https://athyuttamre.com' },
                 { name: 'Bob Perry', href: 'https://zopsi.com' },
-                { name: 'John Palmer', href: 'https://athyuttamre.com' },
+                { name: 'John Palmer', href: 'https://darkblueheaven.com' },
                 {
                     name: 'internetVin',
                     href: 'https://twitter.com/internetVin',

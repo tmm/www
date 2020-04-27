@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
             {
                 allMdx(
                     sort: { fields: [frontmatter___date], order: DESC }
+                    filter: { frontmatter: { published: { ne: false } } }
                     limit: 1000
                 ) {
                     edges {
