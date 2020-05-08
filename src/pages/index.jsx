@@ -110,6 +110,11 @@ const Index = ({
                         </span>
                     ))}
                 </p>
+                <p className="text-muted text-sm">
+                    Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>.
+                    Deployed on <a href="https://vercel.com">Vercel</a>. View
+                    source on <a href="https://github.com/tmm/www">GitHub</a>.
+                </p>
             </section>
         </Layout>
     )

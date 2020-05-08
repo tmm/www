@@ -95,6 +95,7 @@ module.exports = {
                 { name: 'Linear', href: 'https://linear.app' },
                 { name: 'Privacy Badger', href: 'https://privacybadger.org' },
                 { name: 'Render', href: 'https://render.com' },
+                { name: 'Rep.ly', href: 'https://rep.ly' },
                 { name: 'Roam Research', href: 'https://roamresearch.com' },
                 {
                     name: 'Simple Analytics',
