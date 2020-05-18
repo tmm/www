@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
 import sa from 'gatsby-plugin-simple-analytics'
+
+import React, { FormEvent, useEffect, useState } from 'react'
 
 function useButtondown() {
     const [email, setEmail] = useState('')
     const [isLoading, setIsLoading] = useState(false)
     const [isError, setIsError] = useState(false)
     const [isSubscribed, setIsSubscribed] = useState(false)
-    const [message, setMessage] = useState('')
+    const [message, setMessage] = useState<string | any>('')
     const [isValid, setIsValid] = useState(false)
     const [isFocused, setIsFocused] = useState(false)
 
@@ -21,17 +22,14 @@ function useButtondown() {
     const handleFocus = () => {
         setIsFocused(true)
     }
-    const handleChange = (event) => {
-        const {
-            target: { value },
-        } = event
-        setEmail(value)
+    const handleChange = (event: FormEvent) => {
+        setEmail((event.target as HTMLInputElement).value)
         if (isError) {
             setIsError(false)
             setMessage('')
         }
     }
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: FormEvent) => {
         sa('submit_email')
         event.preventDefault()
         try {

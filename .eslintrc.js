@@ -1,14 +1,13 @@
 module.exports = {
-    parser: 'babel-eslint',
+    parser: '@typescript-eslint/parser',
     extends: [
         'plugin:react/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:import/errors',
-        'plugin:mdx/recommended',
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
     ],
-    plugins: ['import', 'react', 'react-hooks'],
+    plugins: ['@typescript-eslint', 'import', 'react', 'react-hooks'],
     rules: {
         'import/order': [
             'error',
@@ -17,7 +16,7 @@ module.exports = {
                 'newlines-between': 'always-and-inside-groups',
             },
         ],
-        'import/no-unresolved': ['error', { ignore: ['^@/'] }],
+        'import/no-unresolved': ['error'],
         'jsx-a11y/anchor-is-valid': 'off',
         'react/jsx-boolean-value': ['warn', 'never'],
         'react/no-array-index-key': 'error',
@@ -27,6 +26,8 @@ module.exports = {
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/self-closing-comp': 'warn',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
         'react/jsx-sort-props': [
             'error',
             {
@@ -34,8 +35,6 @@ module.exports = {
             },
         ],
         'react/jsx-wrap-multilines': 'error',
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
         'sort-imports': [
             'warn',
             {
@@ -59,17 +58,23 @@ module.exports = {
         },
         {
             files: ['*.mdx'],
-            extends: ['plugin:mdx/overrides'],
+            extends: ['plugin:mdx/recommended'],
         },
     ],
     settings: {
         'import/resolver': {
-            node: {
-                extensions: ['.js', '.jsx'],
+            typescript: {
+                alwaysTryTypes: true,
             },
         },
         react: {
             version: 'detect',
+        },
+    },
+    parserOptions: {
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
         },
     },
 }

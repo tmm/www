@@ -1,5 +1,6 @@
 module.exports = {
     prefix: '',
+    purge: false,
     important: false,
     separator: ':',
     theme: {

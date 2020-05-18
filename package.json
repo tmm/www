@@ -2,63 +2,97 @@
     "name": "meagher.co",
     "license": "MIT",
     "scripts": {
+        "commit": "git-cz",
         "build": "gatsby build",
         "dev": "gatsby develop",
         "start": "gatsby serve"
     },
+    "dependencies": {
+        "@mdx-js/mdx": "^1.5.4",
+        "@mdx-js/react": "^1.5.4",
+        "gatsby": "^2.20.6",
+        "littlefoot": "^3.2.4",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-helmet": "^5.2.1",
+        "react-use": "^14.0.0",
+        "tailwindcss": "^1.1.4"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "@types/mdx-js__react": "^1.5.2",
+        "@types/node": "^14.0.1",
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "@types/react-helmet": "^6.0.0",
+        "@typescript-eslint/eslint-plugin": "^2.33.0",
+        "@typescript-eslint/parser": "^2.33.0",
+        "commitizen": "^4.1.2",
+        "cz-conventional-changelog": "3.2.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-import-resolver-typescript": "^2.0.0",
+        "eslint-plugin-import": "2.20.0",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-mdx": "^1.6.5",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.18.0",
+        "eslint-plugin-react-hooks": "^2.3.0",
+        "gatsby-plugin-catch-links": "^2.1.24",
+        "gatsby-plugin-eslint": "^2.0.8",
+        "gatsby-plugin-feed": "^2.5.1",
+        "gatsby-plugin-mdx": "^1.0.67",
+        "gatsby-plugin-postcss": "^2.3.1",
+        "gatsby-plugin-purgecss": "^4.0.1",
+        "gatsby-plugin-react-helmet": "^3.1.21",
+        "gatsby-plugin-sharp": "^2.3.13",
+        "gatsby-plugin-simple-analytics": "^1.0.3",
+        "gatsby-plugin-twitter": "^2.1.18",
+        "gatsby-remark-copy-linked-files": "^2.1.36",
+        "gatsby-remark-embedder": "^1.7.0",
+        "gatsby-remark-external-links": "^0.0.4",
+        "gatsby-remark-images": "^3.1.42",
+        "gatsby-remark-responsive-iframe": "^2.2.31",
+        "gatsby-remark-smartypants": "^2.1.20",
+        "gatsby-remark-unwrap-images": "^1.0.1",
+        "gatsby-source-filesystem": "^2.1.46",
+        "gatsby-transformer-sharp": "^2.3.12",
+        "husky": "^4.0.10",
+        "lint-staged": "^10.0.0",
+        "postcss-import": "^12.0.1",
+        "prettier": "^1.19.1",
+        "typescript": "^3.9.2"
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "lint-staged": {
-        "*.{js,jsx}": [
+        "*.{js,ts,tsx}": [
             "prettier --write",
             "eslint --max-warnings 0 --cache"
         ]
     },
-    "dependencies": {
-        "@mdx-js/mdx": "1.5.4",
-        "@mdx-js/react": "1.5.4",
-        "gatsby": "2.18.22",
-        "littlefoot": "3.2.4",
-        "react": "16.12.0",
-        "react-dom": "16.12.0",
-        "react-helmet": "5.2.1",
-        "react-use": "14.0.0",
-        "tailwindcss": "1.1.4"
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "all",
+        "endOfLine": "lf",
+        "printWidth": 80,
+        "arrowParens": "always",
+        "semi": false,
+        "singleQuote": true
     },
-    "devDependencies": {
-        "babel-eslint": "10.0.3",
-        "eslint": "6.8.0",
-        "eslint-config-prettier": "6.9.0",
-        "eslint-plugin-import": "2.20.0",
-        "eslint-plugin-jsx-a11y": "6.2.3",
-        "eslint-plugin-mdx": "1.6.5",
-        "eslint-plugin-prettier": "3.1.2",
-        "eslint-plugin-react": "7.18.0",
-        "eslint-plugin-react-hooks": "2.3.0",
-        "gatsby-plugin-catch-links": "2.1.24",
-        "gatsby-plugin-eslint": "2.0.8",
-        "gatsby-plugin-mdx": "1.0.67",
-        "gatsby-plugin-postcss": "2.1.19",
-        "gatsby-plugin-purgecss": "4.0.1",
-        "gatsby-plugin-react-helmet": "3.1.21",
-        "gatsby-plugin-sharp": "2.3.13",
-        "gatsby-plugin-simple-analytics": "1.0.3",
-        "gatsby-plugin-twitter": "2.1.18",
-        "gatsby-remark-copy-linked-files": "2.1.36",
-        "gatsby-remark-embedder": "1.7.0",
-        "gatsby-remark-external-links": "0.0.4",
-        "gatsby-remark-images": "3.1.42",
-        "gatsby-remark-responsive-iframe": "2.2.31",
-        "gatsby-remark-smartypants": "2.1.20",
-        "gatsby-remark-unwrap-images": "1.0.1",
-        "gatsby-source-filesystem": "2.1.46",
-        "gatsby-transformer-sharp": "2.3.12",
-        "husky": "4.0.10",
-        "lint-staged": "10.0.0",
-        "postcss-import": "^12.0.1",
-        "prettier": "1.19.1"
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }

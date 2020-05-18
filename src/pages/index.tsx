@@ -1,12 +1,31 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import { PageProps, graphql } from 'gatsby'
+
+import { Helmet } from 'react-helmet'
+
+import React, { FC } from 'react'
 
 import Layout from '@/layouts/default'
 import HomeLink from '@/components/home-link'
 import CopyEmailButton from '@/components/copy-email-button'
 
-const Index = ({
+interface Props extends PageProps {
+    data: {
+        allMdx: { edges: { node: Post }[] }
+        site: {
+            siteMetadata: {
+                author: string
+                home: {
+                    presence: Presence[]
+                    timeline: TimeEvent[]
+                    people: Person[]
+                    products: Product[]
+                }
+            }
+        }
+    }
+}
+
+const Index: FC<Props> = ({
     data: {
         allMdx: { edges: posts },
         site: {
@@ -21,7 +40,7 @@ const Index = ({
         ...presence.slice(0, 1),
         { name: 'Email', children: <CopyEmailButton /> },
         ...presence.slice(1, presence.length),
-    ].sort((a, b) => a.name > b.name)
+    ].sort((a, b) => (a.name > b.name ? 1 : 0))
     return (
         <Layout>
             <Helmet title="Tom Meagher" />
@@ -62,6 +81,8 @@ const Index = ({
                                 fields: { slug },
                                 frontmatter: { date, title },
                             },
+                        }: {
+                            node: Post
                         }) => (
                             <HomeLink key={id} name={date} to={slug} truncate>
                                 {title}

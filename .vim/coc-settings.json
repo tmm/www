@@ -1,4 +1,12 @@
 {
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "css",
+        "markdown"
+    ],
     "eslint.enable": true,
     "eslint.packageManager": "yarn",
     "eslint.autoFixOnSave": true

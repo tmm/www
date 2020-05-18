@@ -1,12 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import { PageProps, graphql } from 'gatsby'
+
+import React, { FC } from 'react'
+import { Helmet } from 'react-helmet'
 
 import Post from '@/components/post'
 import Subscribe from '@/components/subscribe'
 import Layout from '@/layouts/default'
 
-const Template = ({ data: { mdx: post } }) => {
+interface Props extends PageProps {
+    data: {
+        mdx: Post
+    }
+}
+
+const Template: FC<Props> = ({ data: { mdx: post } }) => {
     const description = post.frontmatter.description || post.excerpt
     const title = post.frontmatter.title
     return (

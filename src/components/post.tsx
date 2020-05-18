@@ -1,17 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
-import { MDXProvider } from '@mdx-js/react'
+
+import { useMount } from 'react-use'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import sa from 'gatsby-plugin-simple-analytics'
 
+import { MDXProvider } from '@mdx-js/react'
+
+import React, { FC, useEffect, useRef, useState } from 'react'
+
 import { useStore } from '@/store'
-import useMount from '@/hooks/use-mount'
 import CopyEmailButton from '@/components/copy-email-button'
 import Thanks from '@/components/thanks'
 
 const shortcodes = { CopyEmailButton, Thanks }
 
-const Post = ({
+interface Props {
+    post: Post
+}
+
+const Post: FC<Props> = ({
     post: {
         body,
         fields: { slug },
@@ -19,21 +26,21 @@ const Post = ({
     },
 }) => {
     const [isUpdatingTweets, setIsUpdatingTweets] = useState(true)
-    const articleEl = useRef(null)
+    const articleEl = useRef<HTMLElement>(null)
     const { appearance } = useStore()
-    const click = (title) => {
+    const click = (title: string) => {
         sa(`click_post_${title}`)
     }
     useMount(() => setIsUpdatingTweets(false))
     useEffect(() => {
         if (window.twttr?.widgets && !isUpdatingTweets) {
-            const tweetElements = articleEl.current.querySelectorAll(
+            const tweetElements = articleEl.current?.querySelectorAll(
                 '.twitter-tweet',
-            )
+            ) as NodeListOf<HTMLElement>
             setIsUpdatingTweets(true)
-            tweetElements.forEach(async (t) => {
-                t.style.opacity = 0
-                await twttr.widgets.createTweet(
+            tweetElements?.forEach(async (t) => {
+                t.style.opacity = '0'
+                await window.twttr?.widgets.createTweet(
                     t.dataset.tweetId,
                     t.parentElement,
                     {

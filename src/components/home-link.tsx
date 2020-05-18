@@ -1,9 +1,24 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react'
 import { Link } from 'gatsby'
 import sa from 'gatsby-plugin-simple-analytics'
 
-const HomeLink = ({ name, href, to, children, truncate = false }) => {
+import React, { FC, ReactNode } from 'react'
+
+interface Props {
+    name: string
+    href?: string
+    to?: string
+    children?: ReactNode
+    truncate?: boolean
+}
+
+const HomeLink: FC<Props> = ({
+    name,
+    href,
+    to,
+    children,
+    truncate = false,
+}) => {
     const click = () => sa(`click_home_${name}`)
     let action
     if (href) {
@@ -23,7 +38,7 @@ const HomeLink = ({ name, href, to, children, truncate = false }) => {
     }
     return (
         <div
-            className={truncate ? 'truncate whitespace-no-wrap' : null}
+            className={truncate ? 'truncate whitespace-no-wrap' : ''}
             style={{ marginBottom: '1px' }}
         >
             <div

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import useButtondown from '@/hooks/use-buttondown'
 
-const Form = () => {
+interface Props {}
+
+const Form: FC<Props> = () => {
     const {
         email,
         isFocused,

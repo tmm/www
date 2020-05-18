@@ -1,13 +1,18 @@
-import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Helmet from 'react-helmet'
+
+import React, { FC, ReactNode } from 'react'
+import { Helmet } from 'react-helmet'
 
 import lightFavicon from '../../static/favicons/light.png'
 import darkFavicon from '../../static/favicons/dark.png'
 
 import { useStore } from '@/store'
 
-const Layout = ({ children }) => {
+interface Props {
+    children: ReactNode
+}
+
+const Layout: FC<Props> = ({ children }) => {
     const {
         site: {
             siteMetadata: { description, title, twitter, url },
@@ -39,7 +44,11 @@ const Layout = ({ children }) => {
 
                 <meta content={appearance} name="twitter:widgets:theme" />
 
-                <link href={favicon} rel="shortcut icon" type="image/png" />
+                <link
+                    href={favicon as string}
+                    rel="shortcut icon"
+                    type="image/png"
+                />
             </Helmet>
             {children}
         </>

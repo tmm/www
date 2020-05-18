@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from 'react'
 import { useCopyToClipboard } from 'react-use'
 import { graphql, useStaticQuery } from 'gatsby'
 import sa from 'gatsby-plugin-simple-analytics'
 
-const CopyEmailButton = ({ email }) => {
+import React, { FC, useEffect, useState } from 'react'
+
+interface Props {
+    email?: string
+}
+
+const CopyEmailButton: FC<Props> = ({ email }) => {
     const {
         site: {
             siteMetadata: { email: defaultEmail },

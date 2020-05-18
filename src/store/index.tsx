@@ -1,12 +1,30 @@
-import React, { createContext, useContext, useEffect, useState } from 'react'
 import sa from 'gatsby-plugin-simple-analytics'
 
-import useMount from '@/hooks/use-mount'
+import { useMount } from 'react-use'
+
+import React, {
+    Dispatch,
+    ReactNode,
+    SetStateAction,
+    createContext,
+    useContext,
+    useEffect,
+    useState,
+} from 'react'
+
 import usePrefersDarkMode from '@/hooks/use-prefers-dark-mode'
 
-const Context = createContext()
+type State = {
+    appearance: string
+    isLight: boolean
+    setAppearance: Dispatch<SetStateAction<string>>
+}
+const Context = createContext<Partial<State>>({})
 
-const Provider = ({ children }) => {
+type Props = {
+    children: ReactNode
+}
+const Provider = ({ children }: Props) => {
     const prefersDarkMode = usePrefersDarkMode()
     const initialAppearance = prefersDarkMode ? 'dark' : 'light'
     const [appearance, setAppearance] = useState(initialAppearance)
@@ -31,6 +49,6 @@ const Provider = ({ children }) => {
     )
 }
 
-const useStore = () => useContext(Context)
+const useStore = () => useContext(Context) as State
 
 export { Provider, Context, useStore }
