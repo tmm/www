@@ -135,6 +135,7 @@ const Index: FC<Props> = ({
                     Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>.
                     Deployed on <a href="https://vercel.com">Vercel</a>. View
                     source on <a href="https://github.com/tmm/www">GitHub</a>.
+                    Subscribe via <a href="/rss.xml">RSS</a>.
                 </p>
             </section>
         </Layout>

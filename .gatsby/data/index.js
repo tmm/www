@@ -73,6 +73,7 @@ module.exports = {
         { name: 'Abhi Vyas', href: 'https://abhi.nyc' },
         { name: 'Toby Shorin', href: 'https://tobyshorin.com' },
         { name: 'Kent De Bruin', href: 'https://www.kentdebruin.com' },
+        { name: 'Ayo Isaiah', href: 'https://freshman.tech' },
     ],
     products: [
         { name: 'Are.na', href: 'https://are.na' },
@@ -80,6 +81,7 @@ module.exports = {
         { name: 'Futureland', href: 'https://futureland.tv' },
         { name: 'Kinopio', href: 'https://kinopio.club' },
         { name: 'Linear', href: 'https://linear.app' },
+        { name: 'Notational Velocity', href: 'http://notational.net' },
         { name: 'Privacy Badger', href: 'https://privacybadger.org' },
         { name: 'Render', href: 'https://render.com' },
         { name: 'Rep.ly', href: 'https://rep.ly' },

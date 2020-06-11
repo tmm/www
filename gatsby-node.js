@@ -10,7 +10,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node, actions }) => {
     if (node.internal.type === 'Mdx') {
         const { createNodeField } = actions
         createNodeField({
@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
 
     const { createPage } = actions
-    const template = path.resolve('./src/templates/post.tsx')
+    const template = path.resolve(__dirname, 'src/templates/post.tsx')
     const posts = result.data.allMdx.edges
 
     posts.forEach((post, index) => {

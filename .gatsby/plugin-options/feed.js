@@ -1,25 +1,23 @@
 const query = `
     {
         allMdx(
-            limit: 1000,
-            sort: {
-                order: DESC,
-                fields: [frontmatter___date]
-            }
-    ) {
-        edges {
-            node {
-                frontmatter {
-                    title
-                    date
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { published: { eq: true } } }
+            limit: 1000
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        date
+                    }
+                    fields {
+                        slug
+                    }
+                    excerpt
+                    html
                 }
-                fields {
-                    slug
-                }
-                excerpt
-                html
             }
-        }
         }
     }
 `

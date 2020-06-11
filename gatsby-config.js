@@ -1,6 +1,6 @@
-const homeData = require('./config/data-home')
-const feedOptions = require('./config/plugin-feed')
-const mdxOptions = require('./config/plugin-mdx')
+const homeData = require('./.gatsby/data/index')
+const feedOptions = require('./.gatsby/plugin-options/feed')
+const mdxOptions = require('./.gatsby/plugin-options/mdx')
 
 const author = 'Tom Meagher'
 const url = 'meagher.co'
