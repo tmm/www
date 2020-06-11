@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '@/layouts/default'
 
 const V = () => {
-    const [version, setVersion] = useState('')
+    const [version, setVersion] = useState('00.000.000000')
 
     useInterval(() => {
         const now = new Date()
