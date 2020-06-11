@@ -38,7 +38,7 @@ function useButtondown() {
             setIsLoading(true)
             const body = {
                 email,
-                referrer_url: 'tom.fm',
+                referrer_url: 'meagher.co',
             }
             const response = await fetch(
                 'https://api.buttondown.email/v1/subscribers',
