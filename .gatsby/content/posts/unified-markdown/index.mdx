@@ -1,0 +1,48 @@
+---
+title: Unified Markdown Editor
+date: 2020-06-17
+path: /unified-markdown/
+published: false
+description: Experiments on combining markdown syntax and preview
+---
+
+Markdown is a boon for writing. I write posts on this blog with Markdown. It
+allows me to specify formatting without taking my hands off the keyboard and
+fiddling with my mouse.
+
+In theory, I could write, edit, and revise a post in my text editor of choice,
+then when it's ready, immediately hit publish. No need to look at a preview,
+let alone the generated HTML. It's puzzling why I don't do exactly this.
+
+Instead my workflow looks something like this:
+
+1. Write in Vim.
+2. Preview in a browser.
+3. Switch back to Vim for revisions.
+4. Repeat until done.
+5. Add and commit changes, push to [GitHub
+   repository](https://github.com/tmm/www).
+
+Vim might be the wrong tool for the job. Modern Markdown editors these days let
+you type of the left and preview on the right.[^1] Problem solved, right? In my
+opinion, the split write-preview editor is really clunky. It duplicates content
+on the screen and prevents you from just looking at the cursor.
+
+More sophisticated editors, like [iA Writer](https://ia.net/writer), do lite
+inline preview: `*emphasis*` becomes _\*emphasis\*_, headings appear heavier,
+list items maintain their indent across multiple lines, etc. This is better, but
+it's redundant to show the syntax and preview at the same time since you can
+assume one from the other.
+
+So there are two options left: Write in a plain text editor and "render"
+the preview in your head, or use a WYSIWYG
+
+\_\_
+
+Write, read, revise, all in the same window, all in the same mode.
+https://daringfireball.net/2004/03/dive_into_markdown
+
+[^1]:
+
+    [Dillinger](https://dillinger.io) and [StackEdit](https://stackedit.io/app) are two free
+    examples you can play around with in your browser.
