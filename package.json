@@ -78,7 +78,7 @@
     "lint-staged": {
         "*.{js,ts,tsx}": [
             "prettier --write",
-            "eslint --max-warnings 0 --cache"
+            "eslint --max-warnings 0 --cache --ignore-pattern '!.eslintrc.js'"
         ]
     },
     "prettier": {

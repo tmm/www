@@ -1,13 +1,21 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
+    parserOptions: {
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
     extends: [
+        'plugin:mdx/recommended',
         'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:import/errors',
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
     ],
-    plugins: ['@typescript-eslint', 'import', 'react', 'react-hooks'],
+    plugins: ['import', 'react', 'react-hooks'],
     rules: {
         'import/order': [
             'error',
@@ -26,15 +34,10 @@ module.exports = {
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/self-closing-comp': 'warn',
+        'react/jsx-sort-props': ['error', { callbacksLast: true }],
+        'react/jsx-wrap-multilines': 'error',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
-        'react/jsx-sort-props': [
-            'error',
-            {
-                callbacksLast: true,
-            },
-        ],
-        'react/jsx-wrap-multilines': 'error',
         'sort-imports': [
             'warn',
             {
@@ -44,23 +47,6 @@ module.exports = {
             },
         ],
     },
-    overrides: [
-        {
-            files: ['*.md'],
-            rules: {
-                'prettier/prettier': [
-                    'error',
-                    {
-                        parser: 'markdown',
-                    },
-                ],
-            },
-        },
-        {
-            files: ['*.mdx'],
-            extends: ['plugin:mdx/recommended'],
-        },
-    ],
     settings: {
         'import/resolver': {
             typescript: {
@@ -69,12 +55,6 @@ module.exports = {
         },
         react: {
             version: 'detect',
-        },
-    },
-    parserOptions: {
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
         },
     },
 }
