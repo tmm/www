@@ -1,10 +1,12 @@
 import React, { FC } from 'react'
+import { useLocation } from '@reach/router'
 
 import useButtondown from '@/hooks/use-buttondown'
 
 interface Props {}
 
-const Form: FC<Props> = () => {
+const Subscribe: FC<Props> = () => {
+    const { pathname } = useLocation()
     const {
         email,
         isFocused,
@@ -15,7 +17,7 @@ const Form: FC<Props> = () => {
         handleFocus,
         handleChange,
         handleSubmit,
-    } = useButtondown()
+    } = useButtondown(pathname)
 
     return (
         <form className="mb-30 mt-24 m-auto max-w-sm" onSubmit={handleSubmit}>
@@ -50,4 +52,4 @@ const Form: FC<Props> = () => {
     )
 }
 
-export default Form
+export default Subscribe

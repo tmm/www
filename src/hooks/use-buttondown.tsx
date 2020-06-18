@@ -2,7 +2,9 @@ import sa from 'gatsby-plugin-simple-analytics'
 
 import React, { FormEvent, useEffect, useState } from 'react'
 
-function useButtondown() {
+const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
+
+function useButtondown(pathname: string) {
     const [email, setEmail] = useState('')
     const [isLoading, setIsLoading] = useState(false)
     const [isError, setIsError] = useState(false)
@@ -12,16 +14,17 @@ function useButtondown() {
     const [isFocused, setIsFocused] = useState(false)
 
     useEffect(() => {
-        const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
         setIsValid(!!email && emailRegex.test(email))
     }, [email])
 
     const handleBlur = () => {
         setIsFocused(false)
     }
+
     const handleFocus = () => {
         setIsFocused(true)
     }
+
     const handleChange = (event: FormEvent) => {
         setEmail((event.target as HTMLInputElement).value)
         if (isError) {
@@ -29,6 +32,7 @@ function useButtondown() {
             setMessage('')
         }
     }
+
     const handleSubmit = async (event: FormEvent) => {
         sa('submit_email')
         event.preventDefault()
@@ -36,21 +40,19 @@ function useButtondown() {
             setIsSubscribed(false)
             setIsError(false)
             setIsLoading(true)
-            const body = {
-                email,
-                referrer_url: 'meagher.co',
+
+            const endpoint = 'https://api.buttondown.email/v1/subscribers'
+            const headers = {
+                'Content-Type': 'application/json',
+                Authorization: `Token ${process.env.GATSBY_BUTTONDOWN_API_KEY}`,
             }
-            const response = await fetch(
-                'https://api.buttondown.email/v1/subscribers',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        Authorization: `Token ${process.env.GATSBY_BUTTONDOWN_API_KEY}`,
-                    },
-                    body: JSON.stringify(body),
-                },
-            )
+            const body = { email, referrer_url: pathname }
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify(body),
+            })
+
             if (response.ok) {
                 setIsSubscribed(true)
                 setMessage(
