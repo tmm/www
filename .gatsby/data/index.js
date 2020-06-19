@@ -70,10 +70,12 @@ module.exports = {
             href: 'https://twitter.com/internetVin',
         },
         { name: 'Tim Petri', href: 'https://timpetri.com' },
+        { name: 'Betty Wang', href: 'https://twitter.com/bettywang' },
         { name: 'Abhi Vyas', href: 'https://abhi.nyc' },
+        { name: 'HipCityReg', href: 'https://www.reggiejames.xyz' },
         { name: 'Toby Shorin', href: 'https://tobyshorin.com' },
         { name: 'Kent De Bruin', href: 'https://www.kentdebruin.com' },
-        { name: 'Ayo Isaiah', href: 'https://freshman.tech' },
+        { name: 'Polly Rodriguez', href: 'https://twitter.com/polly_claire' },
     ],
     products: [
         { name: 'Are.na', href: 'https://are.na' },
@@ -90,5 +92,6 @@ module.exports = {
             name: 'Simple Analytics',
             href: 'https://simpleanalytics.com',
         },
+        { name: 'Watsi', href: 'https://watsi.org' },
     ],
 }
