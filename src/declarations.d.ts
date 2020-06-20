@@ -4,14 +4,6 @@ declare module 'gatsby-plugin-simple-analytics' {
     export default function sa(eventName: string): void
 }
 
-interface Window {
-    twttr: {
-        widgets: {
-            createTweet: Function
-        }
-    }
-}
-
 interface Post {
     id: string
     body: string
@@ -24,7 +16,7 @@ interface Media {
     name: string
     href: string
 }
-interface Person extends Media {}
-interface Presence extends Media {}
-interface Product extends Media {}
-interface TimeEvent extends Media {}
+type Person = Media
+type Presence = Media
+type Product = Media
+type TimeEvent = Media

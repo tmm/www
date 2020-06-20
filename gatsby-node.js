@@ -12,62 +12,51 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.onCreateNode = ({ node, actions }) => {
     if (node.internal.type === 'Mdx') {
-        const { createNodeField } = actions
-        createNodeField({
-            name: 'slug',
-            node,
-            value: node.frontmatter.path,
-        })
+        const value = node.frontmatter.path
+        const field = { name: 'slug', node, value }
+        actions.createNodeField(field)
     }
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-    const result = await graphql(
-        `
-            {
-                allMdx(
-                    sort: { fields: [frontmatter___date], order: DESC }
-                    filter: { frontmatter: { published: { eq: true } } }
-                    limit: 1000
-                ) {
-                    edges {
-                        node {
-                            id
-                            fields {
-                                slug
-                            }
-                            frontmatter {
-                                title
-                                description
-                            }
-                            body
+    const query = `
+        {
+            allMdx(
+                sort: { fields: [frontmatter___date], order: DESC }
+                filter: { frontmatter: { published: { eq: true } } }
+                limit: 1000
+            ) {
+                edges {
+                    node {
+                        id
+                        fields {
+                            slug
                         }
+                        frontmatter {
+                            title
+                            description
+                        }
+                        body
                     }
                 }
             }
-        `,
-    )
+        }
+    `
+    const result = await graphql(query)
+
     if (result.errors) {
         throw result.errors
     }
 
-    const { createPage } = actions
-    const template = path.resolve(__dirname, 'src/templates/post.tsx')
     const posts = result.data.allMdx.edges
-
-    posts.forEach((post, index) => {
-        const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node
-        const next = index === 0 ? null : posts[index - 1].node
-
-        createPage({
-            path: post.node.fields.slug,
+    for (const post of posts) {
+        const template = path.resolve(__dirname, 'src/templates/post.tsx')
+        const slug = post.node.fields.slug
+        const page = {
+            path: slug,
             component: template,
-            context: {
-                slug: post.node.fields.slug,
-                previous,
-                next,
-            },
-        })
-    })
+            context: { slug },
+        }
+        actions.createPage(page)
+    }
 }

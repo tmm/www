@@ -22,7 +22,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'posts',
-                path: `${__dirname}/.gatsby/content/posts`,
+                path: `${__dirname}/.gatsby/posts`,
             },
         },
         {
@@ -44,7 +44,6 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        'gatsby-plugin-twitter',
         {
             resolve: 'gatsby-plugin-postcss',
             options: {

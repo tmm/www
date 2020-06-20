@@ -1,6 +1,4 @@
-/* eslint-disable react/jsx-no-target-blank */
 import { Link } from 'gatsby'
-import sa from 'gatsby-plugin-simple-analytics'
 
 import React, { FC, ReactNode } from 'react'
 
@@ -12,34 +10,27 @@ interface Props {
     truncate?: boolean
 }
 
-const HomeLink: FC<Props> = ({
-    name,
-    href,
-    to,
-    children,
-    truncate = false,
-}) => {
-    const click = () => sa(`click_home_${name}`)
+const HomeLink: FC<Props> = (props) => {
+    const { href, to, children } = props
+
     let action
     if (href) {
         action = (
-            <a href={href} rel="noopener" target="_blank" onClick={click}>
+            <a href={href} rel="noopener noreferrer" target="_blank">
                 {children}
             </a>
         )
     } else if (to) {
-        action = (
-            <Link to={to} onClick={click}>
-                {children}
-            </Link>
-        )
+        action = <Link to={to}>{children}</Link>
     } else {
         action = children
     }
+
     return (
         <div
-            className={truncate ? 'truncate whitespace-no-wrap' : ''}
-            style={{ marginBottom: '1px' }}
+            className={`
+                ${props.truncate ? 'truncate whitespace-no-wrap' : ''}
+            `}
         >
             <div
                 className="
@@ -53,7 +44,7 @@ const HomeLink: FC<Props> = ({
                     md:mr-6
                 "
             >
-                {name}
+                {props.name}
             </div>
             {action}
         </div>

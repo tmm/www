@@ -1,5 +1,3 @@
-import sa from 'gatsby-plugin-simple-analytics'
-
 import React, { FormEvent, useEffect, useState } from 'react'
 
 const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
@@ -34,7 +32,6 @@ function useButtondown(pathname: string) {
     }
 
     const handleSubmit = async (event: FormEvent) => {
-        sa('submit_email')
         event.preventDefault()
         try {
             setIsSubscribed(false)

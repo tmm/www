@@ -9,13 +9,12 @@ module.exports = {
     extends: [
         'plugin:mdx/recommended',
         'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:import/errors',
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
     ],
-    plugins: ['import', 'react', 'react-hooks'],
+    plugins: ['import', 'react', 'react-hooks', '@typescript-eslint'],
     rules: {
         'import/order': [
             'error',

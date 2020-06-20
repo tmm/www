@@ -1,6 +1,5 @@
 import { useCopyToClipboard } from 'react-use'
 import { graphql, useStaticQuery } from 'gatsby'
-import sa from 'gatsby-plugin-simple-analytics'
 
 import React, { FC, useEffect, useState } from 'react'
 
@@ -27,7 +26,6 @@ const CopyEmailButton: FC<Props> = ({ email }) => {
     const [state, copyToClipboard] = useCopyToClipboard()
 
     const copyEmail = () => {
-        sa('click_copy_email')
         copyToClipboard(value)
     }
 
@@ -41,38 +39,44 @@ const CopyEmailButton: FC<Props> = ({ email }) => {
     return (
         <span className="inline-block relative">
             <button
-                className="underline hover:text-accent"
+                className="underline hover:text-accent text-decoration-color"
                 title="Click to copy"
                 onClick={copyEmail}
             >
                 {value}
             </button>
-            {copied && (
-                <span
-                    className="
+            <span
+                className={`
                         absolute
                         bg-background
                         border
+                        duration-100
                         px-2
                         py-2
                         rounded-sm
                         shadow
                         text-heading
                         text-sm
+                        transform
+                        transition-all
+                        -translate-x-1/2
                         whitespace-no-wrap
                         z-10
-                    "
-                    style={{
-                        bottom: '1.45rem',
-                        left: '50%',
-                        paddingBottom: '2px',
-                        paddingTop: '2px',
-                        transform: 'translate(-50%, 0)',
-                    }}
-                >
-                    Copied to clipboard!
-                </span>
-            )}
+                        ${
+                            copied
+                                ? 'opacity-100 translate-y-0 visible'
+                                : 'opacity-0 translate-y-2 invisible'
+                        }
+                    `}
+                style={{
+                    bottom: '1.5rem',
+                    left: '50%',
+                    paddingBottom: '2px',
+                    paddingTop: '2px',
+                }}
+            >
+                Copied to clipboard!
+            </span>
         </span>
     )
 }

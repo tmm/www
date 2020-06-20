@@ -3,10 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React, { FC, ReactNode } from 'react'
 import { Helmet } from 'react-helmet'
 
-import lightFavicon from '../../static/favicons/light.png'
-import darkFavicon from '../../static/favicons/dark.png'
-
-import { useStore } from '@/store'
+import favicon from '../../static/favicon.png'
 
 interface Props {
     children: ReactNode
@@ -29,8 +26,6 @@ const Layout: FC<Props> = ({ children }) => {
             }
         }
     `)
-    const { appearance, isLight } = useStore()
-    const favicon = isLight ? lightFavicon : darkFavicon
     return (
         <>
             <Helmet title={title}>
@@ -41,8 +36,6 @@ const Layout: FC<Props> = ({ children }) => {
                 <meta content={`${url}/card.png`} name="twitter:image" />
                 <meta content="summary_large_image" name="twitter:card" />
                 <meta content={`@${twitter}`} name="twitter:creator" />
-
-                <meta content={appearance} name="twitter:widgets:theme" />
 
                 <link
                     href={favicon as string}

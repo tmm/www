@@ -44,19 +44,16 @@ const Index: FC<Props> = ({
     return (
         <Layout>
             <Helmet title="Tom Meagher" />
-            <section className="mb-8 mt-12">
-                <h1 className="font-medium leading-normal mb-3 text-heading">
-                    {author}
-                </h1>
+            <section className="mb-8 mt-20">
+                <h1 className="mb-4">{author}</h1>
                 <p>
-                    Hi, hello, welcome. My name is Tom and I’m an Internet
-                    explorer currently headquartered in New York City via
-                    Boston.
+                    Hi, hello, welcome. My name is Tom and I’m a Internet
+                    explorer headquartered in New York City via Boston.
                 </p>
                 <p>
-                    I’m a bit disenchanted with tech right now despite working
-                    in it. Who isn’t these days? I’m optimistic things will get
-                    better though.
+                    I’m a bit disenchanted with the tech industry despite
+                    working in it. Who isn’t these days? I’m optimistic things
+                    will get better though.
                 </p>
                 <p>
                     Below is some more information and — more importantly —
@@ -64,7 +61,7 @@ const Index: FC<Props> = ({
                 </p>
             </section>
             <section className="mb-8">
-                <h4 className="font-normal mb-2 text-heading">Presence</h4>
+                <h4 className="font-normal">Presence</h4>
                 <div>
                     {presenceData.map((x) => (
                         <HomeLink key={x.name} {...x} />
@@ -72,7 +69,7 @@ const Index: FC<Props> = ({
                 </div>
             </section>
             <section className="mb-8">
-                <h4 className="font-normal mb-2 text-heading">Writing</h4>
+                <h4 className="font-normal">Writing</h4>
                 <div>
                     {posts.map(
                         ({
@@ -92,7 +89,7 @@ const Index: FC<Props> = ({
                 </div>
             </section>
             <section className="mb-8">
-                <h4 className="font-normal mb-2 text-heading">Timeline</h4>
+                <h4 className="font-normal">Timeline</h4>
                 <div>
                     {timeline.map((x) => (
                         <HomeLink key={`${x.name}-${x.href}`} {...x} />
@@ -105,12 +102,12 @@ const Index: FC<Props> = ({
                     Send an email to <CopyEmailButton /> with the answer to
                     “What’s your favorite color?”
                 </p>
-                <p className="text-muted text-sm">
-                    <b>Note:</b> No one ever does this. I would be soOoOo
-                    thrilled if you did.
+                <p className="leading-normal text-muted text-sm">
+                    <b>Note:</b> No one ever does this. I would be thrilled if
+                    you did.
                 </p>
-                <p className="text-muted text-sm">
-                    Some people I’m following:{' '}
+                <p className="leading-normal text-muted text-sm">
+                    People I’m following:{' '}
                     {people.map((x, i) => (
                         <span key={x.name}>
                             <a href={x.href} key={x.name}>
@@ -120,7 +117,7 @@ const Index: FC<Props> = ({
                         </span>
                     ))}
                 </p>
-                <p className="text-muted text-sm">
+                <p className="leading-normal text-muted text-sm">
                     Products to check out:{' '}
                     {products.map((x, i) => (
                         <span key={x.name}>
@@ -131,11 +128,17 @@ const Index: FC<Props> = ({
                         </span>
                     ))}
                 </p>
-                <p className="text-muted text-sm">
-                    Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>.
-                    Deployed on <a href="https://vercel.com">Vercel</a>. View
-                    source on <a href="https://github.com/tmm/www">GitHub</a>.
-                    Subscribe via <a href="/rss.xml">RSS</a>.
+                <p className="leading-normal text-muted text-sm">
+                    Colophon: Typeset in{' '}
+                    <a href="https://rsms.me/inter">Inter</a>, built with{' '}
+                    <a href="https://gatsbyjs.org">Gatsby</a>, deployed on{' '}
+                    <a href="https://vercel.com">Vercel</a>, licensed under the{' '}
+                    <a href="https://github.com/tmm/www/blob/master/.github/LICENSE.md">
+                        MIT License
+                    </a>
+                    , view source on{' '}
+                    <a href="https://github.com/tmm/www">GitHub</a>, subscribe
+                    via <a href="/rss.xml">RSS</a>.
                 </p>
             </section>
         </Layout>
@@ -154,7 +157,7 @@ export const query = graphql`
                         slug
                     }
                     frontmatter {
-                        date(formatString: "MM.DD.YYYY")
+                        date(formatString: "MMM YYYY")
                         description
                         title
                     }
