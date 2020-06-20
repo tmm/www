@@ -36,9 +36,9 @@ const Post: FC<Props> = (props) => {
 
                 <MDXRenderer>{body}</MDXRenderer>
 
-                <footer className="mt-12 text-muted text-sm">
-                    <time>{date}</time>
-                </footer>
+                <div className="mt-4 text-muted text-sm">
+                    Posted on <time>{date}</time>
+                </div>
             </article>
         </MDXProvider>
     )

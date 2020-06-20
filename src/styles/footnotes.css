@@ -127,10 +127,12 @@ sup:hover {
     @apply hidden;
 }
 
-.is-positioned-bottom {
-    top: -0.35em !important;
-}
-.is-positioned-top {
-    bottom: -0.35em !important;
+@media only screen and (min-width: 640px) {
+    .is-positioned-bottom {
+        top: -0.35em !important;
+    }
+    .is-positioned-top {
+        bottom: -0.35em !important;
+    }
 }
 /* purgecss end ignore */
