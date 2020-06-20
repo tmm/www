@@ -4,8 +4,7 @@
         "typescript",
         "typescriptreact",
         "json",
-        "css",
-        "markdown"
+        "css"
     ],
     "eslint.enable": true,
     "eslint.packageManager": "yarn",

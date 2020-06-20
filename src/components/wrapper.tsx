@@ -1,13 +1,13 @@
-import React, { FC } from 'react'
+import React, { FC, ReactNode } from 'react'
 
 import { Provider } from '@/store'
 
 interface Props {
-    element: any
+    element: ReactNode
 }
 
-const Wrapper: FC<Props> = ({ element }) => {
-    return <Provider>{element}</Provider>
+const Wrapper: FC<Props> = (props) => {
+    return <Provider>{props.element}</Provider>
 }
 
 export default Wrapper

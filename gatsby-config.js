@@ -1,6 +1,6 @@
-const homeData = require('./.gatsby/data/index')
 const feedOptions = require('./.gatsby/options/feed')
 const mdxOptions = require('./.gatsby/options/mdx')
+const postCssOptions = require('./.gatsby/options/post-css')
 
 const author = 'Tom Meagher'
 const url = 'meagher.co'
@@ -15,14 +15,20 @@ module.exports = {
         author,
         email,
         twitter,
-        home: homeData,
     },
     plugins: [
         {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'posts',
-                path: `${__dirname}/.gatsby/content/posts`,
+                path: `${__dirname}/content/posts`,
+            },
+        },
+        'gatsby-transformer-json',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/data`,
             },
         },
         {
@@ -44,15 +50,9 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        'gatsby-plugin-twitter',
         {
             resolve: 'gatsby-plugin-postcss',
-            options: {
-                postCssPlugins: [
-                    require('postcss-import')(),
-                    require('tailwindcss'),
-                ],
-            },
+            options: postCssOptions,
         },
         {
             resolve: 'gatsby-plugin-purgecss',

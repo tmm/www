@@ -1,6 +1,6 @@
 import littlefoot from 'littlefoot'
 
-import '@/styles/tailwind.css'
+import '@/styles/global.css'
 import Wrapper from '@/components/wrapper'
 
 export const wrapRootElement = Wrapper
