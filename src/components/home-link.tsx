@@ -6,18 +6,19 @@ interface Props {
     name: string
     href?: string
     to?: string
+    value?: string
     children?: ReactNode
     truncate?: boolean
 }
 
 const HomeLink: FC<Props> = (props) => {
-    const { href, to, children } = props
+    const { href, to, children, value } = props
 
     let action
     if (href) {
         action = (
             <a href={href} rel="noopener noreferrer" target="_blank">
-                {children}
+                {value}
             </a>
         )
     } else if (to) {

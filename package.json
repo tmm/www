@@ -1,5 +1,5 @@
 {
-    "name": "meagher.co",
+    "name": "www",
     "license": "MIT",
     "scripts": {
         "commit": "git-cz",
@@ -57,6 +57,7 @@
         "gatsby-remark-smartypants": "^2.1.20",
         "gatsby-remark-unwrap-images": "^1.0.1",
         "gatsby-source-filesystem": "^2.1.46",
+        "gatsby-transformer-json": "^2.4.5",
         "gatsby-transformer-sharp": "^2.3.12",
         "husky": "^4.0.10",
         "lint-staged": "^10.0.0",

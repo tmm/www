@@ -7,12 +7,8 @@ interface Props {
     email?: string
 }
 
-const CopyEmailButton: FC<Props> = ({ email }) => {
-    const {
-        site: {
-            siteMetadata: { email: defaultEmail },
-        },
-    } = useStaticQuery(graphql`
+const CopyEmailButton: FC<Props> = (props) => {
+    const query = graphql`
         query {
             site {
                 siteMetadata {
@@ -20,8 +16,9 @@ const CopyEmailButton: FC<Props> = ({ email }) => {
                 }
             }
         }
-    `)
-    const value = email ?? defaultEmail
+    `
+    const data = useStaticQuery(query)
+    const value = props.email ?? data.site.siteMetadata.email
     const [copied, setCopied] = useState(false)
     const [state, copyToClipboard] = useCopyToClipboard()
 

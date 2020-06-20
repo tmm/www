@@ -13,8 +13,10 @@ interface Post {
 }
 
 interface Media {
+    id: string
     name: string
-    href: string
+    href?: string
+    value?: string
 }
 type Person = Media
 type Presence = Media

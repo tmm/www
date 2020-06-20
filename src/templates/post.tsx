@@ -13,7 +13,8 @@ interface Props extends PageProps {
     }
 }
 
-const Template: FC<Props> = ({ data: { mdx: post } }) => {
+const Template: FC<Props> = (props) => {
+    const post = props.data.mdx
     const description = post.frontmatter.description || post.excerpt
     const title = post.frontmatter.title
     return (
@@ -22,7 +23,9 @@ const Template: FC<Props> = ({ data: { mdx: post } }) => {
                 <meta content={description} name="description" />
                 <meta content={title} name="twitter:title" />
             </Helmet>
+
             <Post key={post.id} post={post} />
+
             <Subscribe />
         </Layout>
     )
@@ -37,7 +40,7 @@ export const query = graphql`
                 slug
             }
             frontmatter {
-                date(formatString: "MMMM DD YYYY")
+                date(formatString: "ddd MMM DD YYYY")
                 description
                 title
             }

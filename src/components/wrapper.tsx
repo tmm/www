@@ -6,8 +6,8 @@ interface Props {
     element: ReactNode
 }
 
-const Wrapper: FC<Props> = ({ element }) => {
-    return <Provider>{element}</Provider>
+const Wrapper: FC<Props> = (props) => {
+    return <Provider>{props.element}</Provider>
 }
 
 export default Wrapper

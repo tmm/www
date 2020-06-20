@@ -9,12 +9,8 @@ interface Props {
     children: ReactNode
 }
 
-const Layout: FC<Props> = ({ children }) => {
-    const {
-        site: {
-            siteMetadata: { description, title, twitter, url },
-        },
-    } = useStaticQuery(graphql`
+const Layout: FC<Props> = (props) => {
+    const query = graphql`
         query {
             site {
                 siteMetadata {
@@ -25,7 +21,9 @@ const Layout: FC<Props> = ({ children }) => {
                 }
             }
         }
-    `)
+    `
+    const data = useStaticQuery(query)
+    const { title, description, url, twitter } = data.site.siteMetadata
     return (
         <>
             <Helmet title={title}>
@@ -43,7 +41,7 @@ const Layout: FC<Props> = ({ children }) => {
                     type="image/png"
                 />
             </Helmet>
-            {children}
+            {props.children}
         </>
     )
 }

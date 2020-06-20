@@ -10,40 +10,48 @@ import CopyEmailButton from '@/components/copy-email-button'
 
 interface Props extends PageProps {
     data: {
-        allMdx: { edges: { node: Post }[] }
         site: {
             siteMetadata: {
                 author: string
-                home: {
-                    presence: Presence[]
-                    timeline: TimeEvent[]
-                    people: Person[]
-                    products: Product[]
-                }
             }
         }
+        allMdx: { posts: Post[] }
+        allPresenceJson: { presences: Presence[] }
+        allTimelineJson: { events: TimeEvent[] }
+        allFollowingsJson: { followings: Person[] }
+        allProductsJson: { products: Product[] }
     }
 }
 
-const Index: FC<Props> = ({
-    data: {
-        allMdx: { edges: posts },
-        site: {
-            siteMetadata: {
-                author,
-                home: { presence, timeline, people, products },
+const Index: FC<Props> = (props) => {
+    const {
+        data: {
+            site: {
+                siteMetadata: { author },
             },
+            allMdx: { posts },
+            allPresenceJson: { presences: presenceData },
+            allTimelineJson: { events },
+            allFollowingsJson: { followings },
+            allProductsJson: { products },
         },
-    },
-}) => {
-    const presenceData = [
-        ...presence.slice(0, 1),
-        { name: 'Email', children: <CopyEmailButton /> },
-        ...presence.slice(1, presence.length),
-    ].sort((a, b) => (a.name > b.name ? 1 : 0))
+    } = props
+
+    const emailPresence = {
+        id: 'email',
+        name: 'Email',
+        children: <CopyEmailButton />,
+    }
+    const presences = [
+        ...presenceData.slice(0, 1),
+        emailPresence,
+        ...presenceData.slice(1, presenceData.length),
+    ]
+
     return (
         <Layout>
-            <Helmet title="Tom Meagher" />
+            <Helmet title={author} />
+
             <section className="mb-8 mt-20">
                 <h1 className="mb-4">{author}</h1>
                 <p>
@@ -60,42 +68,41 @@ const Index: FC<Props> = ({
                     links to click.
                 </p>
             </section>
+
             <section className="mb-8">
                 <h4 className="font-normal">Presence</h4>
                 <div>
-                    {presenceData.map((x) => (
-                        <HomeLink key={x.name} {...x} />
+                    {presences.map((x) => (
+                        <HomeLink key={x.id} {...x} />
                     ))}
                 </div>
             </section>
+
             <section className="mb-8">
                 <h4 className="font-normal">Writing</h4>
                 <div>
-                    {posts.map(
-                        ({
-                            node: {
-                                id,
-                                fields: { slug },
-                                frontmatter: { date, title },
-                            },
-                        }: {
-                            node: Post
-                        }) => (
-                            <HomeLink key={id} name={date} to={slug} truncate>
-                                {title}
-                            </HomeLink>
-                        ),
-                    )}
-                </div>
-            </section>
-            <section className="mb-8">
-                <h4 className="font-normal">Timeline</h4>
-                <div>
-                    {timeline.map((x) => (
-                        <HomeLink key={`${x.name}-${x.href}`} {...x} />
+                    {posts.map((x) => (
+                        <HomeLink
+                            key={x.id}
+                            name={x.frontmatter.date}
+                            to={x.fields.slug}
+                            truncate
+                        >
+                            {x.frontmatter.title}
+                        </HomeLink>
                     ))}
                 </div>
             </section>
+
+            <section className="mb-8">
+                <h4 className="font-normal">Timeline</h4>
+                <div>
+                    {events.map((x) => (
+                        <HomeLink key={x.id} {...x} />
+                    ))}
+                </div>
+            </section>
+
             <section>
                 <p>
                     If you’ve made it this far, I would love to get to know you.
@@ -108,19 +115,19 @@ const Index: FC<Props> = ({
                 </p>
                 <p className="leading-normal text-muted text-sm">
                     People I’m following:{' '}
-                    {people.map((x, i) => (
-                        <span key={x.name}>
+                    {followings.map((x, i) => (
+                        <span key={x.id}>
                             <a href={x.href} key={x.name}>
                                 {x.name}
                             </a>
-                            {i !== people.length - 1 && ', '}
+                            {i !== followings.length - 1 && ', '}
                         </span>
                     ))}
                 </p>
                 <p className="leading-normal text-muted text-sm">
                     Products to check out:{' '}
                     {products.map((x, i) => (
-                        <span key={x.name}>
+                        <span key={x.id}>
                             <a href={x.href} key={x.name}>
                                 {x.name}
                             </a>
@@ -146,49 +153,61 @@ const Index: FC<Props> = ({
 }
 
 export const query = graphql`
-    query PostsQuery {
-        allMdx(
-            filter: { frontmatter: { published: { eq: true } } }
-            sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        date(formatString: "MMM YYYY")
-                        description
-                        title
-                    }
-                    id
-                }
-            }
-        }
+    query IndexPage {
         site {
             siteMetadata {
                 author
-                email
-                home {
-                    presence {
-                        name
-                        children
-                        href
-                    }
-                    timeline {
-                        name
-                        children
-                        href
-                    }
-                    people {
-                        name
-                        href
-                    }
-                    products {
-                        name
-                        href
-                    }
+            }
+        }
+
+        allMdx(
+            filter: { frontmatter: { published: { eq: true } } }
+            sort: { fields: frontmatter___date, order: DESC }
+        ) {
+            posts: nodes {
+                id
+                fields {
+                    slug
                 }
+                frontmatter {
+                    date(formatString: "MMM YYYY")
+                    description
+                    title
+                }
+            }
+        }
+
+        allPresenceJson {
+            presences: nodes {
+                id
+                name
+                value
+                href
+            }
+        }
+
+        allTimelineJson {
+            events: nodes {
+                id
+                name
+                value
+                href
+            }
+        }
+
+        allFollowingsJson {
+            followings: nodes {
+                id
+                name
+                href
+            }
+        }
+
+        allProductsJson {
+            products: nodes {
+                id
+                name
+                href
             }
         }
     }
