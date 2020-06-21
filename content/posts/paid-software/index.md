@@ -1,5 +1,5 @@
 ---
-title: Thoughts On Paid Software
+title: Thoughts On Building Paid Software
 date: 2020-01-19
 path: /paid-software/
 published: true

@@ -47,7 +47,7 @@ const CopyEmailButton: FC<Props> = (props) => {
                         absolute
                         bg-background
                         border
-                        duration-100
+                        duration-200
                         px-2
                         py-2
                         rounded-sm

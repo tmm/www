@@ -9,6 +9,7 @@ const Subscribe: FC = () => {
         email,
         isLoading,
         message,
+        isFocused,
         isValid,
         handleBlur,
         handleFocus,
@@ -17,10 +18,23 @@ const Subscribe: FC = () => {
     } = useButtondown(pathname)
 
     return (
-        <form className="mt-5" onSubmit={handleSubmit}>
+        <form
+            className={`
+                duration-200
+                mt-20
+                opacity-50
+                transition-opacity
+                hover:opacity-100
+                ${isFocused ? 'opacity-100' : ''}
+            `}
+            onSubmit={handleSubmit}
+        >
             <div className="mb-1 text-muted">Email me about new posts</div>
 
             <div className="flex">
+                <label className="hidden" htmlFor="email">
+                    Email
+                </label>
                 <input
                     className="
                         bg-transparent
@@ -31,6 +45,7 @@ const Subscribe: FC = () => {
                         focus:border-muted
                     "
                     disabled={isLoading}
+                    id="email"
                     value={email}
                     onBlur={handleBlur}
                     onChange={handleChange}

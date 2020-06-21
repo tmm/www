@@ -6,56 +6,82 @@ published: false
 description: Experiments on combining markdown syntax and preview
 ---
 
-I write blog posts in [Markdown](https://en.wikipedia.org/wiki/Markdown). It
-allows me to write and format in plain text so I don't need to take my hands off
-the keyboard and fiddle with my mouse.
+[Markdown](https://en.wikipedia.org/wiki/Markdown) makes writing on the web simple. It allows me to write and format in plain text so I can keep my hands on the keyboard and away from the mouse.
 
-In theory, I could write, edit, revise, and publish a post without ever looking
-at a preview, let alone the generated HTML. Instead, my workflow looks like
-this:
+In theory, I could write, edit, and publish a post without ever looking at a preview — let alone the generated HTML. Instead, my workflow looks something like this:
 
 1. Write in Vim.
 2. Preview in Firefox.
 3. Switch back to Vim for revisions.
 4. Repeat until done.
-5. Add and commit changes, then push to [GitHub](https://github.com/tmm/www).
+5. Commit changes and push to [GitHub](https://github.com/tmm/www).
 
-Vim is probably the wrong tool for the job because it forces me to either
-"render" a preview in my head or use a browser. So let's take a quick look at
-some other editor types for writing and previewing:
+It's clear that Vim is the wrong tool for the job. It's great for editing text, but doesn't support previewing Markdown. It forces me to either "render" a preview in my head or switch between a browser.
 
-**Split-Pane Editors**, like [Dillinger](https://dillinger.io), let you edit
-text on one side and view a preview on the other. Clunky! They duplicate content
-on the screen and shift your focus away from your cursor. Not much better than
-tabbing between a plain text editor and the browser.
+Let's take a look at some different types of Markdown editors and see if any of them are better at editing and previewing.
 
-**Block-Compiled Editors**, like [Roam Research](https://roamresearch.com/),
+#### Split-pane
 
-**Inline Preview Editors**, like [iA Writer](https://ia.net/writer), add lite
-previews as you type: \*emphasis\* becomes _\*emphasis\*_, headings look
-heavier, list items maintain their indent across lines, etc. This is better, but
-it's redundant to show syntax and preview at the same time. Plus, you need a
-preview pane or browser yet again if you want to see the true rendering.
+Split-pane editors, like [Dillinger](https://dillinger.io), divide the window into two panes. One pane lets you edit text and the other displays a live preview.
 
-**[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) Editors**, like [Dropbox
-Paper](https://www.dropbox.com/paper), support Markdown on input, but strip
-syntax characters once they transform them to their semantic HTML. I know
-WYSIWYG is for less technical users and Markdown support is not a primary
-feature, but stripping characters seems like a bug.
+[Video]
 
-While all of these have nice features and are decent options, none of them work.
-They force you to switch between tools and modes: Writing and previewing are
-separate states.
+Clunky! Split-pane editors duplicate content on the screen and shift your focus away from your cursor. Not much better than tabbing between Vim and Firefox like I currently do.
 
-John Gruber sort of captured what
+#### Block preview
 
-Write, read, revise, all in the same window, all in the same mode.
-https://daringfireball.net/2004/03/dive_into_markdown
+Block preview editors, like [Roam Research](https://roamresearch.com/), add preview to the editor on a block-by-block basis. When you are editing a Markdown [block](https://daringfireball.net/projects/markdown/syntax#block), it is displayed as plain text. As soon as the block loses focus, it is compiled into a preview.
 
-What I'm about to propose and walk through are some experiments that Markdown
-purists probably won't like, but I think make for a seamless writing experience.
+[Video]
 
-Syntax shows up when you need it to, and disappears when you don't.
+This is a better than split-pane editors in that you don't need to look elsewhere to see a preview. Writing and preview happen in the same document. The downside is that you cannot see the preview in real time.
 
-If you’re well-versed in Markdown editor, you might have noticed I missed one:
-Typora.
+#### Inline preview
+
+Inline preview editors, like [iA Writer](https://ia.net/writer), add block and inline syntax preview to the editor as you type: \*emphasis\* becomes _\*emphasis\*_, headings look heavier, list items maintain their indent across lines, etc.
+
+[Video]
+
+This is the best so far. (In fact, we could stop here since iA Writer is a fantastic piece of software.) But it's not perfect: Showing syntax and preview at the same time is redundant.
+
+#### WYSIWYG
+
+[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editors aren't really Markdown editors, but they are worth talking about. Editors, like [Dropbox Paper](https://www.dropbox.com/paper), support Markdown on input, but strip syntax characters once they transform them to their semantic meaning.
+
+[Video]
+
+It's worth noting that despite stripping characters, WYSIWYG editors handle preview the best because you are writing in rich text.
+
+***
+
+Okay, none of these do exactly what I want. Some of them come close and are decent editors, but none break the wall between editing and previewing.
+
+There are two important concepts partly or completely missing: 1) Previews should happen inline, and 2) Syntax should show up when you need it to and disappear when you don't. Kind of like this:
+
+[Video]
+
+The video is a recording of a no-frills editor I hacked up to experiment with these two concepts. I'll save implementation details for future post.[^1]
+
+If you are unsure why this a better than editors that already do block or inline previews
+consider the following scenario: A large paragraph with a few links scattered
+throughout.
+
+Block previews only work when a block is inactive so switching between a focused and blurred state causes the link syntax to reflow the text as it is shown and hidden. This makes it complex to perform selections and focus your eyes on the text.
+
+[Video]
+
+Inline previews don't hide syntax so you have URLs taking up space in between words.
+
+[Video]
+
+A large paragraph with links is a dramatic example, but 
+
+[^1]:
+    It's built on top of [ProseMirror](https://prosemirror.net), a "toolkit for building rich-text editors," so it supports history, collaboration, etc. with little fuss.
+
+    Email me (tom@meagher.co) if you want to chat more.
+
+
+
+Typora
+HyperMD

@@ -4,7 +4,7 @@ import React, { FC, ReactNode } from 'react'
 import { Helmet } from 'react-helmet'
 
 import favicon from '../../static/favicon.png'
-import { Footer, Subscribe } from '@/components'
+import { Footer } from '@/components'
 
 interface Props {
     children: ReactNode
@@ -27,6 +27,8 @@ const Layout: FC<Props> = (props) => {
     `
     const data = useStaticQuery(query)
     const { title, description, url, twitter } = data.site.siteMetadata
+    const showFooter = props.footer || props.subscribe
+
     return (
         <>
             <Helmet title={title}>
@@ -47,8 +49,7 @@ const Layout: FC<Props> = (props) => {
 
             <main className="pt-20">{props.children}</main>
 
-            {props.subscribe && <Subscribe />}
-            {props.footer && <Footer />}
+            {showFooter && <Footer subscribe={props.subscribe} />}
         </>
     )
 }
