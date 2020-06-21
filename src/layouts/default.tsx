@@ -4,9 +4,12 @@ import React, { FC, ReactNode } from 'react'
 import { Helmet } from 'react-helmet'
 
 import favicon from '../../static/favicon.png'
+import { Footer, Subscribe } from '@/components'
 
 interface Props {
     children: ReactNode
+    footer?: boolean
+    subscribe?: boolean
 }
 
 const Layout: FC<Props> = (props) => {
@@ -41,7 +44,11 @@ const Layout: FC<Props> = (props) => {
                     type="image/png"
                 />
             </Helmet>
-            {props.children}
+
+            <main className="pt-20">{props.children}</main>
+
+            {props.subscribe && <Subscribe />}
+            {props.footer && <Footer />}
         </>
     )
 }

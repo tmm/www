@@ -64,7 +64,7 @@ Almost every tech company builds the same internal tools. Find out who built the
 
 If you think companies won't switch away from their internal tools and buy your productized version, you are wrong. Internal tools are often very rough and expensive to maintain. Product manager and CEOs would love to use your product if it reclaims engineering time. Maybe your current PM or CEO is your first customer?
 
-—
+***
 
 Closing notes: I've built paid products before, but as part of large teams. There's something different about _getting_ paid to make a paid product and being the one that _gets_ paid by the paid product.
 

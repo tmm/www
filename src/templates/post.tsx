@@ -3,9 +3,8 @@ import { PageProps, graphql } from 'gatsby'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import Post from '@/components/post'
-import Subscribe from '@/components/subscribe'
-import Layout from '@/layouts/default'
+import { Layout } from '@/layouts'
+import { Post } from '@/components'
 
 interface Props extends PageProps {
     data: {
@@ -18,15 +17,13 @@ const Template: FC<Props> = (props) => {
     const description = post.frontmatter.description || post.excerpt
     const title = post.frontmatter.title
     return (
-        <Layout>
+        <Layout footer subscribe>
             <Helmet title={title}>
                 <meta content={description} name="description" />
                 <meta content={title} name="twitter:title" />
             </Helmet>
 
             <Post key={post.id} post={post} />
-
-            <Subscribe />
         </Layout>
     )
 }

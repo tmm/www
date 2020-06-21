@@ -43,7 +43,7 @@ https://twitter.com/peterme/status/1217264622266277888
 
 Overall, I learned a lot from the launch. My biggest takeaway is to "show, not tell" when it comes to a product landing page. While above average (I think), my design described what the product did with only text! Confused or curious visitors would have benefited from an interactive demo, or at least a screenshot, of the product.
 
-—
+***
 
 Some quick closing notes: I didn't go into implementation details in this post. You can check out the [code](https://github.com/tmm/mute.vc) on GitHub. Also, I didn't talk about the launch day stats either. Here are some quick figures as of 1/18/20:
 

@@ -8,16 +8,16 @@
 
 :root {
     --colors-accent: hsl(146, 100%, 55%);
-    --colors-background: hsl(210, 5%, 7%);
-    --colors-border: hsl(210, 0%, 30%);
+    --colors-background: hsl(210, 5%, 8%);
+    --colors-border: hsl(210, 0%, 28%);
     --colors-heading: hsl(209, 25%, 95%);
     --colors-body: hsl(209, 3%, 68%);
     --colors-fill: hsl(210, 0%, 10%);
     --colors-muted: hsl(209, 0%, 55%);
     --colors-shadow: rgba(255, 255, 255, 0.03);
 
-    --font-sans: Inter, -apple-system, serif;
-    --font-mono: 'SFMono-Regular', Consolas, monospace;
+    --font-sans: Sans, -apple-system, 'BlinkMacSystemFont', sans-serif;
+    --font-mono: Mono, 'SFMono-Regular', Consolas, monospace;
 }
 
 ::selection {
@@ -38,7 +38,7 @@ body {
     @apply mb-20;
     @apply mt-0;
     @apply mx-auto;
-    @apply px-3;
+    @apply px-4;
     @apply text-body;
     max-width: 38rem;
 }
@@ -78,6 +78,12 @@ h5,
 h6 {
     @apply mb-2;
     @apply mt-8;
+}
+
+hr {
+    @apply mb-5;
+    @apply mt-8;
+    @apply w-20;
 }
 
 ul,

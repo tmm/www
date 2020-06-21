@@ -1,6 +1,6 @@
-const feedOptions = require('./.gatsby/options/feed')
-const mdxOptions = require('./.gatsby/options/mdx')
-const postCssOptions = require('./.gatsby/options/post-css')
+const feedOptions = require('./plugins/feed')
+const mdxOptions = require('./plugins/mdx')
+const postCssOptions = require('./plugins/post-css')
 
 const author = 'Tom Meagher'
 const url = 'meagher.co'

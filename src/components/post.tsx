@@ -1,15 +1,13 @@
 import { Link } from 'gatsby'
-
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import { MDXProvider } from '@mdx-js/react'
 
 import React, { FC } from 'react'
 
-import CopyEmailButton from '@/components/copy-email-button'
-import Thanks from '@/components/thanks'
+import { CopyEmailButton, Notes } from '@/components'
 
-const shortcodes = { CopyEmailButton, Thanks }
+const shortcodes = { CopyEmailButton, Notes }
 
 interface Props {
     post: Post
@@ -25,7 +23,7 @@ const Post: FC<Props> = (props) => {
     } = props
     return (
         <MDXProvider components={shortcodes}>
-            <article className="mb-12 mt-20">
+            <article>
                 <header className="mb-4">
                     <h1>
                         <Link className="no-underline" to={slug}>
@@ -36,8 +34,8 @@ const Post: FC<Props> = (props) => {
 
                 <MDXRenderer>{body}</MDXRenderer>
 
-                <div className="mt-4 text-muted text-sm">
-                    Posted on <time>{date}</time>
+                <div className="italic mb-10 mt-5 text-muted">
+                    Published <time>{date}</time>
                 </div>
             </article>
         </MDXProvider>

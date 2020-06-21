@@ -1,13 +1,12 @@
 import React, { FC } from 'react'
 import { useLocation } from '@reach/router'
 
-import useButtondown from '@/hooks/use-buttondown'
+import { useButtondown } from '@/hooks'
 
 const Subscribe: FC = () => {
     const { pathname } = useLocation()
     const {
         email,
-        isFocused,
         isLoading,
         message,
         isValid,
@@ -18,33 +17,39 @@ const Subscribe: FC = () => {
     } = useButtondown(pathname)
 
     return (
-        <form className="mb-30 mt-24 m-auto max-w-sm" onSubmit={handleSubmit}>
-            <div className="font-medium mb-1 text-muted text-sm">
-                Email me about new posts
-            </div>
-            <div
-                className={`border-b flex pb-1 pt-0 w-full ${
-                    isFocused ? 'border-accent' : ''
-                }`}
-            >
+        <form className="mt-5" onSubmit={handleSubmit}>
+            <div className="mb-1 text-muted">Email me about new posts</div>
+
+            <div className="flex">
                 <input
-                    className="bg-transparent outline-none placeholder-muted pr-2 flex-1"
+                    className="
+                        bg-transparent
+                        border-b
+                        outline-none
+                        placeholder-muted
+                        pr-2
+                        focus:border-muted
+                    "
                     disabled={isLoading}
-                    placeholder="name@example.com"
                     value={email}
                     onBlur={handleBlur}
                     onChange={handleChange}
                     onFocus={handleFocus}
                 />
                 <button
-                    className="text-body text-sm font-semibold hover:text-heading disabled:pointer-events-none"
+                    className="
+                        border-b
+                        font-medium
+                        text-body
+                        disabled:pointer-events-none
+                    "
                     disabled={isLoading || !isValid}
                 >
-                    {isLoading ? 'Subscribing...' : 'Subscribe'}
+                    Subscribe
                 </button>
             </div>
             {message && (
-                <div className="mt-2 text-muted text-xs">{message}</div>
+                <div className="mt-1 text-muted text-sm">{message}</div>
             )}
         </form>
     )

@@ -1,12 +1,10 @@
 import { PageProps, graphql } from 'gatsby'
 
 import { Helmet } from 'react-helmet'
-
 import React, { FC } from 'react'
 
-import Layout from '@/layouts/default'
-import HomeLink from '@/components/home-link'
-import CopyEmailButton from '@/components/copy-email-button'
+import { CopyEmailButton, HomeLink } from '@/components'
+import { Layout } from '@/layouts'
 
 interface Props extends PageProps {
     data: {
@@ -49,10 +47,10 @@ const Index: FC<Props> = (props) => {
     ]
 
     return (
-        <Layout>
+        <Layout footer>
             <Helmet title={author} />
 
-            <section className="mb-8 mt-20">
+            <section>
                 <h1 className="mb-4">{author}</h1>
                 <p>
                     Hi, hello, welcome. My name is Tom and I’m a Internet
@@ -109,11 +107,11 @@ const Index: FC<Props> = (props) => {
                     Send an email to <CopyEmailButton /> with the answer to
                     “What’s your favorite color?”
                 </p>
-                <p className="leading-normal text-muted text-sm">
+                <p className="leading-normal mb-4 text-muted text-sm">
                     <b>Note:</b> No one ever does this. I would be thrilled if
                     you did.
                 </p>
-                <p className="leading-normal text-muted text-sm">
+                <p className="leading-normal mb-4 text-muted text-sm">
                     People I’m following:{' '}
                     {followings.map((x, i) => (
                         <span key={x.id}>
@@ -124,7 +122,7 @@ const Index: FC<Props> = (props) => {
                         </span>
                     ))}
                 </p>
-                <p className="leading-normal text-muted text-sm">
+                <p className="leading-normal mb-4 text-muted text-sm">
                     Products to check out:{' '}
                     {products.map((x, i) => (
                         <span key={x.id}>
@@ -134,18 +132,6 @@ const Index: FC<Props> = (props) => {
                             {i !== products.length - 1 && ', '}
                         </span>
                     ))}
-                </p>
-                <p className="leading-normal text-muted text-sm">
-                    Colophon: Typeset in{' '}
-                    <a href="https://rsms.me/inter">Inter</a>, built with{' '}
-                    <a href="https://gatsbyjs.org">Gatsby</a>, deployed on{' '}
-                    <a href="https://vercel.com">Vercel</a>, licensed under the{' '}
-                    <a href="https://github.com/tmm/www/blob/master/.github/LICENSE.md">
-                        MIT License
-                    </a>
-                    , view source on{' '}
-                    <a href="https://github.com/tmm/www">GitHub</a>, subscribe
-                    via <a href="/rss.xml">RSS</a>.
                 </p>
             </section>
         </Layout>
