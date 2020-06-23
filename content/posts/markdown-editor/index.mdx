@@ -42,7 +42,7 @@ Inline preview editors, like [iA Writer](https://ia.net/writer), add block and i
 
 [Video]
 
-This is the best so far. (In fact, we could stop here since iA Writer is a fantastic piece of software.) But it's not perfect: Showing syntax and preview at the same time is redundant.
+This is the best so far. (In fact, we could stop here since iA Writer is a fantastic piece of software.) But it's not perfect: Showing syntax and preview at the same time is redundant and diverges from the "HTML" view.
 
 #### WYSIWYG
 
@@ -50,7 +50,7 @@ This is the best so far. (In fact, we could stop here since iA Writer is a fanta
 
 [Video]
 
-It's worth noting that despite stripping characters, WYSIWYG editors handle preview the best because you are writing in rich text.
+It's worth noting that despite stripping characters, WYSIWYG editors handle preview the best because you are writing in rich text, the language of the preview.
 
 ***
 
@@ -60,17 +60,16 @@ There are two important concepts partly or completely missing: 1) Previews shoul
 
 [Video]
 
-The video is a recording of a no-frills editor I hacked up to experiment with these two concepts. I'll save implementation details for future post.[^1]
+The above video is a recording of a no-frills editor I hacked up to experiment with these two concepts. (I'll save implementation details for future post.[^1])
 
-If you are unsure why this a better than editors that already do block or inline previews
-consider the following scenario: A large paragraph with a few links scattered
+If you are unsure why this is better than editors that already do block or inline previews consider the following scenario: A large paragraph with a few links scattered
 throughout.
 
 Block previews only work when a block is inactive so switching between a focused and blurred state causes the link syntax to reflow the text as it is shown and hidden. This makes it complex to perform selections and focus your eyes on the text.
 
 [Video]
 
-Inline previews don't hide syntax so you have URLs taking up space in between words.
+Inline previews don't hide syntax so URLs and other syntax create dead space between words. This makes is difficult to naturally read text when editing or revising.
 
 [Video]
 
@@ -83,5 +82,5 @@ A large paragraph with links is a dramatic example, but
 
 
 
-Typora
-HyperMD
+[Typora](https://typora.io)
+[HyperMD](https://github.com/laobubu/HyperMD)

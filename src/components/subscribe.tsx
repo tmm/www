@@ -9,7 +9,6 @@ const Subscribe: FC = () => {
         email,
         isLoading,
         message,
-        isFocused,
         isValid,
         handleBlur,
         handleFocus,
@@ -22,10 +21,10 @@ const Subscribe: FC = () => {
             className={`
                 duration-200
                 mt-20
-                opacity-50
                 transition-opacity
+                md:opacity-50
                 hover:opacity-100
-                ${isFocused ? 'opacity-100' : ''}
+                focus-within:opacity-100
             `}
             onSubmit={handleSubmit}
         >
@@ -56,6 +55,7 @@ const Subscribe: FC = () => {
                         border-b
                         font-medium
                         text-body
+                        text-sm
                         disabled:pointer-events-none
                     "
                     disabled={isLoading || !isValid}
