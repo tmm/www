@@ -59,6 +59,7 @@ module.exports = {
             options: {
                 develop: process.env.NODE_ENV !== 'development',
                 tailwind: true,
+                whitelist: ['hr'],
             },
         },
     ],

@@ -7,7 +7,7 @@ module.exports = {
             options: {
                 backgroundColor: 'none',
                 disableBgImageOnAlpha: true,
-                maxWidth: 650,
+                maxWidth: 580,
                 showCaptions: true,
             },
         },
@@ -22,5 +22,4 @@ module.exports = {
         'gatsby-remark-smartypants',
         'gatsby-remark-embedder',
     ],
-    plugins: ['gatsby-remark-unwrap-images', 'gatsby-remark-images'],
 }

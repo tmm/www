@@ -24,23 +24,17 @@ Let's take a look at some different types of Markdown editors and see if any of 
 
 Split-pane editors, like [Dillinger](https://dillinger.io), divide the window into two panes. One pane lets you edit text and the other displays a live preview.
 
-[Video]
-
-Clunky! Split-pane editors duplicate content on the screen and shift your focus away from your cursor. Not much better than tabbing between Vim and Firefox like I currently do.
+This isn't a whole lot better than tabbing between Vim and Firefox since it duplicates content and shifts your focus away from your cursor as your eyes move between panes.
 
 #### Block preview
 
 Block preview editors, like [Roam Research](https://roamresearch.com/), add preview to the editor on a block-by-block basis. When you are editing a Markdown [block](https://daringfireball.net/projects/markdown/syntax#block), it is displayed as plain text. As soon as the block loses focus, it is compiled into a preview.
 
-[Video]
-
-This is a better than split-pane editors in that you don't need to look elsewhere to see a preview. Writing and preview happen in the same document. The downside is that you cannot see the preview in real time.
+This is a better than split-pane editors in that you don't need to look elsewhere to see a preview since writing and preview happen in the same document. The downside is that previews aren't real-time and can cause content reflows when focus is toggled.
 
 #### Inline preview
 
 Inline preview editors, like [iA Writer](https://ia.net/writer), add block and inline syntax preview to the editor as you type: \*emphasis\* becomes _\*emphasis\*_, headings look heavier, list items maintain their indent across lines, etc.
-
-[Video]
 
 This is the best so far. (In fact, we could stop here since iA Writer is a fantastic piece of software.) But it's not perfect: Showing syntax and preview at the same time is redundant and diverges from the final "HTML" view.
 
@@ -48,34 +42,46 @@ This is the best so far. (In fact, we could stop here since iA Writer is a fanta
 
 [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editors aren't really Markdown editors, but they are worth talking about. Editors, like [Dropbox Paper](https://www.dropbox.com/paper), support Markdown on input, but strip syntax characters once they transform them to their semantic meaning.
 
-[Video]
-
-It's worth noting that despite stripping characters (which is really bad), WYSIWYG editors handle preview the best because you are writing in rich text, the language of previews.
+Despite stripping characters (which is really bad), WYSIWYG editors handle preview the best because you are writing in rich text/HTML, the language of Markdown previews.
 
 ***
 
 Okay, none of these do exactly what I want. Some of them come close and are decent editors, but none break the wall between editing and previewing.
 
-There are two important principles partially or fully missing: 1) Previews should happen inline, and 2) Syntax should show up when you need it to and disappear when you don't. Kind of like this:
+There are two important principles partially or fully missing: 1) Previews should be scoped to Markdown syntax, and 2) Syntax should show up when you need it to and disappear when you don't. Kind of like this:
 
-[Video]
+[video]
 
-The above video is a recording of a no-frills editor I hacked up to experiment with these two principles. (I'll save implementation details for a future post.[^1])
+In the above GIF, I'm typing up the first paragraph of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) using a no-frills editor I hacked up to experiment with these two principles.[^1]
 
-As I type and move around the editor, previews occur in real time and syntax surfaces based on the cursor/selection. In the same document, I can ==read in rich text and write in plain text== without needing to specify a [mode](https://en.wikipedia.org/wiki/Mode_(user_interface)) or do much of anything!
+Did you notice what's cool about it? (Your queue to watch again.)
 
-If you are unsure why "rich reading, plain writing" is better than editors that already do block or inline previews consider the following scenario: A large paragraph with a few links scattered
-throughout.
+As I type and move around the editor, previews occur in real time and syntax surfaces based on the cursor/selection. In the same document, I can **read in rich text and write in plain text** without needing to specify a [mode](https://en.wikipedia.org/wiki/Mode_(user_interface)) or do much of anything! It just works.
 
-Block previews only work when a block is inactive so switching between a focused and blurred state causes the link syntax to reflow the text as it is shown and hidden. This makes it complex to perform selections and focus your eyes on the text.
+If you are unsure why *rich reading, plain writing* is an improvement on block or inline previews consider the paragraph from the GIF.
 
-[Video]
+```markdown
+**Markdown** is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) with plain-text-formatting syntax, created in 2004 by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) with [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Markdown is often used to format [readme files](https://en.wikipedia.org/wiki/README), for writing messages in online discussion forums, and to create [rich text](https://en.wikipedia.org/wiki/Formatted_text) using a [plain text](https://en.wikipedia.org/wiki/Plain_text) [editor](https://en.wikipedia.org/wiki/Text_editor).
+```
+It doesn't look very friendly like that, right?
 
-Inline previews don't hide syntax so URLs and other syntax create dead space between words. This makes is difficult to naturally read text when editing or revising. You are forced to halt reading while your eyes traverse syntax.
+So let's shove it into a couple editors to see how they handle it. Starting with block preview editor Roam, imagine you are the editor.
 
-[Video]
+[video]
 
-A large paragraph with links is a dramatic example, but when using Markdown it's almost guaranteed the plain text representation will not look like the preview. Old markdown editors are stuck with showing either too much or not enough information — or at least most are.
+Previews only work when a block is inactive so switching between focused and blurred states causes syntax to reflow the text as it is shown and hidden. It creates a jumpy effect that makes it complex to perform an initial selection and focus your eyes on the text.
+
+Next, let's try iA Writer with its inline previews.
+
+[video]
+
+In this case, previews always show syntax so URLs and other markup create dead space between words. This makes is difficult to naturally read text when editing or revising. You are forced to halt reading while your eyes traverse syntax.
+
+A paragraph with a bunch of links is a dramatic example, but when using Markdown, it's not uncommon for the plain text representation to drastically differ from the preview.
+
+The past generation of Markdown editors are not scoped appropriately. They either show too much or not enough information. They attempt to stitch up the editor and previewer along too rough a boundary.
+
+***
 
 When doing [research](https://www.are.na/tmm/mizaru), I found two editors that already implemented a form of RRPW.
 
@@ -83,15 +89,17 @@ When doing [research](https://www.are.na/tmm/mizaru), I found two editors that a
 
 [Typora](https://typora.io) bills itself as a "new way to read and write markdown" through its [WYSIWYM](https://en.wikipedia.org/wiki/WYSIWYM) interface. It doesn't perfectly capture the nature of RRPW though since math blocks and diagrams have separate editing and preview areas in the document.[^2]
 
+It does a lot more than just Markdown.
+
 #### HyperMD
 
-[HyperMD](https://github.com/laobubu/HyperMD)
+[HyperMD](https://github.com/laobubu/HyperMD) is probably the best example of RRPW in the wild right now. It's a more complete version of the hacky demo editor I created. Unfortunately, it's not maintained and it uses [CodeMirror](https://codemirror.net/), which is going through a break-change rewrite.
 
-One of the founders of [Obsidian](https://obsidian.md), a buzzy split-pane editor, [asked on the CodeMirror Forum](https://discuss.codemirror.net/t/implementing-wysiwyg-markdown-editor-in-codemirror/2403) how they could do something similar to HyperMD.
+One of the founders of [Obsidian](https://obsidian.md), a buzzy split-pane editor, [asked on the CodeMirror Forum](https://discuss.codemirror.net/t/implementing-wysiwyg-markdown-editor-in-codemirror/2403) how they could do something similar to HyperMD and were directed to use [ProseMirror](https://prosemirror.net/) instead.
 
-***
+There's still a lot of room for improvement.
 
-Even though Typora and HyperMD exist, there's still room for improvement.
+Create a basic editor based on GFM or CommonMark that works really well.
 
 There is at least one tricky caveat with RRPW: [Whitespace](https://en.wikipedia.org/wiki/Whitespace_character). Markdown is used to generate HTML, which collapses whitespace by default. In plain text, you can add any number of spaces (leading and trailing), carriage returns, etc. though.
 
