@@ -119,6 +119,12 @@ input {
     -webkit-appearance: none;
 }
 
+video {
+    @apply border;
+    @apply my-6;
+    @apply rounded;
+}
+
 /* ===========================
 gatsby image
 =========================== */

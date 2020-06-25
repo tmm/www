@@ -5,9 +5,9 @@ import { MDXProvider } from '@mdx-js/react'
 
 import React, { FC } from 'react'
 
-import { CopyEmailButton, Notes } from '@/components'
+import { CopyEmailButton } from '@/components'
 
-const shortcodes = { CopyEmailButton, Notes }
+const shortcodes = { CopyEmailButton }
 
 interface Props {
     post: Post

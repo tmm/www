@@ -44,27 +44,27 @@ const CopyEmailButton: FC<Props> = (props) => {
             </button>
             <span
                 className={`
-                        absolute
-                        bg-background
-                        border
-                        duration-200
-                        px-2
-                        py-2
-                        rounded-sm
-                        shadow
-                        text-heading
-                        text-sm
-                        transform
-                        transition-all
-                        -translate-x-1/2
-                        whitespace-no-wrap
-                        z-10
-                        ${
-                            copied
-                                ? 'opacity-100 translate-y-0 visible'
-                                : 'opacity-0 translate-y-2 invisible'
-                        }
-                    `}
+                    absolute
+                    bg-background
+                    border
+                    duration-200
+                    px-2
+                    py-2
+                    rounded-sm
+                    shadow
+                    text-heading
+                    text-sm
+                    transform
+                    transition-all
+                    -translate-x-1/2
+                    whitespace-no-wrap
+                    z-10
+                    ${
+                        copied
+                            ? 'opacity-100 translate-y-0 visible'
+                            : 'opacity-0 translate-y-2 invisible'
+                    }
+                `}
                 style={{
                     bottom: '1.5rem',
                     left: '50%',
