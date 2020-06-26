@@ -28,7 +28,9 @@ const Subscribe: FC = () => {
             `}
             onSubmit={handleSubmit}
         >
-            <div className="mb-1 text-muted">Email me about new posts</div>
+            <div className="mb-1 text-muted">
+                Get a email when I publish new posts
+            </div>
 
             <div className="flex">
                 <label className="hidden" htmlFor="email">
