@@ -30,7 +30,7 @@ This isn't a whole lot better than tabbing between Vim and Firefox since it dupl
 
 Block preview editors, like [Roam Research](https://roamresearch.com/), add preview to the editor on a block-by-block basis. When you are editing a Markdown [block](https://daringfireball.net/projects/markdown/syntax#block), it is displayed as plain text. As soon as the block loses focus, it is compiled into a preview.
 
-This is a better than split-pane editors in that you don't need to look elsewhere to see a preview since writing and preview happen in the same document. The downside is that previews aren't real-time and can cause content reflows when focus is toggled.
+This is a better than split-pane editors in that you don't need to look elsewhere to see a preview since writing and preview happen in the same document. The downside is that previews aren't real-time and can cause significant text reflowing when focus is toggled.
 
 #### Inline preview
 
@@ -116,6 +116,8 @@ One of the founders of [Obsidian](https://obsidian.md), a buzzy split-pane edito
 There's still a lot of room for improvement.
 
 There is at least one tricky caveat with RRPW: [Whitespace](https://en.wikipedia.org/wiki/Whitespace_character). Markdown is used to generate HTML, which collapses whitespace by default. In plain text, you can add any number of spaces (leading and trailing), carriage returns, etc. though.
+
+Also challenging to do certain things: Tables.
 
 Goal: Create a basic editor based on GFM or CommonMark that works really well.
 Put search and keyboard shortcuts on top. Create local notes.

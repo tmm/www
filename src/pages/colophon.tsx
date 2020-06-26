@@ -20,11 +20,13 @@ const Colophon = () => (
                 . Deployed on <a href="https://vercel.com">Vercel</a>. DNS
                 managed with <a href="https://cloudflare.com">Cloudflare</a>.{' '}
                 Domain name registered on{' '}
-                <a href="https://www.dynadot.com">Dynadot</a>. Licensed under
-                the{' '}
+                <a href="https://www.dynadot.com">Dynadot</a>. Privacy respected
+                using <a href="https://simpleanalytics.com">Simple Analytics</a>
+                . Licensed under the{' '}
                 <a href="https://github.com/tmm/www/blob/master/.github/LICENSE.md">
                     MIT License
                 </a>
+                .
             </p>
 
             <p>
