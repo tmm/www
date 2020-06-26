@@ -5,9 +5,9 @@ import { MDXProvider } from '@mdx-js/react'
 
 import React, { FC } from 'react'
 
-import { CopyEmailButton } from '@/components'
+import { CodeBlock, CopyEmailButton } from '@/components'
 
-const shortcodes = { CopyEmailButton }
+const components = { code: CodeBlock, CopyEmailButton }
 
 interface Props {
     post: Post
@@ -22,7 +22,7 @@ const Post: FC<Props> = (props) => {
         },
     } = props
     return (
-        <MDXProvider components={shortcodes}>
+        <MDXProvider components={components}>
             <article>
                 <header className="mb-4">
                     <h1>

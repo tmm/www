@@ -1,0 +1,27 @@
+/* purgecss start ignore */
+.keyword {
+    @apply font-bold;
+    color: var(--syntax-keyword);
+}
+
+.token.operator,
+.token.punctuation,
+.token.string,
+.token.number,
+.token.builtin,
+.token.variable,
+.token.url:not(.content) {
+    color: var(--syntax-token);
+}
+
+.token.comment {
+    color: var(--syntax-comment);
+}
+
+.token.class-name,
+.token.function,
+.token.tag,
+.token.attr-name {
+    color: var(--syntax-name);
+}
+/* purgecss end ignore */

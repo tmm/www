@@ -12,7 +12,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.onCreateNode = ({ node, actions }) => {
     if (node.internal.type === 'Mdx') {
-        const value = node.frontmatter.path
+        const value = node.frontmatter.slug
         const field = { name: 'slug', node, value }
         actions.createNodeField(field)
     }

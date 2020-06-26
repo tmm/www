@@ -1,3 +1,4 @@
+export { default as CodeBlock } from './code-block'
 export { default as CopyEmailButton } from './copy-email-button'
 export { default as Footer } from './footer'
 export { default as HomeLink } from './home-link'

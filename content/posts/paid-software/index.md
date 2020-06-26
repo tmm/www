@@ -1,7 +1,7 @@
 ---
 title: Thoughts On Building Paid Software
 date: 2020-01-19
-path: /paid-software/
+slug: /paid-software/
 published: true
 description: Approaches for building products you can charge for.
 ---

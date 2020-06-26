@@ -1,7 +1,7 @@
 ---
 title: Incrementally Building A Blog
 date: 2020-01-23
-path: /incremental-blog/
+slug: /incremental-blog/
 published: true
 description: Focus on writing. Only add new features when you need them. (You don’t need pagination until you write more posts than can fit on a page.)
 ---
@@ -24,7 +24,6 @@ Code snippets are a good example of a lurking stubbed toe. None of my posts cont
 
 Another happy side effect of building my blog in increments is it encourages me to write more. There are features I want to add (search, tagging, an archive), but don't make sense for a blog with only a few posts. There's no utility in pagination unless I write more posts than fit on a page.
 
-Currently this process works well. I anticipate it will continue. It also
-protects me from rushing to add a shiny feature I see on another blog.
+Currently this process works well. I anticipate it will continue. It also protects me from rushing to add a shiny feature I see on another blog.
 
 [^1]: I finally put a name to this idea when I saw [Frank](https://frankchimero.com) and [Jonnie](https://destroytoday.com)'s blogs. Both are redesigning their blogs publicly by [documenting](https://frankchimero.com/blog/2019/redesign) [changes](https://destroytoday.com/blog/hello-world).

@@ -1,4 +1,4 @@
-/*! purgecss start ignore */
+/* purgecss start ignore */
 @import 'littlefoot/dist/littlefoot.css';
 
 sup {
@@ -135,4 +135,4 @@ sup:hover {
         bottom: -0.35em !important;
     }
 }
-/*! purgecss end ignore */
+/* purgecss end ignore */

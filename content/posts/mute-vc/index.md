@@ -1,15 +1,14 @@
 ---
 title: Mute.vc Launch
 date: 2020-01-15
-path: /mute-vc/
+slug: /mute-vc/
 published: true
 description: I launched a product for muting investors on Twitter. People talked about it.
 ---
 
 Yesterday, I launched a quick hack I did over the holiday break: [Mute.vc](https://mute.vc). It's a simple web app where you can individually or bulk mute/unmute investors so you don't have to see their tweets.
 
-I [posted it](https://news.ycombinator.com/item?id=22044945) on Show HN and it
-hit the front page after a half hour. Right away, traffic spiked. I was mostly unproductive for rest of the day replying to comments, refreshing the analytics, and riding the wave.
+I [posted it](https://news.ycombinator.com/item?id=22044945) on Show HN and it hit the front page after a half hour. Right away, traffic spiked. I was mostly unproductive for rest of the day replying to comments, refreshing the analytics, and riding the wave.
 
 Not sure why, but at some point after bouncing around between #11-17 for a few hours, the post dropped to #45. Maybe because some people started talking about politics in the comments (think mute.politics). At that point, with traffic dying, I thought it was over.
 
@@ -19,21 +18,13 @@ On a whim I DMed [@vcstarterkit](https://twitter.com/vcstarterkit). They tweeted
 
 https://twitter.com/vcstarterkit/status/1217241074155962368
 
-Some other big accounts sent out tweets
-([@steveklabnik](https://twitter.com/steveklabnik/status/1217111081077874689),
-[@KristyT](https://twitter.com/KristyT/status/1217255843273461760),
-[@dhh](https://twitter.com/dhh/status/1219302297928224768)), which helped even more. Overall, I was surprised at how well Twitter performed given I had no plan for it. Big thanks to [everyone that tweeted something](https://twitter.com/search?q=mute.vc%20since%3A2020-01-13%20until%3A2020-01-18).
+Some other big accounts sent out tweets ([@steveklabnik](https://twitter.com/steveklabnik/status/1217111081077874689), [@KristyT](https://twitter.com/KristyT/status/1217255843273461760), [@dhh](https://twitter.com/dhh/status/1219302297928224768)), which helped even more. Overall, I was surprised at how well Twitter performed given I had no plan for it. Big thanks to [everyone that tweeted something](https://twitter.com/search?q=mute.vc%20since%3A2020-01-13%20until%3A2020-01-18).
 
-Launch aside, what was the motivation for [Mute.vc](https://mute.vc)? First, to
-be clear, VC is important and necessary.[^1] What's not important or necessary
-is the thought leadership and platitudes a lot of investors tweet out from their
-armchairs.
+Launch aside, what was the motivation for [Mute.vc](https://mute.vc)? First, to be clear, VC is important and necessary.[^1] What's not important or necessary is the thought leadership and platitudes a lot of investors tweet out from their armchairs.
 
 I get why they do it — to build their brand, stroke their ego, and many other reasons — but it was tiresome, especially when I was trying to build things. The problem wasn't who I followed.[^2] Rather it was all the VC content that kept surfacing in my feed via retweets, favorites of people I follow, and recommended tweets.
 
-I was tired of having so many [ideas in my mind](http://paulgraham.com/top.html)
-about voice apps, the future of work, no/low code, crypto, ISAs, etc. All things
-that I don't care about.
+I was tired of having so many [ideas in my mind](http://paulgraham.com/top.html) about voice apps, the future of work, no/low code, crypto, ISAs, etc. All things that I don't care about.
 
 After noodling a bit more, I [posted the idea](https://www.are.na/block/5698385) to my [Random Public Ideas](https://www.are.na/tom-meagher/random-public-ideas) [Are.na](https://www.are.na/) channel, and people seemed to like it. I was encouraged. I joked about it with a friend later that week and realized it would be a fun, quick hack to work on. Much to my delight the [mute.vc](https://mute.vc) domain was available so I got to work.
 
