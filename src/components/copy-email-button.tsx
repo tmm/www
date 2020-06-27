@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import React, { FC, useEffect, useState } from 'react'
 
 interface Props {
-    email?: string
+    value?: string
 }
 
 const CopyEmailButton: FC<Props> = (props) => {
@@ -18,7 +18,7 @@ const CopyEmailButton: FC<Props> = (props) => {
         }
     `
     const data = useStaticQuery(query)
-    const value = props.email ?? data.site.siteMetadata.email
+    const value = props.value ?? data.site.siteMetadata.email
     const [copied, setCopied] = useState(false)
     const [state, copyToClipboard] = useCopyToClipboard()
 

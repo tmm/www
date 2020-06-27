@@ -1,10 +1,11 @@
 import { PageProps, graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import littlefoot from 'littlefoot'
 
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Layout } from '@/layouts'
-import { Post } from '@/components'
+import { Layout, Subscribe } from '@/components'
 
 interface Props extends PageProps {
     data: {
@@ -14,16 +15,50 @@ interface Props extends PageProps {
 
 const Template: FC<Props> = (props) => {
     const post = props.data.mdx
+    const {
+        body,
+        frontmatter: { date, title },
+    } = post
     const description = post.frontmatter.description || post.excerpt
-    const title = post.frontmatter.title
+
+    useEffect(() => {
+        const buttonTemplate = `
+            <button
+                aria-controls="fncontent:<% id %>"
+                aria-expanded="false"
+                aria-label="Footnote <% number %>"
+                class="littlefoot-footnote__button"
+                id="<% reference %>"
+                rel="footnote"
+                title="See Footnote <% number %>"
+            >
+                <% number %>
+            </button>
+        `
+        littlefoot({
+            allowDuplicates: false,
+            buttonTemplate,
+        })
+    })
+
     return (
-        <Layout footer subscribe>
+        <Layout>
             <Helmet title={title}>
                 <meta content={description} name="description" />
                 <meta content={title} name="twitter:title" />
             </Helmet>
 
-            <Post key={post.id} post={post} />
+            <article>
+                <h1>{title}</h1>
+
+                <MDXRenderer>{body}</MDXRenderer>
+
+                <div className="italic mb-10 mt-4 text-muted">
+                    Published <time>{date}</time>
+                </div>
+            </article>
+
+            <Subscribe />
         </Layout>
     )
 }

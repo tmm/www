@@ -8,8 +8,6 @@ import { Footer } from '@/components'
 
 interface Props {
     children: ReactNode
-    footer?: boolean
-    subscribe?: boolean
 }
 
 const Layout: FC<Props> = (props) => {
@@ -27,7 +25,6 @@ const Layout: FC<Props> = (props) => {
     `
     const data = useStaticQuery(query)
     const { title, description, url, twitter } = data.site.siteMetadata
-    const showFooter = props.footer || props.subscribe
 
     return (
         <>
@@ -49,7 +46,7 @@ const Layout: FC<Props> = (props) => {
 
             <main className="pt-20">{props.children}</main>
 
-            {showFooter && <Footer subscribe={props.subscribe} />}
+            <Footer />
         </>
     )
 }

@@ -70,4 +70,4 @@ Closing notes: I've built paid products before, but as part of large teams. Ther
 
 [^1]: Free products have more abstract value trade-offs (i.e. time/attention and instead of money) so there's a lot less friction to amassing users.
 
-[^2]: Calling people that use a product _users_ is lazy. There are [other options](https://jnd.org/words_matter_talk_about_people_not_customers_not_consumers_not_users/), but since this article is very general, I'll continue using the term. At least at [Patreon](https://patreon.com), we say creator, patron, fan, etc.
+[^2]: Calling people that use a product _users_ is lazy. There are [other options](https://jnd.org/words_matter_talk_about_people_not_customers_not_consumers_not_users/), but since this article is very general, I'll continue using the term. At [Patreon](https://patreon.com), we say creator, patron, fan, etc.

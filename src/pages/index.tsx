@@ -3,8 +3,7 @@ import { PageProps, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import React, { FC } from 'react'
 
-import { CopyEmailButton, HomeLink } from '@/components'
-import { Layout } from '@/layouts'
+import { CopyEmailButton, HomeLink, Layout } from '@/components'
 
 interface Props extends PageProps {
     data: {
@@ -47,11 +46,11 @@ const Index: FC<Props> = (props) => {
     ]
 
     return (
-        <Layout footer>
+        <Layout>
             <Helmet title={author} />
 
             <section>
-                <h1 className="mb-4">{author}</h1>
+                <h1>{author}</h1>
                 <p>
                     Hi, hello, welcome. My name is Tom and I’m a Internet
                     explorer headquartered in New York City via Boston.

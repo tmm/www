@@ -77,6 +77,10 @@ h6 {
     @apply leading-relaxed;
 }
 
+h1 {
+    @apply mb-4;
+}
+
 h2,
 h3,
 h4,

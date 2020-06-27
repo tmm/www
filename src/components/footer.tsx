@@ -2,19 +2,12 @@ import { Link } from 'gatsby'
 
 import React, { FC } from 'react'
 
-import Subscribe from './subscribe'
+interface Props {}
 
-interface Props {
-    subscribe?: boolean
-}
-
-const Footer: FC<Props> = (props) => {
+const Footer: FC<Props> = () => {
     return (
-        <>
-            {props.subscribe && <Subscribe />}
-
-            <footer
-                className="
+        <footer
+            className="
                     duration-200
                     mt-5
                     text-muted
@@ -23,16 +16,15 @@ const Footer: FC<Props> = (props) => {
                     md:opacity-50
                     hover:opacity-100
                 "
-            >
-                <Link className="mr-3" to="/">
-                    Home
-                </Link>
-                <Link className="mr-3" to="/colophon">
-                    Colophon
-                </Link>
-                <a href="/rss.xml">RSS</a>
-            </footer>
-        </>
+        >
+            <Link className="mr-3" to="/">
+                Home
+            </Link>
+            <Link className="mr-3" to="/colophon">
+                Colophon
+            </Link>
+            <a href="/rss.xml">RSS</a>
+        </footer>
     )
 }
 
