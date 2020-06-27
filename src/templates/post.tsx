@@ -1,8 +1,7 @@
 import { PageProps, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import littlefoot from 'littlefoot'
 
-import React, { FC, useEffect } from 'react'
+import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { Layout, Subscribe } from '@/components'
@@ -20,26 +19,6 @@ const Template: FC<Props> = (props) => {
         frontmatter: { date, title },
     } = post
     const description = post.frontmatter.description || post.excerpt
-
-    useEffect(() => {
-        const buttonTemplate = `
-            <button
-                aria-controls="fncontent:<% id %>"
-                aria-expanded="false"
-                aria-label="Footnote <% number %>"
-                class="littlefoot-footnote__button"
-                id="<% reference %>"
-                rel="footnote"
-                title="See Footnote <% number %>"
-            >
-                <% number %>
-            </button>
-        `
-        littlefoot({
-            allowDuplicates: false,
-            buttonTemplate,
-        })
-    })
 
     return (
         <Layout>

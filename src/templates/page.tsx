@@ -9,13 +9,20 @@ interface Props extends PageProps {}
 
 const Template: FC<Props> = (props) => {
     // @ts-ignore
-    const title = props.pageContext?.frontmatter?.title
+    const frontmatter = props.pageContext?.frontmatter
+    const title = frontmatter?.title || props.uri
+    const description = frontmatter?.description
 
     return (
         <Layout>
-            <Helmet title={title} />
+            <Helmet title={title}>
+                {description && (
+                    <meta content={description} name="description" />
+                )}
+                <meta content={title} name="twitter:title" />
+            </Helmet>
 
-            {title && <h1>{title}</h1>}
+            <h1>{title}</h1>
 
             {props.children}
         </Layout>
