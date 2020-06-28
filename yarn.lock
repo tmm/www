@@ -9259,10 +9259,10 @@ listr2@1.3.8:
     through "^2.3.8"
     uuid "^7.0.2"
 
-littlefoot@^3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-3.2.4.tgz#797734552a92069bf31cd402d3a6be1ba344bcbc"
-  integrity sha512-tl1A2BKE+mJtB/wUl7tR8LumOZ4j5iOJtfYyWem6A+F9p9FhkuR3u8pN8juxPPNMGpz0AsJnjIWxL/DHYKRbEA==
+littlefoot@^3.3.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-3.3.1.tgz#a4b7b86cfc885b63a6587edca67430fa3ad6a9f5"
+  integrity sha512-orKvTLXk5nfcddPq1OTMJ6RLydiUXbu7Fa3UmPTnnUfRCMChnChn/HYpVqgJ7c9O4gl8JtMtd6LKOsd5kOCLUQ==
   dependencies:
     "@pacote/get-style" "^1.0.0"
     "@pacote/pixels" "^1.0.0"
