@@ -88,7 +88,7 @@ const Subscribe: FC = () => {
                         outline-none
                         placeholder-muted
                         pr-2
-                        focus:border-muted
+                        focus:border-accent
                     "
                     disabled={isLoading}
                     id="email"

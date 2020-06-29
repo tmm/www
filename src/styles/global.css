@@ -1,8 +1,6 @@
 /* purgecss start ignore */
 @import './fonts.css';
 @import './footnotes.css';
-@import './syntax.css';
-@import './twitter.css';
 
 @tailwind base;
 @tailwind components;
@@ -109,21 +107,6 @@ ul {
     @apply list-disc;
 }
 
-pre {
-    @apply bg-fill;
-    @apply leading-normal;
-    @apply my-6;
-    @apply overflow-x-auto;
-    @apply p-4;
-    @apply rounded;
-    @apply whitespace-pre-wrap;
-    font-size: 0.9rem;
-}
-pre.prism-code {
-    @apply m-0;
-    @apply p-0;
-}
-
 button:focus {
     @apply shadow-outline;
     outline: none;
@@ -137,6 +120,28 @@ input {
 video {
     @apply border;
     @apply my-6;
+    @apply rounded;
+}
+
+summary {
+    @apply cursor-pointer;
+    @apply outline-none;
+}
+
+details {
+    @apply border;
+    @apply p-4;
+    @apply rounded;
+}
+details :last-child {
+    @apply mb-0;
+}
+
+.twitter-tweet {
+    @apply border;
+    @apply mx-0;
+    @apply my-6;
+    @apply p-4;
     @apply rounded;
 }
 
@@ -168,6 +173,50 @@ gatsby image
     @apply text-muted;
     @apply text-center;
     @apply text-sm;
+}
+
+/* ===========================
+syntax highlighting
+=========================== */
+pre {
+    @apply bg-fill;
+    @apply leading-normal;
+    @apply my-6;
+    @apply overflow-x-auto;
+    @apply p-4;
+    @apply rounded;
+    @apply whitespace-pre-wrap;
+    font-size: 0.9rem;
+}
+pre.prism-code {
+    @apply m-0;
+    @apply p-0;
+}
+
+.keyword {
+    @apply font-bold;
+    color: var(--syntax-keyword);
+}
+
+.token.operator,
+.token.punctuation,
+.token.string,
+.token.number,
+.token.builtin,
+.token.variable,
+.token.url:not(.content) {
+    color: var(--syntax-token);
+}
+
+.token.comment {
+    color: var(--syntax-comment);
+}
+
+.token.class-name,
+.token.function,
+.token.tag,
+.token.attr-name {
+    color: var(--syntax-name);
 }
 /* purgecss end ignore */
 

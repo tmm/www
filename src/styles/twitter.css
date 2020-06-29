@@ -1,9 +1,0 @@
-/* purgecss start ignore */
-.twitter-tweet {
-    @apply border;
-    @apply mx-0;
-    @apply my-6;
-    @apply p-4;
-    @apply rounded;
-}
-/* purgecss end ignore */
