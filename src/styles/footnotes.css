@@ -73,8 +73,10 @@ sup:hover {
 .littlefoot-footnote {
     @apply bg-background;
     @apply border-border;
+    @apply duration-200;
     @apply rounded;
     @apply shadow;
+    @apply transition-all;
 }
 .littlefoot-footnote.is-active {
     @apply opacity-100;
