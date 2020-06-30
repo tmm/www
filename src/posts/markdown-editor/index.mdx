@@ -1,14 +1,12 @@
 ---
-title: Designing A Better Markdown Editor
+title: Designing My Own Markdown Editor
 date: 2020-06-17
 slug: /markdown-editor/
 published: false
 description: ''
 ---
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) makes writing for the web simple. It allows me to write and format in plain text, then, when I'm ready, publish by pushing to [GitHub](https://github.com/tmm/www).
-
-In theory, I could write a post without ever looking at the preview — let alone the generated HTML. Instead, my workflow looks something like this:
+[Markdown](https://en.wikipedia.org/wiki/Markdown) makes writing for the web simple. It allows me to write and format in plain text, then, when I'm ready, publish by pushing to [GitHub](https://github.com/tmm/www). In theory, I could write an entire post without ever looking at the preview — let alone the generated HTML. Instead, my workflow looks something like this:
 
 1. Write in Vim.
 2. Preview in Firefox.
@@ -16,35 +14,45 @@ In theory, I could write a post without ever looking at the preview — let alon
 4. Repeat until done.
 5. Commit and push changes.
 
-I care a lot about what my writing looks like (how words wrap, paragraph size, etc.) so I do a lot of switching between Vim and Firefox. Every switch, I need find my cursor or the line I'm reading again.
+Since I care a lot about how my writing looks (word wrap, block size, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I'm reading again.
 
-It's exhausting to switch back and forth so I decided to check out some different "types" of Markdown editors to see if any fit my workflow better.
+It's tiring to switch back and forth so I decided to explore making my own editor based on the [GitHub Flavored Markdown Spec](https://github.github.com/gfm). There are a few features outside of the editor that are important, but don't matter until I can write and preview Markdown.
 
-We'll use the first paragraph of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) to test.
+With that in mind, I did some research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare them other than how it *felt* to write with them. Often, how it felt depended on how an editor treated Markdown.
+
+Markdown is difficult to work with because there isn't a [formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a few issues I have with existing Markdown editors.
+
+We'll use the first paragraph of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) as a test example.
 
 
 <details>
-  <summary>Toggle to view example Markdown</summary>
+  <summary>Toggle to view example</summary>
 
 ```markdown
 **Markdown** is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) with plain-text-formatting syntax, created in 2004 by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) with [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Markdown is often used to format [readme files](https://en.wikipedia.org/wiki/README), for writing messages in online discussion forums, and to create [rich text](https://en.wikipedia.org/wiki/Formatted_text) using a [plain text](https://en.wikipedia.org/wiki/Plain_text) [editor](https://en.wikipedia.org/wiki/Text_editor).
 ```
 </details>
 
+#### Redundant information
 
-#### Split-pane
+[iA Writer](https://ia.net/writer) is the benchmark of Markdown editors. Among other features, it renders previews inline as you type (\*emphasis\* becomes _\*emphasis\*_) and has an optional preview pane for viewing the document's HTML view. In fact, most Markdown editors have these exact two features.
 
-Split-pane editors, like [Dillinger](https://dillinger.io), divide the window into two panes. One pane lets you edit text and the other displays a live preview.
+We can refer to this type of editor as a "split pane editor" since it divides the window into two panes. Often, the left pane is a [source code editor](https://en.wikipedia.org/wiki/Source-code_editor) with a monospaced font, syntax highlighting, autocomplete, etc. while the right pane is a markup previewer for the compiled HTML.
 
-This isn't a whole lot better than tabbing between Vim and Firefox since it duplicates content and shifts your focus away from your cursor as your eyes look between panes.
+Notice how iA Writer looks with the example Markdown from earlier:
+
+![iA Writer with preview pane](./assets/ia.png)
+
+The markup preview pane isn't a whole lot better than switching between Vim and Firefox since it duplicates content on the screen and requires shifting focus away from the cursor in order to see the preview.
+
+The inline previews include syntax so URLs and other markup create dead space between words. This makes is difficult to naturally read text when editing or revising. Your eyes are forced to do extra work while traversing to distinguish text from syntax.
 
 #### Block preview
 
 Block preview editors, like [Roam Research](https://roamresearch.com/), add preview to the editor on a block-by-block basis. When you are editing a Markdown [block](https://daringfireball.net/projects/markdown/syntax#block), it is displayed as plain text. As soon as the block loses focus, it is compiled into a preview.
 
-<video controls>
+<video autoplay loop playsinline>
   <source src="./assets/roam.mp4" type="video/mp4" />
-  <source src="./assets/roam.webm" type="video/webm" />
   <p>Your browser doesn't support HTML5 video. Here is
      a <a href="./assets/roam.mp4">link to the video</a> instead.</p>
 </video>
@@ -53,26 +61,11 @@ This is a better than split-pane editors in that you don't need to look elsewher
 
 Previews only work when a block is inactive so switching between focused and blurred states causes syntax to reflow the text as it is shown and hidden. It creates a jumpy effect that makes it complex to perform an initial selection and maintain focus.
 
-#### Inline preview
-
-Inline preview editors, like [iA Writer](https://ia.net/writer), add block and inline syntax preview to the editor as you type: \*emphasis\* becomes _\*emphasis\*_, headings look heavier, list items maintain their indent across lines, etc.
-
-<video controls>
-  <source src="./assets/ia.mp4" type="video/mp4" />
-  <source src="./assets/ia.webm" type="video/webm" />
-  <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="./assets/ia.mp4">link to the video</a> instead.</p>
-</video>
-
-This is the best so far. (In fact, we could stop here since iA Writer is a fantastic piece of software.) But it's not perfect: Showing syntax and preview at the same time is redundant and diverges from the final "HTML" view.
-
-In this case, previews include syntax so URLs and other markup create dead space between words. This makes is difficult to naturally read text when editing or revising. Your eyes are forced to do extra work while traversing to distinguish text from syntax.
-
-Render preview in head
-
 #### WYSIWYG
 
 [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editors aren't really Markdown editors, but they are worth talking about. Editors, like [Dropbox Paper](https://www.dropbox.com/paper), support Markdown on input, but strip syntax characters once they transform them to their semantic meaning.
+
+[media]
 
 Despite stripping characters (which is really bad), WYSIWYG editors handle preview the best because you are writing in rich text/HTML, the language of Markdown previews.
 
@@ -82,9 +75,8 @@ Okay, none of these do exactly what I want. Some of them come close and are dece
 
 There are two important principles partially or fully missing: 1) Previews should be scoped to markup, and 2) Syntax should show up when you need it to and disappear when you don't. Kind of like this:
 
-<video controls>
+<video autoplay loop playsinline>
   <source src="./assets/mizaru.mp4" type="video/mp4" />
-  <source src="./assets/mizaru.webm" type="video/webm" />
   <p>Your browser doesn't support HTML5 video. Here is
      a <a href="./assets/mizaru.mp4">link to the video</a> instead.</p>
 </video>

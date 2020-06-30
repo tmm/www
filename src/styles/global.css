@@ -148,20 +148,19 @@ details :last-child {
 /* ===========================
 gatsby image
 =========================== */
+.gatsby-resp-image-wrapper {
+    @apply border;
+    @apply my-6;
+    @apply rounded;
+}
+
 .gatsby-resp-image-figure {
-    @apply mb-4;
+    @apply mb-5;
+    @apply mt-6;
 }
 
 .gatsby-resp-image-figure .gatsby-resp-image-wrapper {
-    @apply mb-0;
-}
-
-.gatsby-resp-image-wrapper {
-    @apply mb-4;
-}
-
-.gatsby-resp-image-link {
-    @apply border-0;
+    @apply my-0;
 }
 
 .gatsby-resp-image-image {
@@ -171,7 +170,6 @@ gatsby image
 .gatsby-resp-image-figcaption {
     @apply mt-2;
     @apply text-muted;
-    @apply text-center;
     @apply text-sm;
 }
 
