@@ -14,13 +14,13 @@ description: ''
 4. Repeat until done.
 5. Commit and push changes.
 
-Since I care a lot about how my writing looks (word wrap, block size, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I'm reading again.
+Since I care a lot about how my writing looks (word wrap, block size, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I was reading again.
 
-It's tiring to switch back and forth so I decided to explore making my own editor based on the [GitHub Flavored Markdown Spec](https://github.github.com/gfm). There are a few features outside of the editor that are important, but don't matter until I can write and preview Markdown.
+It's tiring to switch back and forth so I decided to explore making my own editor based on the [GitHub Flavored Markdown Spec](https://github.github.com/gfm). There are a few features outside of the editor that are important, but don't matter until I can write and preview.
 
-With that in mind, I did some research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare them other than how it *felt* to write with them. Often, how it felt depended on how an editor treated Markdown.
+With that in mind, I did a bunch of research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare them other than how it *felt* to write with them. Often, how it felt depended on how an editor treated Markdown.
 
-Markdown is difficult to work with because there isn't a [formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a few issues I have with existing Markdown editors.
+Markdown is difficult to work with because there isn't a [formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a couple issues I have with existing Markdown editors.
 
 We'll use the first paragraph of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) as a test example.
 
@@ -33,63 +33,75 @@ We'll use the first paragraph of the [Markdown Wikipedia article](https://en.wik
 ```
 </details>
 
-#### Redundant information
+#### Too much information
 
-[iA Writer](https://ia.net/writer) is the benchmark of Markdown editors. Among other features, it renders previews inline as you type (\*emphasis\* becomes _\*emphasis\*_) and has an optional preview pane for viewing the document's HTML view. In fact, most Markdown editors have these exact two features.
+[iA Writer](https://ia.net/writer) is the benchmark of Markdown editors. Among other features, it renders previews inline as you type (\*emphasis\* becomes _\*emphasis\*_) and has an optional preview pane for viewing the document's HTML view. In fact, most editors have these exact two features.
 
-We can refer to this type of editor as a "split pane editor" since it divides the window into two panes. Often, the left pane is a [source code editor](https://en.wikipedia.org/wiki/Source-code_editor) with a monospaced font, syntax highlighting, autocomplete, etc. while the right pane is a markup previewer for the compiled HTML.
-
-Notice how iA Writer looks with the example Markdown from earlier:
+We can refer to this type of editor as a "split pane editor" because it divides the window into two panes. Often, the left pane is a [source code editor](https://en.wikipedia.org/wiki/Source-code_editor) with a monospaced font, syntax highlighting, autocomplete, etc. while the right pane is a markup previewer for the compiled HTML.
 
 ![iA Writer with preview pane](./assets/ia.png)
 
-The markup preview pane isn't a whole lot better than switching between Vim and Firefox since it duplicates content on the screen and requires shifting focus away from the cursor in order to see the preview.
+Notice how the compiled paragraph is much shorter than the plain text version. How content is duplicated across panes. How the preview takes up half the screen. We've basically taken a simple browser and stitched it up next to the editor.
 
-The inline previews include syntax so URLs and other markup create dead space between words. This makes is difficult to naturally read text when editing or revising. Your eyes are forced to do extra work while traversing to distinguish text from syntax.
+This isn't much better than switching between Vim and Firefox. Looking side-to-side between panes still requires searching for the cursor or reading spot. Sure, overhead is reduced slightly, but it's still there.
 
-#### Block preview
+Now, let's focus on the editor pane. Notice how the text is a lighter color and syntax is a darker color. Reading the paragraph becomes challenging since the syntax creates dead space between words. Your eyes are forced to do extra work while scanning to distinguish text from syntax.
 
-Block preview editors, like [Roam Research](https://roamresearch.com/), add preview to the editor on a block-by-block basis. When you are editing a Markdown [block](https://daringfireball.net/projects/markdown/syntax#block), it is displayed as plain text. As soon as the block loses focus, it is compiled into a preview.
+We are stuck in a catch-22: When reading, syntax is unnecessary, yet when writing, syntax is required for formatting text. By separating reading and writing into different modes, split pane editors erect a wall in the middle of the often blurred reading-writing process
 
-<video autoplay loop playsinline>
-  <source src="./assets/roam.mp4" type="video/mp4" />
-  <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="./assets/roam.mp4">link to the video</a> instead.</p>
-</video>
+#### Nonatomic preview
 
-This is a better than split-pane editors in that you don't need to look elsewhere to see a preview since writing and preview happen in the same document. The downside is that previews aren't real-time and can cause significant text reflowing when focus is toggled.
+[Roam Research](https://roamresearch.com) is a modern take on [Org-mode](https://en.wikipedia.org/wiki/Org-mode) that does something rather clever. It moves previews into the document on a [block](https://daringfireball.net/projects/markdown/syntax#block)-by-block basis. When editing, you manipulate plain text in a `textarea`. Then, when focus is lost, the plain text is compiled into a preview inside a `div`.
 
-Previews only work when a block is inactive so switching between focused and blurred states causes syntax to reflow the text as it is shown and hidden. It creates a jumpy effect that makes it complex to perform an initial selection and maintain focus.
+Although this is an improvement over split-pane editors (you don't need to look elsewhere for the preview), previews aren't real-time and can cause significant text reflowing when focus is toggled, making it difficult to perform an initial selection or maintain focus.
 
-#### WYSIWYG
+<Figure caption="Roam Research with custom theme">
+    <video autoplay loop playsinline>
+      <source src="./assets/roam.mp4" type="video/mp4" />
+      <p>Your browser doesn't support HTML5 video. Here is
+         a <a href="./assets/roam.mp4">link to the video</a> instead.</p>
+    </video>
+</Figure>
 
-[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editors aren't really Markdown editors, but they are worth talking about. Editors, like [Dropbox Paper](https://www.dropbox.com/paper), support Markdown on input, but strip syntax characters once they transform them to their semantic meaning.
+The challenge with block preview editors, like Roam, is the scoping of previews is too broad. In the example paragraph, there are multiple [inline](https://daringfireball.net/projects/markdown/syntax#span) elements that are independent from each other, yet all of them depend on the containing paragraph for triggering their previews.
 
-[media]
+For example, after link is added to the document, it should just render its preview. It shouldn't have to wait for any other text input or events.
 
-Despite stripping characters (which is really bad), WYSIWYG editors handle preview the best because you are writing in rich text/HTML, the language of Markdown previews.
-
-***
-
-Okay, none of these do exactly what I want. Some of them come close and are decent editors, but none break the wall between editing and previewing.
-
-There are two important principles partially or fully missing: 1) Previews should be scoped to markup, and 2) Syntax should show up when you need it to and disappear when you don't. Kind of like this:
-
-<video autoplay loop playsinline>
-  <source src="./assets/mizaru.mp4" type="video/mp4" />
-  <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="./assets/mizaru.mp4">link to the video</a> instead.</p>
-</video>
-
-In the above video, I'm typing up the first paragraph of the using a no-frills editor I hacked up to experiment with these two principles.
-
-Did you notice what's cool about it? (No shame in watching again.)
-
-As I type and move around the editor, previews occur in real time and syntax surfaces based on the cursor/selection. In the same document, I can **read in rich text and write in plain text** without specifying a [mode](https://en.wikipedia.org/wiki/Mode_(user_interface)) or do much of anything! It just works.
+While block-level previews might make programming easier, they make writing more difficult. Previews should be scoped to atomic pieces of markup so they render in real time and cause minimal impact on the document layout.
 
 ***
 
-If you are unsure why on-demand syntax and real-time preview are major improvements compared to the block or inline editors we reviewed earlier, consider the paragraph from the video.
+How can we design an editor to fix these two problems and break the wall between reading and writing?
+
+iA Writer's lighter-colored syntax highlighting keeps the focus on the text, but creates dead visual space. Roam's block preview solves the issue of showing too much information when reading, but disturbs the layout when writing. Both challenges contain the seeds of a better idea.
+
+Syntax should show up when you need it to and disappear when you don't. Kind of like this:
+
+New video should have Markdown title.
+<Figure caption={
+    <div>Demo editor built with TypeScript and <a
+        href="https://prosemirror.net"
+        target="_blank"
+        rel="nofollow noopener noreferrer">ProseMirror</a></div>
+}>
+    <video autoplay loop playsinline>
+      <source src="./assets/mizaru.mp4" type="video/mp4" />
+      <p>Your browser doesn't support HTML5 video. Here is
+         a <a href="./assets/mizaru.mp4">link to the video</a> instead.</p>
+    </video>
+</Figure>
+
+In the video, I'm typing up the example paragraph using a no-frills editor I hacked up to experiment with [building my own notes app](https://futureland.tv/tmm/mizaru). The editor scopes previews to individual units of valid markdown. It doesn't care if it's a block heading, strong emphasis, link, etc.
+
+As I type and move around the editor, previews occur in real time and syntax surfaces based on the cursor/selection. In the same document, I can **write in plain text and read in rich text** without specifying a [mode](https://en.wikipedia.org/wiki/Mode_(user_interface)) or doing much of anything! It just works.
+
+The implementation is also rather simple. First, I check if the cursor or the selection contains a block or inline element. If it does, I add a CSS class to the element container to show the direct syntax inside. Once the cursor no longer contains the element, the class is removed and the syntax disappears.
+
+In order to update the previews in real time, I incrementally parse the document when text changes to see if elements are created or removed. If so, I dispatch transactions to the document making those changes.
+
+While this concept solves challenges faced by other Markdown editors, it's not perfect. I haven't figured out how to handle empty lines. Empty lines make sense when typing in plain text, but causes HTML previews to diverge since Markdown collapses whitespace during compilation.
+
+***
 
 A paragraph with a bunch of links is a dramatic example, but when using Markdown, it's not uncommon for the plain text representation to drastically differ from the preview. [Connect back to principles]
 
@@ -97,7 +109,7 @@ After researching Markdown editors for a couple months, I found [HyperMD](https:
 
 One of the founders of [Obsidian](https://obsidian.md), a buzzy split-pane editor, [asked on the CodeMirror Forum](https://discuss.codemirror.net/t/implementing-wysiwyg-markdown-editor-in-codemirror/2403) how they could do something similar to HyperMD and were directed to use [ProseMirror](https://prosemirror.net/) instead.
 
-There is at least one tricky caveat with RRPW: [Whitespace](https://en.wikipedia.org/wiki/Whitespace_character). Markdown is used to generate HTML, which collapses whitespace by default. In plain text, you can add any number of spaces (leading and trailing), carriage returns, etc. though.
+There is at least one tricky caveat with RRPW: 
 
 Also challenging to do certain things: Tables.
 

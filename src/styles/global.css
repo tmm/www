@@ -117,12 +117,6 @@ input {
     -webkit-appearance: none;
 }
 
-video {
-    @apply border;
-    @apply my-6;
-    @apply rounded;
-}
-
 summary {
     @apply cursor-pointer;
     @apply outline-none;
@@ -167,7 +161,8 @@ gatsby image
     box-shadow: none !important;
 }
 
-.gatsby-resp-image-figcaption {
+.gatsby-resp-image-figcaption,
+figcaption {
     @apply mt-2;
     @apply text-muted;
     @apply text-sm;
@@ -176,6 +171,11 @@ gatsby image
 /* ===========================
 syntax highlighting
 =========================== */
+code {
+    @apply bg-fill;
+    font-size: 0.9rem;
+}
+
 pre {
     @apply bg-fill;
     @apply leading-normal;
