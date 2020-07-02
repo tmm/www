@@ -14,22 +14,26 @@ description: ''
 4. Repeat until done.
 5. Commit and push changes.
 
-Since I care a lot about how my writing looks (word wrap, block size, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I was reading again.
+Since I care a lot about how my writing looks (paragraph size, word wrap, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I was reading again.
 
 It's tiring to switch back and forth so I decided to explore making my own editor based on the [GitHub Flavored Markdown Spec](https://github.github.com/gfm). There are a few features outside of the editor that are important, but don't matter until I can write and preview.
 
-With that in mind, I did a bunch of research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare them other than how it *felt* to write with them. Often, how it felt depended on how an editor treated Markdown.
+With that in mind, I did a bunch of research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare them other than how it *felt* to write. Often, how it felt depended on how an editor treated Markdown.
 
 Markdown is difficult to work with because there isn't a [formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a couple issues I have with existing Markdown editors.
 
-We'll use the first paragraph of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) as a test example.
+We'll use the part of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) as a test example.
 
 
 <details>
   <summary>Toggle to view example</summary>
 
 ```markdown
+# Markdown
+
 **Markdown** is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) with plain-text-formatting syntax, created in 2004 by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) with [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Markdown is often used to format [readme files](https://en.wikipedia.org/wiki/README), for writing messages in online discussion forums, and to create [rich text](https://en.wikipedia.org/wiki/Formatted_text) using a [plain text](https://en.wikipedia.org/wiki/Plain_text) [editor](https://en.wikipedia.org/wiki/Text_editor).
+
+Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions. 
 ```
 </details>
 
@@ -41,13 +45,13 @@ We can refer to this type of editor as a "split pane editor" because it divides 
 
 ![iA Writer with preview pane](./assets/ia.png)
 
-Notice how the compiled paragraph is much shorter than the plain text version. How content is duplicated across panes. How the preview takes up half the screen. We've basically taken a simple browser and stitched it up next to the editor.
+Notice how the compiled text is much shorter than the plain text version. How content is duplicated across panes. How the preview takes up half the screen. We've basically taken a basic browser and stitched it up next to the editor.
 
 This isn't much better than switching between Vim and Firefox. Looking side-to-side between panes still requires searching for the cursor or reading spot. Sure, overhead is reduced slightly, but it's still there.
 
 Now, let's focus on the editor pane. Notice how the text is a lighter color and syntax is a darker color. Reading the paragraph becomes challenging since the syntax creates dead space between words. Your eyes are forced to do extra work while scanning to distinguish text from syntax.
 
-We are stuck in a catch-22: When reading, syntax is unnecessary, yet when writing, syntax is required for formatting text. By separating reading and writing into different modes, split pane editors erect a wall in the middle of the often blurred reading-writing process
+We are stuck in a catch-22: When reading, syntax is unnecessary, yet when writing, syntax is required for formatting text. By separating reading and writing into different modes, split pane editors erect a wall in the middle of the often dynamic reading-writing process.
 
 #### Nonatomic preview
 
@@ -63,7 +67,7 @@ Although this is an improvement over split-pane editors (you don't need to look 
     </video>
 </Figure>
 
-The challenge with block preview editors, like Roam, is the scoping of previews is too broad. In the example paragraph, there are multiple [inline](https://daringfireball.net/projects/markdown/syntax#span) elements that are independent from each other, yet all of them depend on the containing paragraph for triggering their previews.
+The challenge with block preview editors, like Roam, is the scoping of previews is too broad. In the example paragraph, there are multiple [inline](https://daringfireball.net/projects/markdown/syntax#span) elements that are independent from each other, yet all of them depend on the containing paragraph's state for triggering previews.
 
 For example, after link is added to the document, it should just render its preview. It shouldn't have to wait for any other text input or events.
 
@@ -73,11 +77,10 @@ While block-level previews might make programming easier, they make writing more
 
 How can we design an editor to fix these two problems and break the wall between reading and writing?
 
-iA Writer's lighter-colored syntax highlighting keeps the focus on the text, but creates dead visual space. Roam's block preview solves the issue of showing too much information when reading, but disturbs the layout when writing. Both challenges contain the seeds of a better idea.
+iA Writer's less prominent syntax helps maintain focus on text, but creates dead visual space. Roam's block preview solves the issue of showing too much information when reading, but disturbs the layout when writing. Both challenges contain the seeds of a better idea.
 
 Syntax should show up when you need it to and disappear when you don't. Kind of like this:
 
-New video should have Markdown title.
 <Figure caption={
     <div>Demo editor built with TypeScript and <a
         href="https://prosemirror.net"
@@ -91,34 +94,25 @@ New video should have Markdown title.
     </video>
 </Figure>
 
-In the video, I'm typing up the example paragraph using a no-frills editor I hacked up to experiment with [building my own notes app](https://futureland.tv/tmm/mizaru). The editor scopes previews to individual units of valid markdown. It doesn't care if it's a block heading, strong emphasis, link, etc.
+In the video, I'm typing up the example text using a no-frills editor I hacked up to experiment with [building my own notes app](https://futureland.tv/tmm/mizaru). The editor scopes previews to individual units of valid markdown. It doesn't care if it's a block heading, strong emphasis, link, etc.
 
 As I type and move around the editor, previews occur in real time and syntax surfaces based on the cursor/selection. In the same document, I can **write in plain text and read in rich text** without specifying a [mode](https://en.wikipedia.org/wiki/Mode_(user_interface)) or doing much of anything! It just works.
 
-The implementation is also rather simple. First, I check if the cursor or the selection contains a block or inline element. If it does, I add a CSS class to the element container to show the direct syntax inside. Once the cursor no longer contains the element, the class is removed and the syntax disappears.
+The implementation is rather simple. First, I check if the cursor or the selection contains a Markdown element. If it does, I add a CSS class to the container element to show the syntax inside. Once the cursor no longer contains the element, the class is removed and the syntax disappears.
 
-In order to update the previews in real time, I incrementally parse the document when text changes to see if elements are created or removed. If so, I dispatch transactions to the document making those changes.
+For the real-time previews, I parse the document whenever text changes and check if there are any elements created or removed. If so, I dispatch transactions until the document reflects the parsed Markdown [syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree). There are some other optimizations along the way, like only parsing parts of the document, but it's mostly straightforward.[^1]
 
-While this concept solves challenges faced by other Markdown editors, it's not perfect. I haven't figured out how to handle empty lines. Empty lines make sense when typing in plain text, but causes HTML previews to diverge since Markdown collapses whitespace during compilation.
+While the concept of reading in rich text and writing in plain text solves challenges faced by other Markdown editors, it's not perfect. I haven't figured out how to handle empty lines. Empty lines make sense when typing in plain text (just press <kbd>Enter</kbd>), but don't translate well to HTML previews since Markdown collapses [whitespace](https://en.wikipedia.org/wiki/Whitespace_character) during compilation.
 
-***
-
-A paragraph with a bunch of links is a dramatic example, but when using Markdown, it's not uncommon for the plain text representation to drastically differ from the preview. [Connect back to principles]
-
-After researching Markdown editors for a couple months, I found [HyperMD](https://github.com/laobubu/HyperMD). HyperMD is the best example that implements the two principles from earlier. Unfortunately, it's not maintained and it uses [CodeMirror](https://codemirror.net), which is going through a [break-change rewrite](https://codemirror.net/6).
-
-One of the founders of [Obsidian](https://obsidian.md), a buzzy split-pane editor, [asked on the CodeMirror Forum](https://discuss.codemirror.net/t/implementing-wysiwyg-markdown-editor-in-codemirror/2403) how they could do something similar to HyperMD and were directed to use [ProseMirror](https://prosemirror.net/) instead.
-
-There is at least one tricky caveat with RRPW: 
-
-Also challenging to do certain things: Tables.
-
-I created a [Are.na channel](https://www.are.na/tmm/mizaru) for all my research.
+At some point, I might share more about the Markdown editor and notes app I'm building for myself. In the meantime, [Typora](https://typora.io/) and [HyperMD](https://github.com/laobubu/HyperMD) are two alternative editors to check out.[^2]
 
 ***
 
-Thanks to [Justin Seymour](https://justin-seymour.com) for reading drafts of this.
+Thanks to [Justin Seymour](https://justin-seymour.com) and [Kent de Bruin](https://www.kentdebruin.com) for reading drafts of this.
 
-It's built with [ProseMirror](https://prosemirror.net), TypeScript, and React. Email me (tom@meagher.co) if you want to chat more.
 
-Another one, [Typora](https://typora.io/) is close second, but is still a little too WYSIWYG-ish for my liking.
+[^1]: [ProseMirror](https://prosemirror.net) does all the heavy lifting.
+
+[^2]: HyperMD is the closest to what I'm building, but unfortunately, it's not maintained and it uses [CodeMirror](https://codemirror.net), which is going through a [break-change rewrite](https://codemirror.net/6).
+
+    Also, a co-founder of [Obsidian](https://obsidian.md) [asked on the CodeMirror forum](https://discuss.codemirror.net/t/implementing-wysiwyg-markdown-editor-in-codemirror/2403) how they could do something similar to HyperMD and were directed to use [ProseMirror](https://prosemirror.net/) instead.
