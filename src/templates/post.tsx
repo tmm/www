@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 
-import { Layout, Subscribe } from '@/components'
+import { Banner, CopyEmailButton, Layout, Subscribe } from '@/components'
 
 interface Props extends PageProps {
     data: {
@@ -16,7 +16,7 @@ const Template: FC<Props> = (props) => {
     const post = props.data.mdx
     const {
         body,
-        frontmatter: { date, title },
+        frontmatter: { date, published, title },
     } = post
     const description = post.frontmatter.description || post.excerpt
 
@@ -26,6 +26,15 @@ const Template: FC<Props> = (props) => {
                 <meta content={description} name="description" />
                 <meta content={title} name="twitter:title" />
             </Helmet>
+
+            {!published && (
+                <Banner>
+                    <strong>Warning:</strong> This post is still a
+                    work-in-progress. Read at your own risk, but please
+                    don&rsquo;t post it to Twitter, Hacker News, etc. Comments,
+                    questions, or feedback can be sent to <CopyEmailButton />.
+                </Banner>
+            )}
 
             <article>
                 <h1>{title}</h1>
@@ -53,6 +62,7 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "ddd MMM DD YYYY")
                 description
+                published
                 title
             }
         }

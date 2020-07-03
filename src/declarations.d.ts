@@ -9,7 +9,12 @@ interface Post {
     body: string
     excerpt: string
     fields: { slug: string }
-    frontmatter: { date: string; description: string; title: string }
+    frontmatter: {
+        date: string
+        description: string
+        published: boolean
+        title: string
+    }
 }
 
 interface Media {
