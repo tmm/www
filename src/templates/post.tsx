@@ -31,7 +31,7 @@ const Template: FC<Props> = (props) => {
                 <Banner>
                     <strong>Warning:</strong> This post is still a
                     work-in-progress. Read at your own risk, but please
-                    don&rsquo;t post it to Twitter, Hacker News, etc. Comments,
+                    don&rsquo;t post it on Twitter, Hacker News, etc. Comments,
                     questions, or feedback can be sent to <CopyEmailButton />.
                 </Banner>
             )}

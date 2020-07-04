@@ -1,9 +1,9 @@
 ---
 title: Designing My Own Markdown Editor
-date: 2020-06-17
+date: 2020-07-04
 slug: /markdown-editor/
 published: false
-description: ''
+description: Breaking the wall between reading and writing in Markdown.
 ---
 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) makes writing for the web simple. It allows me to write and format in plain text, then, when I'm ready, publish by pushing to [GitHub](https://github.com/tmm/www). In theory, I could write an entire post without ever looking at the preview — let alone the generated HTML. Instead, my workflow looks something like this:
@@ -33,7 +33,7 @@ We'll use the first part of the [Markdown Wikipedia article](https://en.wikipedi
 
 **Markdown** is a [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) with plain-text-formatting syntax, created in 2004 by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber) with [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Markdown is often used to format [readme files](https://en.wikipedia.org/wiki/README), for writing messages in online discussion forums, and to create [rich text](https://en.wikipedia.org/wiki/Formatted_text) using a [plain text](https://en.wikipedia.org/wiki/Plain_text) [editor](https://en.wikipedia.org/wiki/Text_editor).
 
-Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions. 
+Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.
 ```
 </details>
 
@@ -67,11 +67,11 @@ Although this is an improvement over split-pane editors (you don't need to look 
     </video>
 </Figure>
 
-The challenge with block preview editors, like Roam, is the scoping of previews is too broad. In the example paragraph, there are multiple [inline](https://daringfireball.net/projects/markdown/syntax#span) elements that are independent from each other, yet all of them depend on the containing paragraph's state for triggering previews.
+The challenge with block preview editors, like Roam, is previews are scoped too broad. In the example paragraph, there are multiple [inline elements](https://daringfireball.net/projects/markdown/syntax#span) that are independent from each other, yet all of them depend on the containing paragraph's state for triggering previews.
 
-For example, after link is added to the document, it should just render its preview. It shouldn't have to wait for any other text input or events.
+For example, after a link is added to the document, it should just render its preview. It shouldn't have to wait for any other text input or events.
 
-While block-level previews might make programming easier, they make writing more difficult. Previews should be scoped to atomic pieces of markup so they render in real time and cause minimal impact on the document layout.
+While block-level previews might make programming easier, they make writing more difficult. When previews are scoped to atomic pieces of markup, they render in real time and cause minimal impact to the document layout.
 
 ***
 
@@ -100,11 +100,11 @@ As I type and move around the editor, previews occur in real time and syntax sur
 
 The implementation is rather simple. First, I check if the cursor or the selection contains a Markdown element. If it does, I add a CSS class to the container element to show the syntax inside. Once the cursor no longer contains the element, the class is removed and the syntax disappears.
 
-For the real-time previews, I parse the document whenever text changes and check if there are any elements created or removed. If so, I dispatch transactions until the document reflects the parsed Markdown [syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree). There are some other optimizations along the way, like only parsing parts of the document, but it's mostly straightforward.[^1]
+For the real-time previews, I parse the document whenever text changes and check if there are any elements created or removed. If so, I dispatch transactions until the document reflects the [parsed Markdown syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree). There are some other optimizations along the way, like only parsing parts of the document, but it's mostly straightforward.[^1]
 
-While the concept of reading in rich text and writing in plain text solves challenges faced by other Markdown editors, it's not perfect. I haven't figured out how to handle empty lines. Empty lines make sense when typing in plain text (just press <kbd>Enter</kbd>), but don't translate well to HTML previews since Markdown collapses [whitespace](https://en.wikipedia.org/wiki/Whitespace_character) during compilation.
+While the concept of reading in rich text and writing in plain text solves challenges faced by other Markdown editors, it's not perfect. I haven't figured out how to handle blank lines. Blank lines make sense when typing in plain text (just press <kbd>Enter</kbd>), but don't translate well to HTML previews since Markdown collapses whitespace during compilation.
 
-At some point, I might share more about the Markdown editor and notes app I'm building for myself. In the meantime, [Typora](https://typora.io/) and [HyperMD](https://github.com/laobubu/HyperMD) are two alternative editors to check out.[^2]
+At some point, I might share more about the Markdown editor and notes app I'm building for myself. In the meantime, [Typora](https://typora.io) and [HyperMD](https://github.com/laobubu/HyperMD) are two alternative editors to check out.[^2]
 
 ***
 
