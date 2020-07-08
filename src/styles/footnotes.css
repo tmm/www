@@ -58,6 +58,7 @@ sup:hover {
 
 .littlefoot-footnote__button {
     @apply bg-fill;
+    @apply cursor-pointer;
     @apply font-medium;
     @apply h-4;
     @apply rounded-lg;

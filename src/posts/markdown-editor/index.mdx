@@ -3,10 +3,14 @@ title: Designing My Own Markdown Editor
 date: 2020-07-04
 slug: /markdown-editor/
 published: false
-description: Breaking the wall between reading and writing in Markdown.
+description: Breaking down the wall between reading and writing in Markdown.
 ---
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) makes writing for the web simple. It allows me to write and format in plain text, then, when I'm ready, publish by pushing to [GitHub](https://github.com/tmm/www). In theory, I could write an entire post without ever looking at the preview — let alone the generated HTML. Instead, my workflow looks something like this:
+I love writing in [Markdown](https://en.wikipedia.org/wiki/Markdown), but hate writing in Markdown editors.
+
+***
+
+Markdown makes writing for the Web simple. It allows me to write and format in plain text, then, when I'm ready, publish by pushing to [GitHub](https://github.com/tmm/www). In theory, I could write an entire post without ever looking at the preview — let alone the generated HTML. Instead, my workflow looks something like this:
 
 1. Write in Vim.
 2. Preview in Firefox.
@@ -14,13 +18,13 @@ description: Breaking the wall between reading and writing in Markdown.
 4. Repeat until done.
 5. Commit and push changes.
 
-Since I care a lot about how my writing looks (paragraph size, word wrap, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need find my cursor or the line I was reading again.
+Since I care a lot about how my writing looks (paragraph size, word wrap, etc.), I do a lot of switching between Vim and Firefox. After every switch, I need to find my cursor or the line I was reading again.
 
 It's tiring to switch back and forth so I decided to explore making my own editor based on the [GitHub Flavored Markdown Spec](https://github.github.com/gfm). There are a few features outside of the editor that are important, but don't matter until I can write and preview.
 
 With that in mind, I did a bunch of research. I downloaded and tested an absurd number of editors. I didn't use any metrics to compare other than how it *felt* to write in them. Often, how it felt depended on how an editor treated Markdown.
 
-Markdown is difficult to work with because there isn't a [formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a couple issues I have with existing Markdown editors.
+Markdown is difficult to work with because there [isn't a formal grammar](https://roopc.net/posts/2014/markdown-cfg/) so developers need to decide on guardrails for processing it. Before I detail my guardrails, it's worth walking through a couple issues I have with existing Markdown editors.
 
 We'll use the first part of the [Markdown Wikipedia article](https://en.wikipedia.org/wiki/Markdown) as a test example.
 

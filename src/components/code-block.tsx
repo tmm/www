@@ -9,7 +9,7 @@ interface Props {
 }
 
 const CodeBlock: FC<Props> = (props) => {
-    const language = props.className.replace(/language-/, '')
+    const language = (props.className ?? '').replace(/language-/, '')
 
     return (
         <Highlight

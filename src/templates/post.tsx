@@ -37,13 +37,11 @@ const Template: FC<Props> = (props) => {
             )}
 
             <article>
-                <h1>{title}</h1>
-
+                <header className="flex flex-col justify-between mb-4 md:flex-row">
+                    <h1 className="mb-0">{title}</h1>
+                    <time className="text-muted">{date}</time>
+                </header>
                 <MDXRenderer>{body}</MDXRenderer>
-
-                <div className="italic mb-10 mt-4 text-muted">
-                    Published <time>{date}</time>
-                </div>
             </article>
 
             <Subscribe />
@@ -60,7 +58,7 @@ export const query = graphql`
                 slug
             }
             frontmatter {
-                date(formatString: "ddd MMM DD YYYY")
+                date(formatString: "MMM DD YYYY")
                 description
                 published
                 title

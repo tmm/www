@@ -48,7 +48,7 @@ body {
 }
 
 p {
-    @apply mb-5;
+    @apply mb-4;
     @apply mt-0;
 }
 
@@ -97,7 +97,7 @@ hr {
 
 ul,
 ol {
-    @apply mb-5;
+    @apply mb-4;
     @apply pl-10;
 }
 ol {
