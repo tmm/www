@@ -53,8 +53,8 @@ const Index: FC<Props> = (props) => {
                 <h1>{author}</h1>
                 <p>
                     Hi, hello, welcome. My name is Tom and I’m a Internet
-                    explorer living in New York City via Boston. I like going
-                    for walks and cooking up random ideas.
+                    explorer living in Brooklyn via Boston. I like going for
+                    walks and cooking up random ideas.
                 </p>
                 <p>
                     I’m a bit disenchanted with the tech industry despite
