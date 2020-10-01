@@ -1,9 +1,12 @@
-import React, { FC, FormEvent, useEffect, useState } from 'react'
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { FC, FormEvent, useEffect, useRef, useState } from 'react'
 import { useLocation } from '@reach/router'
 
 const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
 
 const Subscribe: FC = () => {
+    const emailRef = useRef<HTMLInputElement>(null)
     const { pathname } = useLocation()
     const [email, setEmail] = useState('')
     const [isError, setIsError] = useState(false)
@@ -61,6 +64,9 @@ const Subscribe: FC = () => {
             setIsLoading(false)
         }
     }
+
+    const handleFocus = () => emailRef.current?.focus()
+
     return (
         <form
             className="
@@ -71,6 +77,7 @@ const Subscribe: FC = () => {
                 hover:opacity-100
                 focus-within:opacity-100
             "
+            onClick={handleFocus}
             onSubmit={handleSubmit}
         >
             <div className="mb-1 text-muted">
@@ -92,6 +99,7 @@ const Subscribe: FC = () => {
                     "
                     disabled={isLoading}
                     id="email"
+                    ref={emailRef}
                     value={email}
                     onChange={handleChange}
                 />
@@ -105,7 +113,7 @@ const Subscribe: FC = () => {
                     "
                     disabled={isLoading || !isValid}
                 >
-                    Subscribe
+                    {isLoading ? 'Subscribing...' : 'Subscribe'}
                 </button>
             </div>
 
