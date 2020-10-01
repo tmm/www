@@ -1,16 +1,48 @@
 [
-    { "name": "Are.na", "href": "https://are.na" },
-    { "name": "Buttondown", "href": "https://buttondown.email" },
-    { "name": "Contexts", "href": "https://contexts.co" },
-    { "name": "Futureland", "href": "https://futureland.tv" },
-    { "name": "Kinopio", "href": "https://kinopio.club" },
-    { "name": "Linear", "href": "https://linear.app" },
-    { "name": "Notational Velocity", "href": "http://notational.net" },
-    { "name": "ōryōki", "href": "http://oryoki.io" },
-    { "name": "Privacy Badger", "href": "https://privacybadger.org" },
-    { "name": "Render", "href": "https://render.com" },
-    { "name": "Rep.ly", "href": "https://rep.ly" },
-    { "name": "Roam Research", "href": "https://roamresearch.com" },
+    {
+        "name": "Are.na",
+        "href": "https://are.na"
+    },
+    {
+        "name": "Buttondown",
+        "href": "https://buttondown.email"
+    },
+    {
+        "name": "Contexts",
+        "href": "https://contexts.co"
+    },
+    {
+        "name": "Futureland",
+        "href": "https://futureland.tv"
+    },
+    {
+        "name": "Kinopio",
+        "href": "https://kinopio.club"
+    },
+    {
+        "name": "Linear",
+        "href": "https://linear.app"
+    },
+    {
+        "name": "Notational Velocity",
+        "href": "http://notational.net"
+    },
+    {
+        "name": "ōryōki",
+        "href": "http://oryoki.io"
+    },
+    {
+        "name": "Privacy Badger",
+        "href": "https://privacybadger.org"
+    },
+    {
+        "name": "Render",
+        "href": "https://render.com"
+    },
+    {
+        "name": "Rep.ly",
+        "href": "https://rep.ly"
+    },
     {
         "name": "Simple Analytics",
         "href": "https://simpleanalytics.com"
@@ -19,5 +51,8 @@
         "name": "The Human Utility",
         "href": "https://www.detroitwaterproject.org"
     },
-    { "name": "Watsi", "href": "https://watsi.org" }
+    {
+        "name": "Watsi",
+        "href": "https://watsi.org"
+    }
 ]
