@@ -1,13 +1,12 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
         },
+        sourceType: 'module',
     },
     extends: [
-        'plugin:mdx/recommended',
         'plugin:react/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:import/errors',
@@ -24,7 +23,6 @@ module.exports = {
             },
         ],
         'import/no-unresolved': ['error'],
-        'jsx-a11y/anchor-is-valid': 'off',
         'react/jsx-boolean-value': ['warn', 'never'],
         'react/no-array-index-key': 'error',
         'react/no-did-mount-set-state': 'error',
