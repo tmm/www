@@ -64,6 +64,7 @@ sup:hover {
     @apply rounded-lg;
     @apply text-body;
     @apply text-xs;
+    @apply transition-none;
     @apply w-6;
 }
 

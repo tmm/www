@@ -15,13 +15,19 @@
     --colors-muted: hsl(210, 3%, 55%);
     --colors-shadow: rgba(255, 255, 255, 0.03);
 
-    --syntax-comment: hsl(210, 3%, 70%);
-    --syntax-keyword: hsl(210, 3%, 0%);
-    --syntax-name: hsl(210, 3%, 40%);
-    --syntax-token: hsl(210, 3%, 55%);
-
     --font-sans: Sans, -apple-system, 'BlinkMacSystemFont', sans-serif;
     --font-mono: Mono, 'SFMono-Regular', Consolas, monospace;
+}
+
+[data-theme='light'] {
+    --colors-accent: hsl(225, 80%, 57%);
+    --colors-background: hsl(104, 100%, 100%);
+    --colors-border: hsl(204, 0%, 80%);
+    --colors-heading: hsl(0, 0%, 0%);
+    --colors-body: hsl(109, 0%, 30%);
+    --colors-fill: hsl(255, 0%, 90%);
+    --colors-muted: hsl(109, 0%, 45%);
+    --colors-shadow: rgba(0, 0, 0, 0.1);
 }
 
 ::selection {

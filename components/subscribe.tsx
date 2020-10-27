@@ -71,18 +71,7 @@ const Subscribe: React.FC<Props> = () => {
     const handleFocus = () => emailRef.current?.focus()
 
     return (
-        <form
-            className="
-                duration-200
-                mt-20
-                transition-opacity
-                md:opacity-50
-                hover:opacity-100
-                focus-within:opacity-100
-            "
-            onClick={handleFocus}
-            onSubmit={handleSubmit}
-        >
+        <form className="mt-20" onClick={handleFocus} onSubmit={handleSubmit}>
             <div className="mb-1 text-muted">
                 Get a email when I publish new posts
             </div>
