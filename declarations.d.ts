@@ -1,3 +1,5 @@
+declare module '@silvenon/remark-smartypants'
+
 type Frontmatter = {
     title: string
     description: string

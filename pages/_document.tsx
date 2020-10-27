@@ -6,6 +6,8 @@ import {
     NextScript,
 } from 'next/document'
 
+import { config } from '@/data'
+
 class Document extends NextDocument {
     render() {
         return (
@@ -14,6 +16,18 @@ class Document extends NextDocument {
                 <body>
                     <Main />
                     <NextScript />
+
+                    <script
+                        async
+                        defer
+                        src={`https://sa.${config.url}/latest.js`}
+                    />
+                    <noscript>
+                        <img
+                            alt=""
+                            src={`https://sa.${config.url}/noscript.gif`}
+                        />
+                    </noscript>
                 </body>
             </Html>
         )
