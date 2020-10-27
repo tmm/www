@@ -1,0 +1,143 @@
+/* purgecss start ignore */
+@import 'littlefoot/dist/littlefoot.css';
+
+sup {
+    @apply align-middle;
+    @apply bg-fill;
+    @apply cursor-pointer;
+    @apply font-medium;
+    @apply h-4;
+    @apply inline-flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply leading-none;
+    @apply rounded-lg;
+    @apply text-body;
+    @apply text-xs;
+    @apply top-auto;
+    @apply w-6;
+
+    margin: 0 0.1em 0 0.2em;
+    padding: 0 0.5em;
+    top: -0.1em;
+}
+sup a {
+    @apply no-underline;
+    @apply text-center;
+}
+sup a:hover {
+    @apply text-background;
+}
+sup:hover {
+    @apply bg-accent;
+    @apply text-background;
+}
+
+.footnotes {
+    @apply mt-8;
+    @apply text-body;
+    font-size: 0.9rem;
+}
+
+.footnotes hr {
+    @apply mb-4;
+}
+
+.footnotes ol {
+    @apply pl-4;
+}
+
+.footnotes li {
+    @apply mb-3;
+}
+
+.footnote-backref {
+    @apply no-underline;
+    margin-left: 4px;
+}
+
+.littlefoot-footnote__button {
+    @apply bg-fill;
+    @apply cursor-pointer;
+    @apply font-medium;
+    @apply h-4;
+    @apply rounded-lg;
+    @apply text-body;
+    @apply text-xs;
+    @apply transition-none;
+    @apply w-6;
+}
+
+.littlefoot-footnote__button:hover {
+    @apply bg-border;
+}
+
+.littlefoot-footnote {
+    @apply bg-background;
+    @apply border-border;
+    @apply duration-200;
+    @apply rounded;
+    @apply shadow;
+    @apply transition-all;
+}
+.littlefoot-footnote.is-active {
+    @apply opacity-100;
+}
+
+.littlefoot-footnote__wrapper {
+    @apply bg-background;
+    @apply rounded;
+}
+
+.littlefoot-footnote__content {
+    @apply bg-background;
+    @apply leading-normal;
+    @apply px-4;
+    @apply rounded;
+    @apply text-heading;
+    @apply text-sm;
+}
+@media only screen and (max-width: 640px) {
+    .littlefoot-footnote__content {
+        @apply text-base;
+    }
+}
+
+.littlefoot-footnote__tooltip {
+    @apply hidden;
+}
+
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before {
+    background-image: linear-gradient(
+        to bottom,
+        var(--colors-background) 50%,
+        rgba(250, 250, 250, 0) 100%
+    );
+}
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
+    background-image: linear-gradient(
+        to top,
+        var(--colors-background) 50%,
+        rgba(250, 250, 250, 0) 100%
+    );
+}
+@media only screen and (max-width: 640px) {
+    .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before,
+    .littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
+        @apply hidden;
+    }
+}
+.littlefoot-footnote.is-scrollable::after {
+    @apply hidden;
+}
+
+@media only screen and (min-width: 640px) {
+    .is-positioned-bottom {
+        top: -0.35em !important;
+    }
+    .is-positioned-top {
+        bottom: -0.35em !important;
+    }
+}
+/* purgecss end ignore */
+
