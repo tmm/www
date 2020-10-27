@@ -9,9 +9,16 @@ type Props = {
 }
 
 const Head: React.FC<Props> = (props) => {
-    const { title, description = config.description } = props
+    const { description = config.description } = props
     const { theme } = useTheme()
+
+    const title = props.title
+        ? `${props.title} - ${config.title}`
+        : config.title
+    const ogUrl = `https://${config.url}`
+    const ogImage = `${ogUrl}/og.png`
     const iconTheme = theme === 'light' ? 'light' : 'dark'
+
     return (
         <NextHead>
             <meta content="en" httpEquiv="Content-Language" />
@@ -21,15 +28,15 @@ const Head: React.FC<Props> = (props) => {
             />
             <meta content={config.author} name="author" />
 
-            <title>{title ? `${title} - ${config.title}` : config.title}</title>
+            <title>{title}</title>
             <meta content={description} name="description" />
 
             <meta content={title} name="og:title" />
             <meta content={description} name="og:description" />
-            <meta content={`https://${config.url}`} name="og:url" />
-            <meta content="/og.png" name="og:image" />
+            <meta content={ogUrl} name="og:url" />
+            <meta content={ogImage} name="og:image" />
 
-            <meta content="/og.png" name="twitter:image" />
+            <meta content={ogImage} name="twitter:image" />
             <meta content="summary_large_image" name="twitter:card" />
             <meta content={`@${config.twitter}`} name="twitter:creator" />
 
