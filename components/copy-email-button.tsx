@@ -38,6 +38,7 @@ const CopyEmailButton: React.FC<Props> = (props) => {
                     absolute
                     bg-background
                     border
+                    border-border
                     duration-200
                     px-2
                     py-2

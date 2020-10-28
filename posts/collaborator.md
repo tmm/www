@@ -26,7 +26,7 @@ Before we build anything, it's important we can empathize with each other.
 
 A little about me: I'm an engineer and occasional designer. I mostly build for the web, although I've made mobile apps in the past. I'm comfortable with frontend, backend, and devops. Currently, I work on [Patreon](https://patreon.com) remotely from NYC. A few projects I'm proud of are [Mute.vc](https://mute.vc), [Notational](https://notational.co), and [this blog](https://meagher.co).
 
-If working together sounds interesting, or you have a friend that might be interested, send me an email (tom@meagher.co) or [Twitter DM](https://twitter.com/awkweb) so we can start chatting. You can simply say hi and that you read this post.
+If working together sounds interesting, or you have a friend that might be interested, send me an email ([tom@meagher.co](mailto:tom@meagher.co)) or [Twitter DM](https://twitter.com/awkweb) so we can start chatting. You can simply say hi and that you read this post.
 
 ---
 

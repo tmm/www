@@ -84,6 +84,7 @@ const Subscribe: React.FC<Props> = () => {
                     className="
                         bg-transparent
                         border-b
+                        border-border
                         outline-none
                         placeholder-muted
                         pr-2
@@ -98,6 +99,7 @@ const Subscribe: React.FC<Props> = () => {
                 <button
                     className="
                         border-b
+                        border-border
                         font-medium
                         text-body
                         text-sm
