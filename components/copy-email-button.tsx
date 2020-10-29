@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 import { config } from '@/data'
 
-interface Props {
+type Props = {
     value?: string
 }
 

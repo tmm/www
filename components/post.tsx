@@ -23,7 +23,7 @@ const footnotes = async () => {
     })
 }
 
-interface Props {
+type Props = {
     title: string
     date: string
     html: string

@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes'
 
 import Link from './link'
 
-interface Props {}
+type Props = {}
 
 const Footer: React.FC<Props> = () => {
     const { theme, themes, setTheme } = useTheme()

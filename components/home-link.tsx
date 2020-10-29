@@ -2,7 +2,7 @@ import { memo } from 'react'
 
 import Link from './link'
 
-interface Props {
+type Props = {
     name: string
     href?: string
     value?: string

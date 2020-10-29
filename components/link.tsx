@@ -2,7 +2,7 @@
 import { memo } from 'react'
 import NextLink from 'next/link'
 
-interface Props {
+type Props = {
     external?: boolean
     href: string
     as?: string
