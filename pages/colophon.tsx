@@ -42,8 +42,11 @@ const Page: NextPage<Props> = () => {
                     <Link external href="https://www.dynadot.com">
                         Dynadot
                     </Link>
-                    . Privacy respected using{' '}
-                    <Link external href="https://simpleanalytics.com">
+                    . Privacy-friendly analytics collected with{' '}
+                    <Link
+                        external
+                        href="https://referral.simpleanalytics.com/tmm"
+                    >
                         Simple Analytics
                     </Link>
                     . Licensed under the{' '}

@@ -1,4 +1,4 @@
-import { useCopyToClipboard } from 'react-use'
+import { useCopyToClipboard, useMount } from 'react-use'
 
 import { useEffect, useState } from 'react'
 
@@ -10,12 +10,15 @@ type Props = {
 
 const CopyEmailButton: React.FC<Props> = (props) => {
     const value = props.value ?? config.email
+    const [mounted, setMounted] = useState(false)
     const [copied, setCopied] = useState(false)
     const [state, copyToClipboard] = useCopyToClipboard()
 
     const copyEmail = () => {
         copyToClipboard(value)
     }
+
+    useMount(() => setMounted(true))
 
     useEffect(() => {
         if (state.value) {
@@ -33,35 +36,37 @@ const CopyEmailButton: React.FC<Props> = (props) => {
             >
                 {value}
             </button>
-            <span
-                className={`
-                    absolute
-                    bg-background
-                    border
-                    border-border
-                    duration-200
-                    px-2
-                    py-2
-                    rounded-sm
-                    select-none
-                    shadow
-                    text-heading
-                    text-sm
-                    transform
-                    transition-all
-                    -translate-x-1/2
-                    whitespace-no-wrap
-                    z-10
-                    ${
-                        copied
-                            ? 'opacity-100 translate-y-0 visible'
-                            : 'opacity-0 translate-y-2 invisible'
-                    }
-                    copied-popover
-                `}
-            >
-                Copied to clipboard!
-            </span>
+            {mounted && (
+                <span
+                    className={`
+                        absolute
+                        bg-background
+                        border
+                        border-border
+                        duration-200
+                        px-2
+                        py-2
+                        rounded-sm
+                        select-none
+                        shadow
+                        text-heading
+                        text-sm
+                        transform
+                        transition-all
+                        -translate-x-1/2
+                        whitespace-no-wrap
+                        z-10
+                        ${
+                            copied
+                                ? 'opacity-100 translate-y-0 visible'
+                                : 'opacity-0 translate-y-2 invisible'
+                        }
+                        copied-popover
+                        `}
+                >
+                    Copied to clipboard!
+                </span>
+            )}
         </span>
     )
 }
