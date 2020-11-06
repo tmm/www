@@ -1,8 +1,7 @@
 import { useCopyToClipboard, useMount } from 'react-use'
-
 import { useEffect, useState } from 'react'
 
-import { config } from '@/data'
+import config from '@/lib/config'
 
 type Props = {
     value?: string
@@ -18,7 +17,7 @@ const CopyEmailButton: React.FC<Props> = (props) => {
         copyToClipboard(value)
     }
 
-    useMount(() => setMounted(true))
+    useMount(() => setTimeout(() => setMounted(true), 0))
 
     useEffect(() => {
         if (state.value) {
@@ -62,7 +61,7 @@ const CopyEmailButton: React.FC<Props> = (props) => {
                                 : 'opacity-0 translate-y-2 invisible'
                         }
                         copied-popover
-                        `}
+                    `}
                 >
                     Copied to clipboard!
                 </span>

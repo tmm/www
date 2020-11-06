@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-import { config } from '@/data'
+import config from '@/lib/config'
 
 type Props = {
     title?: string

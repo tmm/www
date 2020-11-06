@@ -6,7 +6,7 @@ import {
     NextScript,
 } from 'next/document'
 
-import { config } from '@/data'
+import config from '@/lib/config'
 
 class Document extends NextDocument {
     render() {

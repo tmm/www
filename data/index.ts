@@ -1,5 +1,0 @@
-export { default as config } from '@/data/config.json'
-export { default as events } from '@/data/timeline.json'
-export { default as followings } from '@/data/followings.json'
-export { default as presences } from '@/data/presences.json'
-export { default as products } from '@/data/products.json'

@@ -2,7 +2,7 @@ import { sub } from 'date-fns'
 
 import RSS from 'rss'
 
-import { config } from '@/data'
+import config from '@/lib/config'
 
 import fs from 'fs'
 import { join } from 'path'

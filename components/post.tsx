@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useMount } from 'react-use'
 
 import Subscribe from './subscribe'
@@ -30,16 +31,21 @@ type Props = {
 }
 
 const Post: React.FC<Props> = (props) => {
+    const { date } = props
+
     useMount(() => footnotes())
 
     const header = `
         <header class="flex flex-col justify-between mb-4 md:flex-row">
             <h1 class="mb-0">${props.title}</h1>
-            <time class="text-muted">${props.date}</time>
+            <time class="text-muted">${date}</time>
         </header>
     `
     return (
         <>
+            <Head>
+                <meta content={props.date} name="date" />
+            </Head>
             <article
                 dangerouslySetInnerHTML={{
                     __html: `${header}${props.html}`,

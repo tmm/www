@@ -1,10 +1,11 @@
 import { GetStaticProps, NextPage } from 'next'
 import { format } from 'date-fns'
+import loadJsonFile from 'load-json-file'
 
 import { CopyEmailButton, HomeLink, Layout, Link } from '@/components'
 import rss from '@/lib/rss'
+import config from '@/lib/config'
 import _posts from '@/lib/posts'
-import { config, events, followings, presences, products } from '@/data'
 
 type Props = {
     posts: Post[]
@@ -99,7 +100,7 @@ const Page: NextPage<Props> = (props) => {
                                 <Link external href={x.href}>
                                     {x.name}
                                 </Link>
-                                {i !== followings.length - 1 && ', '}
+                                {i !== props.followings.length - 1 && ', '}
                             </span>
                         ))}
                     </p>
@@ -111,7 +112,7 @@ const Page: NextPage<Props> = (props) => {
                                 <Link external href={x.href}>
                                     {x.name}
                                 </Link>
-                                {i !== products.length - 1 && ', '}
+                                {i !== props.products.length - 1 && ', '}
                             </span>
                         ))}
                     </p>
@@ -122,6 +123,10 @@ const Page: NextPage<Props> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+    const presences = await loadJsonFile('./data/presences.json')
+    const events = await loadJsonFile('./data/timeline.json')
+    const followings = await loadJsonFile('./data/followings.json')
+    const products = await loadJsonFile('./data/products.json')
     const posts = _posts.list()
     await rss.generate(posts)
     return {
