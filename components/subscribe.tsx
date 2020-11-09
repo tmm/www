@@ -10,7 +10,7 @@ type Props = {}
 
 const Subscribe: React.FC<Props> = () => {
     const emailRef = useRef<HTMLInputElement>(null)
-    const { pathname } = useRouter()
+    const { asPath } = useRouter()
     const [email, setEmail] = useState('')
     const [isError, setIsError] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
@@ -35,12 +35,12 @@ const Subscribe: React.FC<Props> = () => {
             setIsError(false)
             setIsLoading(true)
 
-            const endpoint = 'https://api.buttondown.email/v1/subscribers'
+            const endpoint = '/api/subscribers'
             const headers = {
                 'Content-Type': 'application/json',
-                Authorization: `Token ${process.env.NEXT_PUBLIC_BUTTONDOWN_API_KEY}`,
             }
-            const body = { email, referrer_url: pathname }
+            console.log(asPath)
+            const body = { email, referrer_url: asPath }
             const response = await fetch(endpoint, {
                 method: 'POST',
                 headers,
@@ -59,7 +59,7 @@ const Subscribe: React.FC<Props> = () => {
                 setEmail('')
             } else {
                 const data = await response.json()
-                const message = data?.[0] ?? 'Something went wrong'
+                const message = data?.error ?? 'Something went wrong'
                 setIsError(true)
                 setMessage(message)
             }
