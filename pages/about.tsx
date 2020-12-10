@@ -2,10 +2,8 @@ import { NextPage } from 'next'
 
 import { CopyEmailButton, Layout, Link } from '@/components'
 
-type Props = {}
-
-const Page: NextPage<Props> = () => {
-    const title = 'Colophon'
+const Page: NextPage = () => {
+    const title = 'About'
     return (
         <Layout description="How the sausage is made" title={title}>
             <article>

@@ -1,61 +1,38 @@
-import { useTheme } from 'next-themes'
+import { config } from '@/lib/config'
 
-import Link from './link'
+import { Link } from './link'
 
-type Props = {}
-
-const Footer: React.FC<Props> = () => {
-    const { theme, themes, setTheme } = useTheme()
-
-    function changeTheme() {
-        const index = themes.findIndex((x) => x === theme)
-        const nextTheme =
-            index === themes.length - 1 ? themes[0] : themes[index + 1]
-        setTheme(nextTheme)
-    }
-
+export const Footer: React.FC = () => {
     return (
-        <footer
-            className="
-                duration-200
-                flex
-                justify-between
-                mt-5
-                text-muted
-                text-sm
-                transition-opacity
-            "
-        >
-            <section>
-                <Link className="mr-3" href="/">
+        <footer className="flex border-t mt-20 pt-8">
+            <section className="flex md:flex-row flex-col font-medium text-muted text-sm space-y-2 md:space-y-0 md:space-x-3">
+                <Link className="no-link" href="/">
                     Home
                 </Link>
-                <Link className="mr-3" href="/colophon">
-                    Colophon
+                <Link className="no-link" href="/archive">
+                    Archive
                 </Link>
-                <Link external href="/rss.xml">
+                <Link className="no-link" href="/about">
+                    About
+                </Link>
+                <Link className="no-link" external href="/rss.xml">
                     RSS
                 </Link>
-            </section>
-
-            <section>
-                <div>
-                    Theme:{' '}
-                    <button
-                        className="
-                            capitalize
-                            leading-tight
-                            hover:text-accent
-                            underlined
-                        "
-                        onClick={changeTheme}
-                    >
-                        {theme}
-                    </button>
-                </div>
+                <Link
+                    className="no-link"
+                    external
+                    href={`mailto:${config.email}`}
+                >
+                    Email
+                </Link>
+                <Link
+                    className="no-link"
+                    external
+                    href={`https://twitter.com/${config.twitter}`}
+                >
+                    Twitter
+                </Link>
             </section>
         </footer>
     )
 }
-
-export default Footer

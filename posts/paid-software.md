@@ -4,6 +4,7 @@ date: 2020-01-19
 slug: paid-software
 published: true
 description: Approaches for building products you can charge for.
+type: post
 ---
 
 Something I've had top of mind for a while is the idea of building paid software. Not in a business-school-make-money kind of way though.

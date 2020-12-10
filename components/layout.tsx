@@ -1,20 +1,28 @@
 import Head from './head'
-import Footer from './footer'
+import { Footer } from './footer'
+import { Nav } from './nav'
 
 type Props = {
-    title?: string
-    description?: string
     children: React.ReactNode
+    description?: string
+    hideFooter?: boolean
+    hideNav?: boolean
+    title?: string
 }
 
-const Layout: React.FC<Props> = (props) => {
+export const Layout: React.FC<Props> = ({
+    children,
+    description,
+    hideFooter = false,
+    hideNav = false,
+    title,
+}) => {
     return (
         <>
-            <Head description={props.description} title={props.title} />
-            <main className="pt-20">{props.children}</main>
-            <Footer />
+            <Head description={description} title={title} />
+            {!hideNav && <Nav />}
+            <main className="pt-12">{children}</main>
+            {!hideFooter && <Footer />}
         </>
     )
 }
-
-export default Layout

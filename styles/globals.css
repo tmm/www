@@ -1,0 +1,193 @@
+@import './fonts.css';
+@import './footnotes.css';
+
+@layer base {
+    :root {
+        --color-accent: hsl(146, 100%, 55%);
+        --color-background: hsl(210, 5%, 8%);
+        --color-border: hsl(210, 3%, 30%);
+        --color-heading: hsl(210, 25%, 95%);
+        --color-body: hsl(210, 3%, 70%);
+        --color-fill: hsl(210, 7%, 13%);
+        --color-muted: hsl(210, 3%, 55%);
+        --color-shadow: rgba(255, 255, 255, 0.03);
+
+        --font-sans: Sans, -apple-system, 'BlinkMacSystemFont', sans-serif;
+        --font-mono: Mono, 'SFMono-Regular', Consolas, monospace;
+    }
+
+    [data-theme='light'] {
+        --color-accent: hsl(225, 80%, 57%);
+        --color-background: hsl(104, 100%, 100%);
+        --color-border: hsl(204, 0%, 80%);
+        --color-heading: hsl(0, 0%, 0%);
+        --color-body: hsl(109, 0%, 30%);
+        --color-fill: hsl(255, 0%, 90%);
+        --color-muted: hsl(109, 0%, 45%);
+        --color-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    ::selection {
+        @apply bg-body;
+        @apply text-background;
+        text-shadow: none;
+    }
+
+    html {
+        @apply font-sans;
+        @apply antialiased;
+        font-size: 16px;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        @apply bg-background;
+        @apply mb-20;
+        @apply mt-0;
+        @apply mx-auto;
+        @apply px-4;
+        @apply text-body;
+        max-width: 38rem;
+    }
+
+    p {
+        @apply mb-4;
+        @apply mt-0;
+    }
+
+    a {
+        @apply link;
+    }
+
+    a:hover {
+        @apply text-accent;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-medium;
+        @apply text-heading;
+        @apply leading-relaxed;
+    }
+
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        @apply no-link;
+    }
+
+    h1 a:hover,
+    h2 a:hover,
+    h3 a:hover,
+    h4 a:hover,
+    h5 a:hover,
+    h6 a:hover {
+        color: inherit;
+    }
+
+    h1 a::after,
+    h2 a::after,
+    h3 a::after,
+    h4 a::after,
+    h5 a::after,
+    h6 a::after {
+        @apply inline-block;
+        @apply text-muted;
+        @apply opacity-0;
+        @apply transition-opacity;
+        @apply transition-transform;
+        @apply transform;
+        @apply translate-x-0;
+        content: '#';
+    }
+
+    h1 a:hover::after,
+    h2 a:hover::after,
+    h3 a:hover::after,
+    h4 a:hover::after,
+    h5 a:hover::after,
+    h6 a:hover::after {
+        @apply opacity-100;
+        @apply translate-x-2;
+    }
+
+    h1 {
+        @apply mb-4;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply mb-2;
+        @apply mt-8;
+    }
+
+    hr {
+        @apply border-border;
+        @apply border-t;
+        @apply mb-5;
+        @apply mt-8;
+    }
+
+    ul,
+    ol {
+        @apply my-5;
+        @apply pl-6;
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    ul {
+        @apply list-square;
+    }
+
+    blockquote {
+        @apply my-5;
+        @apply pl-6;
+        @apply text-muted;
+    }
+}
+
+@layer components {
+    .card:last-child .card-divider {
+        @apply invisible;
+    }
+
+    .card-content *:last-child {
+        @apply mb-0;
+    }
+}
+
+@layer utilities {
+    .copied-popover {
+        bottom: 1.5rem;
+        left: 50%;
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+    .link {
+        @apply bg-left-bottom;
+        @apply bg-no-repeat;
+        background-image: linear-gradient(var(--color-border), var(--color-border));
+        background-size: 100% 1px;
+        color: inherit;
+        text-shadow: 0.1em 0 var(--color-background), -0.1em 0 var(--color-background);
+    }
+
+    .no-link {
+        background: none;
+        text-shadow: none;
+    }
+}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useMount } from 'react-use'
 
-import Subscribe from './subscribe'
+import { Subscribe } from './subscribe'
 
 const footnotes = async () => {
     const littlefoot = (await import('littlefoot')).default
@@ -27,10 +27,10 @@ const footnotes = async () => {
 type Props = {
     title: string
     date: string
-    html: string
+    body: string
 }
 
-const Post: React.FC<Props> = (props) => {
+export const Post: React.FC<Props> = (props) => {
     const { date } = props
 
     useMount(() => footnotes())
@@ -48,12 +48,10 @@ const Post: React.FC<Props> = (props) => {
             </Head>
             <article
                 dangerouslySetInnerHTML={{
-                    __html: `${header}${props.html}`,
+                    __html: `${header}${props.body}`,
                 }}
             />
             <Subscribe />
         </>
     )
 }
-
-export default Post

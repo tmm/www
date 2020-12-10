@@ -1,7 +1,7 @@
 import NextHead from 'next/head'
 import { useTheme } from 'next-themes'
 
-import config from '@/lib/config'
+import { config } from '@/lib/config'
 
 type Props = {
     title?: string
@@ -21,25 +21,29 @@ const Head: React.FC<Props> = (props) => {
 
     return (
         <NextHead>
+            {/* General */}
             <meta content="en" httpEquiv="Content-Language" />
             <meta
                 content="width=device-width, initial-scale=1.0"
                 name="viewport"
             />
-            <meta content={config.author} name="author" />
 
             <title>{title}</title>
             <meta content={description} name="description" />
+            <meta content={config.author} name="author" />
 
+            {/* Open Graph */}
             <meta content={title} name="og:title" />
             <meta content={description} name="og:description" />
             <meta content={ogUrl} name="og:url" />
             <meta content={ogImage} name="og:image" />
 
+            {/* Twitter */}
             <meta content={ogImage} name="twitter:image" />
             <meta content="summary_large_image" name="twitter:card" />
             <meta content={`@${config.twitter}`} name="twitter:creator" />
 
+            {/* RSS */}
             <link
                 href="/feed.xml"
                 rel="alternate"
@@ -47,6 +51,7 @@ const Head: React.FC<Props> = (props) => {
                 type="application/rss+xml"
             />
 
+            {/* Favicons */}
             <link
                 href={`/favicons/${iconTheme}.png?v=1.0`}
                 key="dynamic-favicon-alternate"

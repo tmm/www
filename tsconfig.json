@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "allowJs": true,
-        "alwaysStrict": true,
+        "allowSyntheticDefaultImports": true,
         "baseUrl": "./",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
@@ -26,10 +26,12 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
-        "target": "esnext"
+        "target": "es5"
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        ".next",
+        "out"
     ],
     "include": [
         "next-env.d.ts",

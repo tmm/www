@@ -1,14 +1,12 @@
 import { sub } from 'date-fns'
-
 import RSS from 'rss'
 
-import config from '@/lib/config'
+import { config } from '@/lib/config'
 
 import fs from 'fs'
 import { join } from 'path'
-import markdown from './markdown'
 
-async function generate(posts: Post[]) {
+export async function generateFeed(posts: Post[]) {
     const feed = new RSS({
         title: config.title,
         description: config.description,
@@ -18,15 +16,12 @@ async function generate(posts: Post[]) {
         language: 'en',
     })
 
-    const promises = posts.map((x) => markdown.toHTML(x.body))
-    const html = await Promise.all(promises)
-
-    posts.forEach((x, i) => {
+    posts.forEach((x) => {
         const url = `https://${config.url}/${x.frontmatter.slug}`
         const date = sub(new Date(x.frontmatter.date), { days: 1 })
         feed.item({
             title: x.frontmatter.title,
-            description: html[i],
+            description: x.body,
             date,
             author: config.author,
             url,
@@ -37,8 +32,4 @@ async function generate(posts: Post[]) {
     const path = join(process.cwd(), 'public', 'rss.xml')
     const rss = feed.xml({ indent: true })
     fs.writeFileSync(path, rss)
-}
-
-export default {
-    generate,
 }

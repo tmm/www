@@ -4,15 +4,15 @@ module.exports = {
         extend: {
             borderColor: (theme) => ({
                 ...theme('colors'),
-                default: theme('color.border', 'currentColor'),
+                DEFAULT: theme('colors.border', 'currentColor'),
             }),
             colors: {
                 accent: 'var(--color-accent)',
                 background: 'var(--color-background)',
-                border: 'var(--color-border)',
-                heading: 'var(--color-heading)',
                 body: 'var(--color-body)',
+                border: 'var(--color-border)',
                 fill: 'var(--color-fill)',
+                heading: 'var(--color-heading)',
                 muted: 'var(--color-muted)',
                 shadow: 'var(--color-shadow)',
                 transparent: 'transparent',
@@ -25,7 +25,7 @@ module.exports = {
                 square: 'square',
             },
             maxWidth: {
-                item: '5rem',
+                8: '2rem',
             },
         },
     },
