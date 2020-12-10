@@ -9,10 +9,10 @@ module.exports = {
             colors: {
                 accent: 'var(--color-accent)',
                 background: 'var(--color-background)',
-                border: 'var(--color-border)',
-                heading: 'var(--color-heading)',
                 body: 'var(--color-body)',
+                border: 'var(--color-border)',
                 fill: 'var(--color-fill)',
+                heading: 'var(--color-heading)',
                 muted: 'var(--color-muted)',
                 shadow: 'var(--color-shadow)',
                 transparent: 'transparent',

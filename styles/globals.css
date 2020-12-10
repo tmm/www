@@ -1,9 +1,9 @@
-/* purgecss start ignore */
 @import './fonts.css';
 @import './footnotes.css';
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 :root {
     --color-accent: hsl(146, 100%, 55%);
@@ -134,6 +134,3 @@ blockquote {
     @apply text-muted;
 }
 
-/* purgecss end ignore */
-
-@tailwind utilities;
