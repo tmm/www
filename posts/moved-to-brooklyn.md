@@ -7,4 +7,4 @@ description: ''
 type: home
 ---
 
-After spending five and a half months at home nearby Boston, MA, I moved out of my Union Square, Manhattan apartment and to Fort Greene, Brooklyn.
+After spending five and a half months in my hometown, I moved out of my Manhattan apartment and to Fort Greene, Brooklyn.
