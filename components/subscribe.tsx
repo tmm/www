@@ -1,13 +1,10 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useRouter } from 'next/router'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
 
 export const Subscribe: React.FC = () => {
-    const emailRef = useRef<HTMLInputElement>(null)
     const { asPath } = useRouter()
     const [email, setEmail] = useState('')
     const [isError, setIsError] = useState(false)
@@ -66,38 +63,46 @@ export const Subscribe: React.FC = () => {
         }
     }
 
-    const handleFocus = () => emailRef.current?.focus()
-
     return (
-        <form className="mt-20" onClick={handleFocus} onSubmit={handleSubmit}>
-            <div className="mb-1 text-muted">
-                Get a email when I publish new posts
-            </div>
-
-            <div className="flex">
-                <label className="hidden" htmlFor="email">
+        <form className="flex flex-col items-center" onSubmit={handleSubmit}>
+            <div
+                className="
+                    bg-border
+                    flex
+                    focus-within:outline-none
+                    focus-within:ring
+                    focus-within:border-blue-300
+                    h-9
+                    justify-between
+                    md:max-w-subscribe
+                    mx-auto
+                    px-3 
+                    rounded-lg
+                    w-full
+                "
+            >
+                <label className="sr-only" htmlFor="email">
                     Email
                 </label>
                 <input
                     className="
                         bg-transparent
-                        border-b
-                        border-border
+                        flex-1
                         outline-none
-                        placeholder-muted
                         pr-2
-                        focus:border-accent
+                        placeholder-italic
+                        placeholder-muted
+                        placeholder-opacity-100
+                        text-sm
                     "
                     disabled={isLoading}
                     id="email"
-                    ref={emailRef}
+                    placeholder="Occassional emails from yours truly"
                     value={email}
                     onChange={handleChange}
                 />
                 <button
                     className="
-                        border-b
-                        border-border
                         font-medium
                         text-body
                         text-sm
@@ -105,12 +110,12 @@ export const Subscribe: React.FC = () => {
                     "
                     disabled={isLoading || !isValid}
                 >
-                    {isLoading ? 'Subscribing' : 'Subscribe'}
+                    <span>{isLoading ? 'Subscribing' : 'Subscribe'}</span>
                 </button>
             </div>
 
             {message && (
-                <div className="mt-1 text-muted text-sm">{message}</div>
+                <div className="font-serif mt-1 text-sm">{message}</div>
             )}
         </form>
     )

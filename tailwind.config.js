@@ -6,30 +6,31 @@ module.exports = {
                 ...theme('colors'),
                 DEFAULT: theme('colors.border', 'currentColor'),
             }),
+            borderRadius: {
+                lg: '0.44rem',
+            },
             colors: {
-                accent: 'var(--color-accent)',
                 background: 'var(--color-background)',
                 body: 'var(--color-body)',
                 border: 'var(--color-border)',
-                fill: 'var(--color-fill)',
-                heading: 'var(--color-heading)',
                 muted: 'var(--color-muted)',
-                shadow: 'var(--color-shadow)',
                 transparent: 'transparent',
             },
             fontFamily: {
-                sans: 'var(--font-sans)',
                 mono: 'var(--font-mono)',
+                sans: 'var(--font-sans)',
+                serif: 'var(--font-serif)',
             },
             listStyleType: {
                 square: 'square',
             },
             maxWidth: {
-                8: '2rem',
+                container: '35.5rem',
+                subscribe: '22.25rem',
             },
         },
     },
     variants: {
-        opacity: ({ after }) => after(['focus-within']),
+        outline: ['focus-within'],
     },
 }

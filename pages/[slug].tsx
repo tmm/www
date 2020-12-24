@@ -1,8 +1,10 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { format } from 'date-fns'
+import { useMount } from 'react-use'
 
 import { getPosts } from '@/lib/posts'
 import { Layout, Post } from '@/components'
+import { footnotes } from '@/lib/littlefoot'
 
 interface Props {
     body: string
@@ -16,11 +18,16 @@ interface Props {
 }
 
 const Page: NextPage<Props> = (props) => {
+    useMount(() => footnotes())
     return (
-        <Layout description={props.description} title={props.title}>
+        <Layout
+            className="max-w-container mx-auto pt-36 px-4 space-y-36"
+            description={props.description}
+            title={props.title}
+        >
             <Post
                 {...props}
-                date={format(new Date(props.date), 'MMM dd yyyy')}
+                date={format(new Date(props.date), 'EEE MMM dd yyyy')}
             />
         </Layout>
     )

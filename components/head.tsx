@@ -1,5 +1,4 @@
 import NextHead from 'next/head'
-import { useTheme } from 'next-themes'
 
 import { config } from '@/lib/config'
 
@@ -10,14 +9,12 @@ type Props = {
 
 const Head: React.FC<Props> = (props) => {
     const { description = config.description } = props
-    const { theme } = useTheme()
 
     const title = props.title
         ? `${props.title} - ${config.title}`
         : config.title
     const ogUrl = `https://${config.url}`
     const ogImage = `${ogUrl}/og.png`
-    const iconTheme = theme === 'light' ? 'light' : 'dark'
 
     return (
         <NextHead>
@@ -53,13 +50,13 @@ const Head: React.FC<Props> = (props) => {
 
             {/* Favicons */}
             <link
-                href={`/favicons/${iconTheme}.png?v=1.0`}
+                href={`/favicons/tom.png?v=1.0`}
                 key="dynamic-favicon-alternate"
                 rel="alternate icon"
                 type="image/png"
             />
             <link
-                href={`/favicons/${iconTheme}.svg?v=1.0`}
+                href={`/favicons/tom.svg?v=1.0`}
                 key="dynamic-favicon"
                 rel="icon"
                 type="image/svg+xml"

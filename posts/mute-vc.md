@@ -1,5 +1,5 @@
 ---
-title: Mute.vc Launch
+title: Launching Mute.vc
 date: 2020-01-15
 slug: mute-vc
 published: true

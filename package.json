@@ -14,13 +14,10 @@
     },
     "dependencies": {
         "@silvenon/remark-smartypants": "^1.0.0",
-        "clsx": "^1.1.1",
         "date-fns": "^2.16.1",
         "gray-matter": "4.0.2",
         "littlefoot": "^3.4.1",
-        "load-json-file": "^6.2.0",
         "next": "^10.0.1",
-        "next-themes": "^0.0.10",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-use": "^15.3.4",

@@ -36,10 +36,4 @@ export const Link: React.FC<Props> = ({
             {passHref ? children : <a className={className}>{children}</a>}
         </NextLink>
     )
-
-    return (
-        <NextLink as={as} href={href} passHref={passHref}>
-            {passHref ? children : <a className={className}>{children}</a>}
-        </NextLink>
-    )
 }
