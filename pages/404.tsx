@@ -5,11 +5,15 @@ import { Layout, Link } from '@/components'
 const Page: NextPage = () => {
     const title = 'Page Not Found'
     return (
-        <Layout title={title}>
+        <Layout className="max-w-container mx-auto pt-36 px-4" title={title}>
             <article>
-                <h1>{title}</h1>
+                <header className="mb-8">
+                    <h1 className="font-normal mb-0 text-base text-center">
+                        {title}
+                    </h1>
+                </header>
                 <p>
-                    <Link href="/">Home</Link>
+                    Back to <Link href="/">home</Link>
                 </p>
             </article>
         </Layout>

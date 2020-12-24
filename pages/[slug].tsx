@@ -18,7 +18,8 @@ interface Props {
 }
 
 const Page: NextPage<Props> = (props) => {
-    useMount(() => footnotes())
+    useMount(() => setTimeout(footnotes, 150))
+
     return (
         <Layout
             className="max-w-container mx-auto pt-36 px-4 space-y-36"

@@ -1,5 +1,6 @@
 export const footnotes = async () => {
     const littlefoot = (await import('littlefoot')).default
+
     const buttonTemplate = `
         <button
             aria-controls="fncontent:<% id %>"
@@ -15,6 +16,7 @@ export const footnotes = async () => {
     `
     littlefoot({
         allowDuplicates: false,
+        numberResetSelector: 'article',
         buttonTemplate,
     })
 }

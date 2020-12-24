@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <footer className="mt-32 pb-40">
             <Subscribe />
 
-            <ul className="flex justify-center list-none mb-4 mt-8 p-0 space-x-2 text-sm">
+            <ul className="flex justify-center list-none mb-4 mt-8 p-0 space-x-2 text-sm sm:text-base">
                 <li>
                     <Link className="no-underline" href="/">
                         Home
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
                 </li>
             </ul>
 
-            <aside className="md:max-w-subscribe mx-auto text-muted text-center text-serif text-sm">
+            <aside className="sm:max-w-subscribe mx-auto text-muted text-center text-serif text-sm">
                 If you’ve made it this far, send an email to{' '}
                 <Link
                     className="no-underline"

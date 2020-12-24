@@ -1,27 +1,49 @@
 import Head from 'next/head'
+import hydrate from 'next-mdx-remote/hydrate'
+
+import { Link, mdx } from '@/components'
 
 type Props = {
-    title: string
-    date: string
     body: string
+    date: string
+    hideHead?: boolean
+    slug: string
+    title: string
 }
 
-export const Post: React.FC<Props> = (props) => {
-    const header = `
-        <header class="mb-8">
-            <h1 class="font-normal text-base text-center">${props.title} — ${props.date}</h1>
-        </header>
-    `
+export const Post: React.FC<Props> = ({
+    body,
+    date,
+    hideHead = false,
+    slug,
+    title,
+}) => {
+    const content = hydrate(body, {
+        components: mdx,
+    })
+
     return (
         <>
-            <Head>
-                <meta content={props.date} name="date" />
-            </Head>
-            <article
-                dangerouslySetInnerHTML={{
-                    __html: `${header}${props.body}`,
-                }}
-            />
+            {hideHead && (
+                <Head>
+                    <meta content={date} name="date" />
+                </Head>
+            )}
+
+            <article id={slug}>
+                <header className="mb-8">
+                    <Link
+                        className="no-underline hover:underline hover:text-body"
+                        href={slug}
+                    >
+                        <h1 className="font-normal mb-0 text-base text-center">
+                            {title}
+                        </h1>
+                    </Link>
+                </header>
+
+                {content}
+            </article>
         </>
     )
 }

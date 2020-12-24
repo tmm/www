@@ -4,7 +4,7 @@ import { add } from 'date-fns'
 import fs from 'fs'
 import { join } from 'path'
 
-import { toHTML } from './markdown'
+import { toMdx } from './to-mdx'
 
 const directory = join(process.cwd(), 'posts')
 
@@ -15,8 +15,8 @@ export async function getPost(file: string): Promise<Post> {
         excerpt: true,
         excerpt_separator: '<!-- end -->',
     })
-    const bodyHtml = await toHTML(body || '')
-    const excerptHtml = await toHTML(excerpt || '')
+    const bodyHtml = await toMdx(body || '')
+    const excerptHtml = await toMdx(excerpt || '')
     return {
         frontmatter: <Frontmatter>data,
         excerpt: excerptHtml,

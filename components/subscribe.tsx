@@ -67,14 +67,14 @@ export const Subscribe: React.FC = () => {
         <form className="flex flex-col items-center" onSubmit={handleSubmit}>
             <div
                 className="
-                    bg-border
+                    bg-fill
                     flex
                     focus-within:outline-none
                     focus-within:ring
                     focus-within:border-blue-300
                     h-9
                     justify-between
-                    md:max-w-subscribe
+                    sm:max-w-subscribe
                     mx-auto
                     px-3 
                     rounded-lg
@@ -97,7 +97,7 @@ export const Subscribe: React.FC = () => {
                     "
                     disabled={isLoading}
                     id="email"
-                    placeholder="Occassional emails from yours truly"
+                    placeholder="Occassional emails from Tom"
                     value={email}
                     onChange={handleChange}
                 />

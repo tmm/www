@@ -13,6 +13,8 @@ module.exports = {
                 background: 'var(--color-background)',
                 body: 'var(--color-body)',
                 border: 'var(--color-border)',
+                fill: 'var(--color-fill)',
+                mark: 'var(--color-mark)',
                 muted: 'var(--color-muted)',
                 transparent: 'transparent',
             },

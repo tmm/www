@@ -2,12 +2,8 @@ import { NextPage } from 'next'
 
 import { Layout } from '@/components'
 
-interface Props {
-    status?: number | null
-}
-
-const Error: NextPage<Props> = () => {
-    const title = 'Something went wrong'
+const Page: NextPage = () => {
+    const title = 'Archive'
     return (
         <Layout className="max-w-container mx-auto pt-36 px-4" title={title}>
             <article>
@@ -16,16 +12,10 @@ const Error: NextPage<Props> = () => {
                         {title}
                     </h1>
                 </header>
-                <p>An error occurred.</p>
+                <p>Posts...</p>
             </article>
         </Layout>
     )
 }
 
-Error.getInitialProps = async (context) => {
-    const { res, err } = context
-    const status = res ? res.statusCode : err ? err.statusCode : null
-    return { status }
-}
-
-export default Error
+export default Page
