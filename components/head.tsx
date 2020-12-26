@@ -11,7 +11,7 @@ const Head: React.FC<Props> = (props) => {
     const { description = config.description } = props
 
     const title = props.title
-        ? `${props.title} - ${config.title}`
+        ? `${props.title} — ${config.title}`
         : config.title
     const ogUrl = `https://${config.url}`
     const ogImage = `${ogUrl}/og.png`

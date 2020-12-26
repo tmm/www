@@ -3,21 +3,37 @@
 
 @layer base {
     :root {
-        --color-background: hsl(104, 100%, 100%);
-        --color-body: hsl(109, 0%, 7%);
-        --color-border: hsl(109, 0%, 70%);
-        --color-fill: hsl(109, 0%, 95%);
-        --color-mark: hsl(43, 70%, 93%);
-        --color-muted: hsl(109, 0%, 35%);
-
         --font-mono: source-code, serif, Menlo, SFMono-Regular, monospace;
         --font-sans: source-sans, -apple-system, BlinkMacSystemFont, sans-serif;
         --font-serif: source-serif, Georgia, Cambria, serif;
+        --font-size: 18px;
+    }
+
+    @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+        :root {
+            --color-background: hsl(208, 6%, 8%);
+            --color-body: hsl(109, 0%, 90%);
+            --color-border: hsl(208, 6%, 30%);
+            --color-fill: hsl(208, 6%, 12%);
+            --color-mark: hsl(43, 50%, 10%);
+            --color-muted: hsl(208, 6%, 65%);
+        }
+    }
+
+    @media (prefers-color-scheme: light), print {
+        :root {
+            --color-background: hsl(208, 100%, 100%);
+            --color-body: hsl(208, 0%, 10%);
+            --color-border: hsl(208, 0%, 70%);
+            --color-fill: hsl(208, 0%, 95%);
+            --color-mark: hsl(43, 70%, 93%);
+            --color-muted: hsl(208, 0%, 35%);
+        }
     }
 
     html {
         @apply antialiased font-sans;
-        font-size: 18px;
+        font-size: var(--font-size);
         text-rendering: optimizeLegibility;
     }
 
@@ -29,7 +45,7 @@
         @apply underline;
         text-decoration-color: var(--color-border);
         text-decoration-thickness: 1px;
-        text-underline-offset: 1.8px;
+        text-underline-offset: 2px;
     }
 
     a:hover {

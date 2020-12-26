@@ -8,25 +8,38 @@ import { toMdx } from './to-mdx'
 
 const directory = join(process.cwd(), 'posts')
 
-export async function getPost(file: string): Promise<Post> {
+export async function getPost(
+    file: string,
+    includeContent = false,
+): Promise<Post> {
     const path = join(directory, file)
-    const content = fs.readFileSync(path, 'utf8')
-    const { data, content: body, excerpt } = matter(content, {
+    const raw = fs.readFileSync(path, 'utf8')
+    const { data, content, excerpt } = matter(raw, {
         excerpt: true,
         excerpt_separator: '<!-- end -->',
     })
-    const bodyHtml = await toMdx(body || '')
-    const excerptHtml = await toMdx(excerpt || '')
+    let bodyMdx = ''
+    let excerptMdx = ''
+    let bodyContent = ''
+    if (includeContent) {
+        bodyMdx = await toMdx(content || '')
+        excerptMdx = await toMdx(excerpt || '')
+        bodyContent = content
+    }
     return {
         frontmatter: <Frontmatter>data,
-        excerpt: excerptHtml,
-        body: bodyHtml,
+        excerpt: excerptMdx,
+        body: bodyMdx,
+        content: bodyContent,
     }
 }
 
-export async function getPosts(includeDrafts = false): Promise<Post[]> {
+export async function getPosts({
+    includeDrafts = false,
+    includeContent = false,
+} = {}): Promise<Post[]> {
     const posts = await Promise.all(
-        fs.readdirSync(directory).map((x) => getPost(x)),
+        fs.readdirSync(directory).map((x) => getPost(x, includeContent)),
     )
     return posts
         .filter((x) => includeDrafts || x.frontmatter.published)

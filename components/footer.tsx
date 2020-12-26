@@ -1,74 +1,53 @@
-import { config } from '@/lib/config'
-
 import { Link } from './link'
 import { Subscribe } from './subscribe'
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="mt-32 pb-40">
+        <footer className="mt-32 pb-40 print:hidden">
             <Subscribe />
 
-            <ul className="flex justify-center list-none mb-4 mt-8 p-0 space-x-2 text-sm sm:text-base">
+            <ul
+                className="
+                    flex 
+                    justify-center 
+                    list-none 
+                    mb-4 
+                    mt-8 
+                    p-0 
+                    space-x-2 
+                    sm:space-x-3 
+                    text-muted
+                    text-sm 
+                    sm:text-base
+                "
+            >
                 <li>
-                    <Link className="no-underline" href="/">
+                    <Link className="no-underline hover:underline" href="/">
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link className="no-underline" href="/archive">
+                    <Link
+                        className="no-underline hover:underline"
+                        href="/archive"
+                    >
                         Archive
                     </Link>
                 </li>
                 <li>
-                    <Link className="no-underline" href="/about">
+                    <Link
+                        className="no-underline hover:underline"
+                        href="/about"
+                    >
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link className="no-underline" href="now">
+                    <Link className="no-underline hover:underline" href="/now">
                         Now
                     </Link>
                 </li>
-                <li>
-                    <Link
-                        className="no-underline"
-                        external
-                        href={`mailto:${config.email}`}
-                    >
-                        Email
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        className="no-underline"
-                        external
-                        href={`https://twitter.com/${config.twitter}`}
-                    >
-                        Twitter
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        className="no-underline"
-                        external
-                        href={`https://github.com/${config.github}`}
-                    >
-                        GitHub
-                    </Link>
-                </li>
             </ul>
-
-            <aside className="sm:max-w-subscribe mx-auto text-muted text-center text-serif text-sm">
-                If you’ve made it this far, send an email to{' '}
-                <Link
-                    className="no-underline"
-                    external
-                    href={`mailto:${config.email}`}
-                >
-                    {config.email}
-                </Link>{' '}
-                with the answer to “What’s your favorite color?”
-            </aside>
         </footer>
     )
 }

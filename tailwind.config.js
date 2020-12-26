@@ -28,11 +28,17 @@ module.exports = {
             },
             maxWidth: {
                 container: '35.5rem',
-                subscribe: '22.25rem',
+                subscribe: '25rem',
+            },
+            screens: {
+                print: { raw: 'print' },
             },
         },
     },
     variants: {
-        outline: ['focus-within'],
+        extend: {
+            outline: ['focus-within'],
+            textColor: ['visited'],
+        },
     },
 }

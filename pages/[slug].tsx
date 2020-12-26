@@ -35,7 +35,7 @@ const Page: NextPage<Props> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const posts = await getPosts()
+    const posts = await getPosts({ includeContent: true })
     const slug = context.params?.slug as string
     const index = posts.findIndex((x) => x.frontmatter.slug === slug)
     const post = posts[index]
@@ -50,7 +50,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const posts = await getPosts()
+    const posts = await getPosts({ includeContent: true })
     return {
         paths: posts.map((p) => `/${p.frontmatter.slug}`),
         fallback: false,

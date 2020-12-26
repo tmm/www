@@ -1,3 +1,4 @@
+import { Clock } from './clock'
 import { Footer } from './footer'
 import Head from './head'
 
@@ -17,6 +18,7 @@ export const Layout: React.FC<Props> = ({
     return (
         <>
             <Head description={description} title={title} />
+            <Clock />
             <main className={className}>
                 {children}
                 <Footer />

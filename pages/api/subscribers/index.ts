@@ -25,10 +25,16 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
             )
 
             if (response.status >= 400) {
-                const text = await response.text()
-                let error = text
-                if (text.includes('already subscribed')) {
-                    error = 'Email already subscribed'
+                const data = await response.json()
+                let error = 'Something went wrong'
+                if (Array.isArray(data)) {
+                    const text = data[0]
+                    error = text.includes('already subscribed')
+                        ? 'Email already subscribed'
+                        : text
+                } else if (typeof data === 'object') {
+                    const text = data?.email?.[0]
+                    error = text ?? error
                 }
                 res.status(400).json({ error })
             } else {

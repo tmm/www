@@ -33,7 +33,7 @@ export const Post: React.FC<Props> = ({
             <article id={slug}>
                 <header className="mb-8">
                     <Link
-                        className="no-underline hover:underline hover:text-body"
+                        className="no-underline hover:underline hover:text-muted"
                         href={slug}
                     >
                         <h1 className="font-normal mb-0 text-base text-center">
@@ -43,6 +43,10 @@ export const Post: React.FC<Props> = ({
                 </header>
 
                 {content}
+
+                <section className="mb-0 text-muted">
+                    <time dateTime={date}>{date}</time>
+                </section>
             </article>
         </>
     )

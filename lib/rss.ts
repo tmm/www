@@ -21,7 +21,7 @@ export async function generateFeed(posts: Post[]) {
         const date = sub(new Date(x.frontmatter.date), { days: 1 })
         feed.item({
             title: x.frontmatter.title,
-            description: x.body,
+            description: x.body ?? '',
             date,
             author: config.author,
             url,

@@ -3,6 +3,10 @@
         @apply font-serif mb-5;
     }
 
+    article p {
+        font-size: 0.95rem;
+    }
+
     h1,
     h2,
     h3,
@@ -83,7 +87,7 @@
     }
 
     mark {
-        @apply bg-mark px-1;
+        @apply bg-mark text-body px-1;
     }
 
     code {
@@ -154,6 +158,7 @@
 .littlefoot-footnote {
     @apply bg-background border-border duration-200 md:rounded shadow transition-all;
 }
+
 .littlefoot-footnote.is-active {
     @apply opacity-100;
 }

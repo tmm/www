@@ -4,7 +4,6 @@ date: 2020-04-12
 slug: collaborator
 published: true
 description: ''
-type: post
 ---
 
 I'm tired of working alone.

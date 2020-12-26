@@ -12,6 +12,7 @@ const Page: NextPage = () => {
                         {title}
                     </h1>
                 </header>
+
                 <p>What now</p>
             </article>
         </Layout>
