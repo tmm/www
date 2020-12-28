@@ -1,4 +1,8 @@
 {
-    "*.{js,mdx,ts,tsx}": ["yarn lint:fix"],
-    "*.{css}": ["yarn lint:styles"]
+    "*.{js,mdx,ts,tsx}": [
+        "yarn lint:fix"
+    ],
+    "*.{css}": [
+        "yarn lint:styles"
+    ]
 }

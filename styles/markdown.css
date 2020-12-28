@@ -122,3 +122,8 @@
         counter-increment: orderedlist;
     }
 }
+
+/* Styles that won't be purged */
+.panel {
+    @apply bg-fill flex justify-center mt-5 mb-8 px-2 py-6;
+}

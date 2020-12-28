@@ -15,6 +15,7 @@ module.exports = {
                 border: 'var(--color-border)',
                 fill: 'var(--color-fill)',
                 mark: 'var(--color-mark)',
+                heading: 'var(--color-heading)',
                 muted: 'var(--color-muted)',
                 transparent: 'transparent',
             },
