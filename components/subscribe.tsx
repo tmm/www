@@ -92,7 +92,7 @@ export const Subscribe: React.FC = () => {
                         pr-3
                         md:pr-4
                         text-sm
-                        text-muted
+                        text-body
                         disabled:pointer-events-none
                     "
                     disabled={isLoading}

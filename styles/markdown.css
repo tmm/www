@@ -70,146 +70,55 @@
     h4,
     h5,
     h6 {
-        @apply mb-2 mt-8;
-    }
-
-    ul,
-    ol {
-        @apply my-5 pl-6;
-    }
-
-    ol {
-        @apply list-decimal;
-    }
-
-    ul {
-        @apply list-square;
-    }
-
-    hr {
-        @apply border-border border-t mb-5 mt-8;
+        @apply mb-3 mt-8;
     }
 
     blockquote {
-        @apply my-5 pl-6 text-muted;
+        @apply my-5 pl-3 text-muted;
     }
 
     mark {
         @apply bg-mark text-body px-1;
     }
 
-    code {
-        @apply bg-fill font-medium inline-block leading-normal px-1 text-sm;
+    kbd {
+        @apply align-middle bg-border font-sans font-medium rounded-sm text-xs;
+        margin: 0 2px;
+        padding: 0 3px;
     }
 
-    sup {
-        @apply align-middle bg-fill cursor-pointer font-medium font-sans h-4 inline-flex items-center justify-center leading-none rounded-xl text-body text-xs top-auto w-6;
-
-        margin: 0 0.1em 0 0.2em;
-        padding: 0 0.5em;
-        top: -0.1em;
+    hr {
+        @apply border-border border-t mb-5 mt-8;
     }
 
-    sup a {
-        @apply no-underline text-center;
+    ul {
+        @apply my-5 pl-1;
     }
 
-    sup:hover {
-        @apply bg-fill text-body;
+    ul li {
+        @apply bg-no-repeat mb-0.5 list-none pl-7;
+        background-position: 0px 0.7rem;
     }
 
-    sup:focus {
-        @apply bg-fill outline-none ring border-blue-300 text-body;
+    @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+        ul li {
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 6%, 30%)'/%3E%3C/svg%3E%0A");
+        }
     }
-}
 
-@import 'littlefoot/dist/littlefoot.css';
-
-.footnotes {
-    @apply font-sans mt-8 text-body;
-    font-size: 0.9rem;
-}
-
-.footnotes hr {
-    @apply mb-4;
-}
-
-.footnotes ol {
-    @apply pl-4;
-}
-
-.footnotes li {
-    @apply mb-3;
-}
-
-.footnote-backref {
-    @apply no-underline;
-    margin-left: 4px;
-}
-
-.littlefoot-footnote__button {
-    @apply bg-fill cursor-pointer font-medium font-sans h-4 rounded-xl text-body text-xs transition-none w-6;
-}
-
-.littlefoot-footnote__button:hover {
-    @apply bg-fill text-body;
-}
-
-.littlefoot-footnote__button:focus {
-    @apply bg-fill outline-none ring border-blue-300 text-body;
-}
-
-.littlefoot-footnote__button.is-active {
-    @apply bg-fill text-body;
-}
-
-.littlefoot-footnote {
-    @apply bg-background border-border duration-200 md:rounded shadow transition-all;
-}
-
-.littlefoot-footnote.is-active {
-    @apply opacity-100;
-}
-
-.littlefoot-footnote__wrapper {
-    @apply bg-background rounded;
-}
-
-.littlefoot-footnote__content {
-    @apply bg-background leading-normal px-4 rounded text-body text-base md:text-sm;
-}
-
-.littlefoot-footnote__tooltip {
-    @apply hidden;
-}
-
-.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before {
-    background-image: linear-gradient(
-        to bottom,
-        var(--colors-background) 50%,
-        rgba(250, 250, 250, 0) 100%
-    );
-}
-.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
-    background-image: linear-gradient(
-        to top,
-        var(--colors-background) 50%,
-        rgba(250, 250, 250, 0) 100%
-    );
-}
-.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before,
-.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
-    @apply md:hidden;
-}
-.littlefoot-footnote.is-scrollable::after {
-    @apply hidden;
-}
-
-@media only screen and (min-width: 640px) {
-    .is-positioned-bottom {
-        top: -0.35em !important;
+    @media (prefers-color-scheme: light), print {
+        ul li {
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 0%, 70%)'/%3E%3C/svg%3E%0A");
+        }
     }
-    .is-positioned-top {
-        bottom: -0.35em !important;
+
+    ol {
+        @apply my-5 pl-0.5;
+    }
+
+    ol li::before {
+        @apply align-middle bg-fill leading-tight px-1.5 proportional-nums mr-3 rounded-full text-muted text-xs;
+        content: counter(list-item); 
+        counter-increment: orderedlist;
     }
 }

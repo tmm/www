@@ -13,11 +13,14 @@ export const remarkPlugins = [
     [require('remark-autolink-headings'), { behavior: 'wrap' }],
 ]
 
+export const rehypePlugins = [require('@mapbox/rehype-prism')]
+
 export async function toMdx(markdown: string): Promise<string> {
     return await renderToString(markdown, {
         components: mdx,
         mdxOptions: {
             remarkPlugins,
+            rehypePlugins,
         },
     })
 }

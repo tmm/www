@@ -10,6 +10,7 @@ type Props = {
     body: string
     date: Date
     hideHead?: boolean
+    published: boolean
     slug: string
     title: string
 }
@@ -18,6 +19,7 @@ export const Post: React.FC<Props> = ({
     body,
     date,
     hideHead = false,
+    published,
     slug,
     title,
 }) => {
@@ -44,10 +46,16 @@ export const Post: React.FC<Props> = ({
                         <h1 className="mb-3">{title}</h1>
                     </Link>
                     <div className="text-muted text-sm">
-                        Published{' '}
-                        <time dateTime={date.toString()}>
-                            {format(date, 'MMMM dd, yyyy')}
-                        </time>
+                        {published ? (
+                            <>
+                                Published{' '}
+                                <time dateTime={date.toString()}>
+                                    {format(date, 'MMMM dd, yyyy')}
+                                </time>
+                            </>
+                        ) : (
+                            'Draft: Please do not share'
+                        )}
                     </div>
                 </header>
 

@@ -19,7 +19,7 @@ const Page: NextPage = () => {
                     </div>
                 </header>
 
-                <ul className="changelog">
+                <ul>
                     <li>
                         Learning more about{' '}
                         <Link

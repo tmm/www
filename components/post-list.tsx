@@ -12,11 +12,11 @@ export const PostList: React.FC<Props> = ({ posts, year, showYear }) => {
     return (
         <section className="mb-8" id={year}>
             {showYear && <h3 className="mb-2 mt-0">{year}</h3>}
-            <ul className="list-none my-0 p-0 space-y-4">
+            <ul className="my-0 p-0 space-y-5">
                 {posts.map((x) => (
-                    <li key={x.frontmatter.slug}>
+                    <li className="bg-none pl-0 mb-0" key={x.frontmatter.slug}>
                         <Link
-                            className="block no-underline py-2"
+                            className="block no-underline"
                             href={x.frontmatter.slug}
                         >
                             <div className="font-medium text-muted text-sm">

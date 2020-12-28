@@ -9,7 +9,7 @@ interface Props {
 const Error: NextPage<Props> = () => {
     const title = 'Something went wrong'
     return (
-        <Layout title={title}>
+        <Layout hideFooter title={title}>
             <article>
                 <header className="mb-8">
                     <h1>{title}</h1>

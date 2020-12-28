@@ -1,0 +1,113 @@
+@layer base {
+    sup {
+        @apply align-middle bg-fill cursor-pointer font-medium font-sans h-4 inline-flex items-center justify-center leading-none rounded-xl text-body text-xs top-auto w-6;
+
+        margin: 0 0.1em 0 0.2em;
+        padding: 0 0.5em;
+        top: -0.1em;
+    }
+
+    sup a {
+        @apply no-underline text-center;
+    }
+
+    sup:hover {
+        @apply bg-fill text-body;
+    }
+
+    sup:focus {
+        @apply bg-fill outline-none ring border-blue-300 text-body;
+    }
+}
+
+/* Littlefoot https://github.com/goblindegook/littlefoot */
+@import 'littlefoot/dist/littlefoot.css';
+
+.footnotes {
+    @apply font-sans mt-8 text-body;
+    font-size: 0.9rem;
+}
+
+.footnotes hr {
+    @apply mb-4;
+}
+
+.footnotes ol {
+    @apply pl-4;
+}
+
+.footnotes li {
+    @apply mb-3;
+}
+
+.footnote-backref {
+    @apply no-underline;
+    margin-left: 4px;
+}
+
+.littlefoot-footnote__button {
+    @apply bg-fill cursor-pointer font-medium font-sans h-4 rounded-xl text-body text-xs transition-none w-6;
+}
+
+.littlefoot-footnote__button:hover {
+    @apply bg-fill text-body;
+}
+
+.littlefoot-footnote__button:focus {
+    @apply bg-fill outline-none ring border-blue-300 text-body;
+}
+
+.littlefoot-footnote__button.is-active {
+    @apply bg-fill text-body;
+}
+
+.littlefoot-footnote {
+    @apply bg-background border-border duration-200 md:rounded shadow transition-all;
+}
+
+.littlefoot-footnote.is-active {
+    @apply opacity-100;
+}
+
+.littlefoot-footnote__wrapper {
+    @apply bg-background rounded;
+}
+
+.littlefoot-footnote__content {
+    @apply bg-background leading-normal px-4 rounded text-body text-base md:text-sm;
+}
+
+.littlefoot-footnote__tooltip {
+    @apply hidden;
+}
+
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before {
+    background-image: linear-gradient(
+        to bottom,
+        var(--colors-background) 50%,
+        rgba(250, 250, 250, 0) 100%
+    );
+}
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
+    background-image: linear-gradient(
+        to top,
+        var(--colors-background) 50%,
+        rgba(250, 250, 250, 0) 100%
+    );
+}
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::before,
+.littlefoot-footnote.is-scrollable .littlefoot-footnote__wrapper::after {
+    @apply md:hidden;
+}
+.littlefoot-footnote.is-scrollable::after {
+    @apply hidden;
+}
+
+@media only screen and (min-width: 640px) {
+    .is-positioned-bottom {
+        top: -0.35em !important;
+    }
+    .is-positioned-top {
+        bottom: -0.35em !important;
+    }
+}
