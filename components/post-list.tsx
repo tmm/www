@@ -12,7 +12,7 @@ export const PostList: React.FC<Props> = ({ posts, year, showYear }) => {
     return (
         <section className="mb-8" id={year}>
             {showYear && <h3 className="mb-2 mt-0">{year}</h3>}
-            <ul className="my-0 p-0 space-y-5">
+            <ul className="my-0 p-0 space-y-6">
                 {posts.map((x) => (
                     <li className="bg-none pl-0 mb-0" key={x.frontmatter.slug}>
                         <Link

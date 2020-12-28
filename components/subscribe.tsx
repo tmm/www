@@ -83,7 +83,7 @@ export const Subscribe: React.FC = () => {
                     disabled={isLoading}
                     id="email"
                     name="email"
-                    placeholder="Occassional emails from Tom"
+                    placeholder="Occasional emails from Tom"
                     ref={register({ required: true })}
                 />
                 <button

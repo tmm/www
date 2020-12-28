@@ -10,7 +10,8 @@ export const Nav: React.FC = () => {
                 font-sans
                 print-hidden
                 left-4
-                space-x-2
+                space-x-3
+                md:space-x-2
                 text-muted
                 text-xs
                 top-2

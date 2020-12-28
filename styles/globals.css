@@ -71,4 +71,10 @@
         @apply italic;
     }
 
+    .grayscale {
+        filter: grayscale(100%);
+    }
+    .grayscale:hover {
+        filter: none;
+    }
 }
