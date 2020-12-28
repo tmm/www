@@ -12,11 +12,9 @@ const Page: NextPage<Props> = ({ postsByYear }) => {
     const title = 'Archive'
     const currentYear = new Date().getFullYear().toString()
     return (
-        <Layout className="max-w-container mx-auto pt-36 px-4" title={title}>
+        <Layout title={title}>
             <header className="mb-8">
-                <h1 className="font-normal mb-0 text-base text-center">
-                    {title}
-                </h1>
+                <h1>{title}</h1>
             </header>
 
             {Object.entries(postsByYear)

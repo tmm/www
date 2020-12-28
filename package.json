@@ -6,28 +6,28 @@
         "build": "next build",
         "commit": "git-cz",
         "dev": "next dev",
-        "start": "next start",
         "lint": "eslint --max-warnings 0 --cache",
         "lint:fix": "yarn lint --fix",
         "lint:styles": "stylelint \"**/*.css\" --fix",
-        "lint:types": "tsc --pretty --noEmit"
+        "lint:types": "tsc --pretty --noEmit",
+        "start": "next start"
     },
     "dependencies": {
         "@silvenon/remark-smartypants": "^1.0.0",
-        "clsx": "^1.1.1",
         "date-fns": "^2.16.1",
         "gray-matter": "4.0.2",
         "littlefoot": "^3.4.1",
         "lodash.groupby": "^4.6.0",
         "next": "^10.0.1",
         "next-mdx-remote": "^2.0.0",
+        "next-themes": "^0.0.10",
+        "prism-react-renderer": "^1.1.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-hook-form": "^6.13.1",
         "react-use": "^15.3.4",
         "remark-external-links": "^8.0.0",
-        "remark-footnotes": "^2.0.0",
-        "rss": "^1.2.2"
+        "remark-footnotes": "^2.0.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^11.0.0",

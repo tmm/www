@@ -16,11 +16,13 @@ export const Clock: React.FC = () => {
         <div
             className="
                 absolute
+                md:fixed
                 font-medium
                 font-sans
                 proportional-nums
+                print-hidden
                 right-4
-                text-border
+                text-muted
                 text-xs
                 top-2
                 tracking-wide

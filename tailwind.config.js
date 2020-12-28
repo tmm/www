@@ -21,14 +21,13 @@ module.exports = {
             fontFamily: {
                 mono: 'var(--font-mono)',
                 sans: 'var(--font-sans)',
-                serif: 'var(--font-serif)',
             },
             listStyleType: {
                 square: 'square',
             },
             maxWidth: {
                 container: '35.5rem',
-                subscribe: '25rem',
+                subscribe: '22rem',
             },
             screens: {
                 print: { raw: 'print' },
@@ -38,7 +37,7 @@ module.exports = {
     variants: {
         extend: {
             outline: ['focus-within'],
-            textColor: ['visited'],
+            padding: ['hover'],
         },
     },
 }

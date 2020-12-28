@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import hydrate from 'next-mdx-remote/hydrate'
+import { format } from 'date-fns'
+import { useMount } from 'react-use'
 
+import { footnotes } from '@/lib/littlefoot'
 import { Link, mdx } from '@/components'
 
 type Props = {
     body: string
-    date: string
+    date: Date
     hideHead?: boolean
     slug: string
     title: string
@@ -18,6 +21,8 @@ export const Post: React.FC<Props> = ({
     slug,
     title,
 }) => {
+    useMount(() => setTimeout(footnotes, 250))
+
     const content = hydrate(body, {
         components: mdx,
     })
@@ -26,7 +31,7 @@ export const Post: React.FC<Props> = ({
         <>
             {hideHead && (
                 <Head>
-                    <meta content={date} name="date" />
+                    <meta content={date.toString()} name="date" />
                 </Head>
             )}
 
@@ -36,17 +41,17 @@ export const Post: React.FC<Props> = ({
                         className="no-underline hover:underline hover:text-muted"
                         href={slug}
                     >
-                        <h1 className="font-normal mb-0 text-base text-center">
-                            {title}
-                        </h1>
+                        <h1 className="mb-3">{title}</h1>
                     </Link>
+                    <div className="text-muted text-sm">
+                        Published{' '}
+                        <time dateTime={date.toString()}>
+                            {format(date, 'MMMM dd, yyyy')}
+                        </time>
+                    </div>
                 </header>
 
                 {content}
-
-                <section className="mb-0 text-muted">
-                    <time dateTime={date}>{date}</time>
-                </section>
             </article>
         </>
     )

@@ -5,32 +5,14 @@ import { config } from '@/lib/config'
 
 const Page: NextPage = () => {
     return (
-        <Layout
-            className="max-w-container mx-auto pt-36 px-4 space-y-36"
-            title="About"
-        >
+        <Layout title="About">
             <article>
                 <header className="mb-8">
-                    <h1 className="font-normal mb-0 text-base text-center">
-                        About Tom
-                    </h1>
+                    <h1>About</h1>
                 </header>
-                <p>Image and some info about Tom</p>
-                <p>
-                    If you’ve made it this far, send an email to{' '}
-                    <Link external href={`mailto:${config.email}`}>
-                        {config.email}
-                    </Link>{' '}
-                    with the answer to “What’s your favorite color?”
-                </p>
-            </article>
 
-            <article>
-                <header className="mb-8">
-                    <h1 className="font-normal mb-0 text-base text-center">
-                        About This Site
-                    </h1>
-                </header>
+                <p>Image and some info about Tom</p>
+
                 <p>
                     Typeset in{' '}
                     <Link
@@ -99,6 +81,14 @@ const Page: NextPage = () => {
                         GitHub
                     </Link>
                     .
+                </p>
+
+                <p>
+                    If you’ve made it this far, send an email to{' '}
+                    <Link external href={`mailto:${config.email}`}>
+                        {config.email}
+                    </Link>{' '}
+                    with the answer to “What’s your favorite color?”
                 </p>
             </article>
         </Layout>

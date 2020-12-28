@@ -1,27 +1,29 @@
 import { Clock } from './clock'
+import { Nav } from './nav'
 import { Footer } from './footer'
-import Head from './head'
+import { Head } from './head'
 
 type Props = {
     children: React.ReactNode
-    className?: string
     description?: string
+    hideFooter?: boolean
     title?: string
 }
 
 export const Layout: React.FC<Props> = ({
     children,
-    className,
     description,
     title,
+    hideFooter = false,
 }) => {
     return (
         <>
             <Head description={description} title={title} />
+            <Nav />
             <Clock />
-            <main className={className}>
+            <main className="max-w-container mx-auto pt-36 px-4">
                 {children}
-                <Footer />
+                {!hideFooter && <Footer />}
             </main>
         </>
     )

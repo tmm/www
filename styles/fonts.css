@@ -19,25 +19,6 @@
          url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff?v=3.028') format('woff');
 }
 
-/* https://github.com/adobe-fonts/source-serif-pro */
-@font-face {
-    font-family: source-serif;
-    font-weight: 100 900;
-    font-display: block;
-    font-style: normal;
-    src: url('/fonts/source-serif/SourceSerifVariable-Roman.ttf.woff2?v=3.001') format('woff2'),
-         url('/fonts/source-serif/SourceSerifVariable-Roman.ttf.woff?v=3.001') format('woff');
-}
-
-@font-face {
-    font-family: source-serif;
-    font-weight: 100 900;
-    font-display: block;
-    font-style: italic;
-    src: url('/fonts/source-serif/SourceSerifVariable-Italic.ttf.woff2?v=3.001') format('woff2'),
-         url('/fonts/source-serif/SourceSerifVariable-Italic.ttf.woff?v=3.001') format('woff');
-}
-
 /* https://github.com/adobe-fonts/source-code-pro */
 @font-face {
     font-family: source-code;

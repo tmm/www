@@ -1,4 +1,5 @@
 import NextHead from 'next/head'
+import { useTheme } from 'next-themes'
 
 import { config } from '@/lib/config'
 
@@ -7,11 +8,15 @@ type Props = {
     description?: string
 }
 
-const Head: React.FC<Props> = (props) => {
-    const { description = config.description } = props
+export const Head: React.FC<Props> = ({
+    description = config.description,
+    ...restProps
+}) => {
+    const { systemTheme } = useTheme()
 
-    const title = props.title
-        ? `${props.title} — ${config.title}`
+    const iconTheme = systemTheme === 'light' ? 'light' : 'dark'
+    const title = restProps.title
+        ? `${restProps.title} — ${config.title}`
         : config.title
     const ogUrl = `https://${config.url}`
     const ogImage = `${ogUrl}/og.png`
@@ -40,23 +45,15 @@ const Head: React.FC<Props> = (props) => {
             <meta content="summary_large_image" name="twitter:card" />
             <meta content={`@${config.twitter}`} name="twitter:creator" />
 
-            {/* RSS */}
-            <link
-                href="/feed.xml"
-                rel="alternate"
-                title={`RSS Feed for ${config.author} (${config.url})`}
-                type="application/rss+xml"
-            />
-
             {/* Favicons */}
             <link
-                href={`/favicons/tom.png?v=1.0`}
+                href={`/favicons/${iconTheme}.png?v=1.0`}
                 key="dynamic-favicon-alternate"
                 rel="alternate icon"
                 type="image/png"
             />
             <link
-                href={`/favicons/tom.svg?v=1.0`}
+                href={`/favicons/${iconTheme}.svg?v=1.0`}
                 key="dynamic-favicon"
                 rel="icon"
                 type="image/svg+xml"
@@ -64,5 +61,3 @@ const Head: React.FC<Props> = (props) => {
         </NextHead>
     )
 }
-
-export default Head

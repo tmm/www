@@ -1,10 +1,6 @@
 @layer base {
     p {
-        @apply font-serif mb-5;
-    }
-
-    article p {
-        font-size: 0.95rem;
+        @apply font-sans mb-5;
     }
 
     h1,
@@ -13,7 +9,7 @@
     h4,
     h5,
     h6 {
-        @apply font-medium;
+        @apply font-bold;
     }
 
     h1 a,
@@ -54,7 +50,19 @@
     }
 
     h1 {
-        @apply mb-4;
+        @apply mb-4 text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    h4 {
+        @apply text-lg;
     }
 
     h2,
@@ -95,7 +103,7 @@
     }
 
     sup {
-        @apply align-middle bg-fill cursor-pointer font-medium font-sans h-4 inline-flex items-center justify-center leading-none rounded-lg text-body text-xs top-auto w-6;
+        @apply align-middle bg-fill cursor-pointer font-medium font-sans h-4 inline-flex items-center justify-center leading-none rounded-xl text-body text-xs top-auto w-6;
 
         margin: 0 0.1em 0 0.2em;
         padding: 0 0.5em;
@@ -140,7 +148,7 @@
 }
 
 .littlefoot-footnote__button {
-    @apply bg-fill cursor-pointer font-medium font-sans h-4 rounded-lg text-body text-xs transition-none w-6;
+    @apply bg-fill cursor-pointer font-medium font-sans h-4 rounded-xl text-body text-xs transition-none w-6;
 }
 
 .littlefoot-footnote__button:hover {

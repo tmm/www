@@ -20,7 +20,6 @@ export const Subscribe: React.FC = () => {
             const headers = {
                 'Content-Type': 'application/json',
             }
-            console.log(asPath)
             const body = { email, referrer_url: asPath }
             const response = await fetch(endpoint, {
                 method: 'POST',
@@ -46,7 +45,7 @@ export const Subscribe: React.FC = () => {
 
     return (
         <form
-            className="flex flex-col items-center"
+            className="flex flex-col items-center md:px-1"
             onSubmit={handleSubmit(onSubmit)}
         >
             <div
@@ -59,7 +58,6 @@ export const Subscribe: React.FC = () => {
                     focus-within:border-blue-300
                     h-10
                     justify-between
-                    sm:max-w-subscribe
                     mx-auto
                     rounded-lg
                     w-full
@@ -74,11 +72,13 @@ export const Subscribe: React.FC = () => {
                         flex-1
                         outline-none
                         pl-3
+                        md:pl-4
                         pr-2
                         placeholder-italic
                         placeholder-muted
                         placeholder-opacity-100
                         text-sm
+                        md:text-base
                     "
                     disabled={isLoading}
                     id="email"
@@ -88,10 +88,11 @@ export const Subscribe: React.FC = () => {
                 />
                 <button
                     className="
-                        font-medium
+                        font-semibold
                         pr-3
-                        text-body
+                        md:pr-4
                         text-sm
+                        text-muted
                         disabled:pointer-events-none
                     "
                     disabled={isLoading}

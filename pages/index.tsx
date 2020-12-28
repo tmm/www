@@ -1,24 +1,16 @@
-import { GetStaticProps, NextPage } from 'next'
-import { format } from 'date-fns'
-import { useMount } from 'react-use'
+import { NextPage } from 'next'
 
-import { Layout, Link, Post } from '@/components'
-import { generateFeed } from '@/lib/rss'
-import { getPosts } from '@/lib/posts'
+import { Layout, Link } from '@/components'
 import { config } from '@/lib/config'
-import { footnotes } from '@/lib/littlefoot'
 
-type Props = {
-    posts: Post[]
-}
-
-const Page: NextPage<Props> = (props) => {
-    useMount(() => setTimeout(footnotes, 150))
-
+const Page: NextPage = () => {
     return (
-        <Layout className="max-w-container mx-auto pt-36 px-4 space-y-36">
-            <header>
-                <p className="font-sans">
+        <Layout>
+            <article>
+                <header className="mb-8">
+                    <h1>Tom Meagher</h1>
+                </header>
+                <p>
                     Welcome — I&rsquo;m Tom, a Brooklyn-based software engineer.
                     Currently, I work at{' '}
                     <Link external href="https://locallaboratory.com">
@@ -31,32 +23,9 @@ const Page: NextPage<Props> = (props) => {
                     </Link>
                     , or see what I&rsquo;m up to <Link href="/now">now</Link>.
                 </p>
-            </header>
-
-            {props.posts.map((x) => (
-                <Post
-                    {...x.frontmatter}
-                    body={x.body ?? ''}
-                    date={format(
-                        new Date(x.frontmatter.date),
-                        'EEE MMM dd yyyy',
-                    )}
-                    hideHead
-                    key={x.frontmatter.slug}
-                />
-            ))}
+            </article>
         </Layout>
     )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-    const posts = await getPosts({ includeContent: true })
-    await generateFeed(posts)
-    return {
-        props: {
-            posts,
-        },
-    }
 }
 
 export default Page
