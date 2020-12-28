@@ -1,59 +1,66 @@
 import Head from 'next/head'
+import hydrate from 'next-mdx-remote/hydrate'
+import { format } from 'date-fns'
 import { useMount } from 'react-use'
 
-import Subscribe from './subscribe'
-
-const footnotes = async () => {
-    const littlefoot = (await import('littlefoot')).default
-    const buttonTemplate = `
-        <button
-            aria-controls="fncontent:<% id %>"
-            aria-expanded="false"
-            aria-label="Footnote <% number %>"
-            class="littlefoot-footnote__button"
-            id="<% reference %>"
-            rel="footnote"
-            title="See Footnote <% number %>"
-        >
-            <% number %>
-        </button>
-    `
-    littlefoot({
-        allowDuplicates: false,
-        buttonTemplate,
-    })
-}
+import { footnotes } from '@/lib/littlefoot'
+import { Link, mdx } from '@/components'
 
 type Props = {
+    body: string
+    date: Date
+    hideHead?: boolean
+    published: boolean
+    slug: string
     title: string
-    date: string
-    html: string
 }
 
-const Post: React.FC<Props> = (props) => {
-    const { date } = props
+export const Post: React.FC<Props> = ({
+    body,
+    date,
+    hideHead = false,
+    published,
+    slug,
+    title,
+}) => {
+    useMount(() => setTimeout(footnotes, 250))
 
-    useMount(() => footnotes())
+    const content = hydrate(body, {
+        components: mdx,
+    })
 
-    const header = `
-        <header class="flex flex-col justify-between mb-4 md:flex-row">
-            <h1 class="mb-0">${props.title}</h1>
-            <time class="text-muted">${date}</time>
-        </header>
-    `
     return (
         <>
-            <Head>
-                <meta content={props.date} name="date" />
-            </Head>
-            <article
-                dangerouslySetInnerHTML={{
-                    __html: `${header}${props.html}`,
-                }}
-            />
-            <Subscribe />
+            {hideHead && (
+                <Head>
+                    <meta content={date.toString()} name="date" />
+                </Head>
+            )}
+
+            <article id={slug}>
+                <header className="mb-8">
+                    <Link
+                        className="no-underline hover:underline hover:text-muted"
+                        href={slug}
+                    >
+                        <h1 className="mb-3">{title}</h1>
+                    </Link>
+                    <div className="text-muted text-sm">
+                        {published ? (
+                            <>
+                                Published{' '}
+                                <time dateTime={date.toString()}>
+                                    {format(date, 'MMMM dd, yyyy')}
+                                </time>
+                            </>
+                        ) : (
+                            'Draft: Please do not share'
+                        )}
+                    </div>
+                </header>
+
+                {content}
+            </article>
         </>
     )
 }
-
-export default Post

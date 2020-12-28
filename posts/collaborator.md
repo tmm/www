@@ -3,7 +3,7 @@ title: Looking For A Collaborator
 date: 2020-04-12
 slug: collaborator
 published: true
-description: ''
+description: Let’s maybe work together.
 ---
 
 I'm tired of working alone.

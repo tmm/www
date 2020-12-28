@@ -18,7 +18,7 @@ This problem isn't unique to Gmail either. Any email service that doesn't let yo
 
 This is a war, not a battle. It will take time. First, I create the custom email. Then, I start propagating it across all the services I use. Finally, I switch to a new provider. The fight to own your email address is worth it.
 
-With my own custom email address, I will be able to send and receive email from <CopyEmailButton /> with near 100% uptime. The email service I'm using might get disrupted, shut down, or suspend me, but now I can take my address with me anywhere.[^2]
+With my own custom email address, I will be able to send and receive email from [tom@meagher.co](mailto:tom@meagher.co) with near 100% uptime. The email service I'm using might get disrupted, shut down, or suspend me, but now I can take my address with me anywhere.[^2]
 
 And there might be [somewhere better](https://hey.com) to take it soon.
 

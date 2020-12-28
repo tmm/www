@@ -4,22 +4,44 @@ import { add } from 'date-fns'
 import fs from 'fs'
 import { join } from 'path'
 
+import { toMdx } from './to-mdx'
+
 const directory = join(process.cwd(), 'posts')
 
-function get(file: string): Post {
+export async function getPost(
+    file: string,
+    includeContent = false,
+): Promise<Post> {
     const path = join(directory, file)
-    const content = fs.readFileSync(path, 'utf8')
-    const { data, content: body } = matter(content)
+    const raw = fs.readFileSync(path, 'utf8')
+    const { data, content, excerpt } = matter(raw, {
+        excerpt: true,
+        excerpt_separator: '<!-- end -->',
+    })
+    let bodyMdx = ''
+    let excerptMdx = ''
+    let bodyContent = ''
+    if (includeContent) {
+        bodyMdx = await toMdx(content || '')
+        excerptMdx = await toMdx(excerpt || '')
+        bodyContent = content
+    }
     return {
         frontmatter: <Frontmatter>data,
-        body,
+        excerpt: excerptMdx,
+        body: bodyMdx,
+        content: bodyContent,
     }
 }
 
-function list(includeDrafts: boolean = false): Post[] {
-    const posts = fs
-        .readdirSync(directory)
-        .map((x) => get(x))
+export async function getPosts({
+    includeDrafts = false,
+    includeContent = false,
+} = {}): Promise<Post[]> {
+    const posts = await Promise.all(
+        fs.readdirSync(directory).map((x) => getPost(x, includeContent)),
+    )
+    return posts
         .filter((x) => includeDrafts || x.frontmatter.published)
         .sort((x, y) => (x.frontmatter.date > y.frontmatter.date ? -1 : 1))
         .map((x) => ({
@@ -29,10 +51,4 @@ function list(includeDrafts: boolean = false): Post[] {
                 date: `${add(<Date>x.frontmatter.date, { days: 1 })}`,
             },
         }))
-    return posts
-}
-
-export default {
-    get,
-    list,
 }

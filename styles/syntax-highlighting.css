@@ -1,0 +1,43 @@
+@layer base {
+    pre {
+        @apply my-5 pl-3;
+    }
+
+    pre code {
+        @apply bg-transparent;
+    }
+
+    pre code span {
+        @apply leading-relaxed;
+    }
+
+    code {
+        @apply font-medium inline-block leading-normal px-1 text-sm;
+        background: var(--highlight);
+    }
+}
+
+.keyword {
+    @apply font-bold;
+    color: var(--keyword);
+}
+
+.token.operator,
+.token.punctuation,
+.token.string,
+.token.number,
+.token.builtin,
+.token.variable {
+    color: var(--token);
+}
+
+.token.comment {
+    color: var(--comment);
+}
+
+.token.class-name,
+.token.function,
+.token.tag,
+.token.attr-name {
+    color: var(--name);
+}

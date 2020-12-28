@@ -3,7 +3,7 @@ title: Incrementally Building A Blog
 date: 2020-01-23
 slug: incremental-blog
 published: true
-description: Focus on writing. Only add new features when you need them. (You don’t need pagination until you write more posts than can fit on a page.)
+description: Focus on writing. Only add new features when you need them.
 ---
 
 It's important to [write on your own website](https://bradfrost.com/blog/post/write-on-your-own-website). It helps with building your personal brand, controlling your content, and [many other things](https://indieweb.org/why). But what's the best way to build a website to write on?

@@ -4,32 +4,41 @@ module.exports = {
         extend: {
             borderColor: (theme) => ({
                 ...theme('colors'),
-                default: theme('color.border', 'currentColor'),
+                DEFAULT: theme('colors.border', 'currentColor'),
             }),
+            borderRadius: {
+                lg: '0.44rem',
+            },
             colors: {
-                accent: 'var(--color-accent)',
                 background: 'var(--color-background)',
                 body: 'var(--color-body)',
                 border: 'var(--color-border)',
                 fill: 'var(--color-fill)',
+                mark: 'var(--color-mark)',
                 heading: 'var(--color-heading)',
                 muted: 'var(--color-muted)',
-                shadow: 'var(--color-shadow)',
                 transparent: 'transparent',
             },
             fontFamily: {
-                sans: 'var(--font-sans)',
                 mono: 'var(--font-mono)',
+                sans: 'var(--font-sans)',
             },
             listStyleType: {
                 square: 'square',
             },
             maxWidth: {
-                item: '5rem',
+                container: '35.5rem',
+                subscribe: '22rem',
+            },
+            screens: {
+                print: { raw: 'print' },
             },
         },
     },
     variants: {
-        opacity: ({ after }) => after(['focus-within']),
+        extend: {
+            outline: ['focus-within'],
+            padding: ['hover'],
+        },
     },
 }

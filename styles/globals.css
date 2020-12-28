@@ -1,136 +1,80 @@
 @import './fonts.css';
 @import './footnotes.css';
+@import './markdown.css';
+@import './syntax-highlighting.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+    :root {
+        --font-mono: source-code, serif, Menlo, SFMono-Regular, monospace;
+        --font-sans: source-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-size: 18px;
+    }
 
-:root {
-    --color-accent: hsl(146, 100%, 55%);
-    --color-background: hsl(210, 5%, 8%);
-    --color-border: hsl(210, 3%, 30%);
-    --color-heading: hsl(210, 25%, 95%);
-    --color-body: hsl(210, 3%, 70%);
-    --color-fill: hsl(210, 7%, 13%);
-    --color-muted: hsl(210, 3%, 55%);
-    --color-shadow: rgba(255, 255, 255, 0.03);
+    @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+        :root {
+            --color-background: hsl(208, 6%, 8%);
+            --color-body: hsl(109, 0%, 90%);
+            --color-border: hsl(208, 6%, 30%);
+            --color-fill: hsl(208, 6%, 12%);
+            --color-mark: hsl(43, 50%, 10%);
+            --color-muted: hsl(208, 6%, 65%);
 
-    --font-sans: Sans, -apple-system, 'BlinkMacSystemFont', sans-serif;
-    --font-mono: Mono, 'SFMono-Regular', Consolas, monospace;
-}
+            --token: hsl(109, 0%, 80%);
+            --comment: hsl(109, 0%, 70%);
+            --keyword: hsl(109, 100%, 100%);
+            --name: hsl(109, 100%, 100%);
+            --highlight: hsl(109, 0%, 10%);
+        }
+    }
 
-[data-theme='light'] {
-    --color-accent: hsl(225, 80%, 57%);
-    --color-background: hsl(104, 100%, 100%);
-    --color-border: hsl(204, 0%, 80%);
-    --color-heading: hsl(0, 0%, 0%);
-    --color-body: hsl(109, 0%, 30%);
-    --color-fill: hsl(255, 0%, 90%);
-    --color-muted: hsl(109, 0%, 45%);
-    --color-shadow: rgba(0, 0, 0, 0.1);
-}
+    @media (prefers-color-scheme: light), print {
+        :root {
+            --color-background: hsl(208, 100%, 100%);
+            --color-body: hsl(208, 0%, 10%);
+            --color-border: hsl(208, 0%, 70%);
+            --color-fill: hsl(208, 0%, 95%);
+            --color-mark: hsl(43, 70%, 93%);
+            --color-muted: hsl(208, 0%, 35%);
 
-::selection {
-    @apply bg-body;
-    @apply text-background;
-    text-shadow: none;
-}
+            --token: hsl(109, 0%, 40%);
+            --comment: hsl(109, 0%, 50%);
+            --keyword: hsl(109, 0%, 0%);
+            --name: hsl(109, 0%, 20%);
+            --highlight: hsl(109, 0%, 97%);
+        }
+    }
 
-html {
-    @apply font-sans;
-    @apply antialiased;
-    font-size: 16px;
-    text-rendering: optimizeLegibility;
-}
+    html {
+        @apply antialiased font-sans;
+        font-size: var(--font-size);
+        text-rendering: optimizeLegibility;
+    }
 
-body {
-    @apply bg-background;
-    @apply leading-relaxed;
-    @apply mb-20;
-    @apply mt-0;
-    @apply mx-auto;
-    @apply px-4;
-    @apply text-body;
-    max-width: 38rem;
-}
+    body {
+        @apply bg-background text-body;
+    }
 
-p {
-    @apply mb-4;
-    @apply mt-0;
-}
+    a {
+        @apply underline;
+        text-decoration-color: var(--color-border);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+    }
 
-a {
-    @apply bg-left-bottom;
-    @apply bg-no-repeat;
-    background-image: linear-gradient(var(--color-border), var(--color-border));
-    background-size: 100% 1px;
-    color: inherit;
-    text-shadow: 0.1em 0 var(--color-background), -0.1em 0 var(--color-background);
-}
-a:hover {
-    @apply text-accent;
-}
-.underlined {
-    @apply bg-left-bottom;
-    @apply bg-no-repeat;
-    background-image: linear-gradient(var(--color-border), var(--color-border));
-    background-size: 100% 1px;
-    color: inherit;
-    text-shadow: 0.1em 0 var(--color-background), -0.1em 0 var(--color-background);
-}
-.copied-popover {
-    bottom: 1.5rem;
-    left: 50%;
-    padding-bottom: 2px !important;
-    padding-top: 2px !important;
+    a:hover {
+        @apply text-muted;
+    }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply font-medium;
-    @apply text-heading;
-    @apply leading-relaxed;
-}
+@layer components {
+    .placeholder-italic::placeholder {
+        @apply italic;
+    }
 
-h1 {
-    @apply mb-4;
+    .grayscale {
+        filter: grayscale(100%);
+    }
+    .grayscale:hover {
+        filter: none;
+    }
 }
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply mb-2;
-    @apply mt-8;
-}
-
-hr {
-    @apply border-border;
-    @apply border-t;
-    @apply mb-5;
-    @apply mt-8;
-}
-
-ul,
-ol {
-    @apply my-5;
-    @apply pl-6;
-}
-ol {
-    @apply list-decimal;
-}
-ul {
-    @apply list-square;
-}
-
-blockquote {
-    @apply my-5;
-    @apply pl-6;
-    @apply text-muted;
-}
-

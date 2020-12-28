@@ -70,7 +70,10 @@
             "parser": "eslint-mdx",
             "extends": [
                 "plugin:mdx/recommended"
-            ]
+            ],
+            "rules": {
+                "react/jsx-no-undef": "warn"
+            }
         }
     ],
     "env": {

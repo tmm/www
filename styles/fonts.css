@@ -1,77 +1,39 @@
+/* https://github.com/adobe-fonts/source-sans-pro */
 @font-face {
-    font-family: 'Sans';
+    font-family: source-sans;
+    font-weight: 200 900;
+    font-display: block;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff2?v=3.028') format('woff2'),
+         url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff?v=3.028') format('woff');
+}
+
+@font-face {
+    font-family: source-sans;
+    font-weight: 200 900;
+    font-display: block;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff2?v=3.028') format('woff2'),
+         url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff?v=3.028') format('woff');
+}
+
+/* https://github.com/adobe-fonts/source-code-pro */
+@font-face {
+    font-family: source-code;
     font-weight: 100 900;
     font-display: block;
     font-style: normal;
-    src: url('/fonts/inter/roman.woff2?v=3.13') format('woff2');
+    src: url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff2?v=3.001') format('woff2'),
+         url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff?v=3.001') format('woff');
 }
+
 @font-face {
-    font-family: 'Sans';
+    font-family: source-code;
     font-weight: 100 900;
     font-display: block;
     font-style: italic;
-    src: url('/fonts/inter/italic.woff2?v=3.13') format('woff2');
-}
-
-@font-face {
-    font-family: 'Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Regular.woff2?v=1.0.6') format('woff2');
-}
-@font-face {
-    font-family: 'Mono';
-    font-style: italic;
-    font-weight: 400;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Italic.woff2?v=1.0.6') format('woff2');
-}
-
-@font-face {
-    font-family: 'Mono';
-    font-style: normal;
-    font-weight: 500;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Medium.woff2?v=1.0.6') format('woff2');
-}
-@font-face {
-    font-family: 'Mono';
-    font-style: italic;
-    font-weight: 500;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Medium-Italic.woff2?v=1.0.6')
-        format('woff2');
-}
-
-@font-face {
-    font-family: 'Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Bold.woff2?v=1.0.6') format('woff2');
-}
-@font-face {
-    font-family: 'Mono';
-    font-style: italic;
-    font-weight: 700;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/Bold-Italic.woff2?v=1.0.6')
-        format('woff2');
-}
-
-@font-face {
-    font-family: 'Mono';
-    font-style: normal;
-    font-weight: 800;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/ExtraBold.woff2?v=1.0.6') format('woff2');
-}
-@font-face {
-    font-family: 'Mono';
-    font-style: italic;
-    font-weight: 800;
-    font-display: block;
-    src: url('/fonts/jetbrains-mono/ExtraBold-Italic.woff2?v=1.0.6')
-        format('woff2');
+    src: url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff2?v=3.001') format('woff2'),
+         url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff?v=3.001') format('woff');
 }

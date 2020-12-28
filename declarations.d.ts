@@ -1,4 +1,6 @@
 declare module '@silvenon/remark-smartypants'
+declare module 'remark-slug'
+declare module 'remark-autolink-headings'
 
 type Frontmatter = {
     title: string
@@ -6,20 +8,12 @@ type Frontmatter = {
     slug: string
     date: string | Date
     published: boolean
+    type: PostType
 }
 
 type Post = {
     frontmatter: Frontmatter
-    body: string
+    body?: string
+    excerpt?: string
+    content?: string
 }
-
-interface Media {
-    id?: string
-    name: string
-    href: string
-    value: string
-}
-type Presence = Media
-type TimeEvent = Media
-type Product = Media
-type Following = Media

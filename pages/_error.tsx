@@ -6,12 +6,14 @@ interface Props {
     status?: number | null
 }
 
-const Error: NextPage<Props> = (_props) => {
+const Error: NextPage<Props> = () => {
     const title = 'Something went wrong'
     return (
-        <Layout title={title}>
+        <Layout hideFooter title={title}>
             <article>
-                <h1>{title}</h1>
+                <header className="mb-8">
+                    <h1>{title}</h1>
+                </header>
                 <p>An error occurred.</p>
             </article>
         </Layout>

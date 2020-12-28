@@ -1,45 +1,25 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useRouter } from 'next/router'
+import { ReactNode, useState } from 'react'
+import { useForm } from 'react-hook-form'
 
-import { useEffect, useRef, useState } from 'react'
+type FormData = {
+    email: string
+}
 
-const emailRegex = /(^$|^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)/
-
-type Props = {}
-
-const Subscribe: React.FC<Props> = () => {
-    const emailRef = useRef<HTMLInputElement>(null)
+export const Subscribe: React.FC = () => {
     const { asPath } = useRouter()
-    const [email, setEmail] = useState('')
-    const [isError, setIsError] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
-    const [isValid, setIsValid] = useState(false)
-    const [message, setMessage] = useState<string | any>('')
+    const { register, handleSubmit, setValue } = useForm<FormData>()
+    const [isLoading, setIsLoading] = useState<boolean>(false)
+    const [message, setMessage] = useState<string | ReactNode | null>()
 
-    useEffect(() => {
-        setIsValid(email !== '' && emailRegex.test(email))
-    }, [email])
-
-    const handleChange = (event: React.FormEvent) => {
-        setEmail((event.target as HTMLInputElement).value)
-        if (isError) {
-            setIsError(false)
-            setMessage('')
-        }
-    }
-
-    const handleSubmit = async (event: React.FormEvent) => {
-        event.preventDefault()
+    async function onSubmit({ email }: FormData) {
         try {
-            setIsError(false)
             setIsLoading(true)
 
             const endpoint = '/api/subscribers'
             const headers = {
                 'Content-Type': 'application/json',
             }
-            console.log(asPath)
             const body = { email, referrer_url: asPath }
             const response = await fetch(endpoint, {
                 method: 'POST',
@@ -50,72 +30,79 @@ const Subscribe: React.FC<Props> = () => {
             if (response.ok) {
                 setMessage(
                     <div>
-                        Subscribed{' '}
-                        <span className="border-b border-dotted border-accent text-accent">
-                            {email}
-                        </span>
+                        Subscribed <span className="border-b">{email}</span>
                     </div>,
                 )
-                setEmail('')
+                setValue('email', '')
             } else {
                 const data = await response.json()
-                const message = data?.error ?? 'Something went wrong'
-                setIsError(true)
-                setMessage(message)
+                setMessage(data.error)
             }
         } finally {
             setIsLoading(false)
         }
     }
 
-    const handleFocus = () => emailRef.current?.focus()
-
     return (
-        <form className="mt-20" onClick={handleFocus} onSubmit={handleSubmit}>
-            <div className="mb-1 text-muted">
-                Get a email when I publish new posts
-            </div>
-
-            <div className="flex">
-                <label className="hidden" htmlFor="email">
+        <form
+            className="flex flex-col items-center md:px-1"
+            onSubmit={handleSubmit(onSubmit)}
+        >
+            <div
+                className="
+                    bg-fill
+                    flex
+                    focus-within:bg-background
+                    focus-within:outline-none
+                    focus-within:ring
+                    focus-within:border-blue-300
+                    h-10
+                    justify-between
+                    mx-auto
+                    rounded-lg
+                    w-full
+                "
+            >
+                <label className="sr-only" htmlFor="email">
                     Email
                 </label>
                 <input
                     className="
                         bg-transparent
-                        border-b
-                        border-border
+                        flex-1
                         outline-none
-                        placeholder-muted
+                        pl-3
+                        md:pl-4
                         pr-2
-                        focus:border-accent
+                        placeholder-italic
+                        placeholder-muted
+                        placeholder-opacity-100
+                        text-sm
+                        md:text-base
                     "
                     disabled={isLoading}
                     id="email"
-                    ref={emailRef}
-                    value={email}
-                    onChange={handleChange}
+                    name="email"
+                    placeholder="Occasional emails from Tom"
+                    ref={register({ required: true })}
                 />
                 <button
                     className="
-                        border-b
-                        border-border
-                        font-medium
-                        text-body
+                        font-semibold
+                        pr-3
+                        md:pr-4
                         text-sm
+                        text-body
                         disabled:pointer-events-none
                     "
-                    disabled={isLoading || !isValid}
+                    disabled={isLoading}
+                    type="submit"
                 >
-                    {isLoading ? 'Subscribing' : 'Subscribe'}
+                    <span>{isLoading ? 'Subscribing' : 'Subscribe'}</span>
                 </button>
             </div>
 
-            {message && (
-                <div className="mt-1 text-muted text-sm">{message}</div>
-            )}
+            {message && <div className="font-sans mt-1 text-sm">{message}</div>}
         </form>
     )
 }
-
-export default Subscribe
