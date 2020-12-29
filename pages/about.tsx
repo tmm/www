@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { NextPage } from 'next'
 
 import { Layout, Link } from '@/components'
@@ -12,26 +11,11 @@ const Page: NextPage = () => {
                     <h1>About</h1>
                 </header>
 
-                <div className="mb-5">
-                    <figure className="relative h-48 w-full">
-                        <Image
-                            alt="Picture of the author"
-                            className="grayscale"
-                            layout="fill"
-                            objectFit="cover"
-                            quality={75}
-                            src="/me.png"
-                        />
-                    </figure>
-                    <div className="block mt-2 text-left text-muted text-sm whitespace-nowrap">
-                        Amsterdam, Summer 2019
-                    </div>
-                </div>
-
                 <p>
                     My name is Tom Meagher (MAH-hur). I&rsquo;m a Brooklyn-based
                     software engineer, originally from the suburbs of Boston.
                 </p>
+
                 <p>
                     Currently, I work at{' '}
                     <Link external href="https://locallaboratory.com">

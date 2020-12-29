@@ -6,7 +6,7 @@
 @layer base {
     :root {
         --font-mono: source-code, serif, Menlo, SFMono-Regular, monospace;
-        --font-sans: source-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-sans: source-sans, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
         --font-size: 18px;
     }
 

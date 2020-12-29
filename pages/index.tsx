@@ -5,7 +5,7 @@ import { config } from '@/lib/config'
 
 const Page: NextPage = () => {
     return (
-        <Layout hideFooter>
+        <Layout hideFooter hideNav>
             <article>
                 <header className="mb-8">
                     <h1>Tom Meagher</h1>
