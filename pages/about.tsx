@@ -146,6 +146,42 @@ const Page: NextPage = () => {
                     work fine.
                 </p>
 
+                <h3 id="elsewhere">
+                    <a href="elsewhere">Elsewhere</a>
+                </h3>
+
+                <ul>
+                    <li>
+                        <Link
+                            external
+                            href={`https://github.com/${config.github}`}
+                        >
+                            GitHub
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            external
+                            href={`https://twitter.com/${config.twitter}`}
+                        >
+                            Twitter
+                        </Link>
+                    </li>
+                    <li>
+                        <Link external href="https://are.na/tmm">
+                            Are.na
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            external
+                            href="https://news.ycombinator.com/user?id=meagher"
+                        >
+                            Hacker News
+                        </Link>
+                    </li>
+                </ul>
+
                 <p className="text-muted">
                     If you’ve made it this far, send an email to{' '}
                     <Link

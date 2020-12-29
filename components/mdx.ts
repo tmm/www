@@ -1,4 +1,4 @@
-import { Button as ShinyButton } from './posts/button'
+import { ShinyButton } from './posts/shiny-button'
 
 export const mdx = {
     ShinyButton,

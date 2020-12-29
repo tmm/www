@@ -113,13 +113,11 @@
     }
 
     ol {
-        @apply my-5 pl-0.5;
+        @apply list-decimal my-5 pl-8;
     }
 
-    ol li::before {
-        @apply align-middle bg-fill leading-tight px-1.5 proportional-nums mr-3 rounded-full text-muted text-xs;
-        content: counter(list-item); 
-        counter-increment: orderedlist;
+    ol li {
+        @apply mb-1;
     }
 }
 

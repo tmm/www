@@ -6,7 +6,7 @@ type Props = {
     variant: 'base' | 'shimmer' | 'shine'
 }
 
-export const Button: React.FC<Props> = ({ variant = 'base' }) => {
+export const ShinyButton: React.FC<Props> = ({ variant = 'base' }) => {
     return (
         <button
             className={clsx([
@@ -16,6 +16,7 @@ export const Button: React.FC<Props> = ({ variant = 'base' }) => {
                 variant === 'shimmer' && styles.shimmer,
                 variant === 'shine' && styles.shine,
             ])}
+            onClick={() => alert('Nice Click!')}
         >
             <span className="z-10">Add to Cart</span>
             <svg
