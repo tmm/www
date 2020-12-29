@@ -62,7 +62,7 @@
     @apply opacity-100;
     transition-timing-function: ease;
     transition-delay: 0.25s;
-    animation: shine 3s ease infinite forwards;
+    animation: shine 2s ease infinite forwards;
     animation-delay: 0s;
     animation-delay: 0.25s;
 }
