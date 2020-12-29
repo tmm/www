@@ -18,7 +18,7 @@ const Page: NextPage = () => {
 
                 <p>
                     Currently, I work at{' '}
-                    <Link external href="https://locallaboratory.com">
+                    <Link external href="https://locallaboratory.co">
                         Local Laboratory
                     </Link>
                     . Previously, I worked at{' '}
