@@ -4,7 +4,9 @@ import { format } from 'date-fns'
 import { useMount } from 'react-use'
 
 import { footnotes } from '@/lib/littlefoot'
-import { Link, mdx } from '@/components'
+
+import { mdx } from './mdx'
+import { Link } from './link'
 
 type Props = {
     body: string

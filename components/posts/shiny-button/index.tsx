@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import styles from './index.module.css'
 
 type Props = {
-    variant: 'base' | 'shimmer' | 'shine'
+    variant?: 'base' | 'shimmer' | 'shine'
 }
 
 export const ShinyButton: React.FC<Props> = ({ variant = 'base' }) => {

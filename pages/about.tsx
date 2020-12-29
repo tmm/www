@@ -48,83 +48,8 @@ const Page: NextPage = () => {
 
                 <p>
                     Read more about what I&rsquo;m up to{' '}
-                    <Link href="/now">now</Link>.
-                </p>
-
-                <h3 id="colophon">
-                    <a href="colophon">Colophon</a>
-                </h3>
-
-                <p>
-                    This website is built with{' '}
-                    <Link external href="https://nextjs.org">
-                        Next.js
-                    </Link>{' '}
-                    and typeset in{' '}
-                    <Link
-                        external
-                        href="https://github.com/adobe-fonts/source-sans-pro"
-                    >
-                        Source Sans Pro
-                    </Link>
-                    . Other technologies, products, and doodads include:
-                </p>
-
-                <ul>
-                    <li>
-                        <Link external href="https://www.dynadot.com">
-                            Dynadot
-                        </Link>{' '}
-                        for registering <code>meagher.co</code>
-                    </li>
-                    <li>
-                        <Link external href="https://vercel.com">
-                            Vercel
-                        </Link>{' '}
-                        for hosting
-                    </li>
-                    <li>
-                        <Link external href="https://cloudflare.com">
-                            Cloudflare
-                        </Link>{' '}
-                        for all DNS-related needs
-                    </li>
-                    <li>
-                        <Link
-                            external
-                            href="https://referral.simpleanalytics.com/tmm"
-                        >
-                            Simple Analytics
-                        </Link>{' '}
-                        for collecting analytics
-                    </li>
-                </ul>
-
-                <p>
-                    My writing and the design of this website is{' '}
-                    <Link
-                        external
-                        href="https://www.copyright.gov/help/faq/faq-general.html#mywork"
-                    >
-                        copyrighted
-                    </Link>
-                    . Feel free to ask if you want to reuse any content beyond
-                    the bounds of{' '}
-                    <Link
-                        external
-                        href="https://www.copyright.gov/fair-use/more-info.html"
-                    >
-                        fair use
-                    </Link>
-                    .
-                </p>
-
-                <p>
-                    For more info on how the sausage is made, view the source{' '}
-                    <Link external href="https://github.com/tmm/www">
-                        on GitHub
-                    </Link>
-                    .
+                    <Link href="/now">now</Link> or how this site{' '}
+                    <Link href="/colophon">is built</Link>.
                 </p>
 
                 <h3 id="#contact">
@@ -183,7 +108,7 @@ const Page: NextPage = () => {
                 </ul>
 
                 <p className="text-muted">
-                    If you’ve made it this far, send an email to{' '}
+                    If you made it this far, send an email to{' '}
                     <Link
                         external
                         href={`mailto:${config.email}?subject=Favorite Color&body=My name is [your name] and my favorite color is [your favorite color] ...`}

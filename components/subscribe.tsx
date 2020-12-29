@@ -88,7 +88,7 @@ export const Subscribe: React.FC = () => {
                 />
                 <button
                     className="
-                        font-semibold
+                        font-medium
                         pr-3
                         md:pr-4
                         text-sm
