@@ -13,7 +13,7 @@ const Page: NextPage = () => {
                 <p>
                     Welcome — I&rsquo;m Tom, a Brooklyn-based software engineer.
                     Currently, I work at{' '}
-                    <Link external href="https://locallaboratory.com">
+                    <Link external href="https://locallaboratory.co">
                         Local Laboratory
                     </Link>
                     . Read more <Link href="/about">about me</Link>, browse{' '}
