@@ -15,6 +15,7 @@
     "dependencies": {
         "@mapbox/rehype-prism": "^0.5.0",
         "@silvenon/remark-smartypants": "^1.0.0",
+        "@stripe/stripe-js": "^1.11.0",
         "clsx": "^1.1.1",
         "date-fns": "^2.16.1",
         "gray-matter": "4.0.2",
@@ -28,7 +29,8 @@
         "react-hook-form": "^6.13.1",
         "react-use": "^15.3.4",
         "remark-external-links": "^8.0.0",
-        "remark-footnotes": "^2.0.0"
+        "remark-footnotes": "^2.0.0",
+        "stripe": "^8.129.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^11.0.0",

@@ -29,14 +29,14 @@ export const Subscribe: React.FC = () => {
 
             if (response.ok) {
                 setMessage(
-                    <div>
+                    <span>
                         Subscribed <span className="border-b">{email}</span>
-                    </div>,
+                    </span>,
                 )
                 setValue('email', '')
             } else {
                 const data = await response.json()
-                setMessage(data.error)
+                setMessage(<span className="text-red-500">{data.error}</span>)
             }
         } finally {
             setIsLoading(false)
@@ -50,6 +50,7 @@ export const Subscribe: React.FC = () => {
         >
             <div
                 className="
+                    appearance-none
                     bg-fill
                     flex
                     focus-within:bg-background
@@ -67,6 +68,8 @@ export const Subscribe: React.FC = () => {
                     Email
                 </label>
                 <input
+                    aria-describedby="email"
+                    autoComplete="email"
                     className="
                         bg-transparent
                         flex-1
@@ -74,7 +77,6 @@ export const Subscribe: React.FC = () => {
                         pl-3
                         md:pl-4
                         pr-2
-                        placeholder-italic
                         placeholder-muted
                         placeholder-opacity-100
                         text-sm
@@ -102,7 +104,11 @@ export const Subscribe: React.FC = () => {
                 </button>
             </div>
 
-            {message && <div className="font-sans mt-1 text-sm">{message}</div>}
+            {message && (
+                <p className="mb-0 mt-2 pl-2 text-sm w-full" id="email-message">
+                    {message}
+                </p>
+            )}
         </form>
     )
 }

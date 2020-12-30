@@ -16,7 +16,11 @@ interface Props {
 
 const Page: NextPage<Props> = (props) => {
     return (
-        <Layout description={props.description} title={props.title}>
+        <Layout
+            description={props.description}
+            showTipButton
+            title={props.title}
+        >
             <Post {...props} date={new Date(props.date)} />
         </Layout>
     )

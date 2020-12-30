@@ -64,13 +64,20 @@
     a:hover {
         @apply text-muted;
     }
+
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
 }
 
 @layer components {
-    .placeholder-italic::placeholder {
-        @apply italic;
-    }
-
     .grayscale {
         filter: grayscale(100%);
     }
