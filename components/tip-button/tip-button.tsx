@@ -53,7 +53,7 @@ export const TipButton: React.FC = () => {
                 },
             })
             if (payload.error)
-                throw new Error(`Payment failed ${payload.error.message}`)
+                throw new Error(`Payment failed: ${payload.error.message}`)
 
             setSucceeded(true)
         } catch (err) {
@@ -65,7 +65,16 @@ export const TipButton: React.FC = () => {
     }
 
     if (succeeded) {
-        return <div>Success</div>
+        return (
+            <div className="flex flex-col items-center justify-center">
+                <div className="font-medium mb-1 text-sm md:text-base">
+                    Payment Successful
+                </div>
+                <div className="text-muted text-xs md:text-sm">
+                    Thanks for supporting my work. It means a lot.
+                </div>
+            </div>
+        )
     }
 
     if (showForm) {

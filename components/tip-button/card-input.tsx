@@ -31,7 +31,7 @@ const getCardStyle = (theme: Theme, width: number) => {
             base: {
                 color: '#191919',
                 '::placeholder': {
-                    color: '#aeaeae',
+                    color: '#595959',
                 },
             },
         }
@@ -40,7 +40,7 @@ const getCardStyle = (theme: Theme, width: number) => {
             base: {
                 color: '#e5e5e5',
                 '::placeholder': {
-                    color: '#63686b',
+                    color: '#9fa6ac',
                 },
             },
         }

@@ -138,7 +138,7 @@
   }
 
   thead th {
-    @apply align-bottom px-4 pb-2;
+    @apply align-bottom font-semibold px-4 pb-2;
   }
 
   thead th:first-child {
@@ -150,7 +150,7 @@
   }
 
   tbody tr {
-    @apply font-semibold border-b border-fill;
+    @apply border-b border-fill;
   }
 
   tbody tr:last-child {

@@ -16,7 +16,9 @@
 }
 
 .button {
-  @apply relative overflow-hidden inline-flex items-center justify-center px-3 py-3 md:py-2 shadow-sm text-sm md:text-base font-medium text-white transition-colors rounded-lg w-full bg-blue-600 hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring focus:ring-offset-fill focus:ring-blue-400;
+  @apply relative overflow-hidden inline-flex items-center justify-center px-3 py-3 md:py-2 shadow-sm text-sm md:text-base font-medium transition-colors rounded-lg w-full bg-blue-900 hover:bg-blue-700 hover:border-blue-700 focus:outline-none focus:ring focus:ring-offset-fill focus:ring-blue-400;
+
+  color: hsl(109, 0%, 95%);
 }
 
 .button::after {
@@ -42,5 +44,5 @@
 }
 
 .field {
-  @apply appearance-none bg-fill h-10 pl-3 md:pl-4 outline-none text-sm md:text-base rounded-lg w-full placeholder-muted placeholder-opacity-100 focus:bg-background focus:ring focus:border-blue-300;
+  @apply appearance-none bg-fill h-10 pl-3 md:pl-4 outline-none text-sm md:text-base rounded-lg w-full placeholder-muted focus:bg-background focus:ring;
 }

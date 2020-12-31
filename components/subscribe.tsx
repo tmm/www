@@ -52,7 +52,6 @@ export const Subscribe: React.FC = () => {
                     focus-within:bg-background
                     focus-within:outline-none
                     focus-within:ring
-                    focus-within:border-blue-300
                     h-10
                     justify-between
                     mx-auto
@@ -63,6 +62,7 @@ export const Subscribe: React.FC = () => {
                 <label className="sr-only" htmlFor="email">
                     Email
                 </label>
+
                 <input
                     aria-describedby="email"
                     autoComplete="email"
@@ -74,24 +74,28 @@ export const Subscribe: React.FC = () => {
                         md:pl-4
                         pr-2
                         placeholder-muted
-                        placeholder-opacity-100
                         text-sm
                         md:text-base
                     "
                     disabled={isLoading}
                     id="email"
                     name="email"
-                    placeholder="Occasional emails from Tom"
+                    placeholder="Occasional email updates"
                     ref={register({ required: true })}
                 />
+
                 <button
                     className="
                         font-medium
-                        pr-3
-                        md:pr-4
-                        text-sm
+                        focus:outline-none
+                        focus:ring
+                        px-3
+                        md:px-4
+                        text-xs
+                        md:text-sm
                         text-body
                         disabled:pointer-events-none
+                        rounded-lg
                     "
                     disabled={isLoading}
                     type="submit"

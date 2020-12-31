@@ -26,6 +26,7 @@
 
     content: '`';
   }
+
   article pre code::before,
   pre code::after { content: ''; }
 }

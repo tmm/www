@@ -33,7 +33,7 @@
       --color-border: hsl(208, 0%, 70%);
       --color-fill: hsl(208, 0%, 95%);
       --color-mark: hsl(43, 70%, 93%);
-      --color-muted: hsl(208, 0%, 35%);
+      --color-muted: hsl(208, 0%, 30%);
       --token: hsl(109, 0%, 40%);
       --comment: hsl(109, 0%, 50%);
       --keyword: hsl(109, 0%, 0%);
@@ -63,6 +63,10 @@
 
   a:hover {
     @apply text-muted;
+  }
+
+  input::placeholder {
+    opacity: 1;
   }
 
   input::-webkit-outer-spin-button,

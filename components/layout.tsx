@@ -18,7 +18,6 @@ export const Layout: React.FC<Props> = ({
     title,
     hideNav = false,
     hideFooter = false,
-    showTipButton = false,
 }) => {
     return (
         <>
@@ -30,7 +29,7 @@ export const Layout: React.FC<Props> = ({
 
                 {!hideFooter && (
                     <footer className="mt-40 pb-64 print:hidden">
-                        <Support showTipButton={showTipButton} />
+                        <Support />
                     </footer>
                 )}
             </main>
