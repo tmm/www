@@ -1,0 +1,41 @@
+@layer base {
+  table {
+    @apply w-full table-auto text-left my-6 text-sm;
+  }
+
+  thead {
+    @apply font-semibold border-b;
+  }
+
+  thead th {
+    @apply align-bottom font-semibold px-4 pb-2;
+  }
+
+  thead th:first-child {
+    @apply pl-0;
+  }
+
+  thead th:last-child {
+    @apply pr-0;
+  }
+
+  tbody tr {
+    @apply border-b border-fill;
+  }
+
+  tbody tr:last-child {
+    @apply border-b-0;
+  }
+
+  tbody td {
+    @apply align-top px-4 py-2;
+  }
+
+  tbody td:first-child {
+    @apply pl-0;
+  }
+
+  tbody td:last-child {
+    @apply pr-0;
+  }
+}

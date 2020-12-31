@@ -12,9 +12,9 @@ export const Head: React.FC<Props> = ({
     description = config.description,
     ...restProps
 }) => {
-    const { systemTheme } = useTheme()
+    const { theme } = useTheme()
 
-    const iconTheme = systemTheme === 'light' ? 'light' : 'dark'
+    const iconTheme = theme === 'light' ? 'light' : 'dark'
     const title = restProps.title
         ? `${restProps.title} — ${config.title}`
         : config.title

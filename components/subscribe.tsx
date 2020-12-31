@@ -28,15 +28,11 @@ export const Subscribe: React.FC = () => {
             })
 
             if (response.ok) {
-                setMessage(
-                    <div>
-                        Subscribed <span className="border-b">{email}</span>
-                    </div>,
-                )
+                setMessage(<span>Subscribed {email}</span>)
                 setValue('email', '')
             } else {
                 const data = await response.json()
-                setMessage(data.error)
+                setMessage(<span className="text-red-500">{data.error}</span>)
             }
         } finally {
             setIsLoading(false)
@@ -50,12 +46,12 @@ export const Subscribe: React.FC = () => {
         >
             <div
                 className="
+                    appearance-none
                     bg-fill
                     flex
                     focus-within:bg-background
                     focus-within:outline-none
                     focus-within:ring
-                    focus-within:border-blue-300
                     h-10
                     justify-between
                     mx-auto
@@ -66,7 +62,10 @@ export const Subscribe: React.FC = () => {
                 <label className="sr-only" htmlFor="email">
                     Email
                 </label>
+
                 <input
+                    aria-describedby="email"
+                    autoComplete="email"
                     className="
                         bg-transparent
                         flex-1
@@ -74,26 +73,29 @@ export const Subscribe: React.FC = () => {
                         pl-3
                         md:pl-4
                         pr-2
-                        placeholder-italic
                         placeholder-muted
-                        placeholder-opacity-100
                         text-sm
                         md:text-base
                     "
                     disabled={isLoading}
                     id="email"
                     name="email"
-                    placeholder="Occasional emails from Tom"
+                    placeholder="Occasional email updates"
                     ref={register({ required: true })}
                 />
+
                 <button
                     className="
                         font-medium
-                        pr-3
-                        md:pr-4
-                        text-sm
+                        focus:outline-none
+                        focus:ring
+                        px-3
+                        md:px-4
+                        text-xs
+                        md:text-sm
                         text-body
                         disabled:pointer-events-none
+                        rounded-lg
                     "
                     disabled={isLoading}
                     type="submit"
@@ -102,7 +104,11 @@ export const Subscribe: React.FC = () => {
                 </button>
             </div>
 
-            {message && <div className="font-sans mt-1 text-sm">{message}</div>}
+            {message && (
+                <p className="mb-0 mt-2 pl-2 text-sm w-full" id="email-message">
+                    {message}
+                </p>
+            )}
         </form>
     )
 }

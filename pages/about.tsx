@@ -5,7 +5,7 @@ import { config } from '@/lib/config'
 
 const Page: NextPage = () => {
     return (
-        <Layout title="About">
+        <Layout showTipButton title="About">
             <article>
                 <header className="mb-8">
                     <h1>About</h1>

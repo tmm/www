@@ -1,127 +1,129 @@
+@import './footnotes.css';
+@import './syntax.css';
+@import './tables.css';
+
 @layer base {
-    p {
-        @apply font-sans mb-5;
-    }
+  p {
+    @apply font-sans mb-5;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply font-bold;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
 
-    h1 a,
-    h2 a,
-    h3 a,
-    h4 a,
-    h5 a,
-    h6 a {
-        @apply no-underline;
-    }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    @apply no-underline;
+  }
 
-    h1 a:hover,
-    h2 a:hover,
-    h3 a:hover,
-    h4 a:hover,
-    h5 a:hover,
-    h6 a:hover {
-        color: inherit;
-    }
+  h1 a:hover,
+  h2 a:hover,
+  h3 a:hover,
+  h4 a:hover,
+  h5 a:hover,
+  h6 a:hover {
+    color: inherit;
+  }
 
-    h1 a::after,
-    h2 a::after,
-    h3 a::after,
-    h4 a::after,
-    h5 a::after,
-    h6 a::after {
-        @apply inline-block text-muted opacity-0 ml-1;
-        content: '#';
-    }
+  h1 a::after,
+  h2 a::after,
+  h3 a::after,
+  h4 a::after,
+  h5 a::after,
+  h6 a::after {
+    @apply inline-block text-muted opacity-0 ml-1;
 
-    h1 a:hover::after,
-    h2 a:hover::after,
-    h3 a:hover::after,
-    h4 a:hover::after,
-    h5 a:hover::after,
-    h6 a:hover::after {
-        @apply opacity-100;
-    }
+    content: '#';
+  }
 
-    h1 {
-        @apply mb-4 text-3xl;
-    }
+  h1 a:hover::after,
+  h2 a:hover::after,
+  h3 a:hover::after,
+  h4 a:hover::after,
+  h5 a:hover::after,
+  h6 a:hover::after {
+    @apply opacity-100;
+  }
 
-    h2 {
-        @apply text-2xl;
-    }
+  h1 {
+    @apply mb-4 text-3xl;
+  }
 
-    h3 {
-        @apply text-xl;
-    }
+  h2 {
+    @apply text-2xl;
+  }
 
-    h4 {
-        @apply text-lg;
-    }
+  h3 {
+    @apply text-xl;
+  }
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply mb-3 mt-8;
-    }
+  h4 {
+    @apply text-lg;
+  }
 
-    blockquote {
-        @apply my-5 pl-3 text-muted;
-    }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-3 mt-8;
+  }
 
-    mark {
-        @apply bg-mark text-body px-1;
-    }
+  blockquote {
+    @apply my-5 pl-3 text-muted;
+  }
 
-    kbd {
-        @apply align-middle bg-border font-sans font-medium rounded-sm text-xs;
-        margin: 0 2px;
-        padding: 0 3px;
-    }
+  mark {
+    @apply bg-mark text-body px-1;
+  }
 
-    hr {
-        @apply border-border border-t mb-5 mt-8;
-    }
+  kbd {
+    @apply align-middle bg-border font-sans font-medium rounded-sm text-xs;
 
-    ul {
-        @apply my-5 pl-1;
-    }
+    margin: 0 2px;
+    padding: 0 3px;
+  }
 
-    ul li {
-        @apply bg-no-repeat mb-0.5 list-none pl-7;
-        background-position: 0px 0.7rem;
-    }
+  hr {
+    @apply border-border border-t mb-5 mt-8;
+  }
 
-    @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
-        ul li {
-            background-image: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 6%, 30%)'/%3E%3C/svg%3E%0A");
-        }
-    }
+  ul {
+    @apply my-5 pl-1;
+  }
 
-    @media (prefers-color-scheme: light), print {
-        ul li {
-            background-image: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 0%, 70%)'/%3E%3C/svg%3E%0A");
-        }
-    }
+  ul li {
+    @apply bg-no-repeat mb-0.5 list-none pl-7;
 
-    ol {
-        @apply list-decimal my-5 pl-8;
-    }
+    background-position: 0 0.7rem;
+    background-image: var(--bullet-url);
+  }
 
-    ol li {
-        @apply mb-1;
-    }
+  ol {
+    @apply my-5 pl-8;
+  }
+
+  ol li {
+    @apply mb-1 relative;
+  }
+
+  ol > li::before {
+    @apply absolute font-mono -left-7 pt-0.5 text-muted text-sm;
+
+    content: counter(list-item) ".";
+  }
 }
 
 /* Styles that won't be purged */
 .panel {
-    @apply bg-fill flex justify-center mt-5 mb-8 px-2 py-6;
+  @apply bg-fill flex justify-center mt-5 mb-8 px-2 py-6;
 }

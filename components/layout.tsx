@@ -1,13 +1,14 @@
 import { Clock } from './clock'
 import { Nav } from './nav'
-import { Footer } from './footer'
 import { Head } from './head'
+import { Support } from './support'
 
 type Props = {
     children: React.ReactNode
     description?: string
     hideNav?: boolean
     hideFooter?: boolean
+    showTipButton?: boolean
     title?: string
 }
 
@@ -25,7 +26,12 @@ export const Layout: React.FC<Props> = ({
             <Clock />
             <main className="max-w-container mx-auto pt-36 px-4">
                 {children}
-                {!hideFooter && <Footer />}
+
+                {!hideFooter && (
+                    <footer className="mt-40 pb-64 print:hidden">
+                        <Support />
+                    </footer>
+                )}
             </main>
         </>
     )

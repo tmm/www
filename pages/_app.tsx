@@ -7,7 +7,7 @@ import '@/styles/globals.css'
 const App = (props: AppProps) => {
     const { Component, pageProps } = props
     return (
-        <ThemeProvider defaultTheme="system">
+        <ThemeProvider defaultTheme="dark" disableTransitionOnChange>
             <Component {...pageProps} />
         </ThemeProvider>
     )

@@ -17,3 +17,5 @@ type Post = {
     excerpt?: string
     content?: string
 }
+
+type Theme = 'light' | 'dark'

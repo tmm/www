@@ -12,6 +12,7 @@ export const Nav: React.FC = () => {
                 left-4
                 space-x-3
                 md:space-x-2
+                print:hidden
                 text-muted
                 text-xs
                 top-2

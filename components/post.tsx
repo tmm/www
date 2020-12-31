@@ -48,16 +48,10 @@ export const Post: React.FC<Props> = ({
                         <h1 className="mb-3">{title}</h1>
                     </Link>
                     <div className="text-muted text-sm">
-                        {published ? (
-                            <>
-                                Published{' '}
-                                <time dateTime={date.toString()}>
-                                    {format(date, 'MMMM dd, yyyy')}
-                                </time>
-                            </>
-                        ) : (
-                            'Draft: Please do not share'
-                        )}
+                        {published ? 'Published' : 'Drafted'}{' '}
+                        <time dateTime={date.toString()}>
+                            {format(date, 'MMMM dd, yyyy')}
+                        </time>
                     </div>
                 </header>
 

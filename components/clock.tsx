@@ -20,7 +20,7 @@ export const Clock: React.FC = () => {
                 font-medium
                 font-sans
                 proportional-nums
-                print-hidden
+                print:hidden
                 right-4
                 text-muted
                 text-xs
