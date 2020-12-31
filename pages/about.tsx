@@ -93,6 +93,11 @@ const Page: NextPage = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link external href="https://futureland.tv/tmm">
+                            Futureland
+                        </Link>
+                    </li>
+                    <li>
                         <Link external href="https://are.na/tmm">
                             Are.na
                         </Link>

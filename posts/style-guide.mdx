@@ -1,0 +1,73 @@
+---
+title: Style Guide
+date: 2020-12-31
+slug: style
+published: false
+description: For testing markdown styles
+---
+
+This is a style guide for posts on this website, where I can see all the markdown styles in one go. The following is gibberish: The quick brown fox jumped over the lazy dogs.[^1]
+
+## Heading Two
+
+Lorem markdownum spargimur asper superum inducta calathosque haec, ministrarum tulit! Temptamenta pereunt perfidiae, fetum quorum nomine haec exsangues mensas sine et. <mark>Exiguus penetralia omnem adducto.</mark>
+
+-   Malum memorat
+-   Nisi crimine sub
+-   Buxo pridem
+-   Acta `rerum torquere suae similem` nefas
+
+### Heading `Three`
+
+Fronte parva, urbem mentis quartusque sorores amor recurvis Aeneae saevis nymphae successit penates longa ut reticere pharetras. <kbd>Cmd</kbd> <kbd>Enter</kbd> Quid modo est pariterque Creten filia guttae fessos et urbem!
+
+1. Malum memorat
+2. Nisi crimine sub
+3. Buxo pridem
+4. Acta rerum torquere suae similem nefas
+
+#### Heading Four
+
+Vitreis Iunone lumina, non tellus nec flores, exspectata narrarent. _Thoantis agitasse stetit?_ Quam aequora passim an augurium recordor a senex carmine durum ubi: non pudori, Peleus.
+
+---
+
+Vitreis Iunone lumina, non tellus nec flores, exspectata narrarent. _Thoantis agitasse stetit?_ Quam aequora passim an augurium recordor a senex carmine durum ubi: non pudori, Peleus.
+
+##### Heading Five
+
+Oderit undas **Quae** Cyllenius. Et non clarus praedam corpus. Ebur mihi oculis rector temptare; esset rursusque [quamque et auro](http://simulsimul.org/), continet.
+
+```ts
+export function formatAmountForDisplay(
+    amount: number,
+    currency = 'usd',
+    options: Intl.NumberFormatOptions = {},
+): string {
+    const numberFormat = new Intl.NumberFormat(['en-US'], {
+        style: 'currency',
+        currency: currency,
+        currencyDisplay: 'symbol',
+        ...options,
+    })
+    return numberFormat.format(amount)
+}
+```
+
+##### Heading Six
+
+Et tibi iram operum circuit nam discedens vero fit prohibete. Tibique fessa, coniuge cui concava [Ithacis memorique](http://www.mariti.com/) repertum nec viribus quam pugnat rapta transformat ne oraque leones.
+
+> Lorem markdownum maneret caros partes, amore iungi, recentes silvas, Niseia? Retinens leto illius et citharae crura; mihi quoque porrigit iuvabat agunt?
+>
+> — Micky Mouse, 1993
+
+Sanguine imagine, radiantis matrona rexque. Lassant agnovique: terribilesque labefecit rursus forsitan tura miscentur o adhuc sororem [nomen enim forsitan](http://anno-hoc.org/pectusque) tenebras obvertit magna.
+
+| Header | Column 1 | Column 2 | Column 3 |
+| :----- | :------- | :------: | -------: |
+| 1. Row | is       |    is    |       is |
+| 2. Row | left     |  nicely  |    right |
+| 3. Row | aligned  | centered |  aligned |
+
+[^1]: Certum captus Et produxit Eurotas, emensas mecum sollicita haut mensuraque centum pulso arce telae caput nulla scelus possis obstitit. Saecula Hylaeusque capit.
