@@ -28,11 +28,7 @@ export const Subscribe: React.FC = () => {
             })
 
             if (response.ok) {
-                setMessage(
-                    <span>
-                        Subscribed <span className="border-b">{email}</span>
-                    </span>,
-                )
+                setMessage(<span>Subscribed {email}</span>)
                 setValue('email', '')
             } else {
                 const data = await response.json()

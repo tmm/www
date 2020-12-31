@@ -1,0 +1,7 @@
+.input {
+  @apply bg-fill h-10 pl-3 py-3 md:pl-4 md:py-2.5 rounded-lg w-full;
+}
+
+.inputFocus {
+  @apply bg-background ring border-blue-300;
+}

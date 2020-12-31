@@ -1,5 +1,5 @@
 import { Subscribe } from './subscribe'
-import { TipButton } from './tip-button'
+import { Elements, TipButton } from './tip-button'
 
 type Props = {
     showTipButton?: boolean
@@ -35,7 +35,9 @@ export const Support: React.FC<Props> = ({ showTipButton = false }) => {
                     </div>
 
                     <div className="px-1">
-                        <TipButton />
+                        <Elements>
+                            <TipButton />
+                        </Elements>
                     </div>
                 </>
             )}

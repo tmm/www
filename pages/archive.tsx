@@ -12,7 +12,7 @@ const Page: NextPage<Props> = ({ postsByYear }) => {
     const title = 'Archive'
     const currentYear = new Date().getFullYear().toString()
     return (
-        <Layout title={title}>
+        <Layout showTipButton title={title}>
             <header className="mb-8">
                 <h1>{title}</h1>
             </header>
