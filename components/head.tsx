@@ -30,6 +30,14 @@ export const Head: React.FC<Props> = ({
                 name="viewport"
             />
 
+            <link
+                as="font"
+                crossOrigin="anonymous"
+                href="/fonts/source-sans/SourceSans3VF-Roman.ttf.woff2"
+                rel="preload"
+                type="font/woff2"
+            />
+
             <title>{title}</title>
             <meta content={description} name="description" />
             <meta content={config.author} name="author" />

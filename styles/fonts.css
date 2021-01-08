@@ -4,10 +4,7 @@
   font-weight: 200 900;
   font-display: block;
   font-style: normal;
-  font-stretch: normal;
-  src:
-    url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff2?v=3.028') format('woff2'),
-    url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff?v=3.028') format('woff');
+  src: url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2');
 }
 
 @font-face {
@@ -15,10 +12,7 @@
   font-weight: 200 900;
   font-display: block;
   font-style: italic;
-  font-stretch: normal;
-  src:
-    url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff2?v=3.028') format('woff2'),
-    url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff?v=3.028') format('woff');
+  src: url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff2') format('woff2');
 }
 
 /* https://github.com/adobe-fonts/source-code-pro */
@@ -27,9 +21,7 @@
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  src:
-    url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff2?v=3.001') format('woff2'),
-    url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff?v=3.001') format('woff');
+  src: url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff2') format('woff2');
 }
 
 @font-face {
@@ -37,7 +29,5 @@
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
-  src:
-    url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff2?v=3.001') format('woff2'),
-    url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff?v=3.001') format('woff');
+  src: url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff2') format('woff2');
 }
