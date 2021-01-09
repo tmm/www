@@ -1,8 +1,9 @@
 ## Dev
 
 ```
-yarn global add vercel
-vercel env pull
+yarn      # Install dependencies
+yarn env  # Fetch env from Vercel
+yarn dev  # Start dev server
 ```
 
 ## Prod
