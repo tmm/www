@@ -5,7 +5,7 @@ import { Layout, Link } from '@/components'
 
 const Page: NextPage = () => {
     const title = 'Now'
-    const date = add(new Date('2020-12-28'), { days: 1 })
+    const date = add(new Date('2021-01-26'), { days: 1 })
     return (
         <Layout title={title}>
             <article>
@@ -33,9 +33,9 @@ const Page: NextPage = () => {
                         Reading{' '}
                         <Link
                             external
-                            href="https://bookshop.org/books/dune-9780441005901/9780441172719"
+                            href="https://bookshop.org/books/dune-messiah/9780593098233"
                         >
-                            <em>Dune</em>
+                            <em>Dune Messiah</em>
                         </Link>
                     </li>
                     <li>
@@ -46,15 +46,6 @@ const Page: NextPage = () => {
                         >
                             <em>Brightest Lights</em>
                         </Link>
-                    </li>
-                    <li>
-                        Cooking{' '}
-                        <Link href="https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/">
-                            Palak Paneer
-                        </Link>
-                    </li>
-                    <li>
-                        Starting to <Link href="/archive">blog</Link> again
                     </li>
                 </ul>
             </article>

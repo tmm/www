@@ -2,7 +2,7 @@
 @font-face {
   font-family: source-sans;
   font-weight: 200 900;
-  font-display: block;
+  font-display: optional;
   font-style: normal;
   src: url('/fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2');
 }
@@ -10,7 +10,7 @@
 @font-face {
   font-family: source-sans;
   font-weight: 200 900;
-  font-display: block;
+  font-display: optional;
   font-style: italic;
   src: url('/fonts/source-sans/SourceSans3VF-Italic.ttf.woff2') format('woff2');
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: source-code;
   font-weight: 100 900;
-  font-display: block;
+  font-display: optional;
   font-style: normal;
   src: url('/fonts/source-code/SourceCodeVariable-Roman.ttf.woff2') format('woff2');
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: source-code;
   font-weight: 100 900;
-  font-display: block;
+  font-display: optional;
   font-style: italic;
   src: url('/fonts/source-code/SourceCodeVariable-Italic.ttf.woff2') format('woff2');
 }
