@@ -16,7 +16,7 @@
     "dependencies": {
         "@mapbox/rehype-prism": "^0.5.0",
         "@silvenon/remark-smartypants": "^1.0.0",
-        "@stripe/react-stripe-js": "^1.1.2",
+        "@stripe/react-stripe-js": "^1.2.2",
         "@stripe/stripe-js": "^1.11.0",
         "clsx": "^1.1.1",
         "date-fns": "^2.16.1",
