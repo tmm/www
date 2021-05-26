@@ -1,16 +1,12 @@
-import { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes'
+import { AppProps } from 'next'
 
-import '@/styles/tailwind.css'
-import '@/styles/globals.css'
+import { getLayout as getSiteLayout } from '~/layouts/site'
 
-const App = (props: AppProps) => {
-    const { Component, pageProps } = props
-    return (
-        <ThemeProvider defaultTheme="dark" disableTransitionOnChange>
-            <Component {...pageProps} />
-        </ThemeProvider>
-    )
+import '~/styles/globals.css'
+
+const App = ({ Component, pageProps }: AppProps) => {
+    const getLayout = Component.getLayout || getSiteLayout
+    return getLayout(<Component {...pageProps} />)
 }
 
 export default App

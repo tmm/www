@@ -1,0 +1,8 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "rules": {
+        "declaration-block-trailing-semicolon": null,
+        "indentation": 4,
+        "no-descending-specificity": null
+    }
+}

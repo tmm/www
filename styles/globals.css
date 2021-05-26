@@ -1,74 +1,62 @@
-@import './fonts.css';
-@import './markdown.css';
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('/fonts/inter/Inter-roman.var.woff2?v=3.18') format('woff2');
+}
 
-@layer base {
-  :root {
-    --font-mono: source-code, serif, menlo, sfmono-regular, monospace;
-    --font-sans: source-sans, helvetica, -apple-system, blinkmacsystemfont, sans-serif;
-    --font-size: 18px;
-    --color-background: hsl(208, 6%, 8%);
-    --color-body: hsl(109, 0%, 90%);
-    --color-border: hsl(208, 6%, 30%);
-    --color-fill: hsl(208, 6%, 12%);
-    --color-mark: hsl(43, 50%, 10%);
-    --color-muted: hsl(208, 6%, 65%);
-    --token: hsl(109, 0%, 80%);
-    --comment: hsl(109, 0%, 70%);
-    --keyword: hsl(109, 100%, 100%);
-    --name: hsl(109, 100%, 100%);
-    --highlight: hsl(109, 0%, 10%);
-    --bullet-url: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 6%, 30%)'/%3E%3C/svg%3E%0A");
-  }
+@font-face {
+    font-family: 'Sans';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/fonts/inter/Inter-italic.var.woff2?v=3.18') format('woff2');
+}
 
-  [data-theme='light'] {
-    --color-background: hsl(208, 100%, 100%);
-    --color-body: hsl(208, 0%, 10%);
-    --color-border: hsl(208, 0%, 70%);
-    --color-fill: hsl(208, 0%, 95%);
-    --color-mark: hsl(43, 70%, 93%);
-    --color-muted: hsl(208, 0%, 30%);
-    --token: hsl(109, 0%, 40%);
-    --comment: hsl(109, 0%, 50%);
-    --keyword: hsl(109, 0%, 0%);
-    --name: hsl(109, 0%, 20%);
-    --highlight: hsl(109, 0%, 97%);
-    --bullet-url: url("data:image/svg+xml,%3Csvg width='14' height='1' viewBox='0 0 14 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='14' y2='0.5' stroke='hsl(208, 0%, 70%)'/%3E%3C/svg%3E%0A")
-  }
+:root {
+    /* colors */
+    --color-foreground: hsl(0, 0%, 0%);
+    --color-background: hsl(0, 100%, 100%);
+    --color-selection: hsl(0, 0%, 0%);
 
-  html {
-    @apply antialiased font-sans;
+    /* space */
+    --space: 4px;
+    --space-2x: 8px;
+    --space-4x: 16px;
+    --space-8x: 32px;
+    --space-16x: 64px;
+    --space-24x: 96px;
+    --space-32x: 128px;
+    --space-48x: 192px;
+    --space-64x: 256px;
 
+    /* typography */
+    --font-sans: sans, sans-serif;
+    --font-size: 16px;
+}
+
+::selection {
+    background-color: var(--color-selection);
+    color: var(--color-foreground);
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: var(--font-size);
+    font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
-  }
+}
 
-  body {
-    @apply bg-background text-body;
-  }
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
 
-  a {
-    @apply underline;
-
+a {
+    text-decoration: underline;
     text-decoration-color: var(--color-border);
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
-  }
-
-  a:hover {
-    @apply text-muted;
-  }
-
-  input::placeholder {
-    opacity: 1;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type=number] {
-    -moz-appearance: textfield;
-  }
 }

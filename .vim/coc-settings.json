@@ -1,16 +1,14 @@
 {
     "css.validate": false,
     "eslint.autoFixOnSave": true,
-    "eslint.enable": true,
-    "eslint.filetypes": [
+    "eslint.probe": [
         "css",
         "javascript",
-        "javascriptreact",
         "json",
-        "markdown.mdx",
+        "markdown",
+        "prisma",
         "typescript",
         "typescriptreact"
     ],
-    "eslint.packageManager": "yarn",
-    "stylelintplus.autoFixOnSave": true
+    "eslint.packageManager": "yarn"
 }
