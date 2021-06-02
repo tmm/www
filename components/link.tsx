@@ -10,15 +10,15 @@ type Props = {
     passHref?: boolean
 }
 
-export const Link: React.FC<Props> = ({
+export const Link = ({
     as,
     children,
     className,
     external,
     href,
     passHref,
-}) => {
-    if (external) {
+}: Props) => {
+    if (external)
         return (
             <a
                 className={className}
@@ -29,7 +29,6 @@ export const Link: React.FC<Props> = ({
                 {children}
             </a>
         )
-    }
 
     return (
         <NextLink as={as} href={href} passHref={passHref}>

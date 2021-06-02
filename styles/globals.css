@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Sans';
     font-style: normal;
@@ -14,49 +18,59 @@
     src: url('/fonts/inter/Inter-italic.var.woff2?v=3.18') format('woff2');
 }
 
-:root {
-    /* colors */
-    --color-foreground: hsl(0, 0%, 0%);
-    --color-background: hsl(0, 100%, 100%);
-    --color-selection: hsl(0, 0%, 0%);
-
-    /* space */
-    --space: 4px;
-    --space-2x: 8px;
-    --space-4x: 16px;
-    --space-8x: 32px;
-    --space-16x: 64px;
-    --space-24x: 96px;
-    --space-32x: 128px;
-    --space-48x: 192px;
-    --space-64x: 256px;
-
-    /* typography */
-    --font-sans: sans, sans-serif;
-    --font-size: 16px;
+@font-face {
+    font-family: 'Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url('/fonts/surt/Surt-RegularExp.woff2?v=1.0') format('woff2');
 }
 
-::selection {
-    background-color: var(--color-selection);
-    color: var(--color-foreground);
-}
+@layer base {
+    :root {
+        /* colors */
+        --color-background: hsl(28, 6%, 6%);
+        --color-foreground: hsl(60, 5%, 95%);
+        --color-selection: hsl(28, 10%, 20%);
+        --color-gray-5: hsl(113, 0%, 98%);
+        --color-gray-10: hsl(62, 5%, 96%);
+        --color-gray-20: hsl(29, 5%, 90%);
+        --color-gray-30: hsl(22, 7%, 83%);
+        --color-gray-40: hsl(24, 6%, 64%);
+        --color-gray-50: hsl(23, 6%, 45%);
+        --color-gray-60: hsl(31, 6%, 32%);
+        --color-gray-70: hsl(28, 7%, 25%);
+        --color-gray-80: hsl(10, 8%, 15%);
+        --color-gray-90: hsl(22, 12%, 10%);
 
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: var(--font-size);
-    font-family: var(--font-sans);
-    text-rendering: optimizeLegibility;
-}
+        /* typography */
+        --font-display: display, sans-serif;
+        --font-sans: sans, sans-serif;
+        --font-size: 16px;
+    }
 
-body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-}
+    ::selection {
+        background-color: var(--color-selection);
+    }
 
-a {
-    text-decoration: underline;
-    text-decoration-color: var(--color-border);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: var(--font-size);
+        font-family: var(--font-sans);
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-feature-settings: 'ss01';
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: var(--color-gray-50);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+    }
 }

@@ -19,6 +19,13 @@ const Layout: NextLayout = ({ children }) => {
                 <link
                     as="font"
                     crossOrigin="anonymous"
+                    href="/fonts/surt/Surt-RegularExp.woff2"
+                    rel="preload"
+                    type="font/woff2"
+                />
+                <link
+                    as="font"
+                    crossOrigin="anonymous"
                     href="/fonts/inter/Inter-roman.var.woff2"
                     rel="preload"
                     type="font/woff2"
