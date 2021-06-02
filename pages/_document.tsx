@@ -6,7 +6,7 @@ import {
     NextScript,
 } from 'next/document'
 
-import { config } from '@/lib/config'
+import { config } from '~/lib/config'
 
 class Document extends NextDocument {
     render() {
@@ -17,6 +17,7 @@ class Document extends NextDocument {
                     <Main />
                     <NextScript />
 
+                    {/* Simple analytics */}
                     <script
                         async
                         defer

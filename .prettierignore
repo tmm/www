@@ -1,5 +1,3 @@
-!.*
-.next
-node_modules
-public
+.next/
+node_modules/
 yarn.lock

@@ -1,0 +1,13 @@
+{
+    "css.validate": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "eslint.options": {
+        "extensions": ["css", ".js", ".json", ".md", ".mdx", ".ts", ".tsx"]
+    },
+    "eslint.packageManager": "yarn",
+    "stylelint.packageManager": "yarn"
+}

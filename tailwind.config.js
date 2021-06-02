@@ -1,44 +1,38 @@
 module.exports = {
-    purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+    mode: 'jit',
+    purge: [
+        './components/**/*.{js,ts,jsx,tsx}',
+        './layouts/**/*.{js,ts,jsx,tsx}',
+        './pages/**/*.{js,ts,jsx,tsx}',
+    ],
+    darkMode: false,
     theme: {
         extend: {
-            borderColor: (theme) => ({
-                ...theme('colors'),
-                DEFAULT: theme('colors.border', 'currentColor'),
-            }),
-            borderRadius: {
-                lg: '0.44rem',
-            },
             colors: {
                 background: 'var(--color-background)',
-                body: 'var(--color-body)',
-                border: 'var(--color-border)',
-                fill: 'var(--color-fill)',
-                mark: 'var(--color-mark)',
-                heading: 'var(--color-heading)',
-                muted: 'var(--color-muted)',
-                transparent: 'transparent',
+                foreground: 'var(--color-foreground)',
+                selection: 'var(--color-selection)',
+                gray: {
+                    5: 'var(--color-gray-5)',
+                    10: 'var(--color-gray-10)',
+                    20: 'var(--color-gray-20)',
+                    30: 'var(--color-gray-30)',
+                    40: 'var(--color-gray-40)',
+                    50: 'var(--color-gray-50)',
+                    60: 'var(--color-gray-60)',
+                    70: 'var(--color-gray-70)',
+                    80: 'var(--color-gray-80)',
+                    90: 'var(--color-gray-90)',
+                },
             },
             fontFamily: {
-                mono: 'var(--font-mono)',
+                display: 'var(--font-display)',
                 sans: 'var(--font-sans)',
-            },
-            listStyleType: {
-                square: 'square',
-            },
-            maxWidth: {
-                container: '35.5rem',
-                subscribe: '22rem',
-            },
-            screens: {
-                print: { raw: 'print' },
             },
         },
     },
     variants: {
-        extend: {
-            outline: ['focus-within'],
-            padding: ['hover'],
-        },
+        extend: {},
     },
+    plugins: [],
 }

@@ -1,31 +1,52 @@
-import { NextPage } from 'next'
+import { NextPageWithLayout } from 'next'
 
-import { Layout, Link } from '@/components'
-import { config } from '@/lib/config'
+import { Link } from '~/components'
+import { getLayout } from '~/layouts/site'
+import { config } from '~/lib/config'
 
-const Page: NextPage = () => {
+const Page: NextPageWithLayout = () => {
     return (
-        <Layout hideFooter hideNav>
-            <article>
-                <header className="mb-8">
-                    <h1>Tom Meagher</h1>
-                </header>
+        <main className="max-w-lg pt-20 px-4 md:ml-20">
+            <article className="space-y-6">
+                <h1 className="font-display">Tom Meagher</h1>
+
                 <p>
-                    Welcome — I&rsquo;m Tom, a Brooklyn-based software engineer.
-                    Currently, I work at{' '}
-                    <Link external href="https://locallaboratory.co">
-                        Local Laboratory
-                    </Link>
-                    . Read more <Link href="/about">about me</Link>, browse{' '}
-                    <Link href="/archive">the archive</Link>, drop me{' '}
+                    I&rsquo;m a Brooklyn based software engineer interested in
+                    funding models for art and work, developer experience and
+                    tools, meta learning, and walking.
+                </p>
+
+                <p>
+                    Sometimes I work on consulting projects for select clients.
+                    To work with me or learn more, drop a note to {config.email}
+                    .
+                </p>
+
+                <p>
+                    <Link external href="https://are.na/tmm">
+                        Are.na
+                    </Link>{' '}
                     <Link external href={`mailto:${config.email}`}>
-                        a note
+                        Email
+                    </Link>{' '}
+                    <Link external href="https://futureland.tv/tmm">
+                        Futureland
+                    </Link>{' '}
+                    <Link external href="https://github.com/tmm">
+                        GitHub
+                    </Link>{' '}
+                    <Link
+                        external
+                        href={`https://twitter.com/${config.twitter}`}
+                    >
+                        Twitter
                     </Link>
-                    , or see what I&rsquo;m up to <Link href="/now">now</Link>.
                 </p>
             </article>
-        </Layout>
+        </main>
     )
 }
+
+Page.getLayout = getLayout
 
 export default Page

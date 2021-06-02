@@ -1,21 +1,28 @@
-import { NextPage } from 'next'
+import { NextPageWithLayout } from 'next'
+import Head from 'next/head'
 
-import { Layout, Link } from '@/components'
+import { Link } from '~/components'
+import { getLayout } from '~/layouts/site'
 
-const Page: NextPage = () => {
-    const title = 'Page Not Found'
+const Page: NextPageWithLayout = () => {
     return (
-        <Layout hideFooter title={title}>
-            <article>
-                <header className="mb-8">
-                    <h1>{title}</h1>
-                </header>
-                <p>
-                    Back to <Link href="/">home</Link>
-                </p>
-            </article>
-        </Layout>
+        <>
+            <Head>
+                <title>404</title>
+            </Head>
+            <main className="max-w-lg pt-20 px-4 md:ml-20">
+                <article className="space-y-6">
+                    <h1 className="font-display">404</h1>
+
+                    <p>
+                        Page not found. <Link href="/">Back to home.</Link>
+                    </p>
+                </article>
+            </main>
+        </>
     )
 }
+
+Page.getLayout = getLayout
 
 export default Page
