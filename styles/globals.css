@@ -6,7 +6,7 @@
     font-family: 'Sans';
     font-style: normal;
     font-weight: 100 900;
-    font-display: optional;
+    font-display: fallback;
     src: url('/fonts/inter/Inter-roman.var.woff2?v=3.18') format('woff2');
 }
 
@@ -14,7 +14,7 @@
     font-family: 'Sans';
     font-style: italic;
     font-weight: 100 900;
-    font-display: swap;
+    font-display: fallback;
     src: url('/fonts/inter/Inter-italic.var.woff2?v=3.18') format('woff2');
 }
 
@@ -22,7 +22,7 @@
     font-family: 'Display';
     font-style: normal;
     font-weight: 400;
-    font-display: optional;
+    font-display: fallback;
     src: url('/fonts/surt/Surt-RegularExp.woff2?v=1.0') format('woff2');
 }
 

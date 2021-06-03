@@ -17,12 +17,22 @@ const Page: NextPageWithLayout = () => {
                 </p>
 
                 <p>
-                    Sometimes I work on consulting projects for select clients.
-                    To work with me or learn more, drop a note to {config.email}
+                    Occasionally, I work on consulting projects for select
+                    clients. To work with me or learn more, drop a note to{' '}
+                    <Link external href={`mailto:${config.email}`}>
+                        {config.email}
+                    </Link>
                     .
                 </p>
 
                 <p>
+                    If you made it this far, send me an email with the answer to
+                    &ldquo;What&rsquo;s you favorite color?&rdquo;
+                </p>
+
+                <p>— Tom</p>
+
+                <div className="flex space-x-3">
                     <Link external href="https://are.na/tmm">
                         Are.na
                     </Link>{' '}
@@ -41,7 +51,7 @@ const Page: NextPageWithLayout = () => {
                     >
                         Twitter
                     </Link>
-                </p>
+                </div>
             </article>
         </main>
     )
