@@ -27,7 +27,7 @@ const Page: NextPageWithLayout = () => {
 
                 <p>
                     If you made it this far, send me an email with the answer to
-                    &ldquo;What&rsquo;s you favorite color?&rdquo;
+                    &ldquo;What&rsquo;s your favorite color?&rdquo;
                 </p>
 
                 <p>— Tom</p>
