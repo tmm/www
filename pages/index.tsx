@@ -30,21 +30,24 @@ const Page: NextPageWithLayout = () => {
                     &ldquo;What&rsquo;s your favorite color?&rdquo;
                 </p>
 
-                <p>— Tom</p>
+                <p>~ Tom</p>
 
-                <div className="flex space-x-3">
+                <div className="flex space-x-3 text-sm">
                     <Link external href="https://are.na/tmm">
                         Are.na
-                    </Link>{' '}
+                    </Link>
                     <Link external href={`mailto:${config.email}`}>
                         Email
-                    </Link>{' '}
+                    </Link>
                     <Link external href="https://futureland.tv/tmm">
                         Futureland
-                    </Link>{' '}
+                    </Link>
                     <Link external href="https://github.com/tmm">
                         GitHub
-                    </Link>{' '}
+                    </Link>
+                    <Link external href="https://t.mirror.xyz">
+                        Mirror
+                    </Link>
                     <Link
                         external
                         href={`https://twitter.com/${config.twitter}`}

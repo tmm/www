@@ -1,24 +1,11 @@
 {
     "root": true,
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 8,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "impliedStrict": true,
-            "experimentalObjectRestSpread": true
-        },
-        "allowImportExportEverywhere": true
-    },
     "plugins": ["@typescript-eslint", "import", "react"],
     "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
+        "next",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
         "plugin:prettier/recommended",
         "prettier"
     ],
@@ -63,31 +50,10 @@
         ],
         "react/jsx-wrap-multilines": "error",
         "react/no-array-index-key": "error",
-        "react/no-multi-comp": "warn",
+        "react/no-multi-comp": "off",
         "react/prop-types": "off",
-        "react/self-closing-comp": "warn"
-    },
-    "overrides": [
-        {
-            "files": ["layouts/**/*.@(tsx)", "pages/**/*.@(tsx)"],
-            "rules": {
-                "react/no-multi-comp": "off",
-                "react/react-in-jsx-scope": "off"
-            }
-        }
-    ],
-    "settings": {
-        "import/parsers": {
-            "@typescript-eslint/parser": [".ts", ".tsx"]
-        },
-        "import/resolver": {
-            "typescript": {
-                "alwaysTryTypes": true
-            }
-        },
-        "react": {
-            "version": "detect"
-        }
+        "react/self-closing-comp": "warn",
+        "react/react-in-jsx-scope": "off"
     },
     "env": {
         "es6": true,

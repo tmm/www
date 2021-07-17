@@ -30,7 +30,7 @@
     :root {
         /* colors */
         --color-background: hsl(28, 6%, 6%);
-        --color-foreground: hsl(60, 5%, 95%);
+        --color-foreground: hsl(60, 5%, 85%);
         --color-selection: hsl(28, 10%, 20%);
         --color-gray-5: hsl(113, 0%, 98%);
         --color-gray-10: hsl(62, 5%, 96%);

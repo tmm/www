@@ -10,6 +10,7 @@ const Page: NextPageWithLayout = () => {
             <Head>
                 <title>404</title>
             </Head>
+
             <main className="max-w-lg pt-20 px-4 md:ml-20">
                 <article className="space-y-6">
                     <h1 className="font-display">404</h1>
