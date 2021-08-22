@@ -1,23 +1,9 @@
 {
-    "arrowParens": "always",
-    "endOfLine": "lf",
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "trailingComma": "all",
-    "overrides": [
-        {
-            "files": "*.md",
-            "options": {
-                "tabWidth": 2
-            }
-        },
-        {
-            "files": "*.yaml",
-            "options": {
-                "tabWidth": 2
-            }
-        }
-    ]
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all"
 }
