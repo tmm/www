@@ -1,14 +1,14 @@
 {
-    "css.validate": false,
-    "eslint.autoFixOnSave": true,
-    "eslint.probe": [
-        "css",
-        "javascript",
-        "json",
-        "markdown",
-        "prisma",
-        "typescript",
-        "typescriptreact"
-    ],
-    "eslint.packageManager": "yarn"
+  "css.validate": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.probe": [
+    "css",
+    "javascript",
+    "json",
+    "markdown",
+    "prisma",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.packageManager": "yarn"
 }
