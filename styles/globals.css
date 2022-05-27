@@ -1,76 +1,67 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  color-scheme: dark;
 
-@font-face {
-    font-family: 'Sans';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: fallback;
-    src: url('/fonts/inter/Inter-roman.var.woff2?v=3.18') format('woff2');
+  --background: #141414;
+  --foreground: #bebebe;
+  --muted: #919192;
+  --border: #303031;
+
+  --sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@font-face {
-    font-family: 'Sans';
-    font-style: italic;
-    font-weight: 100 900;
-    font-display: fallback;
-    src: url('/fonts/inter/Inter-italic.var.woff2?v=3.18') format('woff2');
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Display';
-    font-style: normal;
-    font-weight: 400;
-    font-display: fallback;
-    src: url('/fonts/surt/Surt-RegularExp.woff2?v=1.0') format('woff2');
+* {
+  margin: 0;
 }
 
-@layer base {
-    :root {
-        /* colors */
-        --color-background: hsl(28, 6%, 6%);
-        --color-foreground: hsl(60, 5%, 85%);
-        --color-selection: hsl(28, 10%, 20%);
-        --color-gray-5: hsl(113, 0%, 98%);
-        --color-gray-10: hsl(62, 5%, 96%);
-        --color-gray-20: hsl(29, 5%, 90%);
-        --color-gray-30: hsl(22, 7%, 83%);
-        --color-gray-40: hsl(24, 6%, 64%);
-        --color-gray-50: hsl(23, 6%, 45%);
-        --color-gray-60: hsl(31, 6%, 32%);
-        --color-gray-70: hsl(28, 7%, 25%);
-        --color-gray-80: hsl(10, 8%, 15%);
-        --color-gray-90: hsl(22, 12%, 10%);
+html, body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--sans);
+  height: 100%;
+}
 
-        /* typography */
-        --font-display: display, sans-serif;
-        --font-sans: sans, sans-serif;
-        --font-size: 16px;
-    }
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 
-    ::selection {
-        background-color: var(--color-selection);
-    }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
-    html {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-size: var(--font-size);
-        font-family: var(--font-sans);
-        text-rendering: optimizeLegibility;
-    }
+input, button, textarea, select {
+  font: inherit;
+}
 
-    body {
-        background-color: var(--color-background);
-        color: var(--color-foreground);
-        font-feature-settings: 'ss01';
-    }
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+}
 
-    a {
-        text-decoration: underline;
-        text-decoration-color: var(--color-gray-50);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 2px;
-    }
+a {
+  color: inherit;
+  text-decoration-color: var(--border);
+  text-decoration-skip: edges;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+main {
+  font-size: 1.15rem;
+  font-weight: 375;
+  letter-spacing: -0.004rem;
+  line-height: 1.625;
+  padding: 1rem;
+}
+
+.muted {
+  color: var(--muted);
 }

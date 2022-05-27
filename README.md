@@ -1,10 +1,4 @@
-## Dev
-
 ```
-yarn      # Install dependencies
-yarn dev  # Start dev server
+pnpm i
+pnpm dev
 ```
-
-## Prod
-
-Deployed to [Vercel](https://vercel.com).

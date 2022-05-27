@@ -1,12 +1,8 @@
-import { AppProps } from 'next'
-
-import { getLayout as getSiteLayout } from '~/layouts/site'
-
 import '~/styles/globals.css'
+import type { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps }: AppProps) => {
-  const getLayout = Component.getLayout || getSiteLayout
-  return getLayout(<Component {...pageProps} />)
+function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
 }
 
 export default App

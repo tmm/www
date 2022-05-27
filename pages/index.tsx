@@ -1,64 +1,25 @@
-import { NextPageWithLayout } from 'next'
+import Head from 'next/head'
 
-import { Link } from '~/components'
-import { getLayout } from '~/layouts/site'
-import { config } from '~/lib/config'
-
-const Page: NextPageWithLayout = () => {
+function Page() {
   return (
-    <main className="max-w-lg pt-20 px-4 md:ml-20">
-      <article className="space-y-6">
-        <h1 className="font-display">Tom Meagher</h1>
+    <>
+      <Head>
+        <title>awkweb</title>
+        <meta name="description" content="awkweb is a computer programmer based in Brooklyn." />
+      </Head>
 
+      <main>
         <p>
-          I&rsquo;m a Brooklyn based software engineer interested in funding
-          models for art and work, developer experience and tools, meta
-          learning, and walking.
+          Tom is a programmer based in Brooklyn.
         </p>
-
-        <p>
-          Currently, I work at{' '}
-          <Link external href="https://mirror.xyz">
-            Mirror.xyz
-          </Link>
-          . Occasionally, I work on consulting projects with select clients. To
-          work with me or learn more, drop a note to{' '}
-          <Link external href={`mailto:${config.email}`}>
-            {config.email}
-          </Link>
-          .
+        <p className="muted">
+          <a href="https://github.com/tmm">GitHub</a>{' '}
+          <a href="https://twitter.com/awkweb">Twitter</a>{' '}
+          <a href="mailto:tmm@awkweb.com">Email</a>{' '}
         </p>
-
-        <p>
-          If you made it this far, send me an email with the answer to
-          &ldquo;What&rsquo;s your favorite color?&rdquo;
-        </p>
-
-        <div className="flex mb-2 space-x-3 text-gray-40 text-xs">
-          <Link external href="https://are.na/tmm">
-            Are.na
-          </Link>
-          <Link external href={`mailto:${config.email}`}>
-            Email
-          </Link>
-          <Link external href="https://futureland.tv/tmm">
-            Futureland
-          </Link>
-          <Link external href="https://github.com/tmm">
-            GitHub
-          </Link>
-          <Link external href="https://t.mirror.xyz">
-            Mirror
-          </Link>
-          <Link external href={`https://twitter.com/${config.twitter}`}>
-            Twitter
-          </Link>
-        </div>
-      </article>
-    </main>
+      </main>
+    </>
   )
 }
-
-Page.getLayout = getLayout
 
 export default Page
