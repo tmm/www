@@ -1,4 +1,0 @@
-```
-pnpm i
-pnpm dev
-```
